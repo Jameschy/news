@@ -1,0 +1,18 @@
+﻿/*----------------------------------------*/
+/* 8. Breadcrumb CSS
+/*----------------------------------------*/
+.breadcrumb-area {
+  background: #f6f6f6;
+}
+.breadcrumb-area .breadcrumb {
+  background: #f6f6f6;
+  margin-bottom: 0;
+  padding: 25px 15px;
+  padding-left: 0px;
+}
+.breadcrumb ul li a {
+  font-size: 18px;
+}
+.breadcrumb-area .breadcrumb li.active a,.breadcrumb li:hover a {
+  color: #333;
+}

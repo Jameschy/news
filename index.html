@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Main-Model</title>
+
+    <!--<link rel="shortcut icon" type="image/x-icon" href="img/icon/favicon.ico">-->
+    <!--<link rel="shortcut icon" type="image/png" href="img/icon/favicon.png">-->
+    <link rel="icon" type="image/png" href="img/icon/icon.png">
+
+    <!--公共css引入-->
+    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
+    <!--<link rel="stylesheet" href="css/bootstrap-theme.css">-->
+    <!--<link rel="stylesheet" href="css/home.css">-->
+
+
+    <link href="static/css/aecd9971c6ec43ce9ef237b8ae2b07aa.css" rel="stylesheet">
+
+    <!-- mobile menu css -->
+    <link rel="stylesheet" href="static/css/meanmenu.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="static/css/animate.css">
+    <!-- nivo slider css -->
+    <link rel="stylesheet" href="static/css/nivo-slider.css">
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="static/css/slick.css">
+    <!-- price slider css -->
+    <link rel="stylesheet" href="static/css/jquery-ui.min.css">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="static/css/font-awesome.min.css">
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="static/css/jquery.fancybox.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <!-- default css  -->
+    <link rel="stylesheet" href="static/css/default.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="static/css/responsive.css">
+
+    <!-- modernizr js -->
+    <script src="static/js/modernizr-2.8.3.min.js"></script>
+
+
+
+    <!--区块载入-->
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+
+</head>
+<body>
+<!-- Wrapper Start -->
+<div class="wrapper kiosk-home">
+    <!-- Header Area Start -->
+    <div class="header-box"></div>
+    <!-- Header Area End -->
+    <!-- Slider Area Start -->
+    <div class="banner-box"></div>
+    <!-- Slider Area End -->
+    <!-- Service Start -->
+    <div class="services-box"></div>
+    <!-- Service End -->
+    <!-- Slider Start -->
+    <div class="slider-box"></div>
+    <!-- Slider End -->
+    <!-- Product Area Start -->
+    <div class="product-box"></div>
+    <!-- Product Area End -->
+    <!-- Parallax Area Start -->
+    <div class="parallax-box"></div>
+
+    <!-- Parallax Area End -->
+    <!-- BottomBanner Area Start -->
+    <div class="bt-banner-box"></div>
+    <!-- BottomBanner Area Start -->
+    <!-- New Products Start -->
+    <div class="new-products-box"></div>
+    <!-- New Products End -->
+
+    <!-- purchase area Start-->
+    <div class="purchase-box"></div>
+    <!-- purchase area End-->
+
+    <!-- Blog Page Start -->
+    <div class="blogs-box"></div>
+    <!-- Blog Page End -->
+
+    <!-- newsletter Start -->
+    <div class="newsletter-box"></div>
+    <!-- newsletter end -->
+
+    <!-- Footer Start -->
+    <footer class="black-bg"></footer>
+    <!-- Footer End -->
+</div>
+<!-- Wrapper End -->
+<!-- jquery 3.12.4 -->
+<script src="static/js/jquery-1.12.4.min.js"></script>
+<!-- mobile menu js  -->
+<script src="static/js/jquery.meanmenu.min.js"></script>
+<!-- scroll-up js -->
+<script src="static/js/jquery.scrollup.js"></script>
+<!-- owl-carousel js -->
+<script src="static/js/owl.carousel.min.js"></script>
+<!-- slick js -->
+<script src="static/js/slick.min.js"></script>
+<!-- wow js -->
+<script src="static/js/wow.min.js"></script>
+<!-- price slider js -->
+<script src="static/js/jquery-ui.min.js"></script>
+<script src="static/js/jquery.countdown.min.js"></script>
+<!-- nivo slider js -->
+<script src="static/js/jquery.nivo.slider.js"></script>
+<!-- fancybox js -->
+<script src="static/js/jquery.fancybox.min.js"></script>
+<!-- bootstrap -->
+<script src="static/js/bootstrap.min.js"></script>
+<!-- stellar -->
+<script src="static/js/jquery.stellar.min.js"></script>
+<script src="static/js/parallax.js"></script>
+<!-- popper -->
+<script src="static/js/popper.js"></script>
+<!-- plugins -->
+<script src="static/js/plugins.js"></script>
+<!-- main js -->
+<script src="static/js/main.js"></script>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.header-box').load('templates/public/header/t-p-h-01.html');
+        // $('.header-box').load('templates/home/headers/h-02/h-02.html');
+        $('.banner-box').load('templates/home/banners/t-h-b-02.html');
+
+        $('.services-box').load('templates/home/services/s-01.html');
+        $('.slider-box').load('templates/home/slider/t-h-s-01.html');
+        $('.product-box').load('templates/home/product/p-01.html');
+        $('.parallax-box').load('templates/home/parallax/px-01.html');
+        $('.bt-banner-box').load('templates/home/bt-banners/bb-01.html');
+        $('.new-products-box').load('templates/home/new-products/np-01.html');
+        $('.purchase-box').load('templates/home/purchase/pe-01.html');
+        $('.blogs-box').load('templates/home/blogs/blog-01.html');
+        $('.newsletter-box').load('templates/home/newsletters/nl-01.html');
+        $('.black-bg').load('templates/home/footers/f-01/f-01.html');
+
+    });
+</script>
+</html>

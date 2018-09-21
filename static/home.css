@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin-bottom: 0;
+}
+ul li{
+
+    list-style: none;
+}
+.wrap-container{
+    height: 1000px;
+    position: relative;
+}
+.header-box{
+    width: 100%;
+    min-height: 100px;
+    padding-left:0;
+    padding-right: 0;
+}
+.content-box{
+    height: 800px;
+    width: 100%;
+    padding-left:0;
+    padding-right: 0;
+    text-align: center;
+}
+.foot-box{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.classify-block{
+    width: 100%;
+    margin: 0 auto;
+    background: #f6f6f6;
+}
+
