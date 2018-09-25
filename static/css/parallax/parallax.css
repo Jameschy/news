@@ -42,7 +42,7 @@
 .parallax-left {
   z-index: 1;
   height: 700px;
-  background: rgba(0, 0, 0, 0) url("../images/parallax.png") no-repeat scroll bottom center / cover;
+  background: rgba(0, 0, 0, 0) url("../../images/parallax.png") no-repeat scroll bottom center / cover;
 }
 
 .parallax-right:before {
@@ -61,11 +61,11 @@
   position: absolute;
   height: 500px;
   width: 100%;
-  background: rgba(0, 0, 0, 0) url("../images/2.jpg") no-repeat scroll bottom center / cover;
+  background: rgba(0, 0, 0, 0) url("../../images/2.jpg") no-repeat scroll bottom center / cover;
 }
 
 .purchase-area {
-  background: rgba(0, 0, 0, 0) url("../images/3.jpg") no-repeat scroll bottom center / cover;
+  background: rgba(0, 0, 0, 0) url("../../images/3.jpg") no-repeat scroll bottom center / cover;
 }
 
 .purchase-area a {

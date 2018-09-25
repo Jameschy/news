@@ -1,23 +1,23 @@
 ﻿@import url("theme-default.css");
-@import url("header.css");
+@import url("../header/header.css");
 @import url("slider.css");
-@import url("product.css");
+@import url("../product/product.css");
 @import url("service.css");
-@import url("subscribe.css");
+@import url("../subscribe.css");
 @import url("footer.css");
 @import url("breadcrumb.css");
-@import url("shop.css");
-@import url("single-product.css");
-@import url("cart.css");
-@import url("checkout.css");
-@import url("blog.css");
-@import url("error.css");
-@import url("login.css");
-@import url("contact-form.css");
+@import url("../shop/shop.css");
+@import url("../single-product.css");
+@import url("../cart/cart.css");
+@import url("../checkout/checkout.css");
+@import url("../blog/blog.css");
+@import url("../error/error.css");
+@import url("../login/login.css");
+@import url("../contact-form.css");
 @import url("scrollup.css");
-@import url("home2.css");
-@import url("about-us.css");
-@import url("parallax.css");
+@import url("../home2.css");
+@import url("../about/about-us.css");
+@import url("../parallax/parallax.css");
 
 
 
