@@ -1,11 +1,11 @@
 ﻿@import url("theme-default.css");
 @import url("../header/header.css");
-@import url("slider.css");
+@import url("tools/slider.css");
 @import url("../product/product.css");
-@import url("service.css");
+@import url("../service/service.css");
 @import url("../subscribe.css");
-@import url("footer.css");
-@import url("breadcrumb.css");
+@import url("../footer/footer.css");
+@import url("../breadcrumb/breadcrumb.css");
 @import url("../shop/shop.css");
 @import url("../single-product.css");
 @import url("../cart/cart.css");
@@ -14,8 +14,8 @@
 @import url("../error/error.css");
 @import url("../login/login.css");
 @import url("../contact-form.css");
-@import url("scrollup.css");
-@import url("../home2.css");
+@import url("tools/scrollup.css");
+@import url("../home/home2.css");
 @import url("../about/about-us.css");
 @import url("../parallax/parallax.css");
 
