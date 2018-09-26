@@ -7,13 +7,13 @@
 @import url("../footer/footer.css");
 @import url("../breadcrumb/breadcrumb.css");
 @import url("../shop/shop.css");
-@import url("../single-product.css");
+@import url("../product/single-product.css");
 @import url("../cart/cart.css");
 @import url("../checkout/checkout.css");
 @import url("../blog/blog.css");
 @import url("../error/error.css");
 @import url("../login/login.css");
-@import url("../contact-form.css");
+@import url("../contact/contact-form.css");
 @import url("tools/scrollup.css");
 @import url("../home/home2.css");
 @import url("../about/about-us.css");

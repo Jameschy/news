@@ -34,7 +34,7 @@ body {
     color: #666666;
 }
 
-@import url('56f3b6fe7e374f9a9c7bff7843c46fd1.css');
+@import url('supplied.css');
 .img {
     max-width: 100%;
     -webkit-transition: all 0.3s ease-out 0s;
