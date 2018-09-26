@@ -8,14 +8,9 @@
 
     <!--<link rel="shortcut icon" type="image/x-icon" href="img/icon/favicon.ico">-->
     <!--<link rel="shortcut icon" type="image/png" href="img/icon/favicon.png">-->
-    <link rel="icon" type="image/png" href="img/icon/icon.png">
+    <link rel="icon" type="image/png" href="static/img/icon/site/01/icon.png">
 
     <!--公共css引入-->
-    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
-    <!--<link rel="stylesheet" href="css/bootstrap-theme.css">-->
-    <!--<link rel="stylesheet" href="css/home.css">-->
-
-
     <link href="static/css/common/01/main.css" rel="stylesheet">
 
     <!-- mobile menu css -->
@@ -64,65 +59,9 @@
     <div class="banner-box"></div>
     <!-- Slider Area End -->
 
-
-    <!-- Breadcrumb Start -->
-    <!--<div class="bread-box"></div>-->
-    <!-- Breadcrumb End -->
-
-
-    <!-- Cart Main Area Start -->
-    <!--<div class="cart-box"></div>-->
-    <!-- Cart Main Area End -->
-
-
-    <!-- Service Start -->
-    <!--<div class="services-box"></div>-->
-    <!-- Service End -->
-
-
-    <!-- Product Area Start -->
-    <!--<div class="product-box"></div>-->
-    <!-- Product Area End -->
-
-
-    <!-- Parallax Area Start -->
-    <!--<div class="parallax-box"></div>-->
-    <!-- Parallax Area End -->
-
-
-    <!-- BottomBanner Area Start -->
-    <!--<div class="bt-banner-box"></div>-->
-    <!-- BottomBanner Area End -->
-
-
-    <!-- New Products Start -->
-    <!--<div class="new-products-box"></div>-->
-    <!-- New Products End -->
-
-
-    <!-- purchase area Start-->
-    <!--<div class="purchase-box"></div>-->
-    <!-- purchase area End-->
-
-
-    <!-- Blog Page Start -->
-    <!--<div class="blogs-box"></div>-->
-    <!-- Blog Page End -->
-
-
     <!-- Failed Start -->
     <div class="pay-fad-box"></div>
     <!-- Failed end -->
-
-
-    <!-- Error Start -->
-    <!--<div class="error-box"></div>-->
-    <!-- Error end -->
-
-    <!-- newsletter Start -->
-    <!--<div class="newsletter-box"></div>-->
-    <!-- newsletter end -->
-
 
     <!-- Footer Start -->
     <footer class="black-bg"></footer>
@@ -163,26 +102,15 @@
 <script src="static/js/01/main.js"></script>
 </body>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('.header-box').load('templates/public/header/header-01.html');
-        // $('.header-box').load('templates/home/headers/h-02/h-02.html');
-        // $('.banner-box').load('templates/home/banners/b-01.html');
-        $('.bread-box').load('templates/public/breadcrumb/t-p-b-01.html');
-        // $('.cart-box').load('templates/cart/cartmain.html');
-        // $('.services-box').load('templates/home/services/s-01.html');
-
-        // $('.product-box').load('templates/home/product/p-01.html');
-        // $('.parallax-box').load('templates/home/parallax/px-01.html');
-        // $('.bt-banner-box').load('templates/home/bt-banners/bb-01.html');
-        // $('.new-products-box').load('templates/home/new-products/np-01.html');
-        // $('.purchase-box').load('templates/home/purchase/pe-01.html');
-        // $('.blogs-box').load('templates/home/blogs/blog-01.html');
-
-        // $('.error-box').load('templates/public/error/t-p-e-01.html');
-        $('.pay-fad-box').load('templates/public/paystatus/failed/t-p-p-f-01.html');
-        // $('.newsletter-box').load('templates/public/newsletters/newsletter-01.html');
-        $('.black-bg').load('templates/public/footers/footer-01.html');
-
-    });
+        $(document).ready(function () {
+            // 头部导航
+            $('.header-box').load('templates/public/header/header-01.html');
+            // 面包屑导航
+            $('.bread-box').load('templates/public/breadcrumb/breadcrumb-01.html');
+            // failedpay主体
+            $('.pay-fad-box').load('templates/public/paystatus/failed/failedpay-01.html');
+            // 底部信息
+            $('.black-bg').load('templates/public/footers/footer-01.html');
+        });
 </script>
 </html>

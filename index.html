@@ -8,14 +8,9 @@
 
     <!--<link rel="shortcut icon" type="image/x-icon" href="img/icon/favicon.ico">-->
     <!--<link rel="shortcut icon" type="image/png" href="img/icon/favicon.png">-->
-    <link rel="icon" type="image/png" href="img/icon/icon.png">
+    <link rel="icon" type="image/png" href="static/img/icon/site/01/icon.png">
 
     <!--公共css引入-->
-    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
-    <!--<link rel="stylesheet" href="css/bootstrap-theme.css">-->
-    <!--<link rel="stylesheet" href="css/home.css">-->
-
-
     <link href="static/css/common/01/main.css" rel="stylesheet">
 
     <!-- mobile menu css -->
@@ -55,30 +50,37 @@
 <body>
 <!-- Wrapper Start -->
 <div class="wrapper kiosk-home">
+
     <!-- Header Area Start -->
     <div class="header-box"></div>
     <!-- Header Area End -->
+
     <!-- Slider Area Start -->
     <div class="banner-box"></div>
     <!-- Slider Area End -->
+
     <!-- Service Start -->
     <div class="services-box"></div>
     <!-- Service End -->
+
     <!-- Slider Start -->
     <div class="slider-box"></div>
     <!-- Slider End -->
+
     <!-- Product Area Start -->
     <div class="product-box"></div>
     <!-- Product Area End -->
+
     <!-- Parallax Area Start -->
     <div class="parallax-box"></div>
-
     <!-- Parallax Area End -->
+
     <!-- BottomBanner Area Start -->
     <div class="bt-banner-box"></div>
     <!-- BottomBanner Area Start -->
+
     <!-- New Products Start -->
-    <div class="new-products-box"></div>
+    <div class="collection-box"></div>
     <!-- New Products End -->
 
     <!-- purchase area Start-->
@@ -131,21 +133,31 @@
 </body>
 <script type="text/javascript">
     $(document).ready(function () {
+        // 头部导航
         $('.header-box').load('templates/public/header/header-01.html');
-        // $('.header-box').load('templates/home/headers/h-02/h-02.html');
-        $('.banner-box').load('templates/home/banners/t-h-b-02.html');
-
-        $('.services-box').load('templates/home/services/s-01.html');
-        $('.slider-box').load('templates/home/slider/t-h-s-01.html');
-        $('.product-box').load('templates/home/product/p-01.html');
-        $('.parallax-box').load('templates/home/parallax/px-01.html');
-        $('.bt-banner-box').load('templates/home/bt-banners/bb-01.html');
-        $('.new-products-box').load('templates/home/collection/t-h-c-01.html');
-        $('.purchase-box').load('templates/home/purchase/pe-01.html');
-        $('.blogs-box').load('templates/blog/t-b-02.html');
+        // banner展示（主）
+        $('.banner-box').load('templates/home/banner/banner-02.html');
+        // 服务信息
+        $('.services-box').load('templates/public/services/service-01.html');
+        // slider展示（主）
+        $('.slider-box').load('templates/home/slider/slider-01.html');
+        // 热卖产品（主）
+        $('.product-box').load('templates/home/product/product-01.html');
+        // 视差展示
+        $('.parallax-box').load('templates/home/parallax/parallax-01.html');
+        // 底部banner
+        $('.bt-banner-box').load('templates/home/bottombanner/bottombanner-01.html');
+        // 新品展示（主）
+        $('.collection-box').load('templates/home/collection/collection-01.html');
+        // 购物展示（主）
+        $('.purchase-box').load('templates/home/purchase/purchase-01.html');
+        // 博客展示
+        $('.blogs-box').load('templates/blog/blog-02.html');
+        // 底部邮发
         $('.newsletter-box').load('templates/public/newsletters/newsletter-01.html');
+        // 底部信息
         $('.black-bg').load('templates/public/footers/footer-01.html');
-
     });
+
 </script>
 </html>
