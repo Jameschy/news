@@ -1,0 +1,319 @@
+/*----------------------------------------*/
+/* 2. Header-03 CSS
+/*----------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    word-break: break-word;
+}
+
+ul {
+    list-style: none;
+    cursor: default;
+}
+
+body, p, li {
+    letter-spacing: 0.1em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+li {
+    list-style: none;
+    outline: 0;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    transition: all ease .3s;
+    color: inherit;
+    text-decoration: none;
+    outline: 0;
+    letter-spacing: 0.1em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a:visited {
+    outline: 0;
+}
+
+
+
+.header-section {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.header-section .top-bar {
+    background-color: #000;
+    color: #666666;
+}
+
+.header-section .header-logo {
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: #e5e5e5;
+    background-color: #fff;
+    text-align: center;
+    /*padding-top: 38px;*/
+    /*padding-bottom: 38px;*/
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    /*border-bottom-color: #e5e5e5;*/
+    /*border-top-color: #fff;*/
+    position: relative;
+    z-index: 2;
+}
+
+.header-section .header-menu {
+    background-color: #fff;
+}
+
+.header-section .s-container {
+    padding: 0 160px 0 160px;
+}
+
+.clearfix {
+    display: block;
+}
+
+.top-bar .top-bar-slogan {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.top-bar .top-bar-slogan p {
+    font-size: 10px;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+
+.social-button-wrap {
+    text-align: right;
+}
+
+.social-button-wrap li a {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    transition: all 300ms ease-out 0ms;
+}
+
+.top-bar .social-button-wrap ul li a {
+    width: auto;
+    height: auto;
+    border: none;
+    line-height: 40px;
+}
+
+.social-button-wrap li a i {
+    color: #666;
+    font-size: 15px;
+}
+
+.fa, .fab, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+
+.fa-facebook-f:before {
+    content: "\f39e";
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+}
+
+.fa-youtube:before {
+    content: "\f167";
+}
+
+a.logo-link img {
+    max-width: 210px;
+    height: auto;
+    border-style: none;
+    vertical-align: middle;
+    border: 0;
+}
+
+.header-section .s-container {
+    padding: 0 160px 0 160px;
+}
+.menu-bar-wrap {
+    position: relative;
+}
+
+.menu-bar-wrap .left-language {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.menu-bar-wrap .left-language ul li {
+    display: inline-table;
+    margin-right: 2px;
+    list-style: none;
+    outline: 0;
+}
+.menu-bar-wrap .left-language ul li img {
+    margin-bottom: 3px;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.menu-bar-wrap .left-language ul li span {
+    font-weight: 600;
+    font-family: "Raleway",sans-serif;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+.menu-bar-wrap .left-language ul li span:first-child {
+    padding-right: 15px;
+    border-right: 1px solid #ddd;
+    font-size: 14px;
+}
+.menu-bar-wrap .left-language ul li span:last-child {
+    padding-left: 15px;
+    font-size: 16px;
+}
+.menu-bar-wrap .right-icon {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.mobile-menu a.mobile-menu-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #777;
+    color: #fff;
+    font-weight: 600;
+}
+.mobile-menu a.mobile-menu-btn span, .mobile-menu a.mobile-menu-btn i {
+    line-height: 25px;
+}
+
+ul.main-nav .sub-menu-mega-type, ul.main-nav .sub-menu-normal-type {
+    background-color: #ffffff;
+}
+@media (max-width: 1400px) {
+    .s-container {
+        padding-right: 25px !important;
+        padding-left: 25px !important;
+    }
+
+}
+@media (max-width: 991px) {
+    .header-section {
+        position: relative !important;
+    }
+    .header-logo {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .header-logo img {
+        max-height: 28px;
+    }
+    .menu-bar-wrap {
+        padding: 20px 0;
+    }
+
+    .header-section:not(#layout5) .main-menu .mega-menu-wrap {
+        text-align: center;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1;
+    }
+    .header-section:not(#layout5) .main-menu ul.main-nav {
+        display: none;
+        position: absolute;
+        top: calc(100% + 55px);
+        left: 0;
+        right: 0;
+        background: #fff;
+        margin-top: 0;
+        z-index: 2;
+        padding: 0 0 15px 0;
+    }
+
+    .header-section:not(#layout5) .main-menu .mega-menu-wrap ul li {
+        text-align: left;
+        list-style-type: none;
+    }
+    .header-section:not(#layout5) .main-menu ul.main-nav>li {
+        margin: 0 30px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .header-section:not(#layout5) .main-menu ul.main-nav li {
+        line-height: 35px;
+    }
+    .item-has-children {
+        position: relative;
+    }
+    .item-has-children .children-toggle {
+        display: none;
+        margin-left: 20px;
+        padding: 0;
+        height: 100%;
+    }
+
+}
+@media (max-width: 767px) {
+    .top-bar .top-bar-slogan, .top-bar .top-bar-social {
+        text-align: center;
+        float: unset;
+    }
+
+    .top-bar .social-button-wrap {
+        text-align: center;
+    }
+
+    .top-bar .social-button-wrap ul li {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-button-wrap {
+        text-align: left;
+        margin-top: 6px;
+    }
+}
+
+
+

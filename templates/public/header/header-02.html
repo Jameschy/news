@@ -1,208 +1,112 @@
-<header class="home2-header">
-    <!-- Kiosk Header Bottom Start -->
-    <div class="kiosk-header-bottom header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-3 col-lg-2 col-sm-5 col-5">
-                    <div class="logo">
-                        <a href="index.html"><img src="static/picture/logo.png" alt="logo image"></a>
-                    </div>
-                </div>
-                <!-- Primary Vertical-Menu End -->
-                <!-- Search Box Start -->
-                <div class="col-xl-6 col-lg-7 d-none d-lg-block">
-                    <div class="kiosk-middle-menu pull-right">
-                        <nav>
-                            <ul class="kiosk-middle-menu-list">
-                                <li><a href="index.html">home</a>
-                                    <!-- Home Version Dropdown Start -->
-                                    <ul class="kiosk-dropdown home-dropdown">
-                                        <li><a href="index.html">Home Version 1</a></li>
-                                        <li><a href="index-2.html">Home Version 2</a></li>
-                                    </ul>
-                                    <!-- Home Version Dropdown End -->
-                                </li>
-                                <li><a href="about.html">about us</a></li>
-                                <li><a href="shoplist.html">shop</a>
-                                    <!-- Home Version Dropdown Start -->
-                                    <ul class="kiosk-dropdown">
-                                        <li><a href="shoplist.html">shop</a></li>
-                                        <li><a href="cart.html">Cart Page</a></li>
-                                        <li><a href="checkout.html">Checkout Page</a></li>
-                                        <li><a href="wishlist.html">Wishlist Page</a></li>
-                                        <li><a href="product.html">product details Page</a></li>
-                                    </ul>
-                                    <!-- Home Version Dropdown End -->
-                                </li>
-                                <li><a href="blog.html">Blog</a>
-                                    <!-- Home Version Dropdown Start -->
-                                    <ul class="kiosk-dropdown">
-                                        <li><a href="blog.html">Blog Page</a></li>
-                                        <li><a href="blog-details.html">Blog Details Page</a></li>
-                                    </ul>
-                                    <!-- Home Version Dropdown End -->
-                                </li>
-                                <li><a href="#">pages</a>
-                                    <!-- Home Version Dropdown Start -->
-                                    <ul class="kiosk-dropdown">
-                                        <li><a href="contact.html">contact us</a></li>
-                                        <li><a href="about.html">about us</a></li>
-                                        <li><a href="login.html">Login Page</a></li>
-                                        <li><a href="error.html">404 Page</a></li>
-                                    </ul>
-                                    <!-- Home Version Dropdown End -->
-                                </li>
-                                <li><a href="contact.html">contact us</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <!-- Search Box End -->
-                <!-- Cartt Box Start -->
-                <div class="col-lg-3 col-sm-7 col-7">
-                    <div class="kiosk-cart text-right">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-shopping-cart"></i><span class="cart-counter">2</span></a>
-                                <ul class="kiosk-dropdown main-kiosk-cart">
-                                    <li>
-                                        <!-- Cart Box Start -->
-                                        <div class="single-kiosk-cart">
-                                            <div class="cart-img">
-                                                <a href="#"><img src="static/picture/4.jpg" alt="cart-image"></a>
-                                            </div>
-                                            <div class="cart-content">
-                                                <h6><a href="product.html">lorem Ipsum</a></h6>
-                                                <span>$299.00</span>
-                                            </div>
-                                            <h6 class="kiosk-qty"><b>Qty</b>:03</h6>
-                                        </div>
-                                        <!-- Cart Box End -->
-                                        <!-- Cart Box Start -->
-                                        <div class="single-kiosk-cart">
-                                            <div class="cart-img">
-                                                <a href="#"><img src="static/picture/4.jpg" alt="cart-image"></a>
-                                            </div>
-                                            <div class="cart-content">
-                                                <h6><a href="product.html">lorem Ipsum</a></h6>
-                                                <span>$469.00</span>
-                                            </div>
-                                            <h6 class="kiosk-qty"><b>Qty</b>:01</h6>
-                                        </div>
-                                        <!-- Cart Box End -->
-                                        <!-- Cart Footer Inner Start -->
-                                        <div class="cart-footer fix">
-                                            <h5>Discount<span class="f-right">$8.00</span></h5>
-                                            <h5>Shipping<span class="f-right">$18.00</span></h5>
-                                            <h5>Vat<span class="f-right">$6.00</span></h5>
-                                            <h5>Total<span class="f-right"><b>$698.00</b></span></h5>
-                                            <div class="kiosk-cart-button">
-                                                <a class="button slider-btn" href="cart.html">View Cart</a>
-                                                <a class="button slider-btn f-right mr-0" href="checkout.html">Checkout</a>
-                                            </div>
-                                        </div>
-                                        <!-- Cart Footer Inner End -->
+<div id="site-header-wrap">
+    <!-- Header -->
+    <header id="header" class="header header-container clearfix">
+        <div class="container clearfix" id="site-header-inner">
+            <div id="logo" class="logo float-left">
+                <a href="index.html" title="logo">
+                    <img src="static/img/logo/02/logo.png" alt="image" width="107" height="24" data-retina="images/logo@2x.png" data-width="107" data-height="24">
+                </a>
+            </div><!-- /.logo -->
+            <div class="mobile-button"><span></span></div>
+            <ul class="menu-extra">
+                <li class="box-search">
+                    <a class="icon_search header-search-icon" href="#"></a>
+                    <form role="search" method="get" class="header-search-form" action="#">
+                        <input type="text" value="" name="s" class="header-search-field" placeholder="Search...">
+                        <button type="submit" class="header-search-submit" title="Search">Search</button>
+                    </form>
+                </li>
+                <li class="box-login">
+                    <a class="icon_login" href="#"></a>
+                </li>
+                <li class="box-cart nav-top-cart-wrapper">
+                    <a class="icon_cart nav-cart-trigger active" href="#"><span>3</span></a>
+                    <div class="nav-shop-cart">
+                        <div class="widget_shopping_cart_content">
+                            <div class="woocommerce-min-cart-wrap">
+                                <ul class="woocommerce-mini-cart cart_list product_list_widget ">
+                                    <li class="woocommerce-mini-cart-item mini_cart_item">
+                                        <span>No Items in Shopping Cart</span>
                                     </li>
                                 </ul>
-                            </li>
-                            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+                            </div><!-- /.widget_shopping_cart_content -->
+                        </div>
+                    </div><!-- /.nav-shop-cart -->
+                </li>
+            </ul><!-- /.menu-extra -->
+            <div class="nav-wrap">
+                <!-- /.mainnav -->
+            </div><!-- /.nav-wrap -->
+        </div><nav id="mainnav-mobi" class="mainnav" style="display: none;">
+        <ul class="menu">
+            <li class="active">
+                <a href="index.html">HOME</a><span class="btn-submenu"></span>
+                <ul class="submenu" style="display: none;">
+                    <li class="active"><a href="index.html">Homepage Style 1</a></li>
+                    <li><a href="index-v2.html">Homepage Style 2</a></li>
+                    <li><a href="index-v3.html">Homepage Style 3</a></li>
+                    <li><a href="index-v4.html">Homepage Style 4</a></li>
+                    <li><a href="index-v5.html">Homepage Style 5</a></li>
+                    <li><a href="index-v6.html">Homepage Style 6</a></li>
+                    <li><a href="index-v7.html">Homepage Style 7</a></li>
+                    <li><a href="index-v8.html">Homepage Style 8</a></li>
+                    <li><a href="index-v9.html">Homepage Style 9</a></li>
+                    <li><a href="index-v10.html">Homepage Style 10</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="shop-3col.html">SHOP</a><span class="btn-submenu"></span>
+                <ul class="submenu" style="display: none;">
+                    <li>
+                        <a href="shop-3col.html">Shop Layouts</a><span class="btn-submenu"></span>
+                        <ul class="submenu" style="display: none;">
+                            <li><a href="shop-3col.html">Three Columns</a></li>
+                            <li><a href="shop-4col.html">Four Columns</a></li>
+                            <li><a href="shop-5col.html">Five Columns</a></li>
+                            <li><a href="shop-3col-slide.html">Slidebar Three Columns</a></li>
                         </ul>
-                    </div>
-                </div>
-                <!-- Cartt Box End -->
-                <div class="col-sm-12 d-lg-none">
-                    <div class="mobile-menu mean-container"><div class="mean-bar"><a href="#nav" class="meanmenu-reveal" style="right: 0px; left: auto; text-align: center; text-indent: 0px; font-size: 18px;"><span></span><span></span><span></span></a><nav class="mean-nav">
-                        <ul style="display: none;">
-                            <li><a href="index.html">home</a>
-                                <!-- Home Version Dropdown Start -->
-                                <ul style="display: none;">
-                                    <li><a href="index.html">Home Version 1</a></li>
-                                    <li><a href="index-2.html">Home Version 2</a></li>
-                                </ul>
-                                <!-- Home Version Dropdown End -->
-                                <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-                            <li><a href="shop.html">shop</a>
-                                <!-- Mobile Menu Dropdown Start -->
-                                <ul style="display: none;">
-                                    <li><a href="shop.html">shop</a></li>
-                                    <li><a href="cart.html">Cart Page</a></li>
-                                    <li><a href="checkout.html">Checkout Page</a></li>
-                                    <li><a href="wishlist.html">Wishlist Page</a></li>
-                                    <li><a href="product.html">product details</a></li>
-                                </ul>
-                                <!-- Mobile Menu Dropdown End -->
-                                <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-                            <li><a href="blog.html">Blog</a>
-                                <!-- Mobile Menu Dropdown Start -->
-                                <ul style="display: none;">
-                                    <li><a href="blog.html">Blog Page</a></li>
-                                    <li><a href="blog-details.html">Blog Details Page</a></li>
-                                </ul>
-                                <!-- Mobile Menu Dropdown End -->
-                                <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-                            <li><a href="#">pages</a>
-                                <!-- Mobile Menu Dropdown Start -->
-                                <ul style="display: none;">
-                                    <li><a href="contact.html">contact us</a></li>
-                                    <li><a href="about.html">about us</a></li>
-                                    <li><a href="login.html">Login Page</a></li>
-                                    <li><a href="error.html">404 Page</a></li>
-                                </ul>
-                                <!-- Mobile Menu Dropdown End -->
-                                <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-                            <li><a href="about.html">about us</a></li>
-                            <li class="mean-last"><a href="contact.html">contact us</a></li>
+                    </li>
+                    <li>
+                        <a href="shop-detail-des.html">Shop Details</a><span class="btn-submenu"></span>
+                        <ul class="submenu" style="display: none;">
+                            <li><a href="shop-detail-des.html">Details Description</a></li>
+                            <li><a href="shop-detail-exter.html">Details External</a></li>
+                            <li><a href="shop-detail-option.html">Details Options</a></li>
+                            <li><a href="shop-detail-fix.html">Details Fix</a></li>
+                            <li><a href="shop-detail-zoom.html">Details Zoom</a></li>
+                            <li><a href="shop-detail-group.html">Details Grouped</a></li>
+                            <li><a href="shop-detail-video.html">Details Video</a></li>
                         </ul>
-                    </nav></div>
-                        <div class="mean-push"></div><nav style="display: none;">
-                            <ul>
-                                <li><a href="index.html">home</a>
-                                    <!-- Home Version Dropdown Start -->
-                                    <ul>
-                                        <li><a href="index.html">Home Version 1</a></li>
-                                        <li><a href="index-2.html">Home Version 2</a></li>
-                                    </ul>
-                                    <!-- Home Version Dropdown End -->
-                                </li>
-                                <li><a href="shop.html">shop</a>
-                                    <!-- Mobile Menu Dropdown Start -->
-                                    <ul>
-                                        <li><a href="shop.html">shop</a></li>
-                                        <li><a href="cart.html">Cart Page</a></li>
-                                        <li><a href="checkout.html">Checkout Page</a></li>
-                                        <li><a href="wishlist.html">Wishlist Page</a></li>
-                                        <li><a href="product.html">product details</a></li>
-                                    </ul>
-                                    <!-- Mobile Menu Dropdown End -->
-                                </li>
-                                <li><a href="blog.html">Blog</a>
-                                    <!-- Mobile Menu Dropdown Start -->
-                                    <ul>
-                                        <li><a href="blog.html">Blog Page</a></li>
-                                        <li><a href="blog-details.html">Blog Details Page</a></li>
-                                    </ul>
-                                    <!-- Mobile Menu Dropdown End -->
-                                </li>
-                                <li><a href="#">pages</a>
-                                    <!-- Mobile Menu Dropdown Start -->
-                                    <ul>
-                                        <li><a href="contact.html">contact us</a></li>
-                                        <li><a href="about.html">about us</a></li>
-                                        <li><a href="login.html">Login Page</a></li>
-                                        <li><a href="error.html">404 Page</a></li>
-                                    </ul>
-                                    <!-- Mobile Menu Dropdown End -->
-                                </li>
-                                <li><a href="about.html">about us</a></li>
-                                <li><a href="contact.html">contact us</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <!-- Mobile Menu  End -->
-            </div>
-            <!-- Row End -->
-        </div>
-        <!-- Container End -->
-    </div>
-    <!-- Header Bottom End -->
-</header>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="coming-soon.html">PAGE</a><span class="btn-submenu"></span>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                    <li><a href="404.html"> Error 404</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="blog-list.html">BLOG</a><span class="btn-submenu"></span>
+                <ul class="submenu" style="display: none;">
+                    <li><a href="blog-list.html">Blog List Full</a></li>
+                    <li><a href="blog-list-1.html">Blog list Slide 1</a></li>
+                    <li><a href="blog-list-2.html">Blog list Slide 2</a></li>
+                    <li><a href="blog-grid.html">Blog Gird Full</a></li>
+                    <li><a href="blog-grid-1.html">Blog Gird Slide</a></li>
+                    <li><a href="blog-detail.html">Blog Details</a></li>
+                </ul><!-- /.submenu -->
+            </li>
+            <li>
+                <a href="contact.html">CONTACT</a><span class="btn-submenu"></span>
+                <ul class="submenu right-submenu" style="display: none;">
+                    <li><a href="contact.html">Contact Style 1</a></li>
+                    <li><a href="contact-v2.html">Contact Style 2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav><!-- /.container-fluid -->
+    </header><div style="height: 89px; display: none;"></div><!-- /header -->
+</div>
