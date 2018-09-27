@@ -36,7 +36,7 @@
 	border:0;
 	padding:0;
 	margin:0;
-	z-index:6;
+	/*z-index:6;*/
 	display:none;
 	background:white; 
 	filter:alpha(opacity=0); 
@@ -53,7 +53,7 @@
 .nivo-box {
 	display:block;
 	position:absolute;
-	z-index:5;
+	/*z-index:5;*/
 	overflow:hidden;
 }
 .nivo-box img { display:block; }
@@ -66,7 +66,7 @@
 	background:#000;
 	color:#fff;
 	width:100%;
-	z-index:8;
+	/*z-index:8;*/
 	padding: 5px 10px;
 	opacity: 0.8;
 	overflow: hidden;

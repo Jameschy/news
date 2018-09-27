@@ -50,7 +50,7 @@
 .nivo-controlNav {
   padding: 0;
   position: absolute;
-  z-index: 12;
+  /*z-index: 12;*/
   bottom: 15px;
   width: 100%;
 }

@@ -1,3 +1,4 @@
+
 <div id="shopify-section-header" class="shopify-section">
     <div class="header-section">
 
@@ -61,7 +62,7 @@
                     <div class="main-menu">
 
                         <div class="mega-menu-wrap">
-                            <ul class="main-nav" style="display: none;">
+                            <ul class="main-nav" style="">
 
 
                                 <li class="top-level-link item-has-children">
@@ -253,10 +254,8 @@
                                                 </ul>
                                                 <span class="toggle-button"></span></div>
 
-
                                             <div class="mega-type-item mb-hide">
-                                                <div class="banner-collection"
-                                                     style="background-image: url('//cdn.shopify.com/s/files/1/0074/2683/4547/files/Bannermenu_510x290_crop_center.jpg?v=1536116134')">
+                                                <div class="banner-collection" style="background-image: url('//cdn.shopify.com/s/files/1/0074/2683/4547/files/Bannermenu_510x290_crop_center.jpg?v=1536116134')">
                                                 </div>
                                                 <a class="shopnow" href="/collections/all-products">shop now</a>
                                             </div>
@@ -608,7 +607,41 @@
         .header-menu {
             background-color: #fff;
         }
+
+        .sub-menu-normal-type.children-toggle {
+            display: block;
+            z-index: 100000000!important;
+        }
+
     </style>
 
 
 </div>
+<script type="text/javascript">
+
+    // for mobile's active
+    $(document).ready(function(){
+        $('.item-has-children').append('<span class="toggle-button"></span>');
+
+        $('.mobile-menu-btn').click(function(e){
+            e.preventDefault();
+            $('.main-menu').find('.main-nav').slideToggle();
+        });
+
+        $('.toggle-button').click(function(e){
+            e.preventDefault();
+            $(this).parent().find('> .children-toggle').toggleClass('children-open');
+            $(this).parent().find('> .children-toggle').slideToggle();
+        });
+
+        $(".top-level-link.item-has-children").mouseover(function(){
+            $(this).addClass('hover');
+        });
+
+        $(".top-level-link.item-has-children").mouseleave(function(){
+            $(this).removeClass('hover');
+        });
+    });
+
+</script>
+
