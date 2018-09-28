@@ -614,6 +614,7 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 ul.main-nav > li > a {
     color: #222222;
 }
+
 a.shopnow {
     display: inline-block;
     font-size: 14px;
@@ -630,6 +631,41 @@ a.shopnow {
     letter-spacing: 0.05em;
 }
 
+.top-level-link:hover .sub-menu-normal-type,
+.top-level-link:hover .sub-menu-mega-type {
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 55px !important;
+    z-index: 100000 !important;
+}
+
+/*.top-level-link .sub-menu-normal-type:hover,*/
+/*.top-level-link .sub-menu-mega-type:hover{*/
+/*display: block;*/
+/*height: auto;*/
+/*visibility: visible!important;*/
+/*opacity: 1!important;*/
+/*top: 30px!important;*/
+/*z-index: 100000!important;*/
+/*}*/
+
+.hover {
+    visibility: visible !important;
+    opacity: 1 !important;
+    top: 55px !important;
+    z-index: 100000 !important;
+}
+
+.menu-bar-wrap .right-icon > ul > li:hover .toggle-content-wrap {
+    opacity: 1;
+    visibility: visible;
+    top: 45px;
+}
+
+.third-menu-parent:hover .sub-menu-third-wrap {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
 
 @media (max-width: 1400px) {
     .s-container {
@@ -653,10 +689,12 @@ a.shopnow {
     .header-section:not(#layout5) .main-menu ul.sub-menu-lists {
         min-width: 233px;
     }
+
     .header-section:not(#layout5) .main-menu .mega-type-item .banner-collection {
         width: 255px;
         height: 145px;
     }
+
     .header-section:not(#layout5) .main-menu .mega-type-item a.shopnow {
         bottom: 95px;
     }
@@ -863,13 +901,15 @@ a.shopnow {
         top: 55px;
         z-index: 100000 !important;
     }
-    .header-section:not(#layout5) .main-menu .third-menu-parent .sub-menu-third-wrap ul.sub-menu-third>li>a {
+
+    .header-section:not(#layout5) .main-menu .third-menu-parent .sub-menu-third-wrap ul.sub-menu-third > li > a {
         font-size: 14px;
         text-decoration: none;
         letter-spacing: 0.05em;
         font-weight: 500;
         text-transform: capitalize;
     }
+
     .header-section:not(#layout5) .main-menu .mega-type-item .banner-collection {
         width: 510px;
         height: 290px;
@@ -877,6 +917,7 @@ a.shopnow {
         background-position: center;
         background-repeat: no-repeat;
     }
+
     .header-section:not(#layout5) .main-menu .mega-type-item a.shopnow {
         position: absolute;
         background: #57cebf;
@@ -996,6 +1037,12 @@ a.shopnow {
         color: #333 !important;
         text-transform: capitalize;
     }
+
+    .menu-bar-wrap .right-icon > ul > li:hover .toggle-content-wrap {
+        opacity: 1;
+        visibility: visible;
+        top: 88px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1055,37 +1102,8 @@ a.shopnow {
     content: "\f167";
 }
 
-.top-level-link:hover .sub-menu-normal-type,
-.top-level-link:hover .sub-menu-mega-type
-{
-    visibility: visible!important;
-    opacity: 1!important;
-    top: 55px!important;
-    z-index: 100000!important;
-}
-
-/*.top-level-link .sub-menu-normal-type:hover,*/
-/*.top-level-link .sub-menu-mega-type:hover{*/
-    /*display: block;*/
-    /*height: auto;*/
-/*visibility: visible!important;*/
-/*opacity: 1!important;*/
-/*top: 30px!important;*/
-/*z-index: 100000!important;*/
+/*@media only screen and (width: 1024px) {*/
+    /*.wrapper{*/
+        /*max-width: 800px*/
+    /*}*/
 /*}*/
-
-.hover{
-    visibility: visible!important;
-    opacity: 1!important;
-    top: 55px!important;
-    z-index: 100000!important;
-}
-.menu-bar-wrap .right-icon>ul>li:hover .toggle-content-wrap{
-    opacity: 1;
-    visibility: visible;
-    top: 45px;
-}
-.third-menu-parent:hover .sub-menu-third-wrap{
-    visibility: visible!important;
-    opacity: 1!important;
-}

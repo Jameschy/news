@@ -618,30 +618,50 @@
 
 </div>
 <script type="text/javascript">
+    // mobile Events
+    console.log(navigator.userAgent);
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)))
+    {
 
-    // for mobile's active
-    $(document).ready(function(){
-        $('.item-has-children').append('<span class="toggle-button"></span>');
+        $(document).ready(function(){
+            $('.item-has-children').append('<span class="toggle-button"></span>');
 
-        $('.mobile-menu-btn').click(function(e){
-            e.preventDefault();
-            $('.main-menu').find('.main-nav').slideToggle();
+            // menu-block click events on mobile
+            $('.mobile-menu-btn').click(function(e){
+                e.preventDefault();
+                if ($(".menu-infor .toggle-content-wrap").css("display")==="block"){
+                    $(".menu-infor .toggle-content-wrap").css("display","none")
+                }
+                $('.main-menu').find('.main-nav').slideToggle();
+            });
+
+            // submenu-block click events on mobile
+            $('.toggle-button').click(function(e){
+                e.preventDefault();
+                $(this).parent().find('> .children-toggle').toggleClass('children-open');
+                $(this).parent().find('> .children-toggle').slideToggle();
+            });
+
+            // submenu-block hover events on PC
+            // $(".top-level-link.item-has-children").mouseover(function(){
+            //     $(this).addClass('hover');
+            // });
+            //
+            // $(".top-level-link.item-has-children").mouseleave(function(){
+            //     $(this).removeClass('hover');
+            // });
+
+            // login-block click events on mobile
+            $(".menu-infor").click(function (e) {
+                e.preventDefault();
+                if ($(".main-menu .main-nav").css("display")==="block"){
+                    $(".main-menu .main-nav").css("display","none")
+                }
+                $('.menu-infor').find('.toggle-content-wrap').slideToggle();
+            })
         });
+    }
 
-        $('.toggle-button').click(function(e){
-            e.preventDefault();
-            $(this).parent().find('> .children-toggle').toggleClass('children-open');
-            $(this).parent().find('> .children-toggle').slideToggle();
-        });
-
-        $(".top-level-link.item-has-children").mouseover(function(){
-            $(this).addClass('hover');
-        });
-
-        $(".top-level-link.item-has-children").mouseleave(function(){
-            $(this).removeClass('hover');
-        });
-    });
 </script>
 <!--test-->
 
