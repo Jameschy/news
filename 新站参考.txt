@@ -1,0 +1,20 @@
+
+仿站目标:
+https://hopsop.myshopify.com/
+https://saint-plein-demo.myshopify.com/  
+https://d29u17ylf1ylz9.cloudfront.net/nego-v3.html
+https://d29u17ylf1ylz9.cloudfront.net/hopsop-v4/index.html
+http://nahartheme.com/tf/kiosk-preview/about.html   
+http://themesflat.com/html/modaz/index.html
+https://theme-bravo.myshopify.com/
+https://olla.hivethemes.com/home-2/
+http://www.demo.unitemplates.com/tienda/index.php/home-8
+http://www.getmasum.com/html-preview/fancyshop/wishlist.html
+
+模块化模板方案：
+
+只做一套模板：base。在base文件夹下新建多个文件夹，文件夹就是模块名称，例如 头部是 header 文件夹，那么头部的html 模板都放在header 文件夹这里，具体的模板名称为header_自定义名称，例如 header_cool.html。需要自定义的模块有：头部、尾部、商品列表展示框、商品详情页商品图集、商品详情页描述以及评论样式、注册、登录。  其他比较复杂的像支付模块、购物车、下单、会员中心不用做。
+
+css 框架统一用 bootstrap，css 文件放置位置同 html 一样，也是在 css 目录下新建 base 文件夹，然后一个模块对应一个 css 文件。例如上面的header_cool.html对应的是 header_cool.html。
+
+js 框架统一用 jquery，特殊效果尽量统一实现，如果个别模块需要单独写 js 的，也统一在 js 文件夹下新建以模块名称的文件夹。然后在对应的 html 文件中引用。
