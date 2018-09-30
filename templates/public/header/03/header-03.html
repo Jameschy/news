@@ -609,7 +609,7 @@
         }
 
         .sub-menu-normal-type.children-toggle {
-            display: block;
+            /*display: block;*/
             z-index: 100000000!important;
         }
 
@@ -636,14 +636,14 @@
                 if ($(".menu-infor .toggle-content-wrap").css("display")==="block"){
                     $(".menu-infor .toggle-content-wrap").css("display","none")
                 }
-                console.log("ss");
+                // console.log("ss");
                 $('.main-menu').find('.main-nav').slideToggle();
             });
 
             // submenu-block click events on mobile
             $('.toggle-button').click(function(e){
                 e.preventDefault();
-                console.log("adadad");
+                // console.log("adadad");
                 // $(this).addClass('drop-up');
                 $(this).parent().find('> .children-toggle').toggleClass('children-open');
                 $(this).parent().find('> .children-toggle').slideToggle();

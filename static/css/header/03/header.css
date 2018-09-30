@@ -418,10 +418,10 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 
 .search-form .input-wrap input[type=search] {
     width: 100%;
-    padding: 0;
+    padding: 0 20px 0 10px;
     height: 40px;
-    padding-left: 10px;
-    padding-right: 20px;
+    /*padding-left:10px;*/
+    /*padding-right:20px;*/
     border: none;
     margin: 0;
     line-height: 40px;
@@ -624,8 +624,8 @@ a.shopnow {
     line-height: 40px;
     text-align: center;
     background-color: #fff;
-    border: 1px solid;
-    border-color: transparent;
+    border: 1px solid transparent;
+    /*border-color: transparent;*/
     color: #000;
     font-weight: bold;
     letter-spacing: 0.05em;
@@ -665,6 +665,11 @@ a.shopnow {
 .third-menu-parent:hover .sub-menu-third-wrap {
     visibility: visible !important;
     opacity: 1 !important;
+}
+
+.sub-menu-normal-type.children-toggle {
+    display: block;
+    z-index: 100000000 !important;
 }
 
 @media (max-width: 1400px) {
@@ -1004,6 +1009,12 @@ a.shopnow {
         padding: 0;
         height: 100%;
     }
+    .sub-menu-mega-type.children-toggle,
+    .sub-menu-normal-type.children-toggle{
+        /*不能删除1074行block*/
+        /*display: none !important;*/
+        display: none;
+    }
 
     .item-has-children .toggle-button {
         display: block;
@@ -1067,10 +1078,7 @@ a.shopnow {
     }
 }
 
-.sub-menu-normal-type.children-toggle {
-    display: block;
-    z-index: 100000000 !important;
-}
+
 
 .fa, .fab, .fal, .far, .fas {
     -moz-osx-font-smoothing: grayscale;
