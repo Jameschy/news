@@ -47,12 +47,13 @@
 }
 
 /* nivo controlNav css */
+
 .nivo-controlNav {
   padding: 0;
   position: absolute;
-  /*z-index: 12;*/
-  bottom: 15px;
+  bottom: 20px;
   width: 100%;
+  z-index: 10;
 }
 
 .nivo-controlNav a {
@@ -190,9 +191,9 @@
   padding: 1px 35px;
   text-align: left;
   text-transform: uppercase;
-  z-index: 9;
   transform: rotate(-45deg);
   margin: 0;
+  z-index: 9;
 }
 
 .sticker-sale {

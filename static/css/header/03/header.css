@@ -420,8 +420,8 @@ button, html [type="button"], [type="reset"], [type="submit"] {
     width: 100%;
     padding: 0 20px 0 10px;
     height: 40px;
-    /*padding-left:10px;*/
-    /*padding-right:20px;*/
+    padding-left:10px;
+    padding-right:20px;
     border: none;
     margin: 0;
     line-height: 40px;
@@ -666,12 +666,10 @@ a.shopnow {
     visibility: visible !important;
     opacity: 1 !important;
 }
-
 .sub-menu-normal-type.children-toggle {
     display: block;
     z-index: 100000000 !important;
 }
-
 @media (max-width: 1400px) {
     .s-container {
         padding-right: 25px !important;
@@ -761,7 +759,7 @@ a.shopnow {
     .header-section:not(#layout5) .main-menu .sub-menu-normal-type {
         min-width: 250px;
         padding: 35px 0;
-        z-index: 2;
+        z-index: 200;
         margin-left: -45px;
     }
 
@@ -972,7 +970,7 @@ a.shopnow {
         right: 0;
         background: #fff;
         margin-top: 0;
-        z-index: 2;
+        z-index: 20000;
         padding: 0 0 15px 0;
     }
 
@@ -1012,7 +1010,6 @@ a.shopnow {
     .sub-menu-mega-type.children-toggle,
     .sub-menu-normal-type.children-toggle{
         /*不能删除1074行block*/
-        /*display: none !important;*/
         display: none;
     }
 
@@ -1053,6 +1050,9 @@ a.shopnow {
         opacity: 1;
         visibility: visible;
         top: 88px;
+    }
+    .menu-infor .toggle-content-wrap{
+        display: none;
     }
 }
 

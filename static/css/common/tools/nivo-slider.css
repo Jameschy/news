@@ -36,8 +36,8 @@
 	border:0;
 	padding:0;
 	margin:0;
-	/*z-index:6;*/
-	display:none;
+	z-index:1;
+	display:inline-block;
 	background:white; 
 	filter:alpha(opacity=0); 
 	opacity:0;
@@ -46,7 +46,7 @@
 .nivo-slice {
 	display:block;
 	position:absolute;
-	z-index:5;
+	/*z-index:5;*/
 	height:100%;
 	top:0;
 }
