@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <title>目标站点说明</title>
+    <link rel="stylesheet" href="static/css/common/tools/bootstrap.min.css">
 </head>
 <style>
     .content {
         width: 80%;
         margin: 80px auto;
+        overflow: hidden;
     }
 
     .box {
@@ -15,13 +18,15 @@
         overflow: hidden;
         border-left: 2px solid black
     }
-
+h2{
+    margin-left: -4%;
+}
     .time-line {
         display: inline-block;
         width: 12%;
         border-top: 2px dotted black;
         vertical-align: top;
-        margin-top: 15px
+        margin-top: 20px
     }
 
     ol {
@@ -49,7 +54,7 @@
 
         <br>js 框架统一用 jquery，特殊效果尽量统一实现，如果个别模块需要单独写 js 的，也统一在 js 文件夹下新建以模块名称的文件夹。然后在对应的 html 文件中引用。
     </p>
-    <ul>
+    <ul style="overflow-x: scroll">
         <h2>参考模板：</h2>
         <p>https://hopsop.myshopify.com/</p>
         <p>https://saint-plein-demo.myshopify.com/</p>
@@ -62,28 +67,51 @@
         <p>http://www.demo.unitemplates.com/tienda/index.php/home-8</p>
         <p>http://www.getmasum.com/html-preview/fancyshop/wishlist.html</p>
     </ul>
-    <div>
+    <div class="row">
         <h1 style="text-align: center;width: 100%">开发日志</h1>
 
-        <div class="box" style="border-top: 2px solid black">
+        <div class="box col-xs-12 col-md-12" style="border-top: 2px solid black;padding-top: 30px">
             <h2><span class="time-line"></span>2018.09.30</h2>
-            <ol>
+            <ol class="col-xs-12 col-md-6">
                 <li>引入header3，导致banner部分不能切换问题，原理来自banner层级设置，处理方法函数置于 <b>header-3</b>中，直接引用测试OK</li>
                 <li>header-3 menu 部分移动端与PC段分别处理，已兼容</li>
             </ol>
-            <ol>
+            <ol class="col-xs-12 col-md-6">
                 <li>引入header3，导致banner部分不能切换问题，原理来自banner层级设置，处理方法函数置于 <b>header-3</b>中，直接引用测试OK</li>
                 <li>header-3 menu 部分移动端与PC段分别处理，已兼容</li>
             </ol>
         </div>
 
-        <div class="box">
+        <div class="box col-xs-12 col-md-12">
             <h2><span class="time-line"></span>2018.09.30</h2>
-            <ol>
+            <ol class="col-xs-12 col-md-6">
                 <li>引入header3，导致banner部分不能切换问题，原理来自banner层级设置，处理方法函数置于 <b>header-3</b>中，直接引用测试OK</li>
                 <li>header-3 menu 部分移动端与PC段分别处理，已兼容</li>
             </ol>
-            <ol>
+            <ol class="col-xs-12 col-md-6">
+                <li>引入header3，导致banner部分不能切换问题，原理来自banner层级设置，处理方法函数置于 <b>header-3</b>中，直接引用测试OK</li>
+                <li>header-3 menu 部分移动端与PC段分别处理，已兼容</li>
+            </ol>
+        </div>
+        <div class="box col-xs-12 col-md-12" style="">
+            <h2><span class="time-line"></span>2018.09.30</h2>
+            <ol class="col-xs-12 col-md-6">
+                <li>引入header3，导致banner部分不能切换问题，原理来自banner层级设置，处理方法函数置于 <b>header-3</b>中，直接引用测试OK</li>
+                <li>header-3 menu 部分移动端与PC段分别处理，已兼容</li>
+            </ol>
+            <ol class="col-xs-12 col-md-6">
+                <li>引入header3，导致banner部分不能切换问题，原理来自banner层级设置，处理方法函数置于 <b>header-3</b>中，直接引用测试OK</li>
+                <li>header-3 menu 部分移动端与PC段分别处理，已兼容</li>
+            </ol>
+        </div>
+
+        <div class="box col-xs-12 col-md-12">
+            <h2><span class="time-line"></span>2018.09.30</h2>
+            <ol class="col-xs-12 col-md-6">
+                <li>引入header3，导致banner部分不能切换问题，原理来自banner层级设置，处理方法函数置于 <b>header-3</b>中，直接引用测试OK</li>
+                <li>header-3 menu 部分移动端与PC段分别处理，已兼容</li>
+            </ol>
+            <ol class="col-xs-12 col-md-6">
                 <li>引入header3，导致banner部分不能切换问题，原理来自banner层级设置，处理方法函数置于 <b>header-3</b>中，直接引用测试OK</li>
                 <li>header-3 menu 部分移动端与PC段分别处理，已兼容</li>
             </ol>
