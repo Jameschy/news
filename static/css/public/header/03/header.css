@@ -10,7 +10,7 @@
     font-weight: 900;
     src: url(/fa-solid-900.eot);
     /*src: url("../../../../static/fonts/fa-solid-900.eot");*/
-    src: url(fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../../../../static/fonts/fa-solid-900.woff2) format("woff2"), url(../../../../static/fonts/fa-solid-900.woff) format("woff"), url(../../../../static/fonts/fa-solid-900.ttf) format("truetype"), url(../../../../static/fonts/fa-solid-900.svg#fontawesome) format("svg")
+    src: url(fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../../../../fonts/fa-solid-900.woff2) format("woff2"), url(../../../../static/fonts/fa-solid-900.woff) format("woff"), url(../../../../static/fonts/fa-solid-900.ttf) format("truetype"), url(../../../../static/fonts/fa-solid-900.svg#fontawesome) format("svg")
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
