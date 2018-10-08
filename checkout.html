@@ -11,10 +11,14 @@
     <link rel="icon" type="image/png" href="static/img/icon/site/01/icon.png">
     <!--公共css引入-->
     <link href="static/css/common/01/main.css" rel="stylesheet">
-
     <!-- mobile menu css -->
-    <link rel="stylesheet" href="static/css/public/header/01/meanmenu.min.css">
+    <!--<link rel="stylesheet" href="static/css/header/01/meanmenu.min.css">-->
+    <!--<link rel="stylesheet" href="static/css/header/03/all.css">-->
+    <!--header-1 css-->
+    <!--<link rel="stylesheet" href="static/css/header/01/header.css">-->
+    <link rel="stylesheet" href="static/css/public/header/02/header.css">
     <!-- animate css -->
+
     <link rel="stylesheet" href="static/css/common/tools/animate.css">
     <!-- nivo slider css -->
     <link rel="stylesheet" href="static/css/common/tools/nivo-slider.css">
@@ -52,6 +56,10 @@
     <!-- Header Area Start -->
     <div class="header-box"></div>
     <!-- Header Area End -->
+
+    <!-- Error Start -->
+    <div class="bread-box"></div>
+    <!-- Error end -->
 
     <!-- Error Start -->
     <div class="checkout-box"></div>
@@ -98,7 +106,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
         // 头部导航
-        $('.header-box').load('templates/public/header/03/header.html');
+        $('.header-box').load('templates/public/header/02/header.html');
         // 面包屑导航
         $('.bread-box').load('templates/public/breadcrumb/01/breadcrumb.html');
         // checkout主体
