@@ -1040,6 +1040,9 @@ a.shopnow {
         font-weight: 600;
         font-size: 10px;
     }
+    .minus:before{
+        content: "\f068";
+    }
 
     .header-section:not(#layout5) .main-menu ul.main-nav > li > a {
         color: #333 !important;

@@ -14,7 +14,11 @@
     <link href="static/css/common/01/main.css" rel="stylesheet">
 
     <!-- mobile menu css -->
-    <link rel="stylesheet" href="static/css/public/header/01/meanmenu.min.css">
+    <!--<link rel="stylesheet" href="static/css/header/01/meanmenu.min.css">-->
+    <!--<link rel="stylesheet" href="static/css/header/03/all.css">-->
+    <!--header-1 css-->
+    <!--<link rel="stylesheet" href="static/css/header/01/header.css">-->
+    <link rel="stylesheet" href="static/css/public/header/03/header.css">
     <!-- animate css -->
     <link rel="stylesheet" href="static/css/common/tools/animate.css">
     <!-- nivo slider css -->
@@ -85,24 +89,7 @@
     <!-- Footer End -->
 </div>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        // 头部导航
-        $('.header-box').load('templates/public/header/header-01.html');
-        // 面包屑导航
-        $('.bread-box').load('templates/public/breadcrumb/breadcrumb-01.html');
-        // 产品图区（主）
-        $('.thumbnail-box').load('templates/product/thumbnail/thumbnail-01.html');
-        // 产品描述（主）
-        $('.description-box').load('templates/product/description/description-01.html');
-        // 相关产品（主）
-        $('.related-box').load('templates/public/related/related-02.html');
-        // 底部邮发
-        $('.newsletter-box').load('templates/public/newsletters/newsletter-01.html');
-        // 底部信息
-        $('.black-bg').load('templates/public/footers/footer-01.html');
-    });
-</script>
+
 <!-- Wrapper End -->
 <!-- jquery 3.12.4 -->
 <script src="static/js/tool/jquery-1.12.4.min.js"></script>
@@ -140,6 +127,23 @@
 <!-- main js -->
 <script src="static/js/01/main.js"></script>
 </body>
-
+<script type="text/javascript">
+    $(document).ready(function () {
+        // 头部导航
+        $('.header-box').load('templates/public/header/03/header.html');
+        // 面包屑导航
+        $('.bread-box').load('templates/public/breadcrumb/breadcrumb-02.html');
+        // 产品图区（主）
+        $('.thumbnail-box').load('templates/product/thumbnail/01/thumbnail.html');
+        // 产品描述（主）
+        $('.description-box').load('templates/product/description/01/description.html');
+        // 相关产品（主）
+        $('.related-box').load('templates/public/related/02/related.html');
+        // 底部邮发
+        $('.newsletter-box').load('templates/public/newsletters/01/newsletter.html');
+        // 底部信息
+        $('.black-bg').load('templates/public/footers/01/footer.html');
+    });
+</script>
 
 </html>

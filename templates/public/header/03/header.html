@@ -613,6 +613,7 @@
         .zindex1{
             z-index: 1;
         }
+
     </style>
 
 
@@ -647,8 +648,11 @@
 
 
             // submenu-block click events on mobile
-            $('.main-nav .toggle-button').click(function (e) {
+            // $('.main-nav .toggle-button').click(function (e) {
+                $('.item-has-children span').click(function (e) {
+
                 e.preventDefault();
+               // $(this).toggleClass('minus');
                 $(this).parent().find('> .children-toggle').toggleClass('children-open');
                 $(this).parent().find('> .children-toggle').slideToggle();
 
