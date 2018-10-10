@@ -1,6 +1,7 @@
 ﻿@import url("../tools/theme-default.css");
 @import url("../../public/header/01/header.css");
 @import url("../tools/slider.css");
+@import url("../tools/owl.carousel.min.css");
 @import url("../../product/01/product.css");
 @import url("../../public/service/01/service.css");
 @import url("../../home/01/subscribe.css");
