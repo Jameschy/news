@@ -1,7 +1,6 @@
 /*----------------------------------------*/
 /* 2. Header-03 CSS
 /*----------------------------------------*/
-/*@import url("../../../../static/css/common/tools/font-awesome.min.css");*/
 /*@import url("all.css");*/
 
 /*header-3，引用图标，*/
@@ -629,6 +628,7 @@ button, html [type="button"], [type="reset"], [type="submit"] {
     text-transform: capitalize;
 }
 
+
 .header-section .s-container {
     padding: 0 160px 0 160px;
 }
@@ -893,6 +893,9 @@ a.shopnow {
         font-weight: 500;
         text-transform: capitalize;
     }
+    .main-menu ul.sub-menu-lists > li > a:hover{
+        color: #000000;
+    }
 
     .mobile-menu, .toggle-button {
         display: none;
@@ -1122,64 +1125,3 @@ a.shopnow {
         margin-top: 6px;
     }
 }
-
-/*@media only screen and (width: 1024px) {*/
-/*.wrapper{*/
-/*max-width: 800px*/
-/*}*/
-/*}*/
-
-/*@font-face {*/
-/*font-family: "Font Awesome 5 Brands";*/
-/*font-style: normal;*/
-/*font-weight: normal;*/
-/*src: url(../../../../static/fonts/fa-brands-400.eot);*/
-/*src: url(../../../../static/fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),*/
-/*!*url(../../../../static/fonts/fa-brands-400.woff2) format("woff2"),*!*/
-/*url(../../../../static/fonts/fa-brands-400.woff) format("woff"),*/
-/*url(../../../../static/fonts/fa-brands-400.ttf) format("truetype"),*/
-/*url(../../../../static/fonts/fa-brands-400.svg#fontawesome) format("svg")*/
-/*}*/
-
-/*.fab {*/
-/*font-family: "Font Awesome 5 Brands"*/
-/*}*/
-
-/*@font-face {*/
-/*font-family: "Font Awesome 5 Free";*/
-/*font-style: normal;*/
-/*font-weight: 400;*/
-/*src: url(../../../../static/fonts/fa-regular-400.eot);*/
-/*src: url(../../../../static/fonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),*/
-/*!*url(../../../../static/fonts/fa-regular-400.woff2) format("woff2"),*!*/
-/*url(../../../../static/fonts/fa-regular-400.woff) format("woff"),*/
-/*url(../../../../static/fonts/fa-regular-400.ttf) format("truetype"),*/
-/*url(../../../../static/fonts/fa-regular-400.svg#fontawesome) format("svg")*/
-/*}*/
-
-/*.far {*/
-/*font-weight: 400*/
-/*}*/
-
-/*@font-face {*/
-/*font-family: "Font Awesome 5 Free";*/
-/*font-style: normal;*/
-/*font-weight: 900;*/
-/*src: url(../../../../static/fonts/fa-solid-900.eot);*/
-/*src: url(../../../../static/fonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),*/
-/*!*url(../../../../static/fonts/fa-solid-900.woff2) format("woff2"),*!*/
-/*url(../../../../static/fonts/fa-solid-900.woff) format("woff"),*/
-/*url(../../../../static/fonts/fa-solid-900.ttf) format("truetype"),*/
-/*url(../../../../static/fonts/fa-solid-900.svg#fontawesome) format("svg")*/
-/*}*/
-
-/*.fa,*/
-/*.far,*/
-/*.fas {*/
-/*font-family: "Font Awesome 5 Free"*/
-/*}*/
-
-/*.fa,*/
-/*.fas {*/
-/*font-weight: 900*/
-/*}*/
