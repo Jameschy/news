@@ -1,0 +1,50 @@
+/*relate-product model*/
+.related-product .group-title {
+    margin-bottom: 30px;
+    background: #f6f6f6;
+}
+.group-title h2 {
+    font-size: 23px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.single-product {
+    position: relative;
+    background: #fff;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid transparent;
+    padding: 15px 15px 30px 15px;
+    overflow: hidden;
+}
+.product-area .single-product {
+    padding: 0px !important;
+    margin-top: 50px;
+}
+
+.kiosk-product-img {
+    position: relative;
+    margin-bottom: 10px;
+}
+.kiosk-product-content {
+    text-align: center;
+}
+.sticker-new, .sticker-sale {
+    background: #333;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 25px;
+    position: absolute;
+    left: -24px;
+    top: 12px;
+    padding: 1px 35px;
+    text-align: left;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    margin: 0;
+    z-index: 9;
+}
+
+

@@ -1,7 +1,7 @@
-﻿@import url("../tools/theme-default.css");
+﻿@import url("../../common/tools/theme-default.css");
 @import url("../../public/header/01/header.css");
-@import url("../tools/slider.css");
-@import url("../tools/owl.carousel.min.css");
+@import url("../../common/tools/slider.css");
+@import url("../../common/tools/owl.carousel.min.css");
 @import url("../../product/01/product.css");
 @import url("../../public/service/01/service.css");
 @import url("../../home/01/subscribe.css");
@@ -15,7 +15,7 @@
 @import url("../../error/01/error.css");
 @import url("../../login/01/login.css");
 @import url("../../contact/01/contact-form.css");
-@import url("../tools/scrollup.css");
+@import url("../../common/tools/scrollup.css");
 @import url("../../home/01/home2.css");
 @import url("../../about/01/about-us.css");
 @import url("../../parallax/01/parallax.css");

@@ -1,4 +1,3 @@
-
 <header>
     <!-- Kiosk Header Top Start -->
     <div class="kiosk-header-top">
@@ -26,7 +25,6 @@
             </div>
         </div>
         <!-- Container End -->
-
     </div>
     <!-- Header Top End -->
     <!-- Kiosk Header Bottom Start -->
@@ -35,7 +33,7 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-2 col-sm-5 col-5">
                     <div class="logo">
-                        <a href="index.html"><img src="static/img/logo/02/logo.png" alt="logo image"></a>
+                        <a href="index.html"><img src="static/img/logo/01/logo.png" alt="logo image"></a>
                     </div>
                 </div>
                 <!-- Primary Vertical-Menu End -->
@@ -48,13 +46,12 @@
                                     <!-- Home Version Dropdown Start -->
                                     <ul class="kiosk-dropdown home-dropdown">
                                         <li><a href="index.html">Home Version 1</a></li>
-                                        <li><a href="index.html">Home Version 2</a></li>
+                                        <li><a href="index-2.html">Home Version 2</a></li>
                                     </ul>
                                     <!-- Home Version Dropdown End -->
                                 </li>
                                 <li><a href="about.html">about us</a></li>
                                 <li><a href="shoplist.html">shop</a>
-                                    <!--dddd-->
                                     <!-- Home Version Dropdown Start -->
                                     <ul class="kiosk-dropdown">
                                         <li><a href="shoplist.html">shop</a></li>
@@ -135,69 +132,27 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
+                            <li><a href="cart.html"><i class="fa fa-heart-o"></i></a></li>
                         </ul>
                     </div>
                 </div>
                 <!-- Cartt Box End -->
                 <div class="col-sm-12 d-lg-none">
-                    <div class="mobile-menu mean-container"><div class="mean-bar"><a href="#nav" class="meanmenu-reveal" style="background:;color:;right:0;left:auto;"><span></span><span></span><span></span></a><nav class="mean-nav">
-                        <ul style="display: none;">
-                            <li><a href="index.html">home</a>
-                                <!-- Home Version Dropdown Start -->
-                                <ul style="display: none;">
-                                    <li><a href="index.html">Home Version 1</a></li>
-                                    <li><a href="index-2.html">Home Version 2</a></li>
-                                </ul>
-                                <!-- Home Version Dropdown End -->
-                                <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-                            <li><a href="shop.html">shop</a>
-                                <!-- Mobile Menu Dropdown Start -->
-                                <ul style="display: none;">
-                                    <li><a href="shop.html">shop</a></li>
-                                    <li><a href="cart.html">Cart Page</a></li>
-                                    <li><a href="checkout.html">Checkout Page</a></li>
-                                    <li><a href="wishlist.html">Wishlist Page</a></li>
-                                    <li><a href="product.html">product details</a></li>
-                                </ul>
-                                <!-- Mobile Menu Dropdown End -->
-                                <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-                            <li><a href="blog.html">Blog</a>
-                                <!-- Mobile Menu Dropdown Start -->
-                                <ul style="display: none;">
-                                    <li><a href="blog.html">Blog Page</a></li>
-                                    <li><a href="blog-details.html">Blog Details Page</a></li>
-                                </ul>
-                                <!-- Mobile Menu Dropdown End -->
-                                <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-                            <li><a href="#">pages</a>
-                                <!-- Mobile Menu Dropdown Start -->
-                                <ul style="display: none;">
-                                    <li><a href="contact.html">contact us</a></li>
-                                    <li><a href="about.html">about us</a></li>
-                                    <li><a href="login.html">Login Page</a></li>
-                                    <li><a href="error.html">404 Page</a></li>
-                                </ul>
-                                <!-- Mobile Menu Dropdown End -->
-                                <a class="mean-expand" href="#" style="font-size: 18px">+</a></li>
-                            <li><a href="about.html">about us</a></li>
-                            <li class="mean-last"><a href="contact.html">contact us</a></li>
-                        </ul>
-                    </nav></div>
-                        <div class="mean-push"></div><nav style="display: none;">
+                    <div class="mobile-menu">
+                        <nav>
                             <ul>
                                 <li><a href="index.html">home</a>
                                     <!-- Home Version Dropdown Start -->
                                     <ul>
                                         <li><a href="index.html">Home Version 1</a></li>
-                                        <li><a href="index-2.html">Home Version 2</a></li>
+                                        <li><a href="index.html">Home Version 2</a></li>
                                     </ul>
                                     <!-- Home Version Dropdown End -->
                                 </li>
-                                <li><a href="shop.html">shop</a>
+                                <li><a href="shoplist.html">shop</a>
                                     <!-- Mobile Menu Dropdown Start -->
                                     <ul>
-                                        <li><a href="shop.html">shop</a></li>
+                                        <li><a href="shoplist.html">shop</a></li>
                                         <li><a href="cart.html">Cart Page</a></li>
                                         <li><a href="checkout.html">Checkout Page</a></li>
                                         <li><a href="wishlist.html">Wishlist Page</a></li>
@@ -237,3 +192,8 @@
     </div>
     <!-- Header Bottom End -->
 </header>
+<script type="text/javascript">
+        jQuery('.mobile-menu nav').meanmenu({
+            meanScreenWidth: "991",
+        });
+</script>
