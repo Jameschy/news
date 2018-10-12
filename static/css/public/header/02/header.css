@@ -1117,6 +1117,9 @@ a.shopnow {
     .top-bar .social-button-wrap ul li {
         margin: 0 10px;
     }
+    i.fas.fa-angle-right{
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1125,3 +1128,6 @@ a.shopnow {
         margin-top: 6px;
     }
 }
+
+/*转移自html*/
+
