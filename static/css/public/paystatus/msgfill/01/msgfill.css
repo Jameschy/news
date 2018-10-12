@@ -13,15 +13,15 @@
 
 .credit-card-num {
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #d8d8d8;
+    /*border: none;*/
+    border: 1px solid #d8d8d8;
     background: #fff;
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
 }
 .credit-card-input input:focus {
     background: #eceff8;
-    border-bottom: 1px solid #000;
+    border: 1px dotted #ff0000;
 }
 .pd-15{
     padding: 15px;
@@ -32,7 +32,9 @@
 form.cmxform label.error, label.error {
     color: red;
 }
-
+.required{
+    color: #ff0000;
+}
 div#what_is_this img {
     width: auto;
     height: 45px;
