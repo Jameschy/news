@@ -17,6 +17,12 @@
                     <div id="thumb4" class="tab-pane">
                         <a data-fancybox="images" href="static/img/product/01/14.jpg"><img src="static/img/product/01/14.jpg" alt="product-view"></a>
                     </div>
+                    <div id="thumb5" class="tab-pane">
+                        <a data-fancybox="images" href="static/img/product/01/8.jpg"><img src="static/img/product/01/8.jpg" alt="product-view"></a>
+                    </div>
+                    <div id="thumb6" class="tab-pane">
+                        <a data-fancybox="images" href="static/img/product/01/5.jpg"><img src="static/img/product/01/5.jpg" alt="product-view"></a>
+                    </div>
                 </div>
                 <!-- Thumbnail Large Image End -->
 
@@ -27,10 +33,78 @@
                         <a data-toggle="tab" href="#thumb2"> <img src="static/img/product/01/3.jpg" alt="kiosk-product-thumb"></a>
                         <a data-toggle="tab" href="#thumb3"> <img src="static/img/product/01/9.jpg" alt="kiosk-product-thumb"></a>
                         <a data-toggle="tab" href="#thumb4"> <img src="static/img/product/01/14.jpg" alt="kiosk-product-thumb"></a>
+                        <a data-toggle="tab" href="#thumb5"> <img src="static/img/product/01/8.jpg" alt="kiosk-product-thumb"></a>
+                        <a data-toggle="tab" href="#thumb6"> <img src="static/img/product/01/5.jpg" alt="kiosk-product-thumb"></a>
+
                     </div>
                 </div>
                 <!-- Thumbnail image end -->
             </div>
+            <style type="text/css">
+                .thumb-menu{
+                    position: relative;
+                    overflow: hidden;
+                }
+                .thumb-menu.nav .owl-item{
+                    display: inline-block;
+                }
+                .thumb-menu.nav .owl-prev,
+                .thumb-menu.nav .owl-next{
+
+                    font-size: 50px;
+                    position: absolute;
+                    top: 30%;
+                    display: inline-block;
+                }
+                .thumb-menu.nav .owl-prev{
+                    left: 5px;
+                }
+                .thumb-menu.nav .owl-next{
+                    right: 5px;
+                }
+                .thumb-menu.nav .fa{
+                    color: #666;
+                    opacity: .85;
+                }
+
+            </style>
+            <script type="text/javascript">
+
+                $('.thumb-menu').owlCarousel({
+                    loop: false,
+                    // nav: true,
+                    // dots: false,
+                    smartSpeed: 1000,
+                    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+                    // margin: 30,
+                    responsive: {
+                        0: {
+                            items: 2,
+                            autoplay: true
+                        },
+                        480: {
+                            items: 2
+                        },
+                        768: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 3
+                        },
+                        1200: {
+                            items: 4
+                        }
+                    }
+
+                })
+
+                $('.thumb-menu.nav a').click(function (e) {
+                    e.preventDefault();
+                    // 移除堂兄弟元素active，否则与切换功能冲突
+                    // console.log("aaa")
+                    $(this).parent().siblings().find('a').removeClass('active');
+                })
+            </script>
             <!-- Main Thumbnail Image End -->
             <!-- Thumbnail Description Start -->
             <div class="col-lg-7">

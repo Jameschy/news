@@ -1,0 +1,74 @@
+.sub-msgfill {
+    margin: 0 auto;
+    float: none;
+    padding: 40px 0;
+}
+
+.cart-subtotal input {
+    /*text-align: right;*/
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+
+.credit-card-num {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #d8d8d8;
+    background: #fff;
+    padding: 10px;
+    font-size: 20px;
+}
+.credit-card-input input:focus {
+    background: #eceff8;
+    border-bottom: 1px solid #000;
+}
+.pd-15{
+    padding: 15px;
+}
+.pd-5-0{
+    padding: 5px 0;
+}
+form.cmxform label.error, label.error {
+    color: red;
+}
+
+div#what_is_this img {
+    width: auto;
+    height: 45px;
+}
+
+.table-responsive {
+    background-color: #fff;
+}
+
+.kiosk-order-table table th, .kiosk-order-table table td {
+    font-size: 12px;
+    padding: 15px 15px;
+}
+input#card_cvv {
+    height: 45px;
+    width: -webkit-fill-available;
+    border: 1px solid transparent;
+}
+
+input[type=submit] {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    border: 2px solid #000;
+}
+@media (max-width: 767px) {
+    .kiosk-order {
+        padding: 10px;
+    }
+
+    .kiosk-order-table table th, .kiosk-order-table table td {
+        font-size: 12px;
+        padding: 15px 15px;
+    }
+}
