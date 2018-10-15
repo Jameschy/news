@@ -239,21 +239,23 @@
                                     </div>
                                 </div>
 
+                                <div class="kiosk-payment-btn">
+                                    <!--<input type="submit" value="Place order" class="order-submit" onClick="location.href='http://www.baidu.com/'">-->
+                                    <input type="submit" value="Place order" class="order-submit" />
+                                </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </form>
 
-        <div class="kiosk-payment-btn">
-            <!--<input type="submit" value="Place order" class="order-submit" onClick="location.href='http://www.baidu.com/'">-->
-            <input type="submit" value="Place order" class="order-submit" />
-        </div>
 
     </div>
 </div>
+
 
 <script type="text/javascript">
     $('#ship-box').on('click', function () {
@@ -261,7 +263,8 @@
     });
 
     $(".order-submit").click(function(){
-        console.log("nihhih");
+        // console.log("nihhih");
+        // 必填按钮，信息不全，回顶提示
         window.location.href="msgfill.html";
     });
 </script>

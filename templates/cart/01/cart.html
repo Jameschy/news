@@ -1,6 +1,6 @@
 <div class="kiosk-products-cart ptb-70 pb-sm-50">
     <div class="container">
-        <div class="row">
+        <div class="row mb-50">
             <div class="col-md-12">
                 <!-- Form Start -->
                 <form action="#">
@@ -20,7 +20,7 @@
                             <tbody>
                             <tr>
                                 <td class="kiosk-product-thumb">
-                                    <a href="#"><img src="static/img/product/01/3.jpg" alt="cart-image" /></a>
+                                    <a href="#"><img src="static/img/product/01/3.jpg" alt="cart-image"/></a>
                                 </td>
                                 <td class="product-name"><a href="#">Standard Shoes</a></td>
                                 <td class="product-price"><span class="amount">$232.00</span></td>
@@ -32,7 +32,7 @@
                             </tr>
                             <tr>
                                 <td class="kiosk-product-thumb">
-                                    <a href="#"><img src="static/img/product/01/12.jpg" alt="cart-image" /></a>
+                                    <a href="#"><img src="static/img/product/01/12.jpg" alt="cart-image"/></a>
                                 </td>
                                 <td class="product-name"><a href="#">Normal Shoes</a></td>
                                 <td class="product-price"><span class="amount">$233.00</span></td>
@@ -51,5 +51,140 @@
             </div>
         </div>
         <!-- Row End -->
+        <div class="row btn-box">
+
+            <div class="col-md-4 col-xs-12 prev-shopping-box">
+                <input type="submit" value="Continue shopping" class="prev-shopping">
+            </div>
+            <!--<div class="col-md-6 col-xs-12">-->
+            <!--<h3>CART TOTALS</h3>-->
+            <!--<p><span>Subtotal:</span><span>$</span><span>710.00</span></p>-->
+            <!--<p><span>Total :</span><span>$</span><span>699.50</span></p>-->
+            <!--<input type="submit" value="Checkout" class="next-checkout">-->
+            <!--</div>-->
+            <div class="col-md-4 col-xs-12 apply-coupon-box">
+                <!--<input type="text">-->
+                <!--<input type="submit" value="Apply Coupon" class="apply-coupon">-->
+            </div>
+            <div class="col-md-4 col-sm-5 col-xs-12 next-checkout-box">
+                <div class="cart-total">
+                    <h3>Cart Totals</h3>
+                    <table>
+                        <tbody>
+                        <tr class="cart-subtotal">
+                            <th>Subtotal</th>
+                            <td><span class="amount">$<span id="subtotal">24.99</span></span></td>
+                        </tr>
+                        <tr class="cart-discount" id="cart-discount">
+                            <th>Discount</th>
+                            <td><span class="amount discount">-$<span id="discount">0.99</span></span></td>
+                        </tr>
+                        <tr>
+
+                        </tr>
+                        <tr class="order-total">
+                            <th>Total</th>
+                            <td>
+                                <strong><span class="amount">$<span id="total">24.00</span></span></strong>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+                <div class="coupon-fill section mt-30 mb-25">
+                    <input type="text" placeholder="coupon code" class="coupon-text">
+                    <input type="submit" value="Apply Coupon" class="apply-coupon">
+                </div>
+                <div class="proceed-to-checkout section mt-30">
+                    <input type="submit" value="Place order" class="next-checkout">
+                </div>
+            </div>
+        </div>
     </div>
+
+
 </div>
+
+<style type="text/css">
+    .next-checkout-box h3{
+        margin-bottom: 15px;
+    }
+    .next-checkout-box table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .next-checkout-box tr {
+        line-height: 2.5;
+        /*padding-bottom: 15px!important;*/
+    }
+    .next-checkout-box th {
+        font-weight: 800;
+        text-align: inherit;
+    }
+    .prev-shopping-box,
+    .apply-coupon-box,
+    .next-checkout-box {
+        position: relative;
+
+    }
+    .coupon-fill{
+        width: 100%;
+        display: inline-block;
+    }
+
+    .btn-box input {
+        height: 40px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .btn-box input[type=text] {
+        border: 1px solid #333;
+        font-size: 15px;
+        background: none;
+    }
+
+    .btn-box input[type=text]:focus {
+        border: 1px dotted #ff0000;
+    }
+
+    .btn-box input[type=submit] {
+
+        border: 1px solid #333;
+        position: absolute;
+        border-radius: 0;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    input.prev-shopping,
+    input.next-checkout {
+        width: 92%;
+        color: #fff;
+        background: #333;
+        bottom: 0;
+    }
+
+    /*input.next-checkout{*/
+    /*width: 92%;*/
+    /*}*/
+    input.coupon-text{
+        width: 49%;
+    }
+    input.apply-coupon{
+        width: 46%;
+        color: #fff;
+        border-radius: 0;
+        background: #333;
+    }
+</style>
+
+<script type="text/javascript">
+    // var pre = document.getElementsByClassName("prev-shopping");
+    $('.prev-shopping').click(function () {
+        console.log("nihao")
+    })
+</script>

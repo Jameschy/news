@@ -170,7 +170,7 @@ p.checkout-coupon input[type="submit"] {
 
 .country-select label span.required,
 .checkout-form-list label span.required {
-  color: #333
+  color: #ff0000;
 }
 
 .country-select select {
