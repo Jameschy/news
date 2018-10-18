@@ -1007,7 +1007,7 @@ a.shopnow {
     .header-section:not(#layout5) .main-menu ul.main-nav {
         display: none;
         position: absolute;
-        top: calc(100% + 55px);
+        top: calc(100% + 2px);
         left: 0;
         right: 0;
         background: #fff;
@@ -1096,7 +1096,8 @@ a.shopnow {
     .menu-bar-wrap .right-icon > ul > li:hover .toggle-content-wrap {
         opacity: 1;
         visibility: visible;
-        top: 88px;
+        /*top: 88px;*/
+        top: 36px;
     }
 
     .menu-infor .toggle-content-wrap {

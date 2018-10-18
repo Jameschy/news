@@ -51,12 +51,37 @@
 
                     <div class="left-language">
                         <ul>
-                            <li>
-                                <img src="static/img/icon/public/flag.jpg">
+                            <li class="mobile-menu s-container">
+                                <a href="javascripts:void(0)" class="mobile-menu-btn">
+                                    <!--<span>MENU</span>-->
+                                    <i class="fas fa-bars"></i>
+                                </a>
                             </li>
-                            <li><span>US</span><span>$</span></li>
+                            <li class="menu-exch">
+                                <span class="currency-sym">USD</span>
+                                <div class="toggle-content-wrap left-position">
+
+                                    <div class="toggle-content-menu">
+                                        <ul id="currency-list">
+
+                                            <li><a href="javascript:;">US</a></li>
+
+                                            <li><a href="javascript:;">CN</a></li>
+
+                                            <li><a href="javascript:;">EU</a></li>
+
+                                            <li><a href="javascript:;">UK</a></li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <!--<li><span>US</span><span>$</span></li>-->
+
                         </ul>
                     </div>
+
 
                     <div class="main-menu">
 
@@ -254,7 +279,8 @@
                                                 <span class="toggle-button"></span></div>
 
                                             <div class="mega-type-item mb-hide">
-                                                <div class="banner-collection" style="background-image: url('./static/img/home/menu/Bannermenu.jpg')">
+                                                <div class="banner-collection"
+                                                     style="background-image: url('./static/img/home/menu/Bannermenu.jpg')">
                                                 </div>
                                                 <a class="shopnow" href="shoplist.html">shop now</a>
                                             </div>
@@ -454,7 +480,7 @@
 
                                     <div class="toggle-content-search">
 
-                                        <form action="/search" method="get" role="search" class="search-form"
+                                        <form action="" method="get" role="" class="search-form"
                                               style="position: relative;">
                                             <div class="input-wrap">
                                                 <input type="search" id="SearchInput" data-type="product"
@@ -492,13 +518,12 @@
                                     <div class="button-checkout">
 
                                     </div>
-
                                 </div>
                             </li>
 
                             <li class="menu-infor">
                                 <a href="javascript:void(0)">
-                                    <i class="fas fa-bars"></i>
+                                    <i class="fas fa-user"></i>
                                 </a>
                                 <div class="toggle-content-wrap">
 
@@ -523,9 +548,12 @@
                 </div>
             </div>
 
-            <div class="mobile-menu s-container">
-                <a href="javascripts:void(0)" class="mobile-menu-btn"><span>Navigation</span><i class="fas fa-bars"></i></a>
-            </div>
+            <!--<div class="mobile-menu s-container">-->
+            <!--<a href="javascripts:void(0)" class="mobile-menu-btn">-->
+            <!--<span>MENU</span>-->
+            <!--<i class="fas fa-bars"></i>-->
+            <!--</a>-->
+            <!--</div>-->
         </div>
 
     </div>
@@ -596,24 +624,119 @@
         .header-menu {
             background-color: #fff;
         }
+
         .sub-menu-normal-type.children-toggle {
             z-index: 100000000 !important;
         }
+
         .children-open {
             display: block;
         }
-        .zindex0{
-            z-index: 0!important;
+
+        .zindex0 {
+            z-index: 0 !important;
         }
-        .zindex1{
+
+        .zindex1 {
             z-index: 1;
         }
 
+        .header-section .header-menu {
+            position: relative;
+            background-color: #fff;
+        }
+
+        .mobile-menu.s-container {
+            padding: 0 !important;
+            /*position: absolute;*/
+            /*top: 3px;*/
+            /*left: 45%;*/
+        }
+
+        .mobile-menu a.mobile-menu-btn {
+            padding: 0;
+            background-color: transparent;
+        }
+
+        .mobile-menu a.mobile-menu-btn i {
+            line-height: 38px;
+        }
+
+        .toggle-content-wrap.left-position {
+            position: absolute;
+            z-index: 2;
+            background-color: #fff;
+            padding: 5px;
+            top: 60px;
+            /* right: 0; */
+            left: 0;
+            width: 90px;
+            box-shadow: 0 2px 15px 0px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transition: top 250ms ease-in 0s;
+        }
+
+        .menu-bar-wrap .left-language > ul > li:hover .toggle-content-wrap {
+            opacity: 1;
+            visibility: visible;
+            top: 45px;
+        }
+
+        .menu-bar-wrap .left-language > ul > li {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 10px;
+            cursor: pointer;
+            margin-bottom: -5px;
+        }
+
+        .menu-bar-wrap .left-language > ul > li .toggle-content-wrap .toggle-content-menu > ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        .menu-bar-wrap .left-language > ul > li .toggle-content-wrap .toggle-content-menu > ul li {
+            margin: 0;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+            text-transform: capitalize;
+            display: block;
+            text-align: center;
+        }
+
+        @media (max-width: 991px) {
+            .menu-bar-wrap .left-language > ul > li:hover .toggle-content-wrap {
+                opacity: 1;
+                visibility: visible;
+                top: 38px;
+            }
+        }
+        /*.nivo-controlNav{*/
+            /*z-index: 0;*/
+        /*}*/
     </style>
 
 </div>
 <script type="text/javascript">
 
+// function btnclick(a,b,c,d,x,y,z,s) {
+//     var a,b,c,d,x,y,z,s;
+//     if (a||b||c){
+//         a===false;
+//         b===false;
+//         c===false;
+//         x.removeClass('zindex0');
+//         y.removeClass('zindex0');
+//     }
+//     z.slideToggle();
+//     x.toggleClass('zindex0');
+//     y.toggleClass('zindex0');
+// }
 
     // mobile Events
     if (
@@ -625,11 +748,22 @@
         $(document).ready(function () {
             $('.item-has-children').append('<span class="toggle-button"></span>');
 
+            // 移动端重置下拉列表状态为none
+            $(".menu-exch .toggle-content-wrap").css("display", "none");
+            $(".menu-search .toggle-content-wrap").css("display", "none");
             // menu-block click events on mobile
+
+
+
+
             $('.mobile-menu-btn').click(function (e) {
                 e.preventDefault();
-                if ($(".menu-infor .toggle-content-wrap").css("display") === "block") {
+                if ($(".menu-infor .toggle-content-wrap").css("display") === "block" ||
+                    $(".menu-exch .toggle-content-wrap").css("display") === "block" ||
+                    $(".menu-search .toggle-content-wrap").css("display") === "block") {
                     $(".menu-infor .toggle-content-wrap").css("display", "none");
+                    $(".menu-exch .toggle-content-wrap").css("display", "none");
+                    $(".menu-search .toggle-content-wrap").css("display", "none");
                     $(".nivo-imageLink").removeClass("zindex0");
                     $(".nivo-controlNav").removeClass("zindex0");
                 }
@@ -643,10 +777,8 @@
 
             // submenu-block click events on mobile
             // $('.main-nav .toggle-button').click(function (e) {
-                $('.item-has-children span').click(function (e) {
-
+            $('.item-has-children span').click(function (e) {
                 e.preventDefault();
-               // $(this).toggleClass('minus');
                 $(this).parent().find('> .children-toggle').toggleClass('children-open');
                 $(this).parent().find('> .children-toggle').slideToggle();
 
@@ -655,10 +787,14 @@
 
             // login-block click events on mobile
             // 禁止点击图标父级，将影响展开项跳转
-            $(".menu-infor .fas.fa-bars").click(function (e) {
+            $(".menu-infor .fas.fa-user").click(function (e) {
                 e.preventDefault();
-                if ($(".main-menu .main-nav").css("display") === "block") {
+                if ($(".main-menu .main-nav").css("display") === "block" ||
+                    $(".menu-exch .toggle-content-wrap").css("display") === "block" ||
+                    $(".menu-search .toggle-content-wrap").css("display") === "block") {
                     $(".main-menu .main-nav").css("display", "none");
+                    $(".menu-exch .toggle-content-wrap").css("display", "none");
+                    $(".menu-search .toggle-content-wrap").css("display", "none");
                     $(".nivo-imageLink").removeClass("zindex0");
                     $(".nivo-controlNav").removeClass("zindex0");
                 }
@@ -666,30 +802,78 @@
                 $('.nivo-imageLink').toggleClass('zindex0');
                 $('.nivo-controlNav').toggleClass('zindex0');
             })
+
+            // 汇率点击事件
+            $(".menu-exch .currency-sym").click(function (e) {
+                e.preventDefault();
+                if ($(".main-menu .main-nav").css("display") === "block" ||
+                    $(".menu-infor .toggle-content-wrap").css("display") === "block" ||
+                    $(".menu-search .toggle-content-wrap").css("display") === "block") {
+                    $(".menu-infor .toggle-content-wrap").css("display", "none");
+                    $(".menu-search .toggle-content-wrap").css("display", "none");
+                    $(".main-menu .main-nav").css("display", "none");
+                    $(".nivo-imageLink").removeClass("zindex0");
+                    $(".nivo-controlNav").removeClass("zindex0");
+                }
+                $('.menu-exch').find('.toggle-content-wrap').slideToggle();
+                $('.nivo-imageLink').toggleClass('zindex0');
+                $('.nivo-controlNav').toggleClass('zindex0');
+            })
+
+            // 搜索点击事件
+            $(".menu-search .fas.fa-search").click(function (e) {
+                e.preventDefault();
+                if ($(".main-menu .main-nav").css("display") === "block"
+                    || $(".menu-infor .toggle-content-wrap").css("display") === "block"
+                    || $(".menu-exch .currency-sym").css("display") === "block") {
+                    $(".menu-infor .toggle-content-wrap").css("display", "none");
+                    $(".menu-exch .toggle-content-wrap").css("display", "none");
+                    $(".main-menu .main-nav").css("display", "none");
+                    $(".nivo-imageLink").removeClass("zindex0");
+                    $(".nivo-controlNav").removeClass("zindex0");
+                }
+                $('.menu-search').find('.toggle-content-wrap').slideToggle();
+                $('.nivo-imageLink').toggleClass('zindex0');
+                $('.nivo-controlNav').toggleClass('zindex0');
+            })
         });
-    }else {
+    } else {
         // submenu-block hover events on PC
         $(document).ready(function () {
-            $(".top-level-link.item-has-children").mouseover(function(){
+
+            $(".top-level-link.item-has-children").mouseover(function () {
                 $(this).addClass('hover');
-                $('.nivo-imageLink').css('z-index','0')
+                $('.nivo-imageLink').css('z-index', '0')
             });
 
-            $(".top-level-link.item-has-children").mouseleave(function(){
+            $(".top-level-link.item-has-children").mouseleave(function () {
                 $(this).removeClass('hover');
-                $('.nivo-imageLink').css('z-index','5')
+                $('.nivo-imageLink').css('z-index', '5')
             });
-            $(".right-icon li").mouseover(function(){
+
+            $(".left-language li").mouseover(function () {
                 $(this).addClass('hover');
-                $('.nivo-imageLink').css('z-index','0')
+                $('.nivo-imageLink').css('z-index', '0')
             });
-            $(".right-icon li").mouseleave(function(){
+
+            $(".right-icon li").mouseover(function () {
+                $(this).addClass('hover');
+                $('.nivo-imageLink').css('z-index', '0')
+            });
+            $(".right-icon li").mouseleave(function () {
                 $(this).removeClass('hover');
-                $('.nivo-imageLink').css('z-index','5')
+                $('.nivo-imageLink').css('z-index', '5')
             });
+
+
         })
     }
-
+    $(document).ready(function () {
+        $("#currency-list li").click(function (e) {
+            $(".currency-sym").empty();
+            $(".currency-sym").append($(this).text());
+        })
+    })
 </script>
 <!--test-->
 
