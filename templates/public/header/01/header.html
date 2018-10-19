@@ -33,7 +33,9 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-2 col-sm-5 col-5">
                     <div class="logo">
-                        <a href="index.html"><img src="static/img/logo/01/logo.png" alt="logo image"></a>
+                        <a href="index.html">
+                            <img src="static/img/logo/01/logo.png" alt="logo image">
+                        </a>
                     </div>
                 </div>
                 <!-- Primary Vertical-Menu End -->
@@ -132,7 +134,21 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="cart.html"><i class="fa fa-heart-o"></i></a></li>
+                            <li>
+                                <a href="javascript:;">
+                                    <div class="currency-sym">US</div>
+                                    <!--<i class="fa fa-heart-o"></i>-->
+                                </a>
+                                <ul class="kiosk-dropdown main-kiosk-currency">
+                                    <li>US</li>
+                                    <li>CN</li>
+                                    <li>JP</li>
+                                    <li>EU</li>
+                                    <li>CA</li>
+                                    <li>KR</li>
+                                    <li>UK</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -190,10 +206,33 @@
         </div>
         <!-- Container End -->
     </div>
+
+    <style type="text/css">
+        .main-kiosk-currency{
+            width: 80px;
+            text-align: center;
+            padding: 0;
+        }
+        .main-kiosk-currency li{
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+        .main-kiosk-currency li:hover{
+            background-color:#f6f6f6;
+        }
+    </style>
     <!-- Header Bottom End -->
 </header>
 <script type="text/javascript">
         jQuery('.mobile-menu nav').meanmenu({
             meanScreenWidth: "991",
         });
+
+
+        $(document).ready(function () {
+            $(".main-kiosk-currency li").click(function (e) {
+                $(".currency-sym").empty();
+                $(".currency-sym").append($(this).text());
+            })
+        })
 </script>
