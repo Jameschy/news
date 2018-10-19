@@ -708,17 +708,19 @@
             display: block;
             text-align: center;
         }
-
+        li.mobile-menu.s-container{
+            display: none !important;
+        }
         @media (max-width: 991px) {
+            li.mobile-menu.s-container{
+                display: inline-block !important;
+            }
             .menu-bar-wrap .left-language > ul > li:hover .toggle-content-wrap {
                 opacity: 1;
                 visibility: visible;
                 top: 38px;
             }
         }
-        /*.nivo-controlNav{*/
-            /*z-index: 0;*/
-        /*}*/
     </style>
 
 </div>
