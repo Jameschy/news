@@ -150,7 +150,7 @@
                                     <div class="currency-sym">US</div>
                                     <!--<i class="fa fa-heart-o"></i>-->
                                 </a>
-                                <ul class="kiosk-dropdown main-kiosk-currency">
+                                <ul class="kiosk-dropdown main-kiosk-currency" id="currency-list">
                                     <li>US</li>
                                     <li>CN</li>
                                     <li>JP</li>
@@ -163,6 +163,16 @@
                         </ul>
                     </div>
                 </div>
+
+                <script type="text/javascript">
+
+                    $(document).ready(function () {
+                        $("#currency-list li").click(function (e) {
+                            $(".currency-sym").empty();
+                            $(".currency-sym").append($(this).text());
+                        })
+                    })
+                </script>
                 <!-- Cartt Box End -->
                 <div class="col-sm-12 d-lg-none">
                     <div class="mobile-menu">
