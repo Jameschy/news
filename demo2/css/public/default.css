@@ -1,9 +1,3 @@
-/**
- * Created by WebStorm.
- * User: chig@foxmail.com
- * Date: 2018/11/24 0024
- * Time: 11:53
- */
 /*================================================
 [  Table of contents  ]
 ================================================
@@ -717,6 +711,15 @@ input{
     font-size: 14px;
     color: #626262;
 }
+/* input:focus{
+    border: 2px solid #eceff8;
+    height: auto;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #626262;
+} */
 select {
     width: 100%;
     border: 2px solid #eceff8;
