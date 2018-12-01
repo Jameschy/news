@@ -1,0 +1,138 @@
+.swiper-container .swiper-slide {
+	position: relative;
+	overflow: hidden;
+	min-height: 900px;
+}
+
+.homepage-left100 {
+	width: 100%;
+	position: absolute;
+	left: 100%;
+	top: 44%;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+}
+
+.homepage-left100 .txt {
+	text-transform: uppercase;
+	font-size: 48px;
+	letter-spacing: 16px;
+	line-height: 72px;
+}
+
+.txtCenter {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+	padding: 15px;
+}
+
+.txtCenter .txt {
+	font-size: 125px;
+	letter-spacing: -2px;
+	line-height: 115px;
+	color: #121212;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.whiteTxt {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	z-index: 10;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 100%;
+}
+
+.whiteTxt .txt {
+	font-size: 65px;
+	letter-spacing: -2px;
+	line-height: 82px;
+	color: #ffffff;
+	text-align: center;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+	.swiper-container.swiper-container-horizontal {
+		min-height: 450px;
+	}
+
+	.swiper-container .swiper-slide {
+		position: relative;
+		overflow: hidden;
+		min-height: auto;
+	}
+
+	.homepage-left100 {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		z-index: 10;
+		text-align: center;
+		transform: translate(5%, -20%);
+	}
+
+	.homepage-left100 .txt {
+		text-transform: uppercase;
+		font-size: 40px;
+		letter-spacing: 14px;
+		line-height: 50px;
+		color: #FFFFFF;
+	}
+
+	.txtCenter {
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		z-index: 10;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 100%;
+		padding: 15px;
+	}
+
+	.txtCenter .txt {
+		font-size: 4rem;
+		letter-spacing: -2px;
+		line-height: 5rem;
+		color: #121212;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "Arial Black", Gadget, sans-serif;
+	}
+
+	.whiteTxt {
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		z-index: 10;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		width: 100%;
+	}
+
+	.whiteTxt .txt {
+		font-size: 2.5rem;
+		letter-spacing: -2px;
+		line-height: 82px;
+		color: #ffffff;
+		text-align: center;
+		font-family: "Arial Black", Gadget, sans-serif;
+	}
+
+	.mb-menu {
+		width: 100%;
+		
+		padding: 0;
+	}
+}
