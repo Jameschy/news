@@ -1,0 +1,176 @@
+/**
+ * Created by WebStorm.
+ * User: chig@foxmail.com
+ * Date: 2018/12/3 0003
+ * Time: 11:47
+ */
+.side-left-bar {
+    width: 0%;
+    float: left;
+    visibility: hidden;
+    position: relative;
+    display: inline-block;
+    background: #000000;
+    color: #FFFFFF;
+    /* opacity: .55; */
+    height: auto;
+    /*padding-top: 15px;*/
+    min-height: 2000px;
+    transition: all 0.5s;
+}
+
+#sign-in-up {
+    position: relative;
+    min-height: 2500px;
+    /*background-color: orangered;*/
+}
+
+#sign-in-up .msg-box {
+    width: 100%;
+    min-width: 150px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    padding: 0;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px dotted #000000;
+}
+
+#sign-in-up ul li {
+    list-style: none;
+    width: 100%;
+    margin: 5px auto;
+    margin-top: 0;
+    padding: 5px 0;
+    text-align: center;
+}
+#sign-in-up ul li>a{
+    width: 100%;
+    padding: 5px 0;
+    display: inline-block;
+    text-decoration: none;
+}
+.header-logo #logo-img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 50%;
+    background: #FFF3CD;
+    display: inline-block;
+}
+
+.Currency {
+    margin-bottom: 15px;
+}
+
+.li-hover {
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.li-hover:hover {
+    background: #ffffff;
+    color: #333333;
+}
+#sign-in-up .msg-box .header-logo {
+    /*margin-top:15px;*/
+}
+
+#sign-in-up .search-product {
+    padding: 0 15%;
+    margin-bottom: 15px;
+}
+
+#sign-in-up .msg-box .search-product input {
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+}
+
+#sign-in-up .msg-box .mb-menu-box {
+    margin: 0 auto;
+    height: 500px;
+    /*background: #0062CC;*/
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#sign-in-up .msg-box .mb-menu-box::-webkit-scrollbar{
+    display: none;
+}
+#sign-in-up ul li .mb-menu-li {
+    padding: 5px 20px 5px 15px;
+    text-align: left;
+    overflow: hidden;
+}
+.mb-menu-li span{
+    margin-top: 5px;
+    float: right;
+}
+#sign-in-up .msg-box .mb-menu-box ul {
+    padding: 0;
+}
+#sign-in-up .msg-box .mb-menu-box .mb-submenu-box{
+     padding:0 15px;
+ }
+#sign-in-up .msg-box .mb-menu-box .mb-submenu-box li{
+    text-align: initial;
+}
+#sign-in-up .msg-box .mb-menu-box .mb-submenu-box li>a{
+    width: 60%;
+}
+
+/*界面适配代码*/
+.wid-15 {
+    width: 15%;
+}
+
+.wid-85 {
+    width: 85%;
+}
+
+.v-hidden {
+    visibility: hidden;
+}
+
+.v-visble {
+    visibility: visible;
+}
+.dis-no{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .wid-15 {
+        width: 75%;
+    }
+
+    .wid-85 {
+        width: 25%;
+    }
+
+    .mb-off {
+        display: none;
+        transition: 1.8s;
+    }
+
+    .mb-on {
+        display: inline-block;
+    }
+
+    .pc-off {
+        display: none;
+    }
+
+    .pc-on {
+        display: inline-block;
+    }
+
+    .minw-in {
+        min-width: auto !important;
+    }
+
+}

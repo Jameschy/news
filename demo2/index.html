@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Demo2Layout</title>
+    <link rel="stylesheet" href="css/public/font-awesome.css">
+    <link rel="stylesheet" href="css/public/swiper.css">
+    <link rel="stylesheet" href="css/public/bootstrap.css">
+    <!--<link rel="stylesheet" href="../css/public/default.css">-->
+    <link rel="stylesheet" href="css/banner/demo-banner.css">
+    <link rel="stylesheet" href="css/header/01.css">
+    <link rel="stylesheet" href="css/banner/01.css">
+    <link rel="stylesheet" href="css/public/index.css">
+</head>
+<style type="text/css">
+
+</style>
+<script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".side-left-bar").load("templates/side-bar/01.html");
+        $(".main-center-bar .header-box").load("templates/header/01.html");
+        $(".main-center-bar .banner-box").load("templates/banner/01.html");
+    })
+</script>
+
+<body>
+<div class="outer-container big-box">
+
+    <!--左侧边栏 A-->
+    <div class="side-left-bar"></div>
+    <!--左侧边栏 Z-->
+
+    <!--主体栏 A-->
+    <div class="main-center-bar">
+        <!--header A-->
+        <div id="header-box" class="header-box"></div>
+        <!--header Z-->
+
+        <!--banner slider A-->
+        <!--注：注释之img为移动端banner等效大图，已禁用-->
+        <div id="banner-box" class="banner-box"></div>
+        <!--banner slider Z-->
+        <div class="content-container" style="background: yellow;">
+            <ul style="padding: 0;">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </div>
+
+
+
+
+    </div>
+    <!--主体栏 Z-->
+
+    <!--右侧边栏 A-->
+    <div class="side-right-bar" style="display: none"></div>
+    <!--右侧边栏 Z-->
+</div>
+</body>
+
+<script src="js/swiper.min.js" type="text/javascript"></script>
+<!--<script src="../js/swiper.min.js" type="text/javascript"></script>-->
+<script src="js/header2-fn.js" type="text/javascript"></script>
+
+</html>

@@ -9,59 +9,19 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
-
-
-
-.slider-left-bar {
-    width: 0%;
-    float: left;
-    visibility: hidden;
-    position: relative;
-    display: inline-block;
-    background: #000000;
-    color: #FFFFFF;
-    /*opacity: .55;*/
-    transition: all 0.5s;
+a{
+    color: #ffffff;
 }
 
 .main-center-bar {
     width: 100%;
     position: relative;
     overflow: hidden;
+    background: #00a9da;
+    min-height: 2000px;
     transition: all 0.5s;
 }
 
-.swiper-container.swiper-container-horizontal {
-    min-height: 900px;
-    overflow: hidden;
-}
-
-.swiper-slide,
-.full,
-.whiteTxt,
-.swiper-lazy {
-    width: 100%;
-}
-
-.swiper-lazy {
-    /* display: none; */
-}
-
-.swiper-container .swiper-pagination {
-    /* left: 30px; */
-    bottom: 80px;
-    width: 100%;
-}
-
-.swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
-    /* background: none; */
-    /* border: 1px solid #fff; */
-    opacity: 1;
-}
 
 .dis-i-b {
     display: inline-block;
@@ -82,7 +42,9 @@ body {
 .wid-15 {
     width: 15%;
 }
-
+.v-hidden{
+    visibility: hidden;
+}
 .v-visble {
     visibility: visible;
 }
@@ -92,57 +54,9 @@ body {
 }
 
 
-#sign-in-up {
-    position: relative;
-    min-height: 900px;
-    background-color: orangered;
-}
 
-#sign-in-up .msg-box {
-    width: 100%;
-    min-width: 150px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    margin-bottom: 0;
-    padding: 0;
-    padding-bottom: 15px;
-    border-bottom: 2px dotted #000000;
-}
 
-#sign-in-up ul li {
-    list-style: none;
-    width: 100%;
-    margin: 5px auto;
-    margin-top: 0;
-    padding: 5px;
-    text-align: center;
-}
 
-#sign-in-up .search-product {
-    padding: 0 15%;
-    margin-bottom: 15px;
-}
-
-.search-product input {
-    outline: none;
-    border: none;
-    padding: 0 10px;
-}
-
-.Currency {
-    margin-bottom: 15px;
-}
-
-.li-hover {
-    cursor: pointer;
-    transition: all .5s;
-}
-
-.li-hover:hover {
-    background: #000000;
-    color: gold;
-}
 
 .pc-on {
     display: inline-block;
@@ -168,23 +82,6 @@ body {
     .wid-85 {
         width: 25%;
     }
-
-    .swiper-container.swiper-container-horizontal {
-        min-height: initial;
-        /* min-height: initial; */
-        /* overflow: hidden; */
-    }
-
-    .full {
-        width: auto;
-        /* height: 500px; */
-    }
-
-    .full img {
-        /* width: auto; */
-        /* height: 100%; */
-    }
-
     .mb-off {
         display: none;
         transition: 1.8s;
