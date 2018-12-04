@@ -1,74 +1,90 @@
-<!--左侧边栏 A-->
+<!--<!&bull;&nbsp;左侧边栏 A&bull;&nbsp;>-->
 <link rel="stylesheet" href="css/side-bar/01.css">
     <div class="header2-logo">
     </div>
     <div id="sign-in-up">
         <ul class="msg-box">
-            <li class="header-logo">
-							<span id="logo-img"><span>
+            <!--<li class="header-logo">-->
+							<!--<span id="logo-img"><span>-->
+            <!--</li>-->
+            <li class="Sign-in li-hover"><span class="fa fa-sign-in sidebarL-icon"></span>Sign in</li>
+            <li class="Sign-up li-hover"><span class="fa fa-user sidebarL-icon"></span>Sign up</li>
+            <li class="Currency">
+                <a href="###" class="currency-btn li-hover">
+                    <span class="fa fa-money sidebarL-icon"></span>
+                    Currency
+                </a>
+                <ul class="sidebarL-submenu-box dis-no">
+                    <li class="li-hover"><a href="###">CAD</a></li>
+                    <li class="li-hover"><a href="###">CAD</a></li>
+                    <li class="li-hover"><a href="###">CAD</a></li>
+                    <li class="li-hover"><a href="###">CAD</a></li>
+                    <li class="li-hover"><a href="###">CAD</a></li>
+                </ul>
             </li>
-            <li class="Sign-in li-hover">Sign in</li>
-            <li class="Sign-up li-hover">Sign up</li>
-            <li class="Currency li-hover">Currency</li>
             <li class="search-product">
                 <input type="text" name="" id="" value="" placeholder="Search Product" />
             </li>
-            <li class="mb-menu-box">
+            <li class="sidebarL-menu-box">
                 <ul class="">
                     <li class="">
-                        <a href="###1" class="mb-menu-li li-hover">
+                        <a href="###1" class="sidebarL-menu-li li-hover">
                             WOMRNS
                             <span class="fa fa-plus"></span>
                         </a>
-                        <ul class="mb-submenu-box dis-no">
-                            <li class="li-hover">--<a href="###">News1</a></li>
-                            <li class="li-hover">--<a href="###">News1</a></li>
-                            <li class="li-hover">--<a href="###">News1</a></li>
+                        <ul class="sidebarL-submenu-box dis-no">
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="###2" class="mb-menu-li li-hover">
+                        <a href="###2" class="sidebarL-menu-li li-hover">
                             MEWS
                             <span class="fa fa-plus"></span>
                         </a>
-                        <ul class="mb-submenu-box dis-no">
-                            <li class="li-hover">News1</li>
-                            <li class="li-hover">News2</li>
-                            <li class="li-hover">News3</li>
+                        <ul class="sidebarL-submenu-box dis-no">
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="###2" class="mb-menu-li li-hover">KIDS
+                        <a href="###2" class="sidebarL-menu-li li-hover">KIDS
                             <span class="fa fa-plus"></span>
                         </a>
-                        <ul class="mb-submenu-box dis-no">
-                            <li class="li-hover">--<a href="###">News1</a></li>
-                            <li class="li-hover">--<a href="###">News1</a></li>
-                            <li class="li-hover">--<a href="###">News1</a></li>
+                        <ul class="sidebarL-submenu-box dis-no">
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="###2" class="mb-menu-li li-hover">BOYS
+                        <a href="###2" class="sidebarL-menu-li li-hover">BOYS
                             <span class="fa fa-plus"></span>
                         </a>
-                        <ul class="mb-submenu-box dis-no">
-                            <li class="li-hover">--<a href="###">News1</a></li>
-                            <li class="li-hover">--<a href="###">News1</a></li>
-                            <li class="li-hover">--<a href="###">News1</a></li>
+                        <ul class="sidebarL-submenu-box dis-no">
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
+                            <li class="li-hover">&bull;&nbsp;<a href="###">News1</a></li>
                         </ul>
                     </li>
-                    <li><a href="###2" class="mb-menu-li li-hover">GIRLS</a></li>
+                    <li><a href="###2" class="sidebarL-menu-li li-hover">GIRLS</a></li>
                 </ul>
             </li>
         </ul>
 
         <script type="text/javascript">
-        $(".mb-menu-li").click(function () {
-            $(this).siblings(".mb-submenu-box").slideToggle();
+        $(".sidebarL-menu-li").click(function () {
+            $(this).siblings(".sidebarL-submenu-box").slideToggle();
             $(this).children(".fa").toggleClass("fa-minus");
         })
+        $(".currency-btn").click(function () {
+            $(this).siblings(".sidebarL-submenu-box").slideToggle();
+        })
+
         </script>
 
     </div>
-<!--左侧边栏 Z-->
-<!--over-->
+<!--<!&bull;&nbsp;左侧边栏 Z&bull;&nbsp;>-->
+<!--<!&bull;&nbsp;over&bull;&nbsp;>-->
