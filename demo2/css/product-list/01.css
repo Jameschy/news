@@ -31,12 +31,19 @@ ul {
 
 .product-list {
     border: 1px solid transparent;
-    padding: 30px 30px;
+    padding: 0px 0px;
     transition: all .5s
 }
 
+.product-list-container {
+    margin: 10px 15px;
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+}
 .product-list:hover {
-    border: 1px solid #f90
+    border: 1px solid #f90;
+    border-radius: 10px;
 }
 
 .product-list h4 {
@@ -49,7 +56,42 @@ ul {
 .product-list h4 span {
     font-size: 20px
 }
-
+.product-list .product-list-price,
+.product-list .product-list-title,
+.product-list .product-list-star{
+    padding: 0;
+    margin: 5px auto;
+}
+.product-list .special-price {
+    font-size: 20px;
+    /*color: grey;*/
+    /*text-decoration: line-through;*/
+}
+.product-list .origin-price {
+    margin-left: 5px;
+    font-size: 15px;
+    color: grey;
+    text-decoration: line-through;
+}
+.product-list .product-list-percent{
+text-align: center;
+z-index: 10;
+display: block;
+position: absolute;
+top: 10px;
+right: 10px;
+padding: 7px 0;
+line-height: 16px;
+height: 46px;
+width: 46px;
+font-size: 14px;
+background: #ff7e00;
+color: #fff;
+border-radius: 50%;
+}
+.product-list .fa-star{
+    color: #faa51a;
+}
 .u-flyer {
     display: block;
     width: 50px;
@@ -115,7 +157,14 @@ ul {
 
 @media (max-width: 768px) {
     .product-list {
-        padding: 10px 5px;
+        padding: 0px 1px;
+        min-height: 320px;
+    }
+    .product-list-container {
+        margin: 0;
+        background: #fff;
+        padding:5px 0;
+        border-radius: 10px;
     }
 
     .orange {
