@@ -17,7 +17,7 @@ a{
     width: 100%;
     position: relative;
     overflow: hidden;
-    background: #00a9da;
+    /*background: #00a9da;*/
     min-height: 2000px;
     transition: all 0.5s;
 }
