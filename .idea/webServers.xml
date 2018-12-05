@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f02f79e6-0ed6-4431-b061-d37e659b96df" name="localhost" url="http://localhost:63342/news">
+        <fileTransfer host="localhost" port="63342">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="63342" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
