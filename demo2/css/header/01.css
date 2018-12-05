@@ -27,7 +27,7 @@
 }
 
 .header ul li {
-    padding: 0 20px;
+    padding: 0 10px;
     border-right: 1px solid #fff;
     float: left;
     height: 60px;
@@ -40,12 +40,16 @@
     cursor: pointer;
     transition: all .5s;
 }
-.menu-btn-box {
+.header .menu-btn-box {
     display: inline-block;
     background: #000000;
     color: #FFFFFF;
     opacity: .55;
+    padding: 0 15px;
     transition: all 0.5s;
+}
+.header .cart-count-box{
+    float: right;
 }
 
 #headInfor {
@@ -73,6 +77,15 @@ ul.tips-list-box li {
     width: 100%;
     min-width: 320px;
     margin: 0 auto;
+}
+.cart-count{
+    width: 40px;
+    height: 40px;
+    background: #000;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 50%;
+    transform: scale(0.5);
 }
 @media screen and (max-width: 768px) {
     .wid-15 {

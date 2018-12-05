@@ -6,6 +6,7 @@
             $('.main-center-bar').toggleClass("wid-85");
             $('.side-left-bar').toggleClass("v-visble");
             $('.side-left-bar').toggleClass("fl-left");
+            $('.side-left-bar .search-product').toggleClass("dis-no");
             $('#header').toggleClass("fl-right");
             $('#header').toggleClass("wid-85");
             // $('.slide-menu-box').toggleClass("zindex-1");
