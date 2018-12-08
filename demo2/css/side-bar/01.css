@@ -88,8 +88,8 @@
 }
 
 .li-hover:hover {
-    background: #ffffff;
-    color: #333333;
+    background: #999;
+    color: #fff;
 }
 #sign-in-up .msg-box .header-logo {
     /*margin-top:15px;*/
