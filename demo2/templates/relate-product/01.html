@@ -1,0 +1,63 @@
+<div class="relate-container container mb-25">
+    <h2 class="relate-title">Relate Products</h2>
+    <div class="relate-swiper-container swiper-container swiper-container-horizontal swiper-container-multirow">
+        <div class="swiper-wrapper relate-swiper">
+            <!--<div class="swiper-slide">-->
+                <!--<a href="###">-->
+                    <!--<img src="img/product/T20856_512_main.jpg" alt="">-->
+                    <!--<h5>MR EMBROIDERY BD SHIRT MENS</h5>-->
+                    <!--<p>-->
+                        <!--<span class="special-price">$178.00</span>-->
+                        <!--<span class="origin-price">$1785.00</span>-->
+                    <!--</p>-->
+                <!--</a>-->
+            <!--</div>-->
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script type="text/javascript">
+        var i;
+        // var arrImg = ['lg', 'ls', 'cw', 'hs'];
+        var arrImg = ['512', '02182', '3412', '4818','5426'];
+        var index;
+        var srcImg;
+        for (i = 0; i < 16; i++) {
+            index = Math.floor((Math.random() * arrImg.length));
+            srcImg = arrImg[index];
+            $(".relate-swiper").append("" +
+                "<div class='swiper-slide'>" +
+                "<a href='detail.html'>" +
+                "<img class='product-list-img' src='img/product/T20856_" + srcImg + "_main.jpg'/></a>" +
+                "<h4 class='product-list-price col-lg-6 col-12'>$<span class='special-price'>99.00</span>$<span class='origin-price'>799.00</span></h4>" +
+                "<p class='product-list-star col-lg-6 col-12'>" +
+                "<span class='fa fa-star'></span>" +
+                "<span class='fa fa-star'></span>" +
+                "<span class='fa fa-star'></span>" +
+                "<span class='fa fa-star'></span>" +
+                "<span class='fa fa-star'></span>" +
+                "</p>"+
+            "<span class='product-list-percent'>80% <br/>OFF</span>" +
+                "<p class='product-list-title'>" + (i + 1) + "LEATHER JACKETS for WOMAN</p>" +
+                "<a href='###' class='button orange addcar'>Add To Cart</a>" +
+                "</div>")
+        }
+    </script>
+    <script type="text/javascript">
+        var relateSwiper = new Swiper('.relate-swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            paginationClickable: true,
+            spaceBetween: 10
+        });
+    </script>
+</div>

@@ -1,0 +1,15 @@
+/**
+ * Created by WebStorm.
+ * User: chig@foxmail.com
+ * Date: 2018/12/11 0011
+ * Time: 12:00
+ */
+
+.relate-container.container.mb-25{
+    margin: 35px auto;
+}
+.relate-title{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0;
+}

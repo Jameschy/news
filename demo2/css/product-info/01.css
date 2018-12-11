@@ -1,0 +1,176 @@
+/**
+ * Created by WebStorm.
+ * User: chig@foxmail.com
+ * Date: 2018/12/10 0010
+ * Time: 15:53
+ */
+.swiper-info-container .swiper-container {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.gallery-top {
+    height: 100%;
+    width: 100%;
+    /*min-height: 600px;*/
+}
+.gallery-thumbs {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+    height: 100%;
+    opacity: 0.85;
+
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.red-fn {
+    color: #dc3545;
+}
+.gray-fn {
+    color: #f5f5f5;
+}
+.light-gray-fn {
+    color: #dcdcdc;
+}
+.black-fn {
+    color: #000000;
+}
+
+.special-price{
+    font-size: xx-large;
+}
+
+.info-select-size,
+.info-select-color{
+    /*display: inline-block;*/
+    width: 50%;
+    margin-bottom: 15px;
+}
+.input-group{
+    width: 50%;
+}
+.input-group .input-group-append .fa-minus{
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.product-info-description,
+.product-info-submit{
+    padding-top: 20px;
+}
+.product-info-countdown{
+    position: relative;
+    /*color: #ffffff;*/
+    padding: 5px 10px;
+    /*background: #dc3545;*/
+    /*border: 1px solid #dc3545;*/
+}
+
+.info-countdown-box{
+    /*color: #ffffff;*/
+    padding: 5px;
+    /*background-image: url("https://www.coolshoppro.com/includes/templates/images/bar.jpg");*/
+
+}
+.product-info-countdown i{
+    width: 34px;
+    text-align: center;
+    font-style: initial;
+    font-size: 24px;
+    font-family: fantasy;
+    border: 1px solid black;
+    padding: 0px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 3px;
+    display: inline-block;
+}
+span.payment-time{
+    /*position: absolute;*/
+    /*top: 0;*/
+    right: 5px;
+}
+span.active-time {
+    margin-bottom: 5px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+em.time_d,
+em.time_h,
+em.time_m,
+em.time_s{
+    font-size: 30px;
+}
+.product-info-submit button{
+    background: #000000;
+    color: #ffffff;
+}
+.btn-link{
+    color: #000;
+}
+.btn-link:hover,
+.btn-link:focus{
+    text-decoration: none;
+    color: initial;
+}
+.card,.card-header{
+    border: 0;
+}
+.card-header{
+    padding: 0 1.25rem;
+    background-color: transparent;
+    border-bottom: 1px solid #ced4da;
+}
+.card-header .btn-link{
+    text-transform: uppercase;
+}
+.product-info-share{
+    padding-top: 15px;
+}
+.info-share-box{
+    padding-left: 0;
+}
+.info-share-box li{
+    line-height: 35px;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    background: #000000;
+    list-style: none;
+    display: inline-block;
+    transition: all 0.5s;
+}
+.info-share-box li a{
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    display: inline-block;
+    text-decoration: none;
+}
+.info-share-box li:hover{
+    background: #ffffff;
+    color: #000000;
+}
+.info-share-box li a:hover{
+    background: #ffffff;
+    color: #000000;
+    border-radius: 3px;
+    border: 1px solid #000000;
+}

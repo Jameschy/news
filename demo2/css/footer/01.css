@@ -40,7 +40,12 @@ footer a:focus,footer a:hover{
 .footer-copyright-block {
     text-align: center;
     padding: 5px 0;
+
     border-top: 1px solid rgba(0,0,0,0.15);
+}
+.footer-copyright-block p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 .col-lg-12.col-sm-6.col-md-12{
     text-align: right;
@@ -54,5 +59,8 @@ footer a:focus,footer a:hover{
     }
     .col-lg-12.col-sm-6.col-md-12{
         text-align: center;
+    }
+    .footer-content ul{
+        padding-left: 0;
     }
 }

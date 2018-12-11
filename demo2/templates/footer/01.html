@@ -58,7 +58,7 @@
                 <div class="col-lg-6 col-sm-6 col-md-6">
                     <div class="footer-widget">
                         <div class="footer-logo mb-43">
-                            <a href="/"><img src="http://localhost:63342/news/demo2/img/logo/logo (2).png" alt="Your Logo"></a>
+                            <a href="index"><img src="img/logo/logo (2).png" alt="Your Logo"></a>
                         </div>
                         <div class="footer-addres">
                             <div class="fas">
@@ -88,7 +88,7 @@
     $(".footer-title").click(function () {
         // $(".footer-content").css("display","none");
         $(this).prev().siblings().find(".footer-content").css("display","none");
-        $(this).next().toggle('slow')
+        $(this).next().slideToggle(500)
         // $(this).next().css("display","block")
     })
 </script>

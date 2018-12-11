@@ -170,14 +170,14 @@ border-radius: 50%;
 
 @media (max-width: 768px) {
     .product-list {
-        padding: 0px 1px;
+        padding: 5px;
         min-height: 320px;
     }
     .product-list-container {
         margin: 0;
-        background: #fff;
-        padding:5px 0;
-        border-radius: 10px;
+        /*background: #fff;*/
+        padding:0px;
+        /*border-radius: 10px;*/
     }
 
     .orange {
