@@ -1,0 +1,66 @@
+/**
+ * Created by WebStorm.
+ * User: chig@foxmail.com
+ * Date: 2018/12/11 0011
+ * Time: 12:00
+ */
+.swiper-slide{
+    position: relative;
+    overflow: hidden;
+
+}
+.relate-container.container.mb-25{
+    margin: 20px auto;
+}
+.relate-title{
+    /*text-align: center;*/
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+.card-header{
+    padding: 0;
+}
+.btn .badge{
+    left: 10px;
+}
+.product-list-title,
+.product-list-price,
+.star-box{
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.product-list-star{
+    margin-bottom: 0;
+}
+.fa-star{
+    color: #fb6426;
+}
+/*.product-list-percent{*/
+    /*position: absolute;*/
+    /*top: -25px;*/
+    /*left: -25px;*/
+    /*font-size: 12px;*/
+    /*text-align: center;*/
+    /*background: #fb6426;*/
+    /*color: #ffffff;*/
+    /*display: inline-block;*/
+    /*transform: rotate(-45deg);*/
+    /*height: 50px;*/
+    /*width: 50px;*/
+    /*line-height: 80px;*/
+/*}*/
+.product-list-percent{
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    font-size: 12px;
+    text-align: center;
+    background: #fb6426;
+    color: #ffffff;
+    display: inline-block;
+    transform: rotate(45deg);
+    height: 50px;
+    width: 50px;
+    line-height: 80px;
+}

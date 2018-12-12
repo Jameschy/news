@@ -13,3 +13,9 @@
     text-transform: uppercase;
     padding: 30px 0;
 }
+.card-header{
+    padding: 0;
+}
+.btn .badge{
+    left: 10px;
+}

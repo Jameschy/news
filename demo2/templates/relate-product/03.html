@@ -1,0 +1,104 @@
+<div class="relate-container mb-25">
+    <div class="container">
+        <h6 class="relate-title">You might also like</h6>
+        <div class="relate-carousel-container">
+            <div class="carousel-wrapper owl-carousel">
+                <!--<div class="swiper-slide">-->
+                <!--<a href="###">-->
+                <!--<img src="img/product/T20856_512_main.jpg" alt="">-->
+                <!--<h5>MR EMBROIDERY BD SHIRT MENS</h5>-->
+                <!--<p>-->
+                <!--<span class="special-price">$178.00</span>-->
+                <!--<span class="origin-price">$1785.00</span>-->
+                <!--</p>-->
+                <!--</a>-->
+                <!--</div>-->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h6 class="relate-title">New Arrival</h6>
+        <div class="relate-carousel-container">
+            <div class="carousel-wrapper owl-carousel">
+                <!--<div class="swiper-slide">-->
+                <!--<a href="###">-->
+                <!--<img src="img/product/T20856_512_main.jpg" alt="">-->
+                <!--<h5>MR EMBROIDERY BD SHIRT MENS</h5>-->
+                <!--<p>-->
+                <!--<span class="special-price">$178.00</span>-->
+                <!--<span class="origin-price">$1785.00</span>-->
+                <!--</p>-->
+                <!--</a>-->
+                <!--</div>-->
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var i;
+        // var arrImg = ['lg', 'ls', 'cw', 'hs'];
+        var arrImg = ['512', '02182', '3412', '4818', '5426'];
+        var index;
+        var srcImg;
+        for (i = 0; i < 16; i++) {
+            index = Math.floor((Math.random() * arrImg.length));
+            srcImg = arrImg[index];
+            $(".carousel-wrapper").append("" +
+                "<div class='swiper-slide'>" +
+                "<a href='detail.html'>" +
+                "<img class='product-list-img' src='img/product/T20856_" + srcImg + "_main.jpg'/></a>" +
+                "<p class='product-list-title'>" + (i + 1) + "LEATHER JACKETS for WOMAN</p>" +
+                "<p class='product-list-star'>" +
+                "<span class='star-box'>" +
+                "<i class='fa fa-star'></i>" +
+                "<i class='fa fa-star'></i>" +
+                "<i class='fa fa-star'></i>" +
+                "<i class='fa fa-star'></i>" +
+                "<i class='fa fa-star'></i>" +
+                "</span>"+
+                "<span class='star-count'>(12)</span>" +
+                "</p>" +
+                "<h4 class='product-list-price'>" +
+                "$<span class='special-price'>99.00</span>" +
+                "$<span class='origin-price'>799.00</span>" +
+                "</h4>" +
+                "<span class='product-list-percent'><i>80%</i></span>" +
+                "<a href='###' class='button orange addcar'>Add To Cart</a>" +
+                "</div>")
+        }
+    </script>
+    <script type="text/javascript">
+        $('.carousel-wrapper').owlCarousel({
+            loop: true,
+            nav: false,
+            dots: false,
+            smartSpeed: 1000,
+            autoplay: true,
+            // navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                480: {
+                    items: 2
+                },
+                768: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                },
+                1200: {
+                    items: 4
+                }
+            }
+
+        })
+    </script>
+</div>
