@@ -309,7 +309,11 @@ div#accordion {
     background: green;
 }
 .product-info-select .form-control{display: none}
-
+.fancybox-lock .fancybox-overlay {
+    overflow: auto;
+    overflow-y: scroll;
+    background: rgba(0,0,0,0.25);
+}
 @media (max-width: 768px) {
     .swiper-container.gallery-thumbs{
         visibility:hidden;

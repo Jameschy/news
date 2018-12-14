@@ -1,4 +1,5 @@
 <script type="text/javascript" src="js/countDown.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 <div class="product-info-box">
     <div class="container">
         <div class="row">
@@ -7,13 +8,13 @@
                     <div class="swiper-container gallery-top">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"
-                                 ><img src="img/product/T20856_3412_main.jpg" /></div>
+                                 ><a class="fancybox" href="img/product/T20856_3412_main.jpg" data-fancybox-group="gallery"><img src="img/product/T20856_3412_main.jpg" /></a></div>
                             <div class="swiper-slide"
-                                 ><img src="img/product/T20856_3412_alt1.jpg" /></div>
+                                 ><a class="fancybox" href="img/product/T20856_3412_alt1.jpg" data-fancybox-group="gallery"><img src="img/product/T20856_3412_alt1.jpg" /></a></div>
                             <div class="swiper-slide"
-                                 ><img src="img/product/T20856_3412_alt2.jpg" /></div>
+                                 ><a class="fancybox" href="img/product/T20856_3412_alt2.jpg" data-fancybox-group="gallery"><img src="img/product/T20856_3412_alt2.jpg" /></a></div>
                             <div class="swiper-slide"
-                                 ><img src="img/product/T20856_3412_alt3.jpg" /></div>
+                                 ><a class="fancybox" href="img/product/T20856_3412_alt3.jpg" data-fancybox-group="gallery"><img src="img/product/T20856_3412_alt3.jpg" /></a></div>
                         </div>
                         <!-- Add Arrows -->
                         <div class="swiper-button-next swiper-button-white"></div>
@@ -33,6 +34,11 @@
                     </div>
                 </div>
             </div>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.fancybox').fancybox();
+                })
+            </script>
             <div class="col-lg-6 col-12 info-msg-block">
                 <h4 class="col-12 product-info-title">MR EMBROIDERY BD SHIRT MENS</h4>
                 <p class="col-12 product-info-sku">Model:<span>HMZT0120181208</span></p>
