@@ -117,16 +117,18 @@
 }
 .product-info-qty,
 .product-info-size,
+.product-info-color,
 .product-info-sizeChart{
     position: relative;
     height: 38px;
     line-height: 40px;
     float: left;
     padding: 0 8px;
-    margin-right: 5px;
+    margin: 5px 5px 0 0;
 }
 .product-info-qty .qty-title,
-.product-info-size .size-title{
+.product-info-size .size-title,
+.product-info-color .color-title{
     font-size: 13px;
     margin-left: 0px;
     position: relative;
@@ -135,7 +137,8 @@
 }
 
 .product-info-qty .qty,
-.product-info-size .size{
+.product-info-size .size,
+.product-info-color .color{
     height: 38px;
     line-height: 40px;
     font-size: 13px;
@@ -144,7 +147,8 @@
     position: absolute;
     left: 1%;
 }
-.product-info-size .size{
+.product-info-size .size,
+.product-info-color .color{
     padding-left: 22%;
 }
 .product-info-total p{
@@ -223,6 +227,70 @@ div#accordion {
 .card-header h5 .btn{
     font-weight: 900;
     font-size: 12px;
+}
+.card-body{
+    padding: 5px 0;
+    max-height: 500px;
+    /*overflow: overlay;*/
+    /*overflow-x: hidden;*/
+    overflow-y: auto;
+    /*padding-left: 15px;*/
+    /*overflow-y: hidden;*/
+}
+.card-body::-webkit-scrollbar {
+    display: none
+}
+.card-body .review-name-box .review-name-img{
+    display: inline-block;
+    width: 45px;
+    line-height: 60px;
+    height: 45px;
+    border-radius: 50%;
+    background: #9f867c;
+    text-align: center;
+}
+
+.review-star-box,.review-name-box{
+
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+
+}
+.review-star-box{
+    text-align: right;
+    padding-top: 5px;
+}
+.review-name-txt,
+.time-box{
+    margin-bottom: 0;
+}
+.review-name-txt {
+    margin-top: 5px;
+    display: inline-block;
+    color: rgba(0,0,0,.5);
+}
+.card-body .review-name-box .review-name-img i{
+    font-size: 40px;
+    color: #fff;
+}
+.review-header-box .col-6{
+    width: 49%;
+    float: left;
+}
+.card-body .review-content-box .review-content-txt,
+.card-body .review-content-box .review-content-time{
+    padding: 5px 0px;
+    margin-bottom: 0px;
+    /*background: rgba(159,134,124,.15);*/
+}
+.card-body .row{
+    margin: 10px auto;
+    padding: 10px 0;
+    background: rgba(241,241,241,.5);
+}
+.card-body .col-12{
+    margin-bottom: 5px;
 }
 .product-info-share{
     padding-top: 25px;
