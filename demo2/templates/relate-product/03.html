@@ -1,6 +1,6 @@
 <div class="relate-container mb-25">
     <div class="container">
-        <h6 class="relate-title">You might also like</h6>
+        <h6 class="relate-title"><i class="fa fa-heart-o"></i>You might also like</h6>
         <div class="relate-carousel-container">
             <div class="carousel-wrapper owl-carousel">
                 <!--<div class="swiper-slide">-->
@@ -20,7 +20,7 @@
     </div>
 
     <div class="container">
-        <h6 class="relate-title">New Arrival</h6>
+        <h6 class="relate-title"><i class="fa fa-gg"></i>New Arrival</h6>
         <div class="relate-carousel-container">
             <div class="carousel-wrapper owl-carousel">
                 <!--<div class="swiper-slide">-->
@@ -50,9 +50,10 @@
             srcImg = arrImg[index];
             $(".carousel-wrapper").append("" +
                 "<div class='swiper-slide'>" +
-                "<a href='detail.html'>" +
+                "<a href='detail.html' title='LEATHER JACKETS for WOMAN'>" +
                 "<img class='product-list-img' src='img/product/T20856_" + srcImg + "_main.jpg'/></a>" +
                 "<p class='product-list-title'>" + (i + 1) + "LEATHER JACKETS for WOMAN</p>" +
+                "<div class='list-left-msg half-block'>"+
                 "<p class='product-list-star'>" +
                 "<span class='star-box'>" +
                 "<i class='fa fa-star'></i>" +
@@ -67,8 +68,14 @@
                 "$<span class='special-price'>99.00</span>" +
                 "$<span class='origin-price'>799.00</span>" +
                 "</h4>" +
+                "</div>"+
+                "<div class='list-right-msg half-block'>"+
+                "<a href='###' class='to-cart fa-icons' title='add to cart'><i class='fa fa-cart-plus'></i></a>" +
+                "<a href='###' class='to-detail fa-icons' title='view of product'><i class='fa fa-link'></i></a>" +
+                "</div>"+
+
                 "<span class='product-list-percent'><i>80%</i></span>" +
-                "<a href='###' class='button orange addcar'>Add To Cart</a>" +
+
                 "</div>")
         }
     </script>

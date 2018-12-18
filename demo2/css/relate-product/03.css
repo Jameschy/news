@@ -7,6 +7,7 @@
 .swiper-slide{
     position: relative;
     overflow: hidden;
+    padding-bottom: 10px;
 
 }
 .relate-container.container.mb-25{
@@ -16,7 +17,10 @@
     /*text-align: center;*/
     font-weight: 900;
     text-transform: uppercase;
-    padding: 10px 15px;
+    padding: 10px 0px;
+}
+.relate-title i{
+    margin-right: 5px;
 }
 .card-header{
     padding: 0;
@@ -30,7 +34,15 @@
     font-size: 12px;
     margin-bottom: 0;
 }
+.product-list-price .origin-price{
+    color: #8d98aa;
+    text-decoration: line-through;
+}
+.product-list-title{
+    padding: 0 5px;
+}
 .product-list-star{
+    font-size: 12px;
     margin-bottom: 0;
 }
 .fa-star{
@@ -63,4 +75,44 @@
     height: 50px;
     width: 50px;
     line-height: 80px;
+}
+.half-block{
+    width: 50%;
+    /*display: inline-block;*/
+    float: left;
+    padding: 0 5px;
+}
+.list-right-msg.half-block{
+    text-align: center;
+}
+.to-cart,
+.to-detail{
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-top: 10px;
+    /*border-radius: 50%;*/
+    display: inline-block;
+    transition: all .5s;
+}
+.to-cart i{
+    font-size: 20px;
+    color: #333333;
+}
+.to-detail i{
+    font-size: 16px;
+    color: #333333;
+}
+.to-cart:hover{
+    /*background: #333333;*/
+    text-decoration: none;
+}
+.to-cart:hover i,
+.to-detail:hover i{
+    color: #fb6426;
+}
+@media (max-width: 376px) {
+    .half-block{
+        padding: 0;
+    }
 }

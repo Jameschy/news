@@ -1,0 +1,124 @@
+<div class="order-checkout-box container">
+    <div class="row table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">image</th>
+                <th scope="col">name</th>
+                <th scope="col">price</th>
+                <th scope="col" class="box-center">qty</th>
+                <th scope="col">total</th>
+                <th scope="col" class="box-center">remove</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th class="checkbox-msg-num" scope="row">1</th>
+                <td class="checkbox-msg-img">
+                    <img src="img/product/T20856_3412_main.jpg" alt="" width="50px">
+                </td>
+                <td class="checkbox-msg-name">
+                    <p>MR EMBROIDERY BD SHIRT MENS</p>
+                    <p>RED,L</p>
+                </td>
+                <td class="checkbox-msg-price">
+                    <span class="price-symbol">$</span>
+                    <span class="price-value" value="789.00">789.00</span>
+                </td>
+                <td class="checkbox-msg-qty box-center ">
+                    <input type="number" class="form-control qtyIpt" value="10" min="1" onchange="totalPrice(this)">
+                </td>
+                <td class="checkbox-msg-total">
+                    <span class="price-symbol">$</span>
+                    <span class="total-value">7890.00</span>
+                </td>
+                <td class="box-center remove-btn"><a href="###1"><i class="fa fa-trash"></i></a></td>
+            </tr>
+
+            <tr>
+                <th class="checkbox-msg-num" scope="row">1</th>
+                <td class="checkbox-msg-img">
+                    <img src="img/product/T20856_3412_main.jpg" alt="" width="50px">
+                </td>
+                <td class="checkbox-msg-name">
+                    <p>MR EMBROIDERY BD SHIRT MENS</p>
+                    <p>RED,L</p>
+                </td>
+                <td class="checkbox-msg-price">
+                    <span class="price-symbol">$</span>
+                    <span class="price-value" value="789.00">789.00</span>
+                </td>
+                <td class="checkbox-msg-qty box-center ">
+                    <input type="number" class="form-control qtyIpt" value="10" min="1" onchange="totalPrice(this)">
+                </td>
+                <td class="checkbox-msg-total">
+                    <span class="price-symbol">$</span>
+                    <span class="total-value">7890.00</span>
+                </td>
+                <td class="box-center remove-btn"><a href="###1"><i class="fa fa-trash"></i></a></td>
+            </tr>
+
+            <tr>
+                <th class="checkbox-msg-num" scope="row">1</th>
+                <td class="checkbox-msg-img">
+                    <img src="img/product/T20856_3412_main.jpg" alt="" width="50px">
+                </td>
+                <td class="checkbox-msg-name">
+                    <p>MR EMBROIDERY BD SHIRT MENS</p>
+                    <p>RED,L</p>
+                </td>
+                <td class="checkbox-msg-price">
+                    <span class="price-symbol">$</span>
+                    <span class="price-value" value="789.00">789.00</span>
+                </td>
+                <td class="checkbox-msg-qty box-center ">
+                    <input type="number" class="form-control qtyIpt" value="10" min="1" onchange="totalPrice(this)">
+                </td>
+                <td class="checkbox-msg-total">
+                    <span class="price-symbol">$</span>
+                    <span class="total-value">7890.00</span>
+                </td>
+                <td class="box-center remove-btn"><a href="###1"><i class="fa fa-trash"></i></a></td>
+            </tr>
+
+            </tbody>
+            <tbody>
+                <tr>
+                    <th class="checkbox-msg-num" scope="row"></th>
+                    <td class="checkbox-msg-img">
+
+                    </td>
+                    <td class="checkbox-msg-name">
+
+                    </td>
+                    <td class="checkbox-msg-price">
+                        <span class="price-symbol">$</span>
+                        <span class="price-value" value="789.00">789.00</span>
+                    </td>
+                    <td class="checkbox-msg-qty box-center ">
+                        <input type="number" class="form-control qtyIpt" value="10" min="1" max="50" onchange="totalPrice(this)">
+                    </td>
+                    <td class="checkbox-msg-total">
+                        <span class="price-symbol">$</span>
+                        <span class="total-value">7890.00</span>
+                    </td>
+                    <td class="box-center remove-btn"><a href="###1"><i class="fa fa-trash"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script type="text/javascript">
+        function totalPrice(obj) {
+            var iptVal = $(obj).val();
+            var price = $(obj).parent().prev().find('.price-value').attr("value");
+
+            $(obj).parent().next().find('.total-value').html((price * iptVal).toFixed(2));
+            console.log(price);
+            console.log(iptVal);
+        }
+
+
+    </script>
+</div>
