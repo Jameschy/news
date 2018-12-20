@@ -47,3 +47,9 @@ $("input[name='countDown']").each(function () {
             console.info(arguments);
         });
 });
+
+$("a").click(function () {
+    $("html, body").animate({scrollTop: $($(this).attr("href")).offset().top -150+ "px"}, 1000);
+    return false;
+
+});

@@ -36,6 +36,9 @@
 .order-checkout-box tbody .remove-btn>a{
     color: #212529;
 }
+.box-center{
+    text-align: center;
+}
 .checkbox-msg-name p{
     margin-bottom: 0;
 }

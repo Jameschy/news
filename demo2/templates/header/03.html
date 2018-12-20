@@ -1,69 +1,133 @@
-<header class="header header-container container">
-    <div class="row">
-        <div class="col-4 header-left">
-            <span class="fa fa-bars"></span>
-            <span class="fa fa-search"></span>
-        </div>
-        <div class="col-4 header-center">
-            <img src="img/logo/logo (2).png" alt="Your Logo">
-        </div>
-        <div class="col-4 header-right">
-            <span class="fa fa-user-o"></span>
-            <span class="fa fa-shopping-cart"></span>
+<header class="header header-container container width-auto">
+    <div class="row header-tips-box">
+        <div class="headInfor" id="headInfor">
+            <ul class="tips-list-box">
+                <li>Extra $90 OFF Over $179!A</li>
+                <li>Extra $80 OFF Over $279!B</li>
+                <li>Extra $70 OFF Over $379!C</li>
+                <li>Extra $70 OFF Over $379!D Extra $70 OFF Over $379!D Extra $70 OFF Over $379!D</li>
+            </ul>
         </div>
     </div>
+    <div class="row header-main-box">
+        <div class="col-4 header-left">
+            <span class="fa fa-bars" id="bar-btn"></span>
+            <span class="fa fa-search" id="search-btn"></span>
+        </div>
+        <div class="col-4 header-center">
+            <a href="/index.html"><img src="img/logo/logo (2).png" alt="Your Logo"></a>
+        </div>
+        <div class="col-4 header-right">
+            <span class="fa fa-user-o" id="login-btn"></span>
+            <span class="fa fa-shopping-cart" id="cart-btn">
+                <i class="cart-total">12</i>
+            </span>
+        </div>
+    </div>
+    <div class="row header-search-box slide-box">
+        <div class="col-md-12">
+            <input type="text" placeholder="Search Your product"/>
+            <span class="search-product-btn">
+                <a href="###0"><i class="fa fa-search"></i></a>
+            </span>
+        </div>
+    </div>
+
+    <div class="row header-login-box slide-box">
+        <div class="col-md-12">
+            <li><a href="###Login">Login in</a></li>
+            <li><a href="###Login">Register</a></li>
+        </div>
+    </div>
+
 </header>
 
 
-<aside class="aside trl100">
+<aside class="aside">
     <ul class="menu-wrap">
+        <li class="currency-select-box">
+            <span class="">Currency:</span>
+            <select name="currency-select" id="currency-select" class="currency-select">
+                <option value="USD" selected>USD</option>
+                <option value="GBP">GBP</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+            </select>
+        </li>
         <li class="aside-title">MENU</li>
         <li>
             <ul class="menu-list-box">
                 <li>
-                    <a href="###">WOMENS <span class="fa fa-plus"></span></a>
+                    <a class="menu-list" href="###">WOMENS <span class="fa fa-plus"></span></a>
                     <ul class="menu-list-sbbox dis-no">
-                        <li>A</li>
-                        <li>B</li>
-                        <li>C</li>
+                        <li><a href="category.html">A</a></li>
+                        <li><a href="category.html">B</a></li>
+                        <li><a href="category.html">C</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="###">WOMENS <span class="fa fa-plus"></span></a>
+                    <a class="menu-list" href="###">WOMENS <span class="fa fa-plus"></span></a>
                     <ul class="menu-list-sbbox dis-no">
-                        <li>A</li>
-                        <li>B</li>
-                        <li>C</li>
+                        <li><a href="category.html">A</a></li>
+                        <li><a href="category.html">B</a></li>
+                        <li><a href="category.html">C</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="###">WOMENS <span class="fa fa-plus"></span></a>
+                    <a class="menu-list" href="###">WOMENS <span class="fa fa-plus"></span></a>
                     <ul class="menu-list-sbbox dis-no">
-                        <li>A</li>
-                        <li>B</li>
-                        <li>C</li>
+                        <li><a href="category.html">A</a></li>
+                        <li><a href="category.html">B</a></li>
+                        <li><a href="category.html">C</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="###">WOMENS <span class="fa fa-plus"></span></a>
+                    <a class="menu-list" href="###">WOMENS <span class="fa fa-plus"></span></a>
                     <ul class="menu-list-sbbox dis-no">
-                        <li>A</li>
-                        <li>B</li>
-                        <li>C</li>
+                        <li><a href="category.html">A</a></li>
+                        <li><a href="category.html">B</a></li>
+                        <li><a href="category.html">C</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="###">WOMENS</a>
+                    <a class="menu-list" href="###">WOMENS</a>
                 </li>
             </ul>
         </li>
     </ul>
- </aside>
+</aside>
 
 <div class="layer-mask"></div>
 
 <script type="text/javascript">
-    $()
+    $('#bar-btn').click(function () {
+        $('.layer-mask').addClass('dis-bk');
+        $('.aside').addClass('trl100');
+        document.documentElement.style.overflow = "hidden";
+    })
+    $('.layer-mask').click(function () {
+        $(this).removeClass('dis-bk');
+        $('.aside').removeClass('trl100');
+        document.documentElement.style.overflow = "scroll";
+    })
+    $('#search-btn').click(function () {
+        $('.header-login-box').css('display', 'none');
+        $('.header-search-box').slideToggle();
+    })
+
+    $('#login-btn').click(function () {
+        $('.header-search-box').css('display', 'none');
+        $('.header-login-box').slideToggle();
+    })
+    $('.menu-list-box li').click(function () {
+        $(this).children('.menu-list').children('.fa').toggleClass('fa-minus');
+        $(this).children('.menu-list-sbbox').slideToggle();
+    })
+    $(document).ready(function () {
+        SlideDirection(("#headInfor"), 2, 500, 5000);
+    })
+
+
 </script>
 
 <!--over-->

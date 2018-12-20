@@ -1,0 +1,72 @@
+/**
+ * Created by WebStorm.
+ * User: chig@foxmail.com
+ * Date: 2018/12/5 0005
+ * Time: 16:05
+ */
+
+/*@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800,900');*/
+footer{
+    /*height: 150px;*/
+    background: #333333;
+    width: 100%;
+    color: #333333;
+    /*text-align: center;*/
+
+    background-image: url(//cdn.shopify.com/s/files/1/0020/2496/4194/files/footer-bg_1920x.jpg?v=1533135262);
+    background-position: center center;
+    background-size: cover;
+}
+footer a{
+    /*font-family: 'Work Sans', sans-serif;*/
+    /*font-family: 'Bauhaus', sans-serif;*/
+    color: #333333;
+}
+footer a:focus,footer a:hover{
+    text-decoration: none;
+}
+
+.footer-title h6{
+    font-size: 12px;
+}
+.footer-content{
+    display: none;
+}
+.footer-content li{
+    list-style: none;
+}
+
+.footer-msg-block{
+    padding-top: 82px;
+    padding-bottom: 50px;
+
+}
+.footer-copyright-block {
+    text-align: center;
+    padding: 5px 0;
+
+    border-top: 1px solid rgba(0,0,0,0.15);
+}
+.footer-copyright-block p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.col-lg-12.col-sm-6.col-md-12{
+    text-align: right;
+}
+
+
+
+@media (max-width: 768px){
+    .footer-msg-block {
+        padding-top: 82px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .col-lg-12.col-sm-6.col-md-12{
+        text-align: center;
+    }
+    .footer-content ul{
+        padding-left: 0;
+    }
+}

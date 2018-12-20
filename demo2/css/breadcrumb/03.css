@@ -1,0 +1,25 @@
+/**
+ * Created by WebStorm.
+ * User: chig@foxmail.com
+ * Date: 2018/12/8 0008
+ * Time: 10:58
+ */
+#breadcrumb-box{
+    margin-top: 80px;
+}
+.breadcrumb{
+    padding: 0.35rem 1rem;
+    border-radius: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+}
+.breadcrumb-container{
+    padding: 15px 0;
+    margin: 0 auto;
+}
+.breadcrumb .breadcrumb-item{
+    font-size: 12px;
+}
+.breadcrumb-item a {
+    color: rgba(0,0,0,0.45);
+}

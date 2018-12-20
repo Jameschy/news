@@ -76,6 +76,9 @@
     font-size: 12px;
     margin: 0;
 }
+.info-msg-block{
+    padding: 0;
+}
 .product-info-sku{
     /*padding: 15px 0;*/
     padding-top:5px;
@@ -335,6 +338,8 @@ div#accordion {
 .info-share-box{
     padding-left: 0;
     text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ced4da;
 }
 .info-share-box li{
     line-height: 35px;
