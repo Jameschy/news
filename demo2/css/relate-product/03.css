@@ -4,6 +4,12 @@
  * Date: 2018/12/11 0011
  * Time: 12:00
  */
+
+@media (min-width: 1200px){
+    .relate-container .container{
+        max-width: 1640px;
+    }
+}
 .swiper-slide{
     position: relative;
     overflow: hidden;

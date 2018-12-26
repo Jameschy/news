@@ -4,6 +4,15 @@
  * Date: 2018/12/20 0020
  * Time: 16:54
  */
+#content-desc-box {
+    margin-bottom: 30px;
+}
+@media (min-width: 1200px){
+    .product-desc-container .container{
+        max-width: 1640px;
+    }
+}
+
 .product-desc-container .container{
     /*border-bottom: 1px solid #ced4da;*/
 }
@@ -40,12 +49,11 @@ input.review-ipt {
 }
 .submit-img img{
     display: inline-block;
-    width: 23.75%;
+    width: 23%;
 
 }
 .submit-img-btn{
     width: auto;
-
     display: inline-block;
     margin: 10px auto;
 }

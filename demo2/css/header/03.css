@@ -10,6 +10,7 @@ div#header-box{
     left: 0;
     right: 0;
     z-index: 100;
+    border-bottom: 1px solid #ced4da;
 }
 .header {
     width: 100%;
@@ -21,6 +22,12 @@ div#header-box{
     top: 0!important;
     position: relative;
 }
+.header a:focus,
+.header a:hover,
+.header a:active{
+    color: #333333;
+    text-decoration: none;
+}
 .header-center{
     text-align: center;
 }
@@ -29,12 +36,13 @@ div#header-box{
     max-width: 150px;
 }
 .header-right{
-    text-align: right;
+    text-align: center;
 }
 .header-left,
 .header-right{
     padding-top: 15px;
     padding-bottom: 15px;
+    line-height: 45px;
 }
 .header-center{
     padding: 5px 0;
@@ -48,6 +56,7 @@ div#header-box{
     padding: 5px;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 .header-right .cart-total{
     color: red;
@@ -58,28 +67,123 @@ div#header-box{
     top: 0;
     right: -5px;
 }
+
+.pc-nav-box ul{
+    padding:0 5px;
+}
+.pc-nav-box ul li{
+    list-style: none;
+    font-size: 18px;
+}
+.pc-nav-box .nav-list-box{
+    width: 100%;
+    margin-bottom: 0;
+
+}
+.nav-list-box .nav-list{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 30px;
+    padding: 5px 10px;
+    position: relative;
+    transform: all 300ms ease 0s;
+}
+.nav-toplist{
+    min-width: 65px;
+    line-height: 65px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #333333;
+    padding: 0 10px 0 0;
+}
+.nav-list .nav-sublist-box{
+    background-color: #ffffff;
+    color: #000000;
+    top: 100%;
+    width: 180px;
+    padding: 15px 20px;
+    position: absolute;
+    transform-origin: 0 0 0;
+    transform: scaleY(0);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 1px 5px 10px #333333;
+    transition: all 300ms ease 0s;
+}
+.nav-list:hover{
+    background-color: #333333;
+}
+.nav-list:hover .nav-toplist{
+    color: #ffffff;
+}
+.nav-list:hover .nav-sublist-box {
+    visibility: visible;
+    z-index: 100;
+    opacity: 1;
+    transform: scaleY(0.9);
+
+}
+/*.nav-list:hover .nav-sublist-box a{*/
+    /*color: #000000;*/
+    /*font-weight: 600;*/
+/*}*/
+
+.nav-sublist-box li{
+    padding: 10px 5px;
+}
+.nav-sublist-box li a{
+    text-transform: uppercase;
+    color: #333333;
+}
+.nav-sublist:hover a{
+    color: #000000;
+    font-weight: 600;
+}
+
+.currency-select{
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+
+@media (min-width: 767px) {
+    .pc-dis-no{
+        display: none!important;
+    }
+    .pc-dis-ib{
+        display: inline-block;
+    }
+    .header-right span{
+        font-size: 20px;
+    }
+}
+
 .header-search-box,
 .header-login-box{
     display:none;
-    background: #ffffff;
+    background:#0c1923;
     box-shadow: 1px 3px 6px rgba(169,169,169,.5);
 }
 .header-search-box .col-md-12,
-.header-login-box .col-md-12{
+.header-login-box .slide-subbox{
     padding: 15px;
     margin: 0 auto;
     text-align: center;
+    background:rgba(255, 255, 255, 0.25);
 }
-.header-login-box .col-md-12 li{
+.header-login-box .slide-subbox li{
     list-style: none;
+    display: inline-block;
     color: #333333;
 }
 .header-search-box .col-md-12 input{
     padding: 0 15px;
     height: 35px;
-    width: 75%;
+    min-width:252px;
+    width: auto;
     border: none;
-
+    border-radius: 0.25rem;
     border-bottom:1px solid #b2b2b2;
 }
 .header-search-box .col-md-12 .search-product-btn{
@@ -89,13 +193,17 @@ div#header-box{
 .header-search-box .col-md-12 input:focus{
     outline: none;
 }
+.header-login-box .slide-subbox li,
 .header-search-box .col-md-12 .search-product-btn a,
-.header-login-box .col-md-12 li a{
-    color: #333333;
+.header-login-box .slide-subbox li a{
+    color: #ffffff;
     text-transform: uppercase;
     padding: 5px 10px;
 }
-.header-login-box .col-md-12 li a{
+.header-search-box .col-md-12 .search-product-btn a{
+    color: #333333;
+}
+.header-login-box .slide-subbox li a{
     font-size: 12px;
 }
 
@@ -132,7 +240,9 @@ ul.tips-list-box li {
 }
 
 .header-main-box{
-    border-bottom: 1px solid #ced4da;
+    /*max-width: 1300px;*/
+    /*margin: 0 auto;*/
+
 }
 .aside{
     position: fixed;
@@ -244,6 +354,11 @@ ul.tips-list-box li {
     width: auto;
     max-width: initial;
 }
-@media (max-width: 768px) {
-
+@media (max-width: 767px) {
+    .mb-dis-no{
+        display: none!important;
+    }
+    .header-left, .header-right{
+         line-height: 0px;
+    }
 }

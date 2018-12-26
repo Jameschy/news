@@ -10,19 +10,76 @@
         </div>
     </div>
     <div class="row header-main-box">
-        <div class="col-4 header-left">
+        <div class="col-4 header-left pc-dis-no">
             <span class="fa fa-bars" id="bar-btn"></span>
             <span class="fa fa-search" id="search-btn"></span>
         </div>
-        <div class="col-4 header-center">
+        <div class="col-xl-1 col-md-2 col-4 header-center">
             <a href="/index.html"><img src="img/logo/logo (2).png" alt="Your Logo"></a>
         </div>
-        <div class="col-4 header-right">
+
+        <div class="col-xl-9 col-md-8 pc-nav-box mb-dis-no">
+            <ul class="nav-list-box">
+                <li class="nav-list">
+                    <a href="###" class="nav-toplist">Menu1Menu1Menu1</a>
+                    <ul class="nav-sublist-box">
+                        <li class="nav-sublist"><a href="###22">Womens</a></li>
+                        <li class="nav-sublist"><a href="###22">Womens</a></li>
+                        <li class="nav-sublist"><a href="###22">Womens</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list">
+                    <a href="###" class="nav-toplist">Menu2</a>
+                    <ul class="nav-sublist-box">
+                        <li class="nav-sublist"><a href="###22">Womens</a></li>
+                        <li class="nav-sublist"><a href="###22">Womens</a></li>
+                        <li class="nav-sublist"><a href="###22">Womens</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list">
+                    <a href="###" class="nav-toplist">Menu3</a>
+                    <ul class="nav-sublist-box">
+                        <li class="nav-sublist"><a href="###22">Womens</a></li>
+                        <li class="nav-sublist"><a href="###22">Womens</a></li>
+                        <li class="nav-sublist"><a href="###22">Womens</a></li>
+                    </ul>
+                </li>
+                <li class="nav-list">
+                    <a href="###" class="nav-toplist">Menu3</a>
+                </li>
+                <li class="nav-list">
+                    <a href="###" class="nav-toplist">Menu3</a>
+                </li>
+                <li class="nav-list">
+                    <a href="###" class="nav-toplist">Menu3</a>
+                </li>
+                <li class="nav-list">
+                    <a href="###" class="nav-toplist">Menu3</a>
+                </li>
+                <li class="nav-list">
+                    <a href="###" class="nav-toplist">Menu3</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xl-2 col-md-2 col-4 header-right">
+            <select class="currency-select mb-dis-no">
+                <option value="usd" selected>usd</option>
+                <option value="gbp" >gbp</option>
+                <option value="cad" >cad</option>
+                <option value="gbp" >gbp</option>
+                <option value="cad" >cad</option>
+                <option value="gbp" >gbp</option>
+                <option value="cad" >cad</option>
+                <option value="gbp" >gbp</option>
+                <option value="cad" >cad</option>
+            </select>
+            <span class="fa fa-search mb-dis-no" id="pc-search-btn"></span>
             <span class="fa fa-user-o" id="login-btn"></span>
             <span class="fa fa-shopping-cart" id="cart-btn">
                 <i class="cart-total">12</i>
             </span>
         </div>
+
     </div>
     <div class="row header-search-box slide-box">
         <div class="col-md-12">
@@ -34,8 +91,9 @@
     </div>
 
     <div class="row header-login-box slide-box">
-        <div class="col-md-12">
+        <div class="slide-subbox col-md-12 col-12">
             <li><a href="###Login">Login in</a></li>
+            <li>|</li>
             <li><a href="###Login">Register</a></li>
         </div>
     </div>
@@ -110,7 +168,7 @@
         $('.aside').removeClass('trl100');
         document.documentElement.style.overflow = "scroll";
     })
-    $('#search-btn').click(function () {
+    $('.fa-search').click(function () {
         $('.header-login-box').css('display', 'none');
         $('.header-search-box').slideToggle();
     })
@@ -124,7 +182,7 @@
         $(this).children('.menu-list-sbbox').slideToggle();
     })
     $(document).ready(function () {
-        SlideDirection(("#headInfor"), 2, 500, 5000);
+        SlideDirection(("#headInfor"), 4, 500, 5000);
     })
 
 
