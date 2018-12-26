@@ -323,6 +323,7 @@ div#accordion {
     display: inline-block;
     width: 23.5%;
     /*margin: 1%;*/
+    padding: 1%;
 }
 .card-body .row{
     margin: 10px auto;
@@ -332,6 +333,9 @@ div#accordion {
 .card-body .col-12{
     margin-bottom: 5px;
 }
+.card-body-img{
+    text-align: center;
+}
 .product-info-share{
     padding-top: 25px;
 }
@@ -339,7 +343,7 @@ div#accordion {
     padding-left: 0;
     text-align: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ced4da;
+    /*border-bottom: 1px solid #ced4da;*/
 }
 .info-share-box li{
     line-height: 35px;

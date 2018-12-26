@@ -35,6 +35,9 @@ input.review-ipt {
     border-radius: 3px;
     border: 1px solid rgba(0,0,0,.2);
 }
+.submit-img{
+    text-align: center;
+}
 .submit-img img{
     display: inline-block;
     width: 23.75%;
@@ -53,4 +56,7 @@ input.review-ipt {
     margin: 15px auto;
     padding: 5px 15px;
     background: -webkit-gradient(linear, left top, left bottom, from(#C8C8C8), to(#FFFFFF),to(#C8C8C8));
+}
+.fa-star,.fa-star-o,.fa-star-half-o{
+    color: #fb6426;
 }
