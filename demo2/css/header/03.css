@@ -147,7 +147,7 @@ div#header-box{
 }
 
 
-@media (min-width: 767px) {
+@media (min-width: 769px) {
     .pc-dis-no{
         display: none!important;
     }
@@ -354,11 +354,52 @@ ul.tips-list-box li {
     width: auto;
     max-width: initial;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .mb-dis-no{
         display: none!important;
     }
     .header-left, .header-right{
          line-height: 0px;
     }
+    .header-right{
+        text-align: right;
+    }
+}
+@media only screen and (width:1024px){
+    .nav-list-box .nav-list{
+        margin-right: 0px;
+        padding: 5px 6px;
+    }
+
+    .col-md-4{
+        max-width:18%;
+    }
+    .col-md-8{
+        max-width: 62%;
+        padding: 0;
+    }
+    .header-right span {
+        font-size: 18px;
+        margin-left: 0px;
+    }
+
+}
+@media only screen and (width:768px){
+    .nav-list-box .nav-list{
+        margin-right: 0px;
+        padding: 5px 5px;
+    }
+
+}
+
+div#banner-box{
+    margin-top: 100px;
+}
+
+@media (min-width: 1200px){
+    .classify-container .container,
+    .content-box .container{
+        max-width: 1640px;
+    }
+
 }

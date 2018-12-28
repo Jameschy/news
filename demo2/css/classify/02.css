@@ -1,0 +1,30 @@
+/**
+ * Created by WebStorm.
+ * User: chig@foxmail.com
+ * Date: 2018/12/27 0027
+ * Time: 16:40
+ */
+@media (min-width: 1200px){
+    .width-auto{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.classify-container{
+    margin: 15px auto;
+}
+.classify-container .container{
+    max-width: 100%;
+    width: 100%;
+}
+
+.classify-img {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+.classify-img img{
+    width: 100%;
+}

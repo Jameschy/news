@@ -68,3 +68,9 @@ input.review-ipt {
 .fa-star,.fa-star-o,.fa-star-half-o{
     color: #fb6426;
 }
+@media (min-width: 767px){
+    .submit-btn button{
+         width: auto;
+        cursor: pointer;
+    }
+}
