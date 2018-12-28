@@ -1,0 +1,318 @@
+/**
+ * Created by WebStorm.
+ * User: chig@foxmail.com
+ * Date: 2018/12/28 0028
+ * Time: 16:27
+ */
+html{
+    width: 100%;
+    height: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    min-width: 1200px;
+    background-color: #fff;
+}
+/*.container{*/
+    /*width: 100%;*/
+    /*max-width: 100%;*/
+/*}*/
+
+
+
+.out-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.auto-width{
+    width: 100%;
+    max-width: 100%;
+}
+.header {
+    width: 100%;
+    height: 80px;
+    display: block;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    z-index: 1;
+}
+.header .logo-warpper {
+    display: inline-block;
+    margin: 10px 0 0 20px;
+    font-size: 100%;
+}
+.logo-warpper .logo {
+    background: url(//s16a.tiktokcdn.com/aweme/resource/wap_home/static/image/tiktok_logo_0eeef60.png) no-repeat;
+    background-size: 3rem 3.3rem;
+    width: 4rem;
+    height: 3.5rem;
+    margin-left: 3.5rem;
+    position: absolute;
+    top: 1.3rem;
+}
+.header .nav-warpper {
+    font-family: sofiapro-regular;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -86.5px;
+}
+
+.header .nav-warpper a {
+    display: inline;
+    font-size: 16px;
+    color: #FFF;
+    opacity: .8;
+    margin: 0 12px;
+    font-weight: 400;
+}
+.header .nav-warpper a:active,
+.header .nav-warpper a:hover {
+    border-bottom: 2px solid #00f2ea;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.right-panel {
+    width: 100%;
+    background: url(//s16.tiktokcdn.com/musical/resource/mtact/static/tiktok/image/tiktok_bg_2.jpg) no-repeat 100%;
+    background-size: cover;
+    background-position: center;
+    height: 82%;
+    min-height: 550px;
+}
+.right-panel .content-box {
+    width: 580px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%,100%);
+    transform: translate(-50%,100%);
+}
+.right-panel .content-box .logo {
+    height: 70px;
+    margin: 20px 0;
+}
+.right-panel .content-header {
+    /*overflow: hidden;*/
+    width: auto;
+    text-align: center;
+}
+.right-panel .content-header-desc {
+    margin-right: 20px;
+    display: inline-block;
+}
+.right-panel .content-header-slogen {
+    text-align: left;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 0;
+    color: #FEFEFE;
+    letter-spacing: 2.59px;
+}
+.right-panel .content-footer {
+    margin-top: 20px;
+}
+
+.right-panel .content-footer .download-btn-group a {
+    height: 40px;
+    width: 140px;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    text-decoration: none;
+}
+
+.right-panel .content-footer .download-btn-group a img {
+    width: 125px;
+    position: relative;
+    bottom: -5px;
+    left: -4px;
+}
+footer {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+}
+footer>div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    font-family: sofiapro-regular;
+}
+footer  .infomation-group {
+    width: 65%;
+    padding: 5px 0 0 30px;
+    font-size: 12px;
+    background: #f63449;
+}
+
+footer .follow-language {
+    width: 35%;
+    padding-top: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    background: #00e5dd;
+    min-height: 180px;
+}
+footer .infomation-group ul {
+    overflow: hidden;
+    list-style: none;
+    margin: 20px 30px;
+    border-bottom: 1px solid #f98691;
+}
+
+footer .infomation-group ul li {
+    float: left;
+    width: 25%;
+    margin: 10px 0;
+}
+
+footer .infomation-group ul li h2 {
+    font-size: 14px;
+    margin: 0 auto 12px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: .5px;
+}
+footer .infomation-group ul li a {
+    display: block;
+    margin-bottom: 12px;
+    background: transparent;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+    color: #fff;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+    -webkit-font-smoothing: antialiased;
+}
+
+footer .infomation-group .info {
+    padding: 0 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+footer .infomation-group .info .language .language-wrap {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    margin: 0 12px;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+}
+footer .infomation-group .info .language .language-wrap .language-list {
+    position: absolute;
+    width: 60px;
+    left: -10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 10px #afa4a4;
+    overflow: hidden;
+    height: 0;
+    bottom: 23px;
+}
+footer .infomation-group .info .language .language-wrap .language-list .language-li {
+    color: #4a4a4a;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    display: block;
+}
+
+
+
+footer .follow-language .follow-us {
+    padding: 0 40px;
+    font-size: "sofiapro-regular";
+}
+footer .follow-language .follow-us span {
+    letter-spacing: 1.2px;
+}
+
+footer .follow-language .follow-us ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding-top: 20px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+footer .follow-language .follow-us ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+footer .follow-language .follow-us ul a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+footer .follow-language .follow-us ul .follow-img-1 {
+    background: url(//s16.tiktokcdn.com/musical/resource/mtact/static/tiktok/image/follow_ig.png) no-repeat center;
+    background-size: 35px 35px;
+}
+
+footer .follow-language .follow-us ul .follow-img-2 {
+    background: url(//s16.tiktokcdn.com/musical/resource/mtact/static/tiktok/image/follow_fb.png) no-repeat center;
+    background-size: 14px 30px;
+}
+footer .follow-language .follow-us ul .follow-img-3 {
+    background: url(//s16.tiktokcdn.com/musical/resource/mtact/static/tiktok/image/follow_tt.png) no-repeat center;
+    background-size: 33px 26px;
+}
+footer .follow-language .follow-us ul .follow-img-4 {
+    background: url(//s16.tiktokcdn.com/musical/resource/mtact/static/tiktok/image/follow_ytb.png) no-repeat center;
+    background-size: 40px 27px;
+}
+
+
+.pc-dis-no{
+    display: none!important;
+}
+@media (min-width: 768px) {
+    .pc-dis-no{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    html, body {
+        max-width: 100%;
+        min-width: auto;
+        width: 100%;
+        font-size: 52px;
+    }
+
+    .right-panel {
+        background: url(//s16.tiktokcdn.com/aweme/resource/wap_home/static/image/en_bg_55dcf13.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 41rem;
+        font-family: sofiapro-regular-mini;
+        position: relative;
+    }
+}
+
