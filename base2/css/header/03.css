@@ -40,6 +40,7 @@ div#header-box{
 }
 .header-left,
 .header-right{
+    padding: 0;
     padding-top: 15px;
     padding-bottom: 15px;
     line-height: 45px;
@@ -83,7 +84,7 @@ div#header-box{
 .nav-list-box .nav-list{
     display: inline-block;
     vertical-align: top;
-    margin-right: 30px;
+    margin-right: 20px;
     padding: 5px 10px;
     position: relative;
     transform: all 300ms ease 0s;
@@ -162,7 +163,7 @@ div#header-box{
 .header-search-box,
 .header-login-box{
     display:none;
-    background:#0c1923;
+    /*background:#0c1923;*/
     box-shadow: 1px 3px 6px rgba(169,169,169,.5);
 }
 .header-search-box .col-md-12,
@@ -196,7 +197,7 @@ div#header-box{
 .header-login-box .slide-subbox li,
 .header-search-box .col-md-12 .search-product-btn a,
 .header-login-box .slide-subbox li a{
-    color: #ffffff;
+    /*color: #ffffff;*/
     text-transform: uppercase;
     padding: 5px 10px;
 }

@@ -97,7 +97,7 @@ padding: 18px 0;
 line-height: 20px;
 height: 75px;
 width: 75px;
-font-size: 14px;
+font-size: 18px;
 background: #ff7e00;
 color: #fff;
 border-radius: 50%;
@@ -192,5 +192,18 @@ border-radius: 50%;
 
     .button {
         padding: 0.45em .32em .5em;
+    }
+    .product-list p{
+        font-size: 12px;
+    }
+
+    .product-list .product-list-percent{
+        height: 45px;
+        width: 45px;
+        top: 5px;
+        right: 5px;
+        font-size: 13px;
+        line-height: 18px;
+        padding: 8px 0;
     }
 }

@@ -359,6 +359,9 @@ div#accordion {
 #collapseThree .card-body p{
     margin-bottom: 0;
 }
+#collapseThree .card-body p img{
+    width: 100%;
+}
 .product-info-share{
     padding-top: 25px;
 }

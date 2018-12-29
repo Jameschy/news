@@ -1,0 +1,114 @@
+<div class="product-list-box container">
+    <!--Select box A-->
+    <div class="row select-box">
+        <div class="col-lg-2 col-6 input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Price</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">Lower</option>
+                <option value="2">Middle</option>
+                <option value="3">Higher</option>
+            </select>
+        </div>
+        <div class="col-lg-2 col-6 input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect02">Sales</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect02">
+                <option selected>Choose...</option>
+                <option value="1">Best</option>
+                <option value="2">More</option>
+                <option value="3">Less</option>
+            </select>
+        </div>
+    </div>
+    <!--Select box Z-->
+
+    <!--The list-Main A-->
+    <ul class="row product-ul">
+        <!--<li class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6 product-list">-->
+        <!--<a href="####"><img src="img/product/cw.jpg" alt=""></a>-->
+        <!--<h4>$<span>3799.00</span></h4>-->
+        <!--<p>LEATHER JACKETS for WOMAN</p>-->
+        <!--<a href="######/demo/fly/#" class="button orange addcar">Add To Cart</a>-->
+        <!--</li>-->
+    </ul>
+    <!--The list-Main Z-->
+
+    <!--navigation A-->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!--navigation Z-->
+</div>
+<script src="js/jquery.lazyload.js"></script>
+<script type="text/javascript">
+    var i;
+    // var arrImg = ['lg', 'ls', 'cw', 'hs'];
+    var arrImg = ['512', '02182', '3412', '4818','5426'];
+    var index;
+    var srcImg;
+    for (i = 0; i < 160; i++) {
+        index = Math.floor((Math.random() * arrImg.length));
+        srcImg = arrImg[index];
+        $(".product-list-box .product-ul").append("<li class='col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 product-list'>" +
+            "<div class='product-list-container'>" +
+            "<a href='detail.html'>" +
+            "<img class='product-list-img lazy' data-original='img/product/T20856_" + srcImg + "_main.jpg'/></a>" +
+            "<h4 class='product-list-price'>$<span class='special-price'>99.00</span>$<span class='origin-price'>799.00</span></h4>" +
+            "<span class='product-list-percent clipped'>80% <br/>OFF</span>" +
+            "<p class='product-list-title'>" + (i + 1) + "LEATHER JACKETS for WOMAN</p>" +
+            "<a href='###' class='button orange addcar'>Add To Cart</a>" +
+            "<p class='product-list-star'><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span></p>" +
+            "</div>" +
+            "</li>")
+    }
+</script>
+
+<script type="text/javascript">
+    // $(function() {
+    //     $("img.lazy").lazyload(
+    //         {
+    //             event : "click",
+    //             effect: "fadeIn",
+    //             threshold : 0,
+    //             placeholder : "img/product/noimage.jpg"
+    //         },
+    //         // {placeholder : "img/product/noimage.jpg"}
+    //         );
+    // });
+
+    $(function() {
+        $("img.lazy").lazyload({
+            // event : "sporty",
+            // threshold : 10,
+            placeholder : "img/product/noimage.jpg"
+        });
+    });
+
+    // $(window).bind("load", function() {
+    //     var timeout = setTimeout(function() {
+    //         $("img.lazy").trigger("sporty")
+    //     }, 5000);
+    // });
+</script>
