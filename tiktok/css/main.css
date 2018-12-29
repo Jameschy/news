@@ -523,7 +523,6 @@ footer .follow-language .follow-us ul .follow-img-4 {
         display: none;
     }
 
-
     .right-panel .content-header-desc {
         margin-right: 0px;
         padding: 1rem;
@@ -640,7 +639,11 @@ footer .follow-language .follow-us ul .follow-img-4 {
     }
 
 }
-
+@media only screen and (width: 768px){
+    .right-panel .content-footer{
+        margin-top: 5rem;
+    }
+}
 @media only screen and (width: 1024px) {
     .right-panel {
         width: 100%;
@@ -649,6 +652,9 @@ footer .follow-language .follow-us ul .follow-img-4 {
         background-position: center;
         height: 100%;
         min-height: 550px;
+    }
+    .right-panel .content-footer{
+        margin-top: 20rem;
     }
 }
 .la-dis{
