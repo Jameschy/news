@@ -53,3 +53,5 @@ $("a").click(function () {
     return false;
 
 });
+
+galleryThumbs.lazy.load();

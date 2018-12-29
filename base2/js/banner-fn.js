@@ -6,7 +6,7 @@ var swiper1 = new Swiper('#content .swiper-container',{
     loop: true,
     autoplay: 500,
     lazy: {
-        // loadPrevNext: true,
+        loadPrevNext: true,
     },
     // effect: 'fade',
     // effect : 'coverflow',
@@ -75,4 +75,6 @@ homeResize();
 
 $(window).resize(function() {
     homeResize();
+
 });
+swiper1.lazy.load();
