@@ -37,6 +37,7 @@ body {
     position: relative;
     min-width: 1200px;
     background-color: #fff;
+    font-weight: 800;
 }
 
 /*.container{*/
@@ -143,7 +144,7 @@ div[role="document"] {
     color: #FFF;
     opacity: .8;
     margin: 0 12px;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 .header .nav-warpper a:active,
@@ -244,7 +245,7 @@ footer .infomation-group {
 footer .follow-language {
     width: 35%;
     padding-top: 30px;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 14px;
     background: #00e5dd;
     min-height: 180px;
@@ -266,7 +267,7 @@ footer .infomation-group ul li {
 footer .infomation-group ul li h2 {
     font-size: 14px;
     margin: 0 auto 12px;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 15px;
     letter-spacing: .5px;
 }
@@ -413,6 +414,11 @@ footer .follow-us ul .follow-img-4 {
         height: auto !important;
     }
 
+    footer{
+        position: fixed;
+        bottom: 0;
+
+    }
     footer .info {
         padding: 0 15px;
         margin-top: 0;
@@ -443,6 +449,7 @@ footer .follow-us ul .follow-img-4 {
 
     body {
         background: rgb(0, 229, 221);
+        background: #f63449;
         font-family: sofiapro-regular-mini, -apple-system, sans-serif;
         color: #fff;
     }
@@ -578,7 +585,7 @@ footer .follow-us ul .follow-img-4 {
         line-height: 4.5rem;
         margin: 2rem 0 0 3rem;
         color: #fff;
-        font-weight: 500;
+        font-weight: 800;
         opacity: 1;
     }
 
@@ -587,15 +594,16 @@ footer .follow-us ul .follow-img-4 {
         /*background-size: cover;*/
         /*background-position: center;*/
         background: none;
-        height: 55rem;
+        height: 53.5rem;
         font-family: sofiapro-regular-mini;
         position: relative;
+        min-height: auto;
     }
 
     .right-panel .content-box {
         text-align: center;
         position: absolute;
-        top: 8.5rem;
+        top: 14.5rem;
         width: 100%;
     }
 
@@ -613,21 +621,23 @@ footer .follow-us ul .follow-img-4 {
         text-align: center;
         color: #fff;
         padding: 0rem 3rem;
-        font-weight: 500;
+        font-weight: 800;
     }
 
     .footer > div {
         display: block;
         font-family: sofiapro-regular;
     }
-    footer .follow-us>p{
+    footer .follow-us p{
         width: 100%;
-        padding:0 15px;
+        padding:0px;
         margin: 0;
-        margin-top: 10px;
+        margin-top: 0px;
         text-align: center;
     }
-
+    footer .follow-us>p{
+        margin-top: 10px;
+    }
     footer .follow-us ul,
     footer .infomation-group ul {
         display: block;
@@ -646,7 +656,7 @@ footer .follow-us ul .follow-img-4 {
     }
 
     footer .follow-language {
-        padding-top: 10px;
+        padding-top: 0px;
         min-height: auto;
     }
 
@@ -684,7 +694,9 @@ footer .follow-us ul .follow-img-4 {
     .info-group4 a {
         margin-bottom: 0 !important;
     }
-
+    footer .follow-language{
+        font-size: 12px;
+    }
     footer .follow-language .follow-us ul {
         text-align: center;
     }
@@ -702,11 +714,13 @@ footer .follow-us ul .follow-img-4 {
         height: 25px;
     }
 
-    footer .follow-language .follow-us ul li {
-        width: 45%;
-        display: inline-block;
-    }
 
+    footer .follow-us ul li{
+        margin: 0px auto;
+    }
+    footer .infomation-group ul li a{
+        margin: 5px auto;
+    }
     footer .follow-us ul li .follow-img-1 {
         /*background: url(../img/follow_ig.png) no-repeat center;*/
         background-size: 25px 25px;
@@ -729,11 +743,32 @@ footer .follow-us ul .follow-img-4 {
         font-size: 1.5rem;
     }
 
+    .info p{
+        margin-bottom: 0;
+    }
+    footer .info .language .language-wrap{
+        margin-bottom: 0;
+        padding-bottom:0;
+    }
 }
 @media only screen and (width: 320px) {
     .right-panel{
         height: 47.5rem;
     }
+
+    .right-panel .content-box{
+        top: 0.5rem;
+    }
+}
+
+@media only screen and (width: 375px) {
+    footer .follow-us ul{
+        padding-top: 0;
+        margin: 30px 15px;
+    }
+    /*.right-panel .content-box{*/
+        /*top: 8.5rem;*/
+    /*}*/
 }
 @media only screen and (width: 768px) {
     .right-panel .content-footer {
@@ -745,16 +780,17 @@ footer .follow-us ul .follow-img-4 {
     }
 
     .right-panel .content-box {
-        top: 8.5rem;
+        top: 20.5rem;
     }
 
     #my-player_html5_api {
-        width: 414px;
+        width: 490px;
         /* margin: 0 auto; */
     }
     footer .follow-us ul {
         padding-top: 0;
-        margin: 60px 15px;
+        margin: 20px 15px;
+        padding: 20px 0;
     }
 }
 
