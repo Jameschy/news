@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='ie=edge,chrome=1' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, userscalable=no, viewport-fit=cover'
+    />
+    <meta name='renderer' content='webkit' />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta name='apple-touch-fullscreen' content='yes' />
+    <meta name='mobile-web-app-capable' content='yes' />
+    <meta name='x5-fullscreen' content='true' />
+    <meta name='apple-mobile-web-app-status-bar-style' content='#4F29FE' />
+    <meta name='theme-color' content='#4F29FE' />
+    <script type="text/javascript" src="home-assets/lib/jquery-2.1.0.min.js" ></script>
+    <!--[if lte IE 9]>
+    <script src="home-assets/lib/html5shiv.min.js" tppabs="http://www.influencechain.org/home-assets/lib/html5shiv.min.js"></script>
+    <script src="home-assets/lib/IE9.js" tppabs="http://www.influencechain.org/home-assets/lib/IE9.js"></script>
+    <script src="home-assets/lib/es5-sham.min.js" tppabs="http://www.influencechain.org/home-assets/lib/es5-sham.min.js"></script>
+    <script src="home-assets/lib/es5-shim.min.js" tppabs="http://www.influencechain.org/home-assets/lib/es5-shim.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        //切换视频
+        function changeVideo(type){
+            var div_01 = $("#div_01")[0];
+            var div_02 = $("#div_02")[0];
+            if(type == 1){
+                div_01.style = "display:block";
+                div_02.style = "display:none";
+                //如果video_02正在播放，切换时则暂停2视频
+                if (!video_02.paused){
+                    video_02.pause();
+                }
+                if(video_01.paused){
+                    video_01.play();
+                }
+            }else{
+                div_01.style = "display:none";
+                div_02.style = "display:block";
+                //如果video_01正在播放，切换时则暂停2视频
+                if (!video_01.paused){
+                    video_01.pause();
+                }
+                //如果video_02未播放，切换时则播放1视频
+                if(video_02.paused){
+                    video_02.play();
+                }
+            }
+        };
+    </script>
+</head>
+<body>
+<div style="color:#FFF;font-size: 18px;">
+    <input type="submit" value="视频一" onClick="changeVideo(1)"/>
+    <input type="submit" value="视频二" onClick="changeVideo(2)"/>
+</div>
+<div  class='video-container'>
+    <div id="div_01">
+        <video id="video_01" src="home-assets/img/video/fba.mp4" controls="controls">
+            your browser does not support the video tag
+        </video>
+    </div>
+    <div id="div_02" style="display:none;">
+        <video id="video_02"  src="home-assets/img/video/fba_2.mp4" controls="controls">
+            your browser does not support the video tag
+        </video>
+    </div>
+</div>
+</body>
+
+</html>

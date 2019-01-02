@@ -61,6 +61,12 @@
 
     <!--navigation Z-->
 </div>
+
+<div class="fix-cart">
+    <span class="cart-amount"><i class="fa fa-cart-plus fly-end" id="flyEnd"></i></span>
+</div>
+
+<script type="text/javascript" src="js/jquery.fly.min.js"></script>
 <script type="text/javascript">
     var i;
     // var arrImg = ['lg', 'ls', 'cw', 'hs'];
@@ -72,14 +78,38 @@
         srcImg = arrImg[index];
         $(".product-list-box .product-ul").append("<li class='col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 product-list'>" +
             "<div class='product-list-container'>" +
-            "<a href='detail.html'>" +
+            "<a href='detail.html' class='product-list-link'>" +
             "<img class='product-list-img' src='img/product/T20856_" + srcImg + "_main.jpg'/></a>" +
             "<h4 class='product-list-price'>$<span class='special-price'>99.00</span>$<span class='origin-price'>799.00</span></h4>" +
             "<span class='product-list-percent clipped'>80% <br/>OFF</span>" +
             "<p class='product-list-title'>" + (i + 1) + "LEATHER JACKETS for WOMAN</p>" +
-            "<a href='###' class='button orange addcar'>Add To Cart</a>" +
+            "<a href='###' class='button orange addcart'>Add To Cart</a>" +
             "<p class='product-list-star'><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span></p>" +
             "</div>" +
             "</li>")
     }
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        var offset = $("#flyEnd").offset();
+        $(".button.addcart").click(function(event) {
+            var img = $(this).siblings('product-list-link').children('product-list-img').attr('src'); //获取当前点击图片链接
+            var flyer = $('<img class="flyer-img" src="' + img + '">'); //抛物体对象
+            flyer.fly({
+                start: {
+                    left: event.pageX,//抛物体起点横坐标
+                    top: event.pageY //抛物体起点纵坐标
+                },
+                end: {
+                    left: offset.left + 10,//抛物体终点横坐标
+                    top: offset.top + 10, //抛物体终点纵坐标
+                },
+                onEnd: function() {
+                    $("#tip").show().animate({width: '200px'},300).fadeOut(500);////成功加入购物车动画效果
+                    this.destory(); //销毁抛物体
+                }
+            });
+        });
+    });
 </script>

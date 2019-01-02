@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>庭审直播</title>
+    <!--<link rel="stylesheet" href="css/base.css">-->
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <!--<script type="text/javascript" src="js/main.js"></script>-->
+    <script src="js/vue.js"></script>
+    <!--<link rel="stylesheet" href="js/iview/dist/styles/iview.css">-->
+    <!--<script src="js/iview/dist/iview.min.js"></script>-->
+    <!--引入播放器样式-->
+    <!--<link href="js/videojs/css/video-js.min.css" rel="stylesheet">-->
+    <!--引入播放器js-->
+    <!--<script src="js/videojs/js/video.min.js"></script>-->
+    <!--<script src="js/videojs/js/videojs-flash.min.js"></script>-->
+    <script src="//vjs.zencdn.net/5.19/video.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
+    <![endif]-->
+    <style type="text/css">
+        .video-js {
+            /*  position: inherit !important; */
+        }
+        .video{
+            width:50%;
+            padding:0px !important;
+            float:left;
+        }
+        .video-div{
+            float:left;
+            width:45%;
+            margin-left: 35px;
+            background:#3e3b3b00;
+        }
+        .dp-center{
+            background: #403f3f;
+        }
+        .video-list{
+            margin: 5px 10px 10px 10px;
+            padding: 5px 0px;
+            max-height: 330px;
+            list-style: none;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+        }
+        .video-list li {
+            float: left;
+            margin: 0;
+            padding-left:15px;
+            width: 175px;
+            height: 140px;
+        }
+        .text_align_center{
+            text-align:center;
+            color:#fff;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div id="app" class="dp-item dp-item-3">
+    <div class="video">
+        <video id="my-player" class="video-js vjs-default-skin vjs-big-play-centered"  autoplay="autoplay">
+            <!-- <source src="rtmp://live.hkstv.hk.lxdns.com/live/hks" type="rtmp/flv">   -->
+        </video>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // 设置flash路径,用于在videojs发现浏览器不支持HTML5播放器的时候自动唤起flash播放器
+    videojs.options.flash.swf = 'js/videojs/swf/video-js.swf';
+
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            visible: false,
+            listItem:[
+                {isplay:true, type:"video/mp4", url: "../tiktok/img/home-bg1.mp4"},
+                {isplay:true, type:"video/mp4", url: "../tiktok/img/home-bg2.mp4"},
+                {isplay:true, type:"video/mp4", url: "../tiktok/img/home-bg3.mp4"}
+            ]
+        },
+        // mounted:function(){
+        //     this.show();
+        // },
+        // filters: {
+        //     formatDate: function (value) {
+        //         let date = new Date(value);
+        //         let y = date.getFullYear();
+        //         let MM = date.getMonth() + 1;
+        //         MM = MM < 10 ? ('0' + MM) : MM;
+        //         let d = date.getDate();
+        //         d = d < 10 ? ('0' + d) : d;
+        //         let h = date.getHours();
+        //         h = h < 10 ? ('0' + h) : h;
+        //         let m = date.getMinutes();
+        //         m = m < 10 ? ('0' + m) : m;
+        //         let s = date.getSeconds();
+        //         s = s < 10 ? ('0' + s) : s;
+        //         return y + '-' + MM + '-' + d + ' ' + h + ':' + m + ':' + s;
+        //     }
+        // },
+        // methods: {
+        //     show: function () {
+        //         this.visible = true;
+        //     }
+        // }
+    });
+
+
+    var list = vm.listItem;
+    var i = 0;
+
+    function display() {
+
+        var source = document.getElementById("video-source");
+        var player = videojs("my-player", {
+                "autoplay": true,
+                "sources": [{
+                    src: list[i].url,
+                    type: list[i].type
+                }],
+
+            },
+            function () {
+                this.on('loadeddata', function () {
+                    this.play();
+                })
+                this.on('ended', function () {
+                    i++;
+                    if (i >= list.length) {
+                        i = 0;
+                    }
+                    var videoObj = list[i];
+                    this.src({type: videoObj.type, src: videoObj.url});
+                    this.play();
+                })
+
+            });
+    }
+
+</script>
+</body>
+</html>

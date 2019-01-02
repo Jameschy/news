@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<script src="../js/jquery-1.11.1.min.js"></script>-->
+    <script src="../base2/js/jquery-3.3.1.js"></script>
+    <script src="../base2/js/jquery.fly.min.js"></script>
+    <style>
+        .circle {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: red;
+            border-radius: 50%;
+            top: 25%;
+        }
+
+        .end {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: blue;
+            border-radius: 50%;
+            top: 25%;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+<div class="circle"></div>
+<div class="circle" style="left:10%;"></div>
+<div class="end"></div>
+</body>
+<script type="text/javascript">
+    var offset = $('.end').offset();
+    $('.circle').click(function (event) {
+        var thisItem = $(this);
+        var flyer = thisItem.clone();
+        flyer.fly({
+            start: {
+                left: event.pageX,
+                top: event.pageY
+            },
+            end: {
+                left: offset.left + 10,
+                top: offset.top + 10,
+                width: 0,
+                height: 0
+            },
+            onEnd: function () {
+                $('.end').css({
+                    background: 'red'
+                });
+                setTimeout(function () {
+                    $('.end').css({
+                        background: 'blue'
+                    });
+                }, 200);
+                this.destory();
+            }
+        });
+    });
+
+</script>
+</html>

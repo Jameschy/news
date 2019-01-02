@@ -175,6 +175,22 @@ border-radius: 50%;
     min-width: 320px;
 }
 
+.fix-cart{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    background: #000000;
+    color: #ffffff;
+    text-align: center;
+    /*vertical-align: center;*/
+}
+.fix-cart .cart-amount{
+    display: inline-block;
+    margin-top: 250px;
+}
+
 @media (max-width: 768px) {
     .product-list {
         padding: 5px;
