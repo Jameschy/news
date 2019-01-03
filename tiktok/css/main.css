@@ -603,7 +603,7 @@ footer .follow-us ul .follow-img-4 {
     .right-panel .content-box {
         text-align: center;
         position: absolute;
-        top: 14.5rem;
+        top: 8.5rem;
         width: 100%;
     }
 
@@ -764,7 +764,10 @@ footer .follow-us ul .follow-img-4 {
 @media only screen and (width: 375px) {
     footer .follow-us ul{
         padding-top: 0;
-        margin: 30px 15px;
+        margin: 12px 15px;
+    }
+    footer .info{
+        padding:25px 15px;
     }
     /*.right-panel .content-box{*/
         /*top: 8.5rem;*/
