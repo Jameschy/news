@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ckplayer</title>
+    <script type="text/javascript" src="ckplayer/ckplayer.js" charset="UTF-8"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0px;
+            font-family: "Microsoft YaHei", YaHei, "微软雅黑", SimHei, "黑体";
+            font-size: 14px
+        }
+
+        .video-box {
+            width: 100%;
+
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #video {
+            width: 100% !important;
+            max-width: 27rem !important;
+            height: 48rem !important;
+            margin: 0 auto;
+        }
+
+        .videourl {
+            min-width: 250px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="video-box">
+    <div id="video"></div>
+    <script type="text/javascript" src="ckplayer/js/fn.js"></script>
+    <p>
+        <input type="text" class="videourl" placeholder="视频地址"
+               value="">
+
+        <button type="button" onclick="newVideo()">播放</button>
+    </p>
+    <!--<p>-->
+    <!--<input type="text" class="videourl2" style="width: 500px;" placeholder="视频地址" value="http://img.ksbbs.com/asset/Mon_1703/d30e02a5626c066.mp4">-->
+
+    <!--<button type="button" onclick="newVideo2()">播放</button>-->
+
+    <!--</p>-->
+</div>
+</body>
+
+</html>
