@@ -244,7 +244,7 @@ ul.tips-list-box li {
     /*max-width: 1300px;*/
     /*margin: 0 auto;*/
     padding: 0 15px;
-
+    box-shadow: 1px 1px 10px rgba(0,0,0,.2);
 }
 .aside{
     position: fixed;
@@ -373,10 +373,10 @@ ul.tips-list-box li {
         padding: 5px 6px;
     }
 
-    .col-md-4{
+    header .col-md-4{
         max-width:18%;
     }
-    .col-md-8{
+    header .col-md-8{
         max-width: 62%;
         padding: 0;
     }

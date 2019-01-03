@@ -6,6 +6,10 @@
  */
 #breadcrumb-box{
     margin-top: 90px;
+    /*background-image: url("../../img/banner/1.jpg");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .breadcrumb-container{
     padding: 15px 0;

@@ -1,4 +1,9 @@
 <div class="product-list-box container">
+
+    <div class="row product-box-title">
+        <p>Featured Products</p>
+    </div>
+
     <!--Select box A-->
     <div class="row select-box">
         <div class="col-lg-2 col-6 input-group mb-3">
@@ -25,6 +30,8 @@
         </div>
     </div>
     <!--Select box Z-->
+
+
 
     <!--The list-Main A-->
     <ul class="row product-ul">
@@ -61,56 +68,73 @@
 
     <!--navigation Z-->
 </div>
-
-<div class="fix-cart">
-    <span class="cart-amount"><i class="fa fa-cart-plus fly-end" id="flyEnd"></i></span>
-</div>
-
-<script type="text/javascript" src="js/jquery.fly.min.js"></script>
+<script src="js/jquery.lazyload.js"></script>
 <script type="text/javascript">
     var i;
     // var arrImg = ['lg', 'ls', 'cw', 'hs'];
     var arrImg = ['512', '02182', '3412', '4818','5426'];
     var index;
     var srcImg;
-    for (i = 0; i < 16; i++) {
+    for (i = 0; i < 30; i++) {
         index = Math.floor((Math.random() * arrImg.length));
         srcImg = arrImg[index];
         $(".product-list-box .product-ul").append("<li class='col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6 product-list'>" +
             "<div class='product-list-container'>" +
-            "<a href='detail.html' class='product-list-link'>" +
-            "<img class='product-list-img' src='img/product/T20856_" + srcImg + "_main.jpg'/></a>" +
-            "<h4 class='product-list-price'>$<span class='special-price'>99.00</span>$<span class='origin-price'>799.00</span></h4>" +
-            "<span class='product-list-percent clipped'>80% <br/>OFF</span>" +
+            "<a href='detail.html' title='LEATHER JACKETS for WOMAN'>" +
+            "<img class='product-list-img lazy' data-original='img/product/T20856_" + srcImg + "_main.jpg'/></a>" +
             "<p class='product-list-title'>" + (i + 1) + "LEATHER JACKETS for WOMAN</p>" +
-            "<a href='###' class='button orange addcart'>Add To Cart</a>" +
-            "<p class='product-list-star'><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span><span class='fa fa-star'></span></p>" +
+            "<div class='list-left-msg half-block'>"+
+            "<p class='product-list-star'>" +
+            "<span class='star-box'>" +
+            "<i class='fa fa-star'></i>" +
+            "<i class='fa fa-star'></i>" +
+            "<i class='fa fa-star'></i>" +
+            "<i class='fa fa-star'></i>" +
+            "<i class='fa fa-star'></i>" +
+            "</span>"+
+            "<span class='star-count'>(12)</span>" +
+            "</p>" +
+            "<h4 class='product-list-price'>" +
+            "$<span class='special-price'>99.00</span>" +
+            "$<span class='origin-price'>799.00</span>" +
+            "</h4>" +
+            "</div>"+
+            "<div class='list-right-msg half-block'>"+
+            "<a href='###' class='to-cart fa-icons' title='add to cart'><i class='fa fa-cart-plus'></i></a>" +
+            "<a href='###' class='to-detail fa-icons' title='view of product'><i class='fa fa-link'></i></a>" +
+            "</div>"+
+            "<span class='product-list-percent'><i>80%</i></span>" +
             "</div>" +
             "</li>")
     }
 </script>
 
 <script type="text/javascript">
+    // $(function() {
+    //     $("img.lazy").lazyload(
+    //         {
+    //             event : "click",
+    //             effect: "fadeIn",
+    //             threshold : 0,
+    //             placeholder : "img/product/noimage.jpg"
+    //         },
+    //         // {placeholder : "img/product/noimage.jpg"}
+    //         );
+    // });
+
     $(function() {
-        var offset = $("#flyEnd").offset();
-        $(".button.addcart").click(function(event) {
-            var img = $(this).siblings('product-list-link').children('product-list-img').attr('src'); //获取当前点击图片链接
-            // var img = 'img/product/T20856_3412_main.jpg'
-            var flyer = $('<img class="flyer-img" src="' + img + '">'); //抛物体对象
-            flyer.fly({
-                start: {
-                    left: event.pageX,//抛物体起点横坐标
-                    top: event.pageY //抛物体起点纵坐标
-                },
-                end: {
-                    left: offset.left + 10,//抛物体终点横坐标
-                    top: offset.top + 10, //抛物体终点纵坐标
-                },
-                onEnd: function() {
-                    $("#tip").show().animate({width: '200px'},300).fadeOut(500);////成功加入购物车动画效果
-                    this.destory(); //销毁抛物体
-                }
-            });
+        $("img.lazy").lazyload({
+            // event : "sporty",
+            // threshold : 10,
+            effect: "fadeIn",
+            threshold: 200,
+            placeholder : "img/product/noimage.jpg"
         });
     });
+
+    // $(window).bind("load", function() {
+    //     var timeout = setTimeout(function() {
+    //         $("img.lazy").trigger("sporty")
+    //     }, 5000);
+    // });
 </script>

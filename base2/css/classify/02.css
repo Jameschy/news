@@ -28,3 +28,12 @@
 .classify-img img{
     width: 100%;
 }
+
+@media (max-width: 767px){
+    .classify-subbox{
+        padding:0;
+    }
+    .classify-img{
+        margin-bottom: 5px;
+    }
+}

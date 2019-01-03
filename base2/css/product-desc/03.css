@@ -73,4 +73,7 @@ input.review-ipt {
          width: auto;
         cursor: pointer;
     }
+    .submit-img img{
+        width: 10%;
+    }
 }

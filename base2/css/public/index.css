@@ -87,6 +87,29 @@ a{
     z-index: 20;
 }
 
+.cd-top.cd-is-visible{
+    visibility: visible;
+    opacity: 1;
+}
+.cd-top {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: rgba(232, 98, 86, 0.8) url(http://www.17sucai.com/preview/1/2015-03-17/%E5%93%8D%E5%BA%94%E5%BC%8F%E8%BF%94%E5%9B%9E%E9%A1%B6%E9%83%A8%E4%BB%A3%E7%A0%81/images/cd-top-arrow.svg) no-repeat center 50%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
 @media screen and (max-width: 768px) {
     .wid-15 {
         width: 75%;
