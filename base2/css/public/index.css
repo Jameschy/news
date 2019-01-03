@@ -90,6 +90,7 @@ a{
 .cd-top.cd-is-visible{
     visibility: visible;
     opacity: 1;
+    z-index: 99;
 }
 .cd-top {
     display: inline-block;
