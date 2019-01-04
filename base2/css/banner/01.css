@@ -2,7 +2,7 @@
 .swiper-container .swiper-slide {
     position: relative;
     overflow: hidden;
-    min-height: 900px;
+    min-height: 500px;
 }
 
 .homepage-left100 {

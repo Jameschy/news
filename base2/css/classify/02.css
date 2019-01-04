@@ -25,6 +25,7 @@
     overflow: hidden;
     position: relative;
     margin-bottom: 15px;
+    text-align: center;
 }
 .classify-img img{
     width: 100%;
