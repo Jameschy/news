@@ -4,6 +4,11 @@
  * Date: 2018/12/18 0018
  * Time: 15:01
  */
+#content-box{
+    height: auto;
+    min-height: 430px;
+    padding-bottom: 20px;
+}
 .order-checkout-box .table-responsive{
     margin: 0;
 }
@@ -15,17 +20,24 @@
     font-size: 12px;
 }
 
+
 .table thead th{
     border-bottom: 1px solid #dee2e6;
 }
 .table th, .table td{
+    padding: 0.75rem 0.25rem;
     border-top: none;
-}
-.order-checkout-box table tbody{
-    font-size: 12px;
-    border-top: 1px dotted darkgrey;
+    min-width: 60px;
 }
 
+
+.order-checkout-box table tbody{
+    font-size: 12px;
+    /*border-top: 1px dotted darkgrey;*/
+}
+.table tbody + tbody{
+    border-bottom: 1px dotted darkgrey;
+}
 .table-striped tbody tr:nth-of-type(odd){
     background-color: rgba(0, 0, 0, 0.025);
 }
@@ -47,6 +59,49 @@
     max-width: 45px;
     padding: 2.5px;
 }
+
+tbody.total-row{
+    margin-top: 15px;
+}
+tbody.total-row td{
+    padding-bottom: 0;
+}
+.coupon-fill,.coupon-apply{
+    height: 35px;
+    border-radius: 0;
+    display: inline-block;
+    float: left;
+    max-width: 50%;
+}
+.coupon-fill{
+    width: auto;
+
+}
+.coupon-apply{
+    text-transform: uppercase;
+}
+
+.deal-btn-box{
+    padding:20px 15px;
+}
+.back-shop-btn,.next-pay-btn{
+    padding: 0 0.25rem;
+}
+.back-shop-btn a,
+.next-pay-btn a{
+    display: inline-block;
+    padding: 10px 10px;
+    background: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+    width: auto;
+}
+.next-pay-btn a{
+    margin-right: -16rem;
+}
+
 .input-group-text{
     padding:5px 10px;
 }
@@ -62,6 +117,18 @@
 @media (max-width: 768px) {
     td.checkbox-msg-qty{
         min-width: 100px;
+    }
+    .next-pay-btn{
+        text-align: right;
+    }
+    .back-shop-btn a,
+    .next-pay-btn a{
+        padding: 5px 3px;
+        font-size: 12px;
+
+    }
+    .next-pay-btn a{
+        margin: 0;
     }
 }
 

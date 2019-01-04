@@ -4,6 +4,14 @@
  * Date: 2018/12/13 0013
  * Time: 11:23
  */
+/*控制header1侧栏高度对整体高度影响*/
+.side-left-bar{
+    display: none!important;
+}
+.main-center-bar{
+    min-height: auto!important;
+}
+
 div#header-box{
     position: fixed;
     top: 0;
@@ -16,6 +24,7 @@ div#header-box{
     width: 100%;
     z-index: 40;
     background-color: #fff;
+
 }
 .header {
     display: block;
@@ -84,8 +93,8 @@ div#header-box{
 .nav-list-box .nav-list{
     display: inline-block;
     vertical-align: top;
-    margin-right: 20px;
-    padding: 5px 10px;
+    margin-right: 10px;
+    padding: 5px;
     position: relative;
     transform: all 300ms ease 0s;
 }
@@ -210,6 +219,7 @@ div#header-box{
 
 .header-tips-box{
     background-color: #0c1923;
+    background: linear-gradient(45deg, #0c1923 0%, #999999 55%,#0c1923 100%);
 }
 
 #headInfor {

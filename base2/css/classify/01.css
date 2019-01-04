@@ -4,3 +4,31 @@
  * Date: 2018/12/27 0027
  * Time: 16:40
  */
+
+div#classify-box{
+    width: 100%;
+    padding: 30px 0;
+}
+
+div#classify-box .container{
+    padding: 0;
+}
+
+div#classify-box .classify-img-box{
+    margin-bottom: 15px;
+}
+
+.classify-img {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.classify-img > img {
+    transition: all 0.3s ease-out 0s;
+    width: 100%;
+}
+.classify-img:hover img{
+    transform: scale(1.05);
+}
