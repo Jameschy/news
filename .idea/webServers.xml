@@ -10,6 +10,14 @@
           <option name="port" value="63342" />
         </fileTransfer>
       </webServer>
+      <webServer id="e63926f5-59d1-4068-aae1-868b99575845" name="nightscloudlive.com" url="http://167.160.4.50">
+        <fileTransfer host="167.160.4.50" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
