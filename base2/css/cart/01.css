@@ -9,6 +9,11 @@
     min-height: 430px;
     padding-bottom: 20px;
 }
+
+.cart-table{
+    background: #f8f8f8 none repeat scroll 0 0;
+    border: 1px solid #ddd;
+}
 .order-checkout-box .table-responsive{
     margin: 0;
 }
@@ -51,6 +56,11 @@
 .box-center{
     text-align: center;
 }
+
+.order-checkout-box .checkbox-msg-num{
+    padding-left: 0.25rem;
+    text-align: center;
+}
 .checkbox-msg-name p{
     margin-bottom: 0;
 }
@@ -65,6 +75,11 @@ tbody.total-row{
 }
 tbody.total-row td{
     padding-bottom: 0;
+}
+
+.font-size-18{
+    font-size: 18px;
+    font-weight: 700;
 }
 .coupon-fill,.coupon-apply{
     height: 35px;
@@ -101,9 +116,11 @@ tbody.total-row td{
     text-align: center;
     min-width: 200px;
 }
-.next-pay-btn a{
-    margin-right: -16rem;
+.next-pay-btn{
+    /*margin-right: -16rem;*/
+    text-align: right;
 }
+
 
 .input-group-text{
     padding:5px 10px;
@@ -129,7 +146,7 @@ tbody.total-row td{
         min-width: auto;
         width: 100%;
         text-align: center;
-        padding: 8px 10px;
+        padding: 10px 10px;
         font-size: 12px;
 
     }

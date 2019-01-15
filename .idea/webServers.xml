@@ -2,14 +2,6 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="f02f79e6-0ed6-4431-b061-d37e659b96df" name="localhost" url="http://localhost:63342/news">
-        <fileTransfer host="localhost" port="63342">
-          <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
-          </advancedOptions>
-          <option name="port" value="63342" />
-        </fileTransfer>
-      </webServer>
       <webServer id="e63926f5-59d1-4068-aae1-868b99575845" name="nightscloudlive.com" url="http://167.160.4.50">
         <fileTransfer host="167.160.4.50" port="21">
           <advancedOptions>
@@ -17,6 +9,9 @@
           </advancedOptions>
           <option name="port" value="21" />
         </fileTransfer>
+      </webServer>
+      <webServer id="3ee4187d-0416-4c20-a2ac-8cd40c001d58" name="Localhost" url="http://192.168.1.27">
+        <fileTransfer port="0" mountedRoot="E:\news" accessType="MOUNT" />
       </webServer>
     </option>
   </component>

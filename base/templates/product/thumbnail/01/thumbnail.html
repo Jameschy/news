@@ -1,4 +1,6 @@
 <div class="kiosk-product-details ptb-70">
+
+
     <div class="container">
         <div class="row">
             <!-- Main Thumbnail Image Start -->
@@ -6,26 +8,31 @@
                 <!-- Thumbnail Large Image start -->
                 <div class="tab-content">
                     <div id="thumb1" class="tab-pane active">
-                        <a data-fancybox="images" href="static/img/product/01/1.jpg"><img src="static/img/product/01/1.jpg" alt="product-view"></a>
+                        <a class="fancybox" data-fancybox-group="gallery" href="static/img/product/01/1.jpg"><img src="static/img/product/01/1.jpg" alt="product-view"></a>
                     </div>
                     <div id="thumb2" class="tab-pane">
-                        <a data-fancybox="images" href="static/img/product/01/3.jpg"><img src="static/img/product/01/3.jpg" alt="product-view"></a>
+                        <a class="fancybox" data-fancybox-group="gallery" href="static/img/product/01/3.jpg"><img src="static/img/product/01/3.jpg" alt="product-view"></a>
                     </div>
                     <div id="thumb3" class="tab-pane">
-                        <a data-fancybox="images" href="static/img/product/01/9.jpg"><img src="static/img/product/01/9.jpg" alt="product-view"></a>
+                        <a class="fancybox" data-fancybox-group="gallery" href="static/img/product/01/9.jpg"><img src="static/img/product/01/9.jpg" alt="product-view"></a>
                     </div>
                     <div id="thumb4" class="tab-pane">
-                        <a data-fancybox="images" href="static/img/product/01/14.jpg"><img src="static/img/product/01/14.jpg" alt="product-view"></a>
+                        <a class="fancybox" data-fancybox-group="gallery" href="static/img/product/01/14.jpg"><img src="static/img/product/01/14.jpg" alt="product-view"></a>
                     </div>
                     <div id="thumb5" class="tab-pane">
-                        <a data-fancybox="images" href="static/img/product/01/8.jpg"><img src="static/img/product/01/8.jpg" alt="product-view"></a>
+                        <a class="fancybox" data-fancybox-group="gallery" href="static/img/product/01/8.jpg"><img src="static/img/product/01/8.jpg" alt="product-view"></a>
                     </div>
                     <div id="thumb6" class="tab-pane">
-                        <a data-fancybox="images" href="static/img/product/01/5.jpg"><img src="static/img/product/01/5.jpg" alt="product-view"></a>
+                        <a class="fancybox" data-fancybox-group="gallery" href="static/img/product/01/5.jpg"><img src="static/img/product/01/5.jpg" alt="product-view"></a>
                     </div>
                 </div>
                 <!-- Thumbnail Large Image End -->
 
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $('.fancybox').fancybox();
+                    })
+                </script>
                 <!-- Thumbnail Image End -->
                 <div class="kiosk-product-thumb">
                     <div class="thumb-menu nav">

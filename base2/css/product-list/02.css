@@ -19,6 +19,12 @@
     width: auto;
     /*margin: 0 auto;*/
 }
+
+.select-box .input-group-text,
+.select-box .input-group-prepend,
+.select-box .custom-select{
+    border-radius: 0;
+}
 .select-box .input-group:nth-child(2){
     float: right;
 }
@@ -150,7 +156,9 @@ border-radius: 50%;
     position: relative;
     top: 1px;
 }
-
+.addcar{
+    font-size: 12px;
+}
 /* orange */
 .orange {
     color: #fef4e9;

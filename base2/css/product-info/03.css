@@ -215,42 +215,72 @@ em.time_s{
     font-weight: 700;
 }
 
+.black-btn {
+    color: #fef4e9;
+    border: solid 1px #0c1923;
+    background: #0c1923;
+    background: linear-gradient(45deg, #0c1923 0%, #999999 55%,#0c1923 100%);
+    border-radius: 0;
+}
 
-
-.orange {
+.orange-btn {
     color: #fef4e9;
     border: solid 1px #da7c0c;
-
     background: #f78d1d;
     background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
     background: -moz-linear-gradient(top, #faa51a, #f47a20);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
 }
-
-
-.product-info-submit button:active {
-    color: #fcd3a5;
-
+.product-info-submit .black-btn:hover,
+.product-info-submit .black-btn:focus,
+.product-info-submit .black-btn:active{
+    background: transparent;
+    color: #000000;
+}
+.product-info-submit .black-btn a{
+    color: inherit;
+}
+.product-info-submit .black-btn:active {
+    color: #999999;
     background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
     background: -moz-linear-gradient(top, #f47a20, #faa51a);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
 }
-.product-info-submit button a,
-.product-info-submit button a:active,
-.product-info-submit button a:hover{
-    color: inherit;
-    text-decoration: none;
+.product-info-submit button:focus{
+    box-shadow: none;
+    outline: none;
 }
-.orange:hover {
+.product-info-submit .orange-btn:active {
+    color: #fcd3a5;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+    background: -moz-linear-gradient(top, #f47a20, #faa51a);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+}
+/*.product-info-submit button a{*/
+    /*color: #F8F8F8;*/
+/*}*/
+
+/*.product-info-submit button a:active,*/
+/*.product-info-submit button a:hover{*/
+    /*color: inherit;*/
+    /*text-decoration: none;*/
+/*}*/
+/*.product-info-submit .black-btn:hover a{*/
+    /*color: #999999;*/
+/*}*/
+/*.product-info-submit .black-btn:active a{*/
+    /*color: #F8F8F8;*/
+/*}*/
+.orange-btn:hover {
     background: #f47c20;
     background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
     background: -moz-linear-gradient(top, #f88e11, #f06015);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
 }
 
-product-info-submit button:active a{
-    color: #000000;
-}
+/*product-info-submit button:active a{*/
+    /*color: #000000;*/
+/*}*/
 .fa-icons{
     margin-right: 5px;
 }
