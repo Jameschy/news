@@ -314,12 +314,24 @@
                 <div class="col-12 product-info-share">
                     <!--<h6>Share To:</h6>-->
                     <ul class="info-share-box">
-                        <li><a href="###"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="###"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="###"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="###"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a class="share-to-fb"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="share-to-tw" id="share-twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="share-to-ig"><i class="fa fa-instagram"></i></a></li>
+                        <li><a class="share-to-pt"><i class="fa fa-pinterest"></i></a></li>
                     </ul>
                 </div>
+
+                <script type="text/javascript">
+                    $("#share-twitter").on('click',function(){
+                        var pageTitle = $(document).attr("title","");
+                        var pageLink = window.location.href
+                        var text = pageTitle + pageLink;
+                        window.open("https://twitter.com/intent/tweet?text="+encodeURIComponent(text));
+
+                        console.log(pageTitle);
+                        console.log(pageLink);
+                    });
+                </script>
 
 
             </div>

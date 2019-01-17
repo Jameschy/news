@@ -1,0 +1,279 @@
+/**
+ * Created by WebStorm.
+ * User: chig@foxmail.com
+ * Date: 2019/1/17 0017
+ * Time: 16:49
+ */
+html,
+body{
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: initial;
+}
+a:hover,
+a:focus{
+    color: initial;
+    text-decoration: none;
+}
+
+body{
+    background: #161823;
+    height: 100%;
+    min-width: 1200px;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.body-header{
+    height: 100px;
+    /*line-height: 100px;*/
+    width: 100%;
+    /*overflow: hidden;*/
+}
+.body-header .header-logo,
+.body-header .header-slogen{
+    display: inline-block;
+}
+.body-header .header-logo{
+    padding-left: 50px;
+}
+.body-header .header-logo a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 25px 0;
+}
+.body-header .header-logo img{
+    width: 100%;
+}
+.body-header .header-slogen{
+    padding-left: 16px;
+}
+.body-header .header-slogen a{
+    color: #FFFFFF;
+}
+.body-header .header-slogen .slogan-name{
+    font-size: 18px;
+}
+.body-header .header-slogen .slogan-theme{
+    font-size: 14px;
+    opacity: .89;
+}
+
+.body-content{
+    width: 650px;
+    margin: 45px auto;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    background: #0E0F1A;
+    position: relative;
+    overflow: hidden;
+}
+.body-content .content-left{
+    width: 320px;
+    min-height: 550px;
+}
+.body-content .content-left{
+    float: left;
+}
+.body-content .content-right{
+    width: 47.8%;
+    float: left;
+}
+.body-content .video-box,
+.body-content .video-comment{
+    padding: 0;
+    max-width: initial;
+}
+
+.body-content .video-comment{
+    height: 100%;
+    padding-left: 30px;
+    position: relative;
+}
+
+.body-content .video-box .video-player{
+    background-image: url(https://p1.pstatp.com/large/161ea0004f1bc589c7a2f.jpg);
+    /*height: 568.889px;*/
+    position: relative;
+    width: 320px;
+    height: 568px;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    cursor: pointer;
+}
+.body-content .video-box .video-source{
+    display: none;
+}
+
+.body-content .video-box .video-play-btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(//s3.bytecdn.cn/aweme/resource/web/static/image/icon_play_6ac4843.png) no-repeat center center;
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+.body-content .video-box video{
+    width: 100%;
+}
+
+.video-comment .comment-top-box .user-info{
+    padding-top: 15px;
+}
+.comment-top-box .user-info .user-info-icon{
+    margin-right: 10px;
+}
+.comment-top-box .user-info .user-info-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.comment-top-box .user-info .user-info-name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.comment-top-box .user-desc{
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+}
+.body-content .video-comment .comment-bottom-box{
+    position: absolute;
+    bottom: 0;
+}
+.body-content .video-comment .comment-bottom-box .download-title{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 12px;
+    color: #FC0156;
+}
+.body-content .video-comment .comment-bottom-box .download-qrcode{
+    margin: 0 auto;
+    text-align: center;
+}
+.body-content .video-comment .comment-bottom-box .download-qrcode img{
+    width: 170px;
+    height: 170px;
+}
+.body-footer{
+    width: 100%;
+}
+
+.footer{
+    width: 100%;
+    background-color: #0E0F1A;
+}
+.body-footer .infomation{
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 20px;
+    font-size: 12px;
+    color: #FFF;
+    text-align: center;
+    line-height: 2;
+}
+.body-footer .infomation p {
+    opacity: .3;
+    margin-bottom: 0;
+}
+.body-footer .infomation a{
+    color: #FFF;
+}
+.pc-dis-no{
+    display: none;
+}
+@media (max-width: 769px) {
+
+    body{
+        min-width: initial;
+    }
+    .wraper-box .container{
+        margin: 0;
+        max-width: 100%;
+    }
+    .mb-dis-no{
+        display: none;
+    }
+    .pc-dis-no{
+        display: block;
+    }
+    .body-content{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .body-content .content-left,
+    .body-content .content-right{
+        width: 100%;
+        float: none;
+    }
+    .body-content .video-box .video-player{
+        width: 100%;
+        height: calc(95vh - 3.65rem);
+    }
+    .body-content .video-box .video-play-btn{
+        width: 42px;
+        height: 52px;
+    }
+
+    .mb-main,
+    .mb-videos-box,
+    .videos-box-list{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .videos-box-list{
+        overflow: hidden;
+    }
+    .videos-box-list li{
+        width: 50%;
+        overflow: hidden;
+        float: left;
+        margin-bottom: 1px;
+
+    }
+    .videos-box-list li a{
+        display: inline-block;
+        width: 100%;
+    }
+    .videos-box-list li:nth-child(2n) a{
+        margin-left: 1px;
+    }
+
+    .videos-box-list li .list-cover{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding-top: 133.2%;
+        position: relative;
+        background-image: url("https://p3.pstatp.com/large/c25600052cc816f5ecdb.jpg");
+    }
+    .videos-box-list li:nth-child(3n+2) .list-cover{
+        background-image: url("https://p3.pstatp.com/large/c25600052cc816f5ecdb.jpg");
+    }
+    .videos-box-list li:nth-child(3n+1) .list-cover{
+        background-image: url("https://p99.pstatp.com/large/b0ac0005e3beba70d91e.jpg");
+    }
+    .videos-box-list li:nth-child(2n+2) .list-cover{
+        background-image: url("https://p99.pstatp.com/large/14eb30008b2a40f76ff8a.jpg");
+    }
+}

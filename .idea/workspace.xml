@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f2e415e3-2ad0-4b41-b45e-d72fa6903be1" name="Default Changelist" comment="1.更新购物车页面按钮分布">
-      <change afterPath="$PROJECT_DIR$/base/static/css/common/02/jquery.fancybox0.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tiktok/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+    <list default="true" id="f2e415e3-2ad0-4b41-b45e-d72fa6903be1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/nights-share/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nights-share/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nights-share/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nights-share/js/jquery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nights-share/js/video.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/templates/product/thumbnail/01/thumbnail.html" beforeDir="false" afterPath="$PROJECT_DIR$/base/templates/product/thumbnail/01/thumbnail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base2/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/base2/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base2/css/order-msg/01.css" beforeDir="false" afterPath="$PROJECT_DIR$/base2/css/cart/01.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base2/css/product-info/03.css" beforeDir="false" afterPath="$PROJECT_DIR$/base2/css/product-info/03.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base2/css/product-list/02.css" beforeDir="false" afterPath="$PROJECT_DIR$/base2/css/product-list/02.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base2/css/product-list/03.css" beforeDir="false" afterPath="$PROJECT_DIR$/base2/css/product-list/03.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base2/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/base2/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base2/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/base2/sign.html" beforeDir="false" afterPath="$PROJECT_DIR$/base2/sign.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base2/templates/header/03.html" beforeDir="false" afterPath="$PROJECT_DIR$/base2/templates/header/03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base2/templates/order-msg/01.html" beforeDir="false" afterPath="$PROJECT_DIR$/base2/templates/cart/01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base2/templates/product-info/01.html" beforeDir="false" afterPath="$PROJECT_DIR$/base2/templates/product-info/01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base2/templates/banner/01.html" beforeDir="false" afterPath="$PROJECT_DIR$/base2/templates/banner/01.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base2/templates/product-info/03.html" beforeDir="false" afterPath="$PROJECT_DIR$/base2/templates/product-info/03.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktok/img2/en_bg_55dcf13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tiktok/img2/en_bg_55dcf13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiktok/img2/tiktok_bg_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/tiktok/img2/tiktok_bg_2.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,25 +43,25 @@
           <entry key="project.open.time.12" value="6" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="6" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.6" value="5" />
+          <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="10" />
           <entry key="project.open.time.9" value="11" />
-          <entry key="project.opened" value="93" />
+          <entry key="project.opened" value="95" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="191" />
-          <entry key="html" value="376" />
+          <entry key="css" value="196" />
+          <entry key="html" value="382" />
           <entry key="ico" value="1" />
           <entry key="jpg" value="36" />
-          <entry key="js" value="40" />
+          <entry key="js" value="43" />
           <entry key="json" value="1" />
           <entry key="map" value="2" />
           <entry key="php" value="4" />
@@ -82,111 +70,102 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="191" />
-          <entry key="HTML" value="376" />
+          <entry key="CSS" value="196" />
+          <entry key="HTML" value="382" />
           <entry key="Image" value="54" />
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="40" />
+          <entry key="JavaScript" value="43" />
           <entry key="PHP" value="4" />
           <entry key="SourceMap" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="9698" />
-          <entry key="html" value="15757" />
+          <entry key="css" value="10538" />
+          <entry key="html" value="17263" />
           <entry key="js" value="145" />
           <entry key="json" value="2" />
           <entry key="php" value="16" />
-          <entry key="txt" value="1592" />
+          <entry key="txt" value="1602" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="9698" />
-          <entry key="HTML" value="15761" />
+          <entry key="CSS" value="10538" />
+          <entry key="HTML" value="17267" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="141" />
           <entry key="PHP" value="16" />
-          <entry key="PLAIN_TEXT" value="1592" />
+          <entry key="PLAIN_TEXT" value="1602" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base2/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base2/sign.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="62" lean-forward="true" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base2/css/header/03.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="205" column="35" lean-forward="true" selection-start-line="205" selection-start-column="35" selection-end-line="205" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base2/templates/banner/01.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base2/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="65" lean-forward="true" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/base2/templates/product-info/03.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tiktok/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/nights-share/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="352">
+                  <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#2382#2388#0" expanded="true" />
+                    <element signature="e#2389#2395#0" expanded="true" />
+                    <element signature="e#2397#2403#0" expanded="true" />
+                    <element signature="e#2403#2409#0" expanded="true" />
+                    <element signature="e#2410#2416#0" expanded="true" />
+                    <element signature="e#2432#2438#0" expanded="true" />
+                    <element signature="e#2439#2445#0" expanded="true" />
+                    <element signature="e#2459#2465#0" expanded="true" />
+                    <element signature="e#2468#2474#0" expanded="true" />
+                    <element signature="e#2475#2481#0" expanded="true" />
+                    <element signature="e#2498#2504#0" expanded="true" />
+                    <element signature="e#2597#2603#0" expanded="true" />
+                    <element signature="e#2604#2610#0" expanded="true" />
+                    <element signature="e#2637#2643#0" expanded="true" />
+                    <element signature="e#2644#2650#0" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/nights-share/css/main.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="252">
+                  <caret line="201" column="18" selection-start-line="201" selection-start-column="18" selection-end-line="201" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/base2/templates/product-list/03.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="342">
+                  <caret line="78" column="15" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -270,8 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/example/01.html" />
-        <option value="$PROJECT_DIR$/example/sd.html" />
         <option value="$PROJECT_DIR$/example/ss.html" />
         <option value="$PROJECT_DIR$/example/sec.html" />
         <option value="$PROJECT_DIR$/example/多段视频连续播放.html" />
@@ -315,12 +292,14 @@
         <option value="$PROJECT_DIR$/base2/css/cart/01.css" />
         <option value="$PROJECT_DIR$/base2/css/product-list/03.css" />
         <option value="$PROJECT_DIR$/base2/css/product-list/02.css" />
-        <option value="$PROJECT_DIR$/base2/templates/product-info/03.html" />
         <option value="$PROJECT_DIR$/base2/css/product-info/03.css" />
-        <option value="$PROJECT_DIR$/base2/templates/banner/01.html" />
-        <option value="$PROJECT_DIR$/base2/detail.html" />
         <option value="$PROJECT_DIR$/tiktok/test.html" />
         <option value="$PROJECT_DIR$/base2/sign.html" />
+        <option value="$PROJECT_DIR$/base2/detail.html" />
+        <option value="$PROJECT_DIR$/base2/templates/product-info/03.html" />
+        <option value="$PROJECT_DIR$/base2/templates/banner/01.html" />
+        <option value="$PROJECT_DIR$/nights-share/index.html" />
+        <option value="$PROJECT_DIR$/nights-share/css/main.css" />
       </list>
     </option>
   </component>
@@ -357,21 +336,7 @@
             <path>
               <item name="news" type="b2602c69:ProjectViewProjectNode" />
               <item name="news" type="462c0819:PsiDirectoryNode" />
-              <item name="base2" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="news" type="b2602c69:ProjectViewProjectNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-              <item name="base2" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="news" type="b2602c69:ProjectViewProjectNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-              <item name="base2" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="product-info" type="462c0819:PsiDirectoryNode" />
+              <item name="nights-share" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -382,26 +347,26 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="G:/wb" />
+    <property name="last_opened_file_path" value="G:/vueTest" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\news\base2\control" />
-      <recent name="E:\news\base2" />
-      <recent name="E:\news\base2\css\product-list" />
-      <recent name="E:\news\tiktok\tools" />
-      <recent name="E:\news\tiktok" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\news\base2\css\cart" />
       <recent name="E:\news\base2\templates\cart" />
       <recent name="E:\news\tiktok\tools" />
       <recent name="E:\news\base2\img\saveoff" />
       <recent name="E:\news\base" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\news\nights-share\js" />
+      <recent name="E:\news\nights-share\css" />
+      <recent name="E:\news\base2\control" />
+      <recent name="E:\news\base2" />
+      <recent name="E:\news\base2\css\product-list" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -551,14 +516,9 @@
       <workItem from="1547173592591" duration="677000" />
       <workItem from="1547179589780" duration="2241000" />
       <workItem from="1547430751050" duration="2624000" />
-      <workItem from="1547523791072" duration="2684000" />
-    </task>
-    <task id="LOCAL-00010" summary="for test！！！！">
-      <created>1537939104517</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1537939104517</updated>
+      <workItem from="1547523791072" duration="3382000" />
+      <workItem from="1547605883041" duration="4980000" />
+      <workItem from="1547690489235" duration="14725000" />
     </task>
     <task id="LOCAL-00011" summary="for test！！！！">
       <created>1537940934598</created>
@@ -896,11 +856,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546684615501</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="1.fancybox动画">
+      <created>1547544674379</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1547544674380</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="533340000" />
+    <option name="totallyTimeSpent" value="553743000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -913,6 +880,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49736148" visible="true" weight="0.1691254" />
       <window_info id="Structure" order="1" sideWeight="0.5026385" side_tool="true" weight="0.2618546" />
@@ -993,7 +961,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.新加detail3模块" />
     <MESSAGE value="1.新加fancybox动画插件，2.新加product-info模块，" />
     <MESSAGE value="1.整理product3代码格式" />
     <MESSAGE value="1.新建登录页结构；2.新建订单页；3.优化列表页，新增列表单项添加到购物车端口图标；4.实现订单页动态求和" />
@@ -1018,41 +985,10 @@
     <MESSAGE value="1.新建登录页，2.新加info1review列表，3.新加classify1," />
     <MESSAGE value="1.新建css动画集，" />
     <MESSAGE value="1.更新购物车页面按钮分布" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.更新购物车页面按钮分布" />
+    <MESSAGE value="1.fancybox动画" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.fancybox动画" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/base2/sign-in-on.html" />
-    <entry file="file://$PROJECT_DIR$/base2/templates/header3/01.html" />
-    <entry file="file://$PROJECT_DIR$/base2/templates/header/01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2/css/login/01.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="107" column="52" selection-start-line="107" selection-start-column="52" selection-end-line="107" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2/templates/login/01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2/img/banner/01.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2/img/banner/slide.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2/img/banner/ups3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/base2/img/banner/ups2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1080,13 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2470">
           <caret line="130" column="34" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2/css/banner/01.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1237,13 +1166,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base2/login.html" />
-    <entry file="file://$PROJECT_DIR$/base2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tiktok/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1268,21 +1190,94 @@
     <entry file="file://$PROJECT_DIR$/base2/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="65" lean-forward="true" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base2/templates/banner/01.html">
+    <entry file="file://$PROJECT_DIR$/base2/css/banner/01.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base2/js/banner-fn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/base2/templates/product-info/03.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="74" lean-forward="true" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
+        <state relative-caret-position="442">
+          <caret line="311" column="26" lean-forward="true" selection-start-line="311" selection-start-column="26" selection-end-line="311" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base2/templates/banner/01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1696">
+          <caret line="101" column="11" lean-forward="true" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tiktok/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nights-share/js/jquery-3.3.1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nights-share/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nights-share/js/video.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base2/templates/product-list/03.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="78" column="15" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nights-share/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="201" column="18" selection-start-line="201" selection-start-column="18" selection-end-line="201" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nights-share/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="64" column="22" lean-forward="true" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+          <folding>
+            <element signature="e#2382#2388#0" expanded="true" />
+            <element signature="e#2389#2395#0" expanded="true" />
+            <element signature="e#2397#2403#0" expanded="true" />
+            <element signature="e#2403#2409#0" expanded="true" />
+            <element signature="e#2410#2416#0" expanded="true" />
+            <element signature="e#2432#2438#0" expanded="true" />
+            <element signature="e#2439#2445#0" expanded="true" />
+            <element signature="e#2459#2465#0" expanded="true" />
+            <element signature="e#2468#2474#0" expanded="true" />
+            <element signature="e#2475#2481#0" expanded="true" />
+            <element signature="e#2498#2504#0" expanded="true" />
+            <element signature="e#2597#2603#0" expanded="true" />
+            <element signature="e#2604#2610#0" expanded="true" />
+            <element signature="e#2637#2643#0" expanded="true" />
+            <element signature="e#2644#2650#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

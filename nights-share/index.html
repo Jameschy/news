@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Share</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<div class="wraper-box">
+    <div class="container">
+        <div class="row">
+            <div class="body-header mb-dis-no">
+                <div class="header-logo">
+                    <a href="###logo">
+                        <img src="img/logo_icon.png" alt="web-logo">
+                    </a>
+                </div>
+                <div class="header-slogen">
+                    <a href="###Name" class="slogan-name">夜色</a>
+                    <a href="###Slogen" class="slogan-theme">| 记录美好生活</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="body-content">
+                <div class="col-lg-6 col-12 content-left video-box">
+                    <div class="video-player">
+                        <div class="video-play-btn" id="playing"></div>
+                        <video class="video-source" src="img/home.mp4"></video>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-12 content-right video-comment">
+                    <div class="comment-top-box">
+                        <p class="user-info">
+                            <span class="user-info-icon">
+                                <img src="img/user-icon.jpeg" alt="user-info" />
+                            </span>
+                            <span class="user-info-name">@SiWon诗媛</span>
+                        </p>
+                        <p class="user-desc">
+                            抖音有八亿用户,你却偏偏刷到了我…所以你好,我叫诗媛,愿你卡里有钱,每天开心❤️
+                        </p>
+                    </div>
+                    <div class="comment-bottom-box mb-dis-no">
+                        <p class="download-title">【扫码下载抖音，观看更多有趣视频】</p>
+                        <div class="download-qrcode">
+                            <img src="img/qrcode.png" alt="qrcode"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pc-dis-no">
+            <div class="mb-videos-box">
+                <div class="videos-box-header">
+                    <span class="title">今日热门推荐</span>
+                </div>
+
+                <ul class="videos-box-list">
+                    <!--<li>-->
+                        <!--<a href="###1">-->
+                            <!--<div class="list-cover" style="background-image: url(img/list-1.jpg)">-->
+                                <!--<div class="cover-mask"></div>-->
+                                <!--<div class="cover-btn"></div>-->
+                                <!--<div class="cover-info">-->
+                                    <!--<span class="info-icon"></span>-->
+                                    <!--<span class="info-nickname">Pig John</span>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                        <!--</a>-->
+                    <!--</li>-->
+
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="footer mb-dis-no">
+        <div class="body-footer">
+            <div class="infomation">
+                <p><span id="copyYear">2019</span>&nbsp;©&nbsp;抖音&nbsp;&nbsp;|&nbsp;京ICP备16016397号-3&nbsp;|&nbsp;北京微播视界科技有限公司 |&nbsp; 地址&nbsp;:&nbsp;北京市海淀区知春路51号4层408&nbsp;</p>
+                <p><a target="_blank" href="http://www.nightslive.cn/">中国互联网举报中心</a>&nbsp;|&nbsp;网络文化许可证-京网文-（2016）2282-264号&nbsp;|&nbsp;违法和不良信息举报：010-83434212</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/video.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#playing").click(function(){
+            //此处写点击触发的操作
+            $(this).css("display","none");
+            //1、取得播放器的对象
+            $(".video-source").css("display","block");
+
+            // var objVideo=$("#diveoID");
+            //2、调用视频播放API
+            // objVideo.play();
+
+        });
+    });
+
+    var i,index, lower = 1,upper=9;
+
+    function random(lower, upper) {
+        return Math.floor(Math.random() * (upper - lower)) + lower;
+    }
+
+    for (i =0; i<16;i++){
+        index = random(lower, upper);
+        $(".videos-box-list").append("<li>\n" +
+            "                        <a href=\"###1\">\n" +
+            "                            <div class=\"list-cover\" style=\"background-image: url(img/list-"+index+".jpg)\">\n" +
+            "                                <div class=\"cover-mask\"></div>\n" +
+            "                                <div class=\"cover-btn\"></div>\n" +
+            "                                <div class=\"cover-info\">\n" +
+            "                                    <span class=\"info-icon\"></span>\n" +
+            "                                    <span class=\"info-nickname\">Pig John</span>\n" +
+            "                                </div>\n" +
+            "                            </div>\n" +
+            "\n" +
+            "                        </a>\n" +
+            "                    </li>")
+    }
+</script>
+</html>
