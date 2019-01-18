@@ -5,71 +5,83 @@
  * Time: 16:49
  */
 html,
-body{
+body {
     padding: 0;
     margin: 0;
 }
-a{
+
+a {
     color: initial;
 }
+
 a:hover,
-a:focus{
+a:focus {
     color: initial;
     text-decoration: none;
 }
 
-body{
+body {
     background: #161823;
     height: 100%;
     min-width: 1200px;
 }
-ul{
+
+ul {
     padding: 0;
     margin: 0;
 }
-li{
+
+li {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.body-header{
+.body-header {
     height: 100px;
     /*line-height: 100px;*/
     width: 100%;
     /*overflow: hidden;*/
 }
+
 .body-header .header-logo,
-.body-header .header-slogen{
+.body-header .header-slogen {
     display: inline-block;
 }
-.body-header .header-logo{
+
+.body-header .header-logo {
     padding-left: 50px;
 }
-.body-header .header-logo a{
+
+.body-header .header-logo a {
     display: block;
     width: 50px;
     height: 50px;
     margin: 25px 0;
 }
-.body-header .header-logo img{
+
+.body-header .header-logo img {
     width: 100%;
 }
-.body-header .header-slogen{
+
+.body-header .header-slogen {
     padding-left: 16px;
 }
-.body-header .header-slogen a{
+
+.body-header .header-slogen a {
     color: #FFFFFF;
 }
-.body-header .header-slogen .slogan-name{
+
+.body-header .header-slogen .slogan-name {
     font-size: 18px;
 }
-.body-header .header-slogen .slogan-theme{
+
+.body-header .header-slogen .slogan-theme {
     font-size: 14px;
     opacity: .89;
 }
 
-.body-content{
+.body-content {
     width: 650px;
     margin: 45px auto;
     padding: 15px;
@@ -79,30 +91,34 @@ li{
     position: relative;
     overflow: hidden;
 }
-.body-content .content-left{
+
+.body-content .content-left {
     width: 320px;
     min-height: 550px;
 }
-.body-content .content-left{
+
+.body-content .content-left {
     float: left;
 }
-.body-content .content-right{
+
+.body-content .content-right {
     width: 47.8%;
     float: left;
 }
+
 .body-content .video-box,
-.body-content .video-comment{
+.body-content .video-comment {
     padding: 0;
     max-width: initial;
 }
 
-.body-content .video-comment{
+.body-content .video-comment {
     height: 100%;
     padding-left: 30px;
     position: relative;
 }
 
-.body-content .video-box .video-player{
+.body-content .video-box .video-player {
     background-image: url(https://p1.pstatp.com/large/161ea0004f1bc589c7a2f.jpg);
     /*height: 568.889px;*/
     position: relative;
@@ -115,11 +131,12 @@ li{
     overflow: hidden;
     cursor: pointer;
 }
-.body-content .video-box .video-source{
+
+.body-content .video-box .video-source {
     display: none;
 }
 
-.body-content .video-box .video-play-btn{
+.body-content .video-box .video-play-btn {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -129,60 +146,71 @@ li{
     left: 50%;
     margin-left: -25px;
     margin-top: -25px;
+    z-index: 100;
 }
-.body-content .video-box video{
+
+.body-content .video-box video {
     width: 100%;
 }
 
-.video-comment .comment-top-box .user-info{
+.video-comment .comment-top-box .user-info {
     padding-top: 15px;
 }
-.comment-top-box .user-info .user-info-icon{
+
+.comment-top-box .user-info .user-info-icon {
     margin-right: 10px;
 }
-.comment-top-box .user-info .user-info-icon img{
+
+.comment-top-box .user-info .user-info-icon img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
 }
-.comment-top-box .user-info .user-info-name{
+
+.comment-top-box .user-info .user-info-name {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.comment-top-box .user-desc{
+.comment-top-box .user-desc {
     color: #999;
     font-size: 12px;
     line-height: 12px;
 }
-.body-content .video-comment .comment-bottom-box{
+
+.body-content .video-comment .comment-bottom-box {
     position: absolute;
     bottom: 0;
 }
-.body-content .video-comment .comment-bottom-box .download-title{
+
+.body-content .video-comment .comment-bottom-box .download-title {
     width: 100%;
     text-align: center;
     padding-bottom: 12px;
     color: #FC0156;
 }
-.body-content .video-comment .comment-bottom-box .download-qrcode{
+
+.body-content .video-comment .comment-bottom-box .download-qrcode {
     margin: 0 auto;
     text-align: center;
 }
-.body-content .video-comment .comment-bottom-box .download-qrcode img{
+
+.body-content .video-comment .comment-bottom-box .download-qrcode img {
     width: 170px;
     height: 170px;
 }
-.body-footer{
+
+.body-footer {
     width: 100%;
 }
 
-.footer{
+.footer {
     width: 100%;
     background-color: #0E0F1A;
 }
-.body-footer .infomation{
+
+.body-footer .infomation {
     width: 100%;
     padding-top: 64px;
     padding-bottom: 20px;
@@ -191,75 +219,232 @@ li{
     text-align: center;
     line-height: 2;
 }
+
 .body-footer .infomation p {
     opacity: .3;
     margin-bottom: 0;
 }
-.body-footer .infomation a{
+
+.body-footer .infomation a {
     color: #FFF;
 }
-.pc-dis-no{
+
+.pc-dis-no {
     display: none;
 }
+
+.dis-no {
+    display: none;
+}
+
+.dis-bl {
+    display: block;
+}
+
 @media (max-width: 769px) {
 
-    body{
+    body {
         min-width: initial;
     }
-    .wraper-box .container{
-        margin: 0;
-        max-width: 100%;
+
+    .body-content .content-left{
+        min-height: initial;
     }
-    .mb-dis-no{
+
+    .wraper-box .container {
+        margin: 0;
+        max-width: initial;
+        width: 100%;
+    }
+
+    .mb-dis-no {
         display: none;
     }
-    .pc-dis-no{
+
+    .pc-dis-no {
         display: block;
     }
-    .body-content{
+        #download{
+            transform: translateY(-75px);
+            transition: all 1s;
+        }
+    .app-download {
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: 75px;
+        overflow: hidden;
+        background-color: #0e0b17;
+        background-image: url(//s3.bytecdn.cn/ies/resource/falcon/douyin_falcon/static/image/reflow/banner_logo_new_1a2d51c.png);
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: 50%;
+    }
+
+    #download .download-btn {
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        width: 22%;
+        height: 28px;
+        line-height: 28px;
+        border-radius: 3px;
+        float: right;
+        margin-top: 25px;
+        margin-right: 15px;
+        background-color: #fe2c55;
+        font-size: 0;
+    }
+
+    #download .download-btn span {
+        color: #fff;
+        font-size: .28rem;
+        vertical-align: middle;
+    }
+    .body-content {
         width: 100%;
         margin: 0 auto;
         padding: 0;
     }
+
+    .video-player .video-mask{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        z-index: 10;
+        top: 1.4rem;
+        background: -webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.6)),to(transparent));
+         background: -webkit-linear-gradient(bottom,rgba(0,0,0,.6),transparent);
+         background: linear-gradient(to top,rgba(0,0,0,.6),transparent);
+    }
+    #videoUser{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 15px;
+        z-index: 10;
+        display: block;
+        color: #fff;
+    }
+    #videoUser .user-title{
+        font-size: 18px;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: normal;
+    }
+    #videoUser .user-avator{
+    float: left;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border:1px solid #fff;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+    #videoUser .user-info p{
+        margin-bottom: 0;
+    }
+    #videoUser .user-follow-btn{
+        float: right;
+        margin-top: -35px;
+        font-size: 13px;
+        width: 20%;
+        text-align: center;
+        background: -webkit-linear-gradient(top,#fe2e57,#f41d6a);
+        border-radius: 3px;
+        padding: 5px 10px;
+        z-index: 999;
+    }
+
     .body-content .content-left,
-    .body-content .content-right{
+    .body-content .content-right {
         width: 100%;
         float: none;
     }
-    .body-content .video-box .video-player{
+
+    .body-content .video-box .video-player {
         width: 100%;
         height: calc(95vh - 3.65rem);
     }
-    .body-content .video-box .video-play-btn{
-        width: 42px;
-        height: 52px;
+
+    .body-content .video-box .video-play-btn {
+        width: 65px;
+        height: 65px;
+    }
+
+    .videos-box-header {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .videos-box-header .title {
+        color: #FFFFFF;
+        font-size: 12px;
+        letter-spacing: 1px;
+        background: #161823;
+        padding: 5px 10px;
+        display: inline-block;
+        z-index: 1;
+    }
+
+    .videos-box-header .title:before {
+        content: '';
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        /*width: 2.92rem;*/
+        height: 1px;
+        background-color: #fff;
+        z-index: -1;
     }
 
     .mb-main,
     .mb-videos-box,
-    .videos-box-list{
+    .videos-box-list {
         width: 100%;
         margin-top: 15px;
     }
-    .videos-box-list{
+
+    .videos-box-list {
         overflow: hidden;
     }
-    .videos-box-list li{
+
+    .videos-box-list li {
         width: 50%;
         overflow: hidden;
         float: left;
         margin-bottom: 1px;
 
     }
-    .videos-box-list li a{
+
+    .videos-box-list li a {
         display: inline-block;
         width: 100%;
     }
-    .videos-box-list li:nth-child(2n) a{
+
+    .videos-box-list li:nth-child(2n) a {
         margin-left: 1px;
     }
 
-    .videos-box-list li .list-cover{
+    .videos-box-list li .list-cover {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -267,13 +452,103 @@ li{
         position: relative;
         background-image: url("https://p3.pstatp.com/large/c25600052cc816f5ecdb.jpg");
     }
-    .videos-box-list li:nth-child(3n+2) .list-cover{
+
+    .videos-box-list li:nth-child(3n+2) .list-cover {
         background-image: url("https://p3.pstatp.com/large/c25600052cc816f5ecdb.jpg");
     }
-    .videos-box-list li:nth-child(3n+1) .list-cover{
+
+    .videos-box-list li:nth-child(3n+1) .list-cover {
         background-image: url("https://p99.pstatp.com/large/b0ac0005e3beba70d91e.jpg");
     }
-    .videos-box-list li:nth-child(2n+2) .list-cover{
+
+    .videos-box-list li:nth-child(2n+2) .list-cover {
         background-image: url("https://p99.pstatp.com/large/14eb30008b2a40f76ff8a.jpg");
+    }
+
+    .videos-box-list li .list-cover .cover-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 50px;
+        width: 50px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-image: url(//s3a.bytecdn.cn/ies/resource/falcon/douyin_falcon/static/image/reflow/play_4a92d1e.png);
+        background-size: 100%;
+    }
+
+    .videos-box-list li .list-cover {
+        position: relative;
+    }
+
+    .videos-box-list li .list-cover .cover-mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .videos-box-list li .list-cover .video-source {
+        display: none;
+    }
+
+    .videos-box-list li .list-cover .cover-info {
+        /*box-sizing: border-box;*/
+        /*position: absolute;*/
+        /*bottom: 5%;*/
+        /*left: 2%;*/
+        /*width: 100%;*/
+        /*height: 50px;*/
+        /*!*line-height: 27px;*!*/
+        padding-left: 10px;
+        margin-top: -10px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        background-image: linear-gradient(-180deg, transparent 0, rgba(0, 0, 0, .45) 100%);
+
+    }
+
+    .videos-box-list li .list-cover .cover-info .info-icon {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 5px;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-image: url(//s3a.bytecdn.cn/ies/resource/falcon/douyin_falcon/static/image/reflow/musicicon_191951e.png);
+        background-size: contain;
+    }
+
+    .videos-box-list li .list-cover .cover-info .info-nickname {
+        color: #FFFFFF;
+        font-size: 13px;
+        line-height: 15px;
+        /*margin-left: 8px;*/
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-left: 2px;
+        width: 70%;
+        margin-bottom: -5px;
+        display: inline-block;
+    }
+}
+@media only screen and (width: 320px){
+    .app-download{
+        background-size: 65%;
+    }
+}
+    @media only screen and (width: 768px) {
+    .app-download{
+        background-size: 30%;
+    }
+
+    .body-content .video-box .video-player{
+        width: 70%;
+        height: calc(95vh - 3.65rem);
+        margin: 0 auto;
     }
 }
