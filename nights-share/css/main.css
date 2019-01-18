@@ -241,7 +241,7 @@ li {
     display: block;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
 
     body {
         min-width: initial;
