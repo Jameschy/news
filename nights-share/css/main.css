@@ -633,8 +633,11 @@ li {
     }
 
     .mb-body-footer p {
+        width: 80%;
+        margin: 0 auto;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 15px;
+        padding-bottom: 20px;
         font-size: 13px;
         color: rgba(225, 225, 225, 0.35);
         letter-spacing: 1px;
@@ -919,4 +922,8 @@ li {
 
 .dis-bl {
     display: block;
+}
+
+.txt-uppercase{
+    text-transform: uppercase;
 }
