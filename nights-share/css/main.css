@@ -679,6 +679,9 @@ li {
     .app-download {
         background-size: 50%;
     }
+    #videoUser .user-follow-btn{
+        width: 30%;
+    }
 }
 
 @media only screen and (width: 768px) {
