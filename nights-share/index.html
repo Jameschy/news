@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="refresh" content="10" />-->
     <meta name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <title>Night Share</title>
@@ -173,10 +173,10 @@
             $("#download").css("transform", "translateY(0)")
         }, 1000);
 
-        //after 10s Auto display the download block
-        setTimeout(function () {
+        //after 8s Auto display the download block
+        setInterval(function () {
             $(".downloadDlg").removeClass("dis-no")
-        }, 5000);
+        }, 8000);
 
         // click ignore to hide
         $(".btn-ignore").click(function () {
