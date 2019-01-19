@@ -29,7 +29,7 @@
     <session id="-490599279">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="42" />
+          <entry key="project.closed" value="43" />
           <entry key="project.open.time.0" value="8" />
           <entry key="project.open.time.1" value="8" />
           <entry key="project.open.time.10" value="7" />
@@ -39,6 +39,7 @@
           <entry key="project.open.time.14" value="6" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="1" />
@@ -47,7 +48,7 @@
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="10" />
           <entry key="project.open.time.9" value="11" />
-          <entry key="project.opened" value="96" />
+          <entry key="project.opened" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -76,37 +77,38 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="11110" />
-          <entry key="html" value="17982" />
+          <entry key="css" value="11669" />
+          <entry key="html" value="18936" />
           <entry key="js" value="145" />
           <entry key="json" value="2" />
           <entry key="php" value="16" />
-          <entry key="txt" value="1660" />
+          <entry key="txt" value="1672" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="11110" />
-          <entry key="HTML" value="17986" />
+          <entry key="CSS" value="11669" />
+          <entry key="HTML" value="18940" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="141" />
           <entry key="PHP" value="16" />
-          <entry key="PLAIN_TEXT" value="1660" />
+          <entry key="PLAIN_TEXT" value="1672" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.530415">
+    <splitter split-orientation="horizontal" split-proportion="0.50992066">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/nights-share/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="512">
-                  <caret line="112" column="22" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
+                <state relative-caret-position="190">
+                  <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
                   <folding>
-                    <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="e#4608#4614#0" expanded="true" />
+                    <element signature="e#4839#4845#0" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#a#0;n#li#0;n#!!top" expanded="true" />
                   </folding>
@@ -121,8 +123,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/base2/templates/product-list/03.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="79" column="31" lean-forward="true" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="31" />
+                <state relative-caret-position="1501">
+                  <caret line="79" column="31" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -130,8 +132,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/nights-share/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="203">
-                  <caret line="223" column="21" lean-forward="true" selection-start-line="223" selection-start-column="21" selection-end-line="223" selection-end-column="21" />
+                <state relative-caret-position="341">
+                  <caret line="909" column="21" lean-forward="true" selection-start-line="909" selection-start-column="21" selection-end-line="909" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -152,7 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>product-list-percent</find>
       <find>http://support.tiktok.com/</find>
       <find>/img//</find>
       <find>target=&quot;_blank&quot;</find>
@@ -182,6 +183,7 @@
       <find>fancybox</find>
       <find>checkbox-msg-name</find>
       <find>cart</find>
+      <find>.user-info</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;p&gt;http</replace>
@@ -291,8 +293,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="74" />
+    <option name="y" value="71" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -301,7 +303,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -323,6 +324,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -500,14 +502,8 @@
       <workItem from="1547523791072" duration="3382000" />
       <workItem from="1547605883041" duration="4980000" />
       <workItem from="1547690489235" duration="14725000" />
-      <workItem from="1547777484459" duration="20503000" />
-    </task>
-    <task id="LOCAL-00013" summary="create the header-3's css！！！！">
-      <created>1537961424541</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1537961424541</updated>
+      <workItem from="1547777484459" duration="20551000" />
+      <workItem from="1547863963722" duration="11649000" />
     </task>
     <task id="LOCAL-00014" summary="refresh the header-3's css and make it has some animation！！！！">
       <created>1538046146488</created>
@@ -845,11 +841,18 @@
       <option name="project" value="LOCAL" />
       <updated>1547808787317</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="1.变更footer内边距">
+      <created>1547809005299</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1547809005299</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="574246000" />
+    <option name="totallyTimeSpent" value="585943000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -864,7 +867,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49736148" visible="true" weight="0.07323498" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49736148" visible="true" weight="0.20337197" />
       <window_info id="Structure" order="1" sideWeight="0.5026385" side_tool="true" weight="0.2618546" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -943,7 +946,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.新建登录页结构；2.新建订单页；3.优化列表页，新增列表单项添加到购物车端口图标；4.实现订单页动态求和" />
     <MESSAGE value="1.优化侧滑导航栏" />
     <MESSAGE value="1.优化侧滑导航栏&#10;2.新增货币切换选择&#10;3.新增评论提交区块&#10;4.新增header搜索、登陆下拉菜单&#10;5.新增购物车提示功能，优化购物车提示&#10;6.优化相关产品内边距&#10;7.新增header顶部tips提示滚动信息区&#10;8.优化面包屑&#10;9.优化footer样式及结构&#10;10.新增评论跳转锚点功能及过渡滚动" />
     <MESSAGE value="1.详情页新加物流信息示范图&#10;2.详情评分新增半星&#10;3.订单页取消容器container，全屏展示" />
@@ -968,7 +970,8 @@
     <MESSAGE value="1.fancybox动画" />
     <MESSAGE value="1.分享页适配移动端；2.视频播放与暂停功能实现" />
     <MESSAGE value="1.变更移动端界限769&gt;&gt;&gt;&gt;1025" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.变更移动端界限769&gt;&gt;&gt;&gt;1025" />
+    <MESSAGE value="1.变更footer内边距" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.变更footer内边距" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/base2/img/banner/ups2.jpg">
@@ -1225,17 +1228,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base2/templates/product-list/03.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="79" column="31" lean-forward="true" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="31" />
+        <state relative-caret-position="1501">
+          <caret line="79" column="31" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nights-share/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="112" column="22" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
+        <state relative-caret-position="190">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4608#4614#0" expanded="true" />
+            <element signature="e#4839#4845#0" expanded="true" />
             <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#a#0;n#li#0;n#!!top" expanded="true" />
           </folding>
@@ -1244,8 +1248,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nights-share/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="223" column="21" lean-forward="true" selection-start-line="223" selection-start-column="21" selection-end-line="223" selection-end-column="21" />
+        <state relative-caret-position="341">
+          <caret line="909" column="21" lean-forward="true" selection-start-line="909" selection-start-column="21" selection-end-line="909" selection-end-column="21" />
         </state>
       </provider>
     </entry>

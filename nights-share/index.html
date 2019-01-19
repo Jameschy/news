@@ -6,12 +6,10 @@
     <meta name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
     <title>Night Share</title>
-
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-
 <div class="wraper-box">
     <div class="header-fixed app-download up-down" id="download">
         <div class="download-btn">
@@ -111,13 +109,47 @@
 
     </div>
     <div class="footer">
-        <div class="body-footer">
+        <div class="body-footer mb-dis-no">
             <div class="infomation">
-                <p><span id="copyYear">2019</span>&nbsp;©&nbsp;抖音&nbsp;&nbsp;|&nbsp;京ICP备16016397号-3&nbsp;|&nbsp;北京微播视界科技有限公司
-                    |&nbsp; 地址&nbsp;:&nbsp;北京市海淀区知春路51号4层408&nbsp;</p>
-                <p><a target="_blank" href="http://www.nightslive.cn/">中国互联网举报中心</a>&nbsp;|&nbsp;网络文化许可证-京网文-（2016）2282-264号&nbsp;|&nbsp;违法和不良信息举报：010-83434212
+                <p>
+                    <span id="copyYear">2019</span>
+                    &nbsp;©&nbsp;抖音&nbsp;&nbsp;|&nbsp;京ICP备16016397号-3&nbsp;|&nbsp;北京微播视界科技有限公司
+                    |&nbsp; 地址&nbsp;:&nbsp;北京市海淀区知春路51号4层408&nbsp;
+                </p>
+                <p>
+                    <a target="_blank" href="http://www.nightslive.cn/">中国互联网举报中心</a>
+                    &nbsp;|&nbsp;网络文化许可证-京网文-（2016）2282-264号&nbsp;|&nbsp;违法和不良信息举报：010-83434212
                 </p>
             </div>
+        </div>
+        <div class="mb-body-footer pc-dis-no">
+            <p>
+                <span>更多精彩，请前往客户端体验</span>
+                <span class="arrow"></span>
+            </p>
+
+
+            <div class="banner-bottom" id="bannerBottom">
+                <div class="banner-bottom-side">
+                    <img src="img/bottom_logo.png" class="bt-banner-logo"/>
+                    <img src="img/bottom_slogen.png" class="bt-banner-slogan">
+                </div>
+                <span class="banner-btn">立即加入</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="downloadDlg pc-dis-no dis-no">
+    <div class="dlg-bg">
+        <div class="dlg-title"></div>
+        <div class="dlg-body">
+            <p class="title bolder">下载抖音</p>
+            <p class="content">查看更多有趣视频</p>
+        </div>
+        <div class="dlg-operation">
+            <div class="btn-ignore">忽略</div>
+            <div class="btn-download bolder">立即下载</div>
         </div>
     </div>
 </div>
@@ -129,11 +161,24 @@
 <script type="text/javascript" src="js/video.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        setTimeout(function (){
-            $("#download").css("transform","translateY(0)")
-        },1000);
+
+        //after 1s Auto slideDown the Bar
+        setTimeout(function () {
+            $("#download").css("transform", "translateY(0)")
+        }, 1000);
+
+        //after 10s Auto display the download block
+        setTimeout(function () {
+            $(".downloadDlg").removeClass("dis-no")
+        }, 10000);
+
+        // click ignore to hide
+        $(".btn-ignore").click(function () {
+            $(".downloadDlg").addClass("dis-no")
+        })
     });
 
+    // player btn function
     $(".video-player").click(function () {
         if ($("#playing").is(":hidden")) {
             $("#playing").show();
@@ -144,7 +189,7 @@
             $("#playing").hide();
             $(".video-mask").hide();
             $(".body-content .video-source").show();
-            $("video").trigger("play");
+            $(".body-content video").trigger("play");
 
         }
     })
@@ -154,6 +199,7 @@
         $("#playing").show();
         $(".body-content video").trigger('pause');
         $(".body-content .video-source").hide();
+        $(".video-mask").show();
         console.log("播放结束！！")
     }
 
