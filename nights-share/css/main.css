@@ -615,7 +615,7 @@ li {
         flex: 1;
         line-height: 55px;
         background-color: #e7e8f5;
-        border-bottom-left-radius: .04rem;
+        border-bottom-left-radius: 3px;
     }
 
     .downloadDlg .dlg-bg .dlg-operation .btn-download {
@@ -625,7 +625,7 @@ li {
         line-height: 55px;
         background-color: #d9dbeb;
         color: rgba(22, 24, 35, .9);
-        border-bottom-right-radius: .04rem;
+        border-bottom-right-radius: 3px;
     }
 
     .mb-body-footer {
@@ -682,7 +682,7 @@ li {
         border-radius: 2px;
         text-align: center;
         /*width: 15%;*/
-        padding: 8px 20px;
+        padding: 5px 20px;
         display: block;
     }
 }
