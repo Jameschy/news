@@ -119,7 +119,7 @@ li {
 }
 
 .body-content .video-box .video-player {
-    background-image: url(https://p1.pstatp.com/large/161ea0004f1bc589c7a2f.jpg);
+    background-image: url(../img/face_cover.jpg);
     /*height: 568.889px;*/
     position: relative;
     width: 320px;
@@ -140,7 +140,7 @@ li {
     position: absolute;
     width: 50px;
     height: 50px;
-    background: url(//s3.bytecdn.cn/aweme/resource/web/static/image/icon_play_6ac4843.png) no-repeat center center;
+    background: url(../img/icon_play.png) no-repeat center center;
     background-size: cover;
     top: 50%;
     left: 50%;
@@ -276,7 +276,7 @@ li {
         height: 75px;
         overflow: hidden;
         background-color: #0e0b17;
-        background-image: url(//s3.bytecdn.cn/ies/resource/falcon/douyin_falcon/static/image/reflow/banner_logo_new_1a2d51c.png);
+        background-image: url(../img/banner_logo_new.png);
         background-repeat: no-repeat;
         background-position: center left;
         background-size: 50%;
@@ -456,19 +456,7 @@ li {
         background-size: cover;
         padding-top: 133.2%;
         position: relative;
-        background-image: url("https://p3.pstatp.com/large/c25600052cc816f5ecdb.jpg");
-    }
-
-    .videos-box-list li:nth-child(3n+2) .list-cover {
-        background-image: url("https://p3.pstatp.com/large/c25600052cc816f5ecdb.jpg");
-    }
-
-    .videos-box-list li:nth-child(3n+1) .list-cover {
-        background-image: url("https://p99.pstatp.com/large/b0ac0005e3beba70d91e.jpg");
-    }
-
-    .videos-box-list li:nth-child(2n+2) .list-cover {
-        background-image: url("https://p99.pstatp.com/large/14eb30008b2a40f76ff8a.jpg");
+        background-image: url("../img/face_cover.jpg");
     }
 
     .videos-box-list li .list-cover .cover-btn {
@@ -479,7 +467,7 @@ li {
         width: 50px;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
-        background-image: url(//s3a.bytecdn.cn/ies/resource/falcon/douyin_falcon/static/image/reflow/play_4a92d1e.png);
+        background-image: url(../img/play.png);
         background-size: 100%;
     }
 
@@ -524,7 +512,7 @@ li {
         vertical-align: middle;
         background-repeat: no-repeat;
         background-position: left top;
-        background-image: url(//s3a.bytecdn.cn/ies/resource/falcon/douyin_falcon/static/image/reflow/musicicon_191951e.png);
+        background-image: url(../img/icon-0.jpeg);
         background-size: contain;
     }
 
@@ -569,7 +557,7 @@ li {
         position: relative;
         width: 100%;
         height: 114px;
-        background-image: url(//s3a.bytecdn.cn/ies/resource/falcon/douyin_falcon/page/reflow_video/image/downloadDlg_eb7879b.png);
+        background-image: url(../img/downloadDlg.png);
         font-size: 0;
         background-size: 100%;
         vertical-align: bottom;
@@ -651,7 +639,7 @@ li {
         height: 29px;
         margin-bottom: -25px;
         margin-left: 5px;
-        background: url(//s3.bytecdn.cn/ies/resource/falcon/douyin_falcon/static/image/reflow/line_arrow_964b8a2.png) no-repeat left top;
+        background: url(../img/line_arrow.png) no-repeat left top;
         background-size: contain;
     }
 

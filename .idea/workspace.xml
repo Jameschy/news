@@ -56,7 +56,8 @@
           <entry key="css" value="197" />
           <entry key="html" value="382" />
           <entry key="ico" value="1" />
-          <entry key="jpg" value="36" />
+          <entry key="jpeg" value="1" />
+          <entry key="jpg" value="37" />
           <entry key="js" value="43" />
           <entry key="json" value="1" />
           <entry key="map" value="2" />
@@ -68,7 +69,7 @@
         <counts>
           <entry key="CSS" value="197" />
           <entry key="HTML" value="382" />
-          <entry key="Image" value="54" />
+          <entry key="Image" value="56" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="43" />
           <entry key="PHP" value="4" />
@@ -77,35 +78,35 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="11691" />
-          <entry key="html" value="19340" />
+          <entry key="css" value="11817" />
+          <entry key="html" value="19354" />
           <entry key="js" value="145" />
           <entry key="json" value="2" />
           <entry key="php" value="16" />
-          <entry key="txt" value="1693" />
+          <entry key="txt" value="1714" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="11691" />
-          <entry key="HTML" value="19344" />
+          <entry key="CSS" value="11817" />
+          <entry key="HTML" value="19358" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="141" />
           <entry key="PHP" value="16" />
-          <entry key="PLAIN_TEXT" value="1693" />
+          <entry key="PLAIN_TEXT" value="1714" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6269841">
+    <splitter split-orientation="horizontal" split-proportion="0.54761904">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/nights-share/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="236" column="28" lean-forward="true" selection-start-line="236" selection-start-column="28" selection-end-line="236" selection-end-column="28" />
+                <state relative-caret-position="304">
+                  <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
                   <folding>
                     <element signature="e#4608#4614#0" expanded="true" />
                     <element signature="e#4839#4845#0" expanded="true" />
@@ -138,8 +139,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/nights-share/css/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="512">
-                  <caret line="639" column="29" selection-start-line="639" selection-start-column="29" selection-end-line="639" selection-end-column="29" />
+                <state relative-caret-position="377">
+                  <caret line="450" column="5" lean-forward="true" selection-start-line="450" selection-start-column="5" selection-end-line="450" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -315,11 +316,6 @@
             <path>
               <item name="news" type="b2602c69:ProjectViewProjectNode" />
               <item name="news" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="news" type="b2602c69:ProjectViewProjectNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-              <item name="base2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="news" type="b2602c69:ProjectViewProjectNode" />
@@ -509,21 +505,7 @@
       <workItem from="1547605883041" duration="4980000" />
       <workItem from="1547690489235" duration="14725000" />
       <workItem from="1547777484459" duration="20551000" />
-      <workItem from="1547863963722" duration="14156000" />
-    </task>
-    <task id="LOCAL-00016" summary="回复菜单动画功能，OK！！！">
-      <created>1538193479451</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1538193479451</updated>
-    </task>
-    <task id="LOCAL-00017" summary="回复菜单动画功能，OK！！！">
-      <created>1538270816890</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1538270816890</updated>
+      <workItem from="1547863963722" duration="15771000" />
     </task>
     <task id="LOCAL-00018" summary="test！！！">
       <created>1538270872624</created>
@@ -854,11 +836,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547883698559</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="1.优化英文下，界面样式">
+      <created>1547884723029</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1547884723029</updated>
+    </task>
+    <task id="LOCAL-00066" summary="1.优化浮层圆角">
+      <created>1547885240139</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1547885240139</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="588450000" />
+    <option name="totallyTimeSpent" value="590065000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -952,8 +948,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1.详情页新加物流信息示范图&#10;2.详情评分新增半星&#10;3.订单页取消容器container，全屏展示" />
-    <MESSAGE value="1.优化各模块PC&gt;1200宽度,&#10;2.新建header3之PC端，新建PC菜单导航结构及动画，适配移动端" />
     <MESSAGE value="1.新建产品列表图片库；2新建产品分类模块自定义模块&#10;3.优化banner动画PC端遮盖问题" />
     <MESSAGE value="1.新建仿抖音pc端" />
     <MESSAGE value="1.创建仿抖音项目，适配移动端；" />
@@ -977,15 +971,11 @@
     <MESSAGE value="1.变更footer内边距" />
     <MESSAGE value="1.适配1024/768界面" />
     <MESSAGE value="1.英文化界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.英文化界面" />
+    <MESSAGE value="1.优化英文下，界面样式" />
+    <MESSAGE value="1.优化浮层圆角" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.优化浮层圆角" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/base2/img/banner/ups2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base2/img/banner/ups1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/base2/img/banner/slide3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1239,17 +1229,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nights-share/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="639" column="29" selection-start-line="639" selection-start-column="29" selection-end-line="639" selection-end-column="29" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/nights-share/img/icon-0.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nights-share/img/list-1.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/nights-share/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="236" column="28" lean-forward="true" selection-start-line="236" selection-start-column="28" selection-end-line="236" selection-end-column="28" />
+        <state relative-caret-position="304">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
             <element signature="e#4608#4614#0" expanded="true" />
             <element signature="e#4839#4845#0" expanded="true" />
@@ -1262,6 +1251,13 @@
             <element signature="n#style#0;n#div#0;n#a#0;n#li#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#a#0;n#li#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nights-share/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="450" column="5" lean-forward="true" selection-start-line="450" selection-start-column="5" selection-end-line="450" selection-end-column="5" />
         </state>
       </provider>
     </entry>
