@@ -595,8 +595,8 @@ li {
 
     .downloadDlg .dlg-bg .dlg-body .title {
         font-size: 18px;
-        padding-top: 6px;
         margin-bottom: 0;
+        padding: 6px 10px 0;
         color: rgba(22, 24, 35, .9);
     }
 
