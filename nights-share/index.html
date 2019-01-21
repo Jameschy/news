@@ -164,7 +164,6 @@
 </body>
 
 <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-<script type="text/javascript" src="js/video.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
 
@@ -181,7 +180,15 @@
         // click ignore to hide
         $(".btn-ignore").click(function () {
             $(".downloadDlg").addClass("dis-no")
-        })
+        });
+
+        // if click the video list items，Show Shadow
+        $(".cover-btn").click(function () {
+            $(".cover-mask").css("background","rgba(225,225,225,0.125)");
+            $(this).siblings(".cover-mask").css("background","rgba(225,225,225,0)");
+
+            console.log("adadadad")
+        });
     });
 
     // player btn function
@@ -205,6 +212,8 @@
     $(".cover-btn").click(function () {
         $(".cover-mask").css("background","rgba(225,225,225,0.125)");
         $(this).siblings(".cover-mask").css("background","rgba(225,225,225,0)");
+
+        console.log("adddd");
     });
 
     // video Play Watching And Control
