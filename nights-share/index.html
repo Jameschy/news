@@ -176,7 +176,7 @@
         //after 8s Auto display the download block
         setInterval(function () {
             $(".downloadDlg").removeClass("dis-no")
-        }, 15000);
+        }, 20000);
 
         // click ignore to hide
         $(".btn-ignore").click(function () {
@@ -201,7 +201,13 @@
     })
 
 
-    // Watching playing Status
+    // if click the video list items，Show Shadow
+    $(".cover-btn").click(function () {
+        $(".cover-mask").css("background","rgba(225,225,225,0.125)");
+        $(this).siblings(".cover-mask").css("background","rgba(225,225,225,0)");
+    });
+
+    // video Play Watching And Control
     function endPlay() {
         $("#playing").show();
         $(".body-content video").trigger('pause');

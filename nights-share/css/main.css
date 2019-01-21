@@ -278,8 +278,13 @@ li {
         background-color: #0e0b17;
         background-image: url(../img/banner_logo_new.png);
         background-repeat: no-repeat;
-        background-position:15px center;
+        background-position: 15px center;
         background-size: 50%;
+    }
+
+    .body-content .video-box video {
+        width: 100%;
+        margin-top: -15%;
     }
 
     #download .download-btn {
@@ -481,6 +486,11 @@ li {
         left: 0;
         width: 100%;
         height: 100%;
+        background: rgba(225,225,225,0.125);
+    }
+
+    .videos-box-list li .list-cover .cover-mask:hover{
+        background: rgba(225,225,225,0);
     }
 
     .videos-box-list li .list-cover .video-source {
@@ -512,7 +522,7 @@ li {
         vertical-align: middle;
         background-repeat: no-repeat;
         background-position: left top;
-        background-image: url(../img/icon-0.jpeg);
+        background-image: url(../img/icon-.png);
         background-size: contain;
     }
 
@@ -682,6 +692,14 @@ li {
     #videoUser .user-follow-btn{
         width: 30%;
     }
+
+}
+
+@media only screen and (width: 375px) {
+    .body-content .video-box video{
+        margin-top: 12%;
+    }
+
 }
 
 @media only screen and (width: 768px) {
