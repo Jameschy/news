@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="r-content">
+    <div class="video-wrap" style="width: 650px;text-align: center">
+        <video  src="img/home-bg1.mp4"  width='100%' width="450" controls="controls" class="video"
+                preload="metadata"  type="video/mp4" id="myv">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+</body>
+<script src="http://code.jquery.com/jquery-1.3.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        test();
+    })
+    function test() {
+        var myvObj = document.getElementsByClassName("video")[0];
+        myvObj.addEventListener("loadedmetadata", function () {
+            // console.log(this.videoHeight+" "+this.videoWidth);
+            var height = $(this).height();
+            var wid = $(this).width();
+            console.log(height + "宽度"+wid);
+
+        });
+    }
+
+</script>
+
+</html>

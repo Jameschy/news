@@ -2,13 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/video.js/6.0.0-RC.5/alt/video-js-cdn.min.css">
+    　　　<script src="http://cdn.bootcss.com/video.js/6.0.0-RC.5/alt/video.novtt.min.js"></script>
 </head>
 <body>
-<video width="500px" height="500px" controls="controls" autoplay="autoplay">
-
-    <source src="img/home-bg1.mp4" type="video/ogg" />
-
+<video id="my_video_1" class='video-js vjs-default-skin vjs-big-play-centered' preload='auto' data-setup='{}' autoplay="autoplay" muted>
+    <source src='img/home-bg1.mp4' type='video/mp4'>
 </video>
 </body>
+<script src="http://code.jquery.com/jquery-1.3.1.min.js"></script>
+<script type="text/javascript">
+    var vList = [
+        'img/home-bg2.mp4',
+        'img/home-bg3.mp4',
+        'img/home-bg1.mp4'
+    ]; // 初始化播放列表
+    var vLen = vList.length; // 播放列表的长度
+    var curr = 0; // 当前播放的视频
+
+    var video = videojs("my_video_1", {}, function () {
+        this.on('ended', function () {
+            play();
+            function play(e) {
+                video.src(vList[curr]);
+                video.load();
+                video.play();
+                curr++;
+                if (curr >= vLen) {
+                    curr = 0; // 播放完了，重新播放
+                }
+            }
+        })
+    })
+
+    $(document).ready(function () {
+    function VdoMiddle() {
+        // var screenH = document.documentElement.clientHeight;
+        var videoH = $('.vjs-tech')[0].offsetHeight;
+        var videoW = $('.vjs-tech')[0].offsetWidth;
+        // $('#video')[0].style.top =(screenH - videoH) / 2 + 'px';
+        // console.log('屏幕高：' + screenH);
+        console.log('视频高：' + videoH);
+        console.log('视频宽：' + videoW);
+        // console.log('top值：' + $('#video')[0].style.top);
+    }
+    })
+</script>
 </html>

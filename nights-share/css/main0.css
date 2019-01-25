@@ -123,7 +123,7 @@ li {
     /*height: 568.889px;*/
     position: relative;
     width: 320px;
-    height: 565px;
+    height: 568px;
     background-color: #eee;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,7 +133,7 @@ li {
 }
 
 .body-content .video-box .video-source {
-    /*display: none;*/
+    display: none;
 }
 
 .body-content .video-box .video-play-btn {
@@ -175,8 +175,8 @@ li {
 
 .comment-top-box .user-desc {
     color: #999;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 12px;
+    line-height: 12px;
 }
 
 .body-content .video-comment .comment-bottom-box {
@@ -340,7 +340,7 @@ li {
     }
 
     #videoUser .user-title {
-        font-size: 16px;
+        font-size: 18px;
         padding-bottom: 5px;
         margin-bottom: 5px;
         border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -683,14 +683,9 @@ li {
         padding: 5px 20px;
         display: block;
     }
-
-
 }
 
 @media only screen and (width: 320px) {
-    .body-content .video-box .video-player{
-        height: 435px;
-    }
     .app-download {
         background-size: 50%;
     }
@@ -701,35 +696,14 @@ li {
 }
 
 @media only screen and (width: 375px) {
-    .body-content .video-box .video-player{
-        height: 565px;
-    }
     .body-content .video-box video{
         margin-top: 12%;
     }
-    video.video-source-375{
-        position: absolute;
-        top: 42%;
-    }
-
-}
-
-@media only screen and (width: 411px) {
-    .body-content .video-box video{
-        margin-top: 0%;
-    }
-
-}
-@media only screen and (width: 414px) {
-
 
 }
 
 @media only screen and (width: 768px) {
 
-    .body-content .video-box video{
-        margin-top: 0%;
-    }
     .body-content .video-box .video-play-btn,
     .videos-box-list li .list-cover .cover-btn {
         width: 85px;
@@ -958,18 +932,7 @@ li {
 .dis-bl {
     display: block;
 }
-.video-source-horizontal{
-    position: absolute;
-    top: 30%;
-    margin-top: 0%!important;
 
-}
-.bg-transparent{
-    background: transparent!important;
-}
 .txt-uppercase{
     text-transform: uppercase;
-}
-#bgimg{
-    display: none;
 }

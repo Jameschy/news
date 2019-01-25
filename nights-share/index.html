@@ -38,6 +38,7 @@
             <div class="body-content">
                 <div class="col-lg-6 col-12 content-left video-box">
                     <div class="video-player">
+                        <img id="bgimg" src="{$video.cover}" alt="">
                         <div class="video-play-btn" id="playing"></div>
                         <video class="video-source" src="img/home.mp4" onended="endPlay()">
 
@@ -169,60 +170,120 @@
 
         //after 1s Auto slideDown the Bar
         setTimeout(function () {
-            $("#download").css("transform", "translateY(0)")
+            $("#download").css("transform", "translateY(0)");
+
         }, 1000);
 
-        //after 8s Auto display the download block
+        //after 10s Auto display the download block
+        downloadBox();
+        compareImgSize();
+        // click ignore to hide
+
+
+        $(".btn-ignore").click(function () {
+            $(".downloadDlg").addClass("dis-no")
+        })
+
+        // if click the video list items，Show mask Shadow
+        $(".cover-btn").click(function () {
+            $(".cover-mask").css("background", "rgba(225,225,225,0.125)");
+            $(this).siblings(".cover-mask").css("background", "rgba(225,225,225,0)");
+            $(".downloadDlg").removeClass("dis-no");
+            // console.log("adadadad")
+        });
+
+
+    });
+
+
+    // 对视频在视窗容器位置的判定
+    function compareImgSize() {
+        var coverImg = document.getElementById("bgimg"),
+            coverSize = getImgNaturalDimensions(coverImg),
+
+            // 计算宽高比
+            coverSizeRate = coverSize[0] / coverSize[1];
+
+        // 多条件判断全写
+        // if (coverSizeRate > 1.7){
+        //     imgPosition(33);
+        // }else if (coverSizeRate < 1.7 && coverSizeRate > 0.7){
+        //     imgPosition(12);
+        // }else if(coverSizeRate < 0.7){
+        //     imgPosition(0);
+        // }
+
+        // 多条件判断简写
+        (coverSizeRate > 1.7 ||coverSizeRate == 1.7)  ? imgPosition(33)
+            : (coverSizeRate < 1.7 && coverSizeRate > 0.7 || coverSizeRate == 0.7) ? imgPosition(12)
+            :(coverSizeRate < 0.7 && coverSizeRate > 0.65 || coverSizeRate == 0.65) ? imgPosition(0)
+                : imgPosition(-0.5);
+
+        // console.log(coverSize[0]+"<宽*高>" + coverSize[1]);
+    }
+
+    // 封面图片对视频控制
+    function imgPosition(topData) {
+        $("#vSource").css({
+            "position":"absolute",
+            "top":topData +"%",
+            "margin-top":0
+        })
+    }
+
+    // 获取图片原始大小
+    function getImgNaturalDimensions(img) {
+        var nWidth, nHeight;
+        if (img.naturalWidth) { // 现代浏览器
+            nWidth = img.naturalWidth
+            nHeight = img.naturalHeight
+        }
+        // else { // IE6/7/8
+        //     var imgae = new Image()
+        //     image.src = img.src
+        //     image.onload = function() {
+        //         callback(image.width, image.height)
+        //     }
+        // }
+        return [nWidth, nHeight]
+    }
+
+
+    // 页顶定时下拉功能
+    function downloadBox() {
         setInterval(function () {
             $(".downloadDlg").removeClass("dis-no")
         }, 20000);
+    }
 
-        // click ignore to hide
-        $(".btn-ignore").click(function () {
-            $(".downloadDlg").addClass("dis-no")
-        });
-
-        // if click the video list items，Show Shadow
-        $(".cover-btn").click(function () {
-            $(".cover-mask").css("background","rgba(225,225,225,0.125)");
-            $(this).siblings(".cover-mask").css("background","rgba(225,225,225,0)");
-
-            console.log("adadadad")
-        });
-    });
-
-    // player btn function
+    // 视频播放功能
     $(".video-player").click(function () {
         if ($("#playing").is(":hidden")) {
             $("#playing").show();
             $(".body-content video").trigger('pause');
             // $(".video-source").hide();
             $(".video-mask").show();
+            // $(".video-player").removeClass("bg-transparent");
+
         } else {
             $("#playing").hide();
+            compareImgSize();
             $(".video-mask").hide();
             $(".body-content .video-source").show();
             $(".body-content video").trigger("play");
-
+            $("#vSource").removeClass("dis-no");
+            $(".video-player").addClass("bg-transparent");
         }
     })
 
-
-    // if click the video list items，Show Shadow
-    $(".cover-btn").click(function () {
-        $(".cover-mask").css("background","rgba(225,225,225,0.125)");
-        $(this).siblings(".cover-mask").css("background","rgba(225,225,225,0)");
-
-        console.log("adddd");
-    });
-
-    // video Play Watching And Control
+    // 视频播放监测
     function endPlay() {
         $("#playing").show();
         $(".body-content video").trigger('pause');
         $(".body-content .video-source").hide();
         $(".video-mask").show();
-        console.log("播放结束！！")
+        $(".video-player").removeClass("bg-transparent")
+        // console.log("播放结束！！")
     }
 
 
@@ -246,11 +307,12 @@
             "目不转睛经"
         ];
 
-    // Giving a random Number
+    // 获取范围内随机数
     function random(lower, upper) {
         return Math.floor(Math.random() * (upper - lower)) + lower;
     }
 
+    // 遍历生成列表
     for (i = 0; i < 26; i++) {
         indexImg = random(lower, upper);
         indexName = Math.floor((Math.random() * nameArr.length));
@@ -272,5 +334,6 @@
             "                        </a>\n" +
             "                    </li>")
     }
+
 </script>
 </html>

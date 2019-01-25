@@ -10,30 +10,17 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 
-    <link rel="stylesheet" href="//cdn.bootcss.com/video.js/6.0.0-RC.5/alt/video-js-cdn.min.css">
-    　　　<script src="http://cdn.bootcss.com/video.js/6.0.0-RC.5/alt/video.novtt.min.js"></script>
-
 </head>
 <body>
 
 <div class="out-container">
     <div class="video-bg pc-dis-no" id="video-bg">
         <div class="video">
-            <!--<video id="my-player" class="video-js vjs-default-skin vjs-big-play-centered" muted autoplay="autoplay" >-->
+            <video id="my-player" class="video-js vjs-default-skin vjs-big-play-centered" muted autoplay="autoplay" >
 
-            <!--</video>-->
-            <video id="my_video_1" class='video-js vjs-default-skin vjs-big-play-centered' preload='auto' data-setup='{}' autoplay="autoplay" muted>
-                <source src='img/home-bg1.mp4' type='video/mp4'>
             </video>
         </div>
     </div>
-
-    <style type="text/css">
-        .my_video_1-dimensions{
-            background-color: transparent!important;
-            height: 675px!important;
-        }
-    </style>
 
 
     <div class="out-wrapper">
@@ -227,106 +214,81 @@ $("#languageWrap").click(function () {
 })
 </script>
 
-<!--<script type="text/javascript" src="js/vue.js"></script>-->
-<!--<script src="//vjs.zencdn.net/5.19/video.min.js"></script>-->
-<!--<script type="text/javascript" src="js/video.min.js"></script>-->
+<script type="text/javascript" src="js/vue.js"></script>
+<script src="//vjs.zencdn.net/5.19/video.min.js"></script>
+<script type="text/javascript" src="js/video.min.js"></script>
 
 <script type="text/javascript">
-    var vList = [
-        'img/home-bg2.mp4',
-        'img/home-bg3.mp4',
-        'img/home-bg1.mp4'
-    ]; // 初始化播放列表
-    var vLen = vList.length; // 播放列表的长度
-    var curr = 0; // 当前播放的视频
+    // 设置flash路径,用于在videojs发现浏览器不支持HTML5播放器的时候自动唤起flash播放器
+    videojs.options.flash.swf = 'js/videojs/swf/video-js.swf';
 
-    var video = videojs("my_video_1", {}, function () {
-        this.on('ended', function () {
-            play();
-            function play(e) {
-                video.src(vList[curr]);
-                video.load();
-                video.play();
-                curr++;
-                if (curr >= vLen) {
-                    curr = 0; // 播放完了，重新播放
-                }
+    var vm = new Vue({
+        el: '#video-bg',
+        data: {
+            visible: true,
+            listItem:[
+                {isplay:true, type:"video/mp4", url: "img/home-bg1.mp4"},
+                {isplay:true, type:"video/mp4", url: "img/home-bg2.mp4"},
+                {isplay:true, type:"video/mp4", url: "img/home-bg3.mp4"}
+            ]
+        },
+        mounted:function(){
+            this.show();
+        },
+        filters: {
+            formatDate: function (value) {
+                let date = new Date(value);
+                let y = date.getFullYear();
+                let MM = date.getMonth() + 1;
+                MM = MM < 10 ? ('0' + MM) : MM;
+                let d = date.getDate();
+                d = d < 10 ? ('0' + d) : d;
+                let h = date.getHours();
+                h = h < 10 ? ('0' + h) : h;
+                let m = date.getMinutes();
+                m = m < 10 ? ('0' + m) : m;
+                let s = date.getSeconds();
+                s = s < 10 ? ('0' + s) : s;
+                return y + '-' + MM + '-' + d + ' ' + h + ':' + m + ':' + s;
             }
-        })
-    })
+        },
+        methods: {
+            show: function () {
+                this.visible = true;
+            }
+
+        }
+    });
+
+    var list = vm.listItem;
+    var i = 0;
+    $(function(){
+
+        var source = document.getElementById("video-source");
+        var player = videojs("my-player", {
+            "autoplay":true,
+            "sources": [{
+                src: list[i].url,
+                type: list[i].type
+            }],
+
+        }, function(){
+            this.on('loadeddata',function(){
+                this.play();
+            })
+            this.on('ended',function(){
+                i++;
+                if(i >= list.length){
+                    i = 0;
+                }
+                var videoObj = list[i];
+                this.src({type: videoObj.type, src: videoObj.url});
+                this.play();
+            })
+
+        });
+    });
 </script>
-
-<!--<script type="text/javascript">-->
-    <!--// 设置flash路径,用于在videojs发现浏览器不支持HTML5播放器的时候自动唤起flash播放器-->
-    <!--videojs.options.flash.swf = 'js/videojs/swf/video-js.swf';-->
-
-    <!--var vm = new Vue({-->
-        <!--el: '#video-bg',-->
-        <!--data: {-->
-            <!--visible: true,-->
-            <!--listItem:[-->
-                <!--{isplay:true, type:"video/mp4", url: "img/home-bg1.mp4"},-->
-                <!--{isplay:true, type:"video/mp4", url: "img/home-bg2.mp4"},-->
-                <!--{isplay:true, type:"video/mp4", url: "img/home-bg3.mp4"}-->
-            <!--]-->
-        <!--},-->
-        <!--mounted:function(){-->
-            <!--this.show();-->
-        <!--},-->
-        <!--filters: {-->
-            <!--formatDate: function (value) {-->
-                <!--let date = new Date(value);-->
-                <!--let y = date.getFullYear();-->
-                <!--let MM = date.getMonth() + 1;-->
-                <!--MM = MM < 10 ? ('0' + MM) : MM;-->
-                <!--let d = date.getDate();-->
-                <!--d = d < 10 ? ('0' + d) : d;-->
-                <!--let h = date.getHours();-->
-                <!--h = h < 10 ? ('0' + h) : h;-->
-                <!--let m = date.getMinutes();-->
-                <!--m = m < 10 ? ('0' + m) : m;-->
-                <!--let s = date.getSeconds();-->
-                <!--s = s < 10 ? ('0' + s) : s;-->
-                <!--return y + '-' + MM + '-' + d + ' ' + h + ':' + m + ':' + s;-->
-            <!--}-->
-        <!--},-->
-        <!--methods: {-->
-            <!--show: function () {-->
-                <!--this.visible = true;-->
-            <!--}-->
-
-        <!--}-->
-    <!--});-->
-
-    <!--var list = vm.listItem;-->
-    <!--var i = 0;-->
-    <!--$(function(){-->
-
-        <!--var source = document.getElementById("video-source");-->
-        <!--var player = videojs("my-player", {-->
-            <!--"autoplay":true,-->
-            <!--"sources": [{-->
-                <!--src: list[i].url,-->
-                <!--type: list[i].type-->
-            <!--}],-->
-
-        <!--}, function(){-->
-            <!--this.on('loadeddata',function(){-->
-                <!--this.play();-->
-            <!--})-->
-            <!--this.on('ended',function(){-->
-                <!--i++;-->
-                <!--if(i >= list.length){-->
-                    <!--i = 0;-->
-                <!--}-->
-                <!--var videoObj = list[i];-->
-                <!--this.src({type: videoObj.type, src: videoObj.url});-->
-                <!--this.play();-->
-            <!--})-->
-
-        <!--});-->
-    <!--});-->
-<!--</script>-->
 
 
 </html>
