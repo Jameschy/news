@@ -10,17 +10,17 @@
 <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 <script type="text/javascript" src="js/video.min.js"></script>
 <body>
-<video  id="myvideo" width="100%" height="auto" controls="controls" >
+<video  id="myvideo" width="100%" height="auto" controls="controls" muted >
     你的浏览器不支持HTML5播放此视频
     <span style="white-space:pre">    </span><!-- 支持播放的文件格式 -->
-    <source src="../tiktok/img/home-bg1.mp4" type='video/mp4' />
+    <source src="" type='video/mp4' />
 </video>
 
 
 <script language="javascript" type="text/javascript">
 
 
-    var vList = ['../tiktok/img/home-bg1.mp4', '../tiktok/img/home-bg2.mp4', '../tiktok/img/home-bg3.mp4']; // 初始化播放列表    var vLen = vList.length;
+    var vList = ['../tiktok/img/home-bg2.mp4', '../tiktok/img/home-bg3.mp4', '../tiktok/img/home-bg1.mp4']; // 初始化播放列表    var vLen = vList.length;
     var curr = 0;
     var video = document.getElementById("myvideo");
     video.addEventListener('ended', function(){

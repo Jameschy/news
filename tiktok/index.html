@@ -33,6 +33,12 @@
             background-color: transparent!important;
             height: 675px!important;
         }
+        .video-js .vjs-tech{
+            height: auto;
+        }
+        .video{
+            margin-top: -18px;
+        }
     </style>
 
 
@@ -232,6 +238,10 @@ $("#languageWrap").click(function () {
 <!--<script type="text/javascript" src="js/video.min.js"></script>-->
 
 <script type="text/javascript">
+
+    document.ready= function (callback) {
+        ajaxData();
+    }
     var vList = [
         'img/home-bg2.mp4',
         'img/home-bg3.mp4',
@@ -254,6 +264,31 @@ $("#languageWrap").click(function () {
             }
         })
     })
+
+
+    // function ajaxData() {
+        var ajax =  new XMLHttpRequest();
+        var requestData;
+        var arrNew = [];
+        ajax.open('get','http://nightscloudlive.com/index/index/get_videos.html');
+        ajax.send();
+        ajax.onreadystatechange = function (requestData) {
+            if (ajax.readyState==4 &&ajax.status==200) {
+                //步骤五 如果能够进到这个判断 说明 数据 完美的回来了,并且请求的页面是存在的
+                // console.log(JSON.parse(ajax.responseText));//输入相应的内容
+                requestData = JSON.parse(ajax.responseText);
+
+            }
+        }
+    console.log(requestData)
+    // requestData.forEach(function (item) {
+    //     arrNew.push({url: item.url})
+    //     console.log(arrNew);
+    // })
+
+
+
+    // }
 </script>
 
 <!--<script type="text/javascript">-->
