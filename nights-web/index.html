@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="refresh" content="10" />-->
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Night Share</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/swiper.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <link rel="stylesheet" href="css/videobox.css">
+</head>
+<body>
+
+<div class="main-box">
+    <div class="wraper-box">
+        <div class="header-fixed app-download up-down" id="download">
+            <div class="download-btn">
+                <span class="txt txt-uppercase">Open it</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="body-header mb-dis-no">
+                    <div class="header-logo">
+                        <a href="###logo">
+                            <img src="img/logo_pc.png" alt="web-logo">
+                        </a>
+                    </div>
+                    <div class="header-slogen">
+                        <a href="###Name" class="slogan-name txt-uppercase">Nights</a>
+                        <a href="###Slogen" class="slogan-theme">| Recording the Good Times</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="body-content" style="display: none">
+                    <div class="col-lg-6 col-12 content-left video-box">
+                        <div class="video-player">
+                            <img id="bgimg" src="" alt="">
+                            <div class="video-play-btn" id="playing"></div>
+                            <video class="video-source" src="img/home-bg1.mp4" onended="endPlay()">
+
+                            </video>
+                            <div class="video-mask"></div>
+                            <div id="videoUser" class="video-user pc-dis-no">
+                                <div class="user-title">
+                                    There are 800 million users of tremolo, but you brush it to me. So hello, my name is
+                                    Shiyuan. May you have money in your card and be happy every day.❤️
+                                    ❤️
+                                </div>
+                                <div class="user-avator"
+                                     style="background-image:url(https://p3-dy.bytecdn.cn/aweme/100x100/93c8001e8bf5825bc7cf.jpeg)"></div>
+                                <div class="user-info">
+                                    <p class="user-info-name">@Marry Bush</p>
+                                    <p class="user-info-id">
+                                        NightsID: siwon0516
+                                    </p>
+                                </div>
+                                <div class="user-follow-btn">Following</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-12 content-right video-comment">
+                        <div class="comment-top-box mb-dis-no">
+                            <p class="user-info">
+                            <span class="user-info-icon">
+                                <img src="img/user-icon.jpeg" alt="user-info"/>
+                            </span>
+                                <span class="user-info-name">@Marry Bush</span>
+                            </p>
+                            <p class="user-desc">
+                                There are 800 million users of tremolo, but you brush it to me. So hello, my name is
+                                Shiyuan. May you have money in your card and be happy every day.❤️
+                            </p>
+                        </div>
+
+                        <div class="comment-bottom-box mb-dis-no">
+                            <p class="download-title">【Scan the QR code，Watching More the Interestings】</p>
+                            <div class="download-qrcode">
+                                <img src="img/qrcode.png" alt="qrcode"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pc-dis-no">
+                <div class="mb-videos-box">
+                    <!--<div class="videos-box-header">-->
+                        <!--<span class="title txt-uppercase">Hot Items</span>-->
+                    <!--</div>-->
+
+                    <ul class="videos-box-list">
+                        <!--<li>-->
+                        <!--<a href="###1">-->
+                        <!--<div class="list-cover" style="background-image: url(img/list-1.jpg)">-->
+                        <!--<div class="cover-mask"></div>-->
+                        <!--<div class="cover-btn"></div>-->
+                        <!--<div class="cover-info">-->
+                        <!--<span class="info-icon"></span>-->
+                        <!--<span class="info-nickname">Pig John</span>-->
+                        <!--</div>-->
+                        <!--<video class="video-source" src="img/home.mp4" onended="endPlay()">-->
+                        <!--</video>-->
+                        <!--</div>-->
+                        <!--</a>-->
+                        <!--</li>-->
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <div class="body-footer mb-dis-no">
+                <div class="infomation">
+                    <p>
+                        <span id="copyYear">2019</span>
+                        &nbsp;©&nbsp;Nights&nbsp;&nbsp;|&nbsp;京ICP备16016397号-3&nbsp;|&nbsp;<br/>
+                        &nbsp;|&nbsp;Shenzhen HMZT Technology Co., Ltd.&nbsp;|&nbsp;<br/>
+                        |&nbsp; Addr&nbsp;:&nbsp;6th of North Gaoxin ,Nanshan,Shenzhen&nbsp;|&nbsp;<br/>
+                    </p>
+                    <p>
+                        <a target="_blank" href="http://www.nightslive.cn/">China Internet Illegal Information Reporting
+                            Centre (CIIRC)</a>
+                        &nbsp;|&nbsp;Cyberculture Licence-京网文-（2016）2282-264号&nbsp;|&nbsp; <br/>
+                        &nbsp;|&nbsp;Illegal and Bad Information Reporting：010-83434212&nbsp;|&nbsp;
+                    </p>
+                </div>
+            </div>
+            <div class="mb-body-footer pc-dis-no">
+                <p>
+                    <span>More exciting, <br/>please open the App of Nights</span>
+                    <span class="arrow"></span>
+                </p>
+
+
+                <div class="banner-bottom" id="bannerBottom">
+                    <div class="banner-bottom-side">
+                        <img src="img/bottom_logo.png" class="bt-banner-logo"/>
+                        <img src="img/bottom_slogen.png" class="bt-banner-slogan">
+                    </div>
+                    <span class="banner-btn txt-uppercase">Join us</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="downloadDlg pc-dis-no dis-no">
+        <div class="dlg-bg">
+            <div class="dlg-title"></div>
+            <div class="dlg-body">
+                <p class="title bolder">Download The Application</p>
+                <p class="content">For More Videos</p>
+            </div>
+            <div class="dlg-operation">
+                <div class="btn-ignore txt-uppercase">Ignore</div>
+                <div class="btn-download bolder txt-uppercase">Download</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="right-play-box swiper-container">
+    <div class="right-video-box swiper-wrapper">
+        <div class="swiper-slide">
+            <video class="v-slide" src="img/home-bg1.mp4"></video>
+            <ul class="right-btn-box">
+                <li class="btn-follow"></li>
+                <li class="btn-close"></li>
+            </ul>
+            <div class="bottom-brief-box dis-no">
+                Test!!!Test!!Test!!Test!!Test!!Test!!
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <video class="v-slide" src="img/home-bg2.mp4"></video>
+            <ul class="right-btn-box">
+                <li class="btn-follow"></li>
+                <li class="btn-close"></li>
+            </ul>
+            <div class="bottom-brief-box dis-no">
+                Test!!!Test!!Test!!Test!!Test!!Test!!
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <video class="v-slide" src="img/home-bg3.mp4"></video>
+            <ul class="right-btn-box">
+                <li class="btn-follow"></li>
+                <li class="btn-close"></li>
+            </ul>
+            <div class="bottom-brief-box dis-no">
+                Test!!!Test!!Test!!Test!!Test!!Test!!
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+
+<script type="text/javascript">
+    var swiper = new Swiper('.swiper-container');
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        //after 1s Auto slideDown the Bar
+        // setTimeout(function () {
+        //     $("#download").css("transform", "translateY(0)");
+        //
+        // }, 1000);
+
+        //after 10s Auto display the download block
+        // downloadBox();
+        // compareImgSize();
+        // click ignore to hide
+
+
+        $(".btn-ignore").click(function () {
+            $(".downloadDlg").addClass("dis-no");
+        })
+
+        // if click the video list items，Show mask Shadow
+        $(".cover-btn").click(function () {
+            $(".list-cover").removeClass("bgimg-no");
+            $("video").trigger('pause');
+            $(".cover-mask").css("background", "rgba(225,225,225,0.125)");
+            $(this).siblings(".cover-mask").css("background", "rgba(225,225,225,0)");
+
+
+
+            // 控制左右容器移动
+            $(".main-box").addClass("wid-0");
+            $(".right-play-box").css("right","0");
+
+            // $(".downloadDlg").removeClass("dis-no");
+            console.log("adadadad");
+            $(this).parent().addClass("bgimg-no");
+            $(this).siblings("video").addClass("pos-fix");
+            $(this).siblings("video").trigger('play');
+        });
+
+
+    });
+
+
+    // 对视频在视窗容器位置的判定
+    function compareImgSize() {
+        var coverImg = document.getElementById("bgimg"),
+            coverSize = getImgNaturalDimensions(coverImg),
+
+            // 计算宽高比
+            coverSizeRate = coverSize[0] / coverSize[1];
+
+        // 多条件判断全写
+        // if (coverSizeRate > 1.7){
+        //     imgPosition(33);
+        // }else if (coverSizeRate < 1.7 && coverSizeRate > 0.7){
+        //     imgPosition(12);
+        // }else if(coverSizeRate < 0.7){
+        //     imgPosition(0);
+        // }
+
+        // 多条件判断简写
+        (coverSizeRate > 1.7 || coverSizeRate == 1.7) ? imgPosition(33)
+            : (coverSizeRate < 1.7 && coverSizeRate > 0.7 || coverSizeRate == 0.7) ? imgPosition(12)
+            : (coverSizeRate < 0.7 && coverSizeRate > 0.65 || coverSizeRate == 0.65) ? imgPosition(0)
+                : imgPosition(-0.5);
+
+        // console.log(coverSize[0]+"<宽*高>" + coverSize[1]);
+    }
+
+    // 封面图片对视频控制
+    function imgPosition(topData) {
+        $("#vSource").css({
+            "position": "absolute",
+            "top": topData + "%",
+            "margin-top": 0
+        })
+    }
+
+    // 获取图片原始大小
+    function getImgNaturalDimensions(img) {
+        var nWidth, nHeight;
+        if (img.naturalWidth) { // 现代浏览器
+            nWidth = img.naturalWidth
+            nHeight = img.naturalHeight
+        }
+        // else { // IE6/7/8
+        //     var imgae = new Image()
+        //     image.src = img.src
+        //     image.onload = function() {
+        //         callback(image.width, image.height)
+        //     }
+        // }
+        return [nWidth, nHeight]
+    }
+
+
+    // 页顶定时下拉功能
+    function downloadBox() {
+        setInterval(function () {
+            $(".downloadDlg").removeClass("dis-no")
+        }, 20000);
+    }
+
+    // 视频播放功能
+    $(".video-player").click(function () {
+        if ($("#playing").is(":hidden")) {
+            $("#playing").show();
+            $(".body-content video").trigger('pause');
+            // $(".video-source").hide();
+            $(".video-mask").show();
+            // $(".video-player").removeClass("bg-transparent");
+
+        } else {
+            $("#playing").hide();
+            compareImgSize();
+            $(".video-mask").hide();
+            $(".body-content .video-source").show();
+            $(".body-content video").trigger("play");
+            $("#vSource").removeClass("dis-no");
+            $(".video-player").addClass("bg-transparent");
+        }
+    })
+
+
+    $(".cover-btn").click(function () {
+
+        $(".cover-btn").trigger('pause');
+        $(this).parents().css(
+            "background-image", "none",
+        )
+        console.log("adada");
+        $(this).trigger('play');
+    })
+
+    // 视频播放监测
+    function endPlay() {
+        $("#playing").show();
+        $(".body-content video").trigger('pause');
+        $(".body-content .video-source").hide();
+        $(".video-mask").show();
+        $(".video-player").removeClass("bg-transparent");
+        // console.log("播放结束！！")
+
+        $(".video-source").removeClass("pos-fix");
+        $(".list-cover").removeClass("bgimg-no")
+    }
+
+
+    var i,
+        indexImg,
+        indexName,
+        titles,
+        lower = 1,
+        upper = 12,
+        nameArr = [
+            "@黑妹儿创作的原声",
+            "@瑞琪组合（🔥🔥🔥）创作的原声",
+            "@盒子日记创作的原声",
+            "Jingle Bells",
+            "@长发飘飘:乔金子创作的原声",
+            "说爱你",
+            "小太阳",
+            "@叫我马哈创作的原声",
+            "United State of Pop 2017 (How We Do It)",
+            "@生僻字（剪辑版）",
+            "目不转睛经"
+        ];
+
+    // 获取范围内随机数
+    function random(lower, upper) {
+        return Math.floor(Math.random() * (upper - lower)) + lower;
+    }
+
+    // 遍历生成列表
+    for (i = 0; i < 4; i++) {
+        indexImg = random(lower, upper);
+        indexName = Math.floor((Math.random() * nameArr.length));
+        titles = nameArr[indexName];
+        $(".videos-box-list").append("<li>\n" +
+            "                        <a href=\"###00\">\n" +
+            "                            <div class=\"list-cover\" style=\"background-image: url(img/list-" + indexImg + ".jpg)\">\n" +
+            "                                <div class=\"cover-mask\"></div>\n" +
+            "                                <div class=\"cover-btn\"></div>\n" +
+            "                                <div class=\"cover-info\">\n" +
+            "                                    <span class=\"info-icon\" style=\"background-image: url(img/icon-" + (indexImg - 1) + ".jpeg)\"></span>\n" +
+            "                                    <span class=\"info-nickname\">" + titles + "</span>\n" +
+            "                                </div>\n" +
+            "                                <video class=\"video-source\" src=\"img/home-bg" + (i + 1) + ".mp4\" onended=\"endPlay()\">\n" +
+            "\n" +
+            "                                </video>\n" +
+            "                            </div>\n" +
+            "\n" +
+            "                        </a>\n" +
+            "                    </li>")
+    }
+
+</script>
+</html>
