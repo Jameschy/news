@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="refresh" content="10" />-->
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Night Share</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/swiper.css"/>
+    <link rel="stylesheet" href="css/main-slides.css"/>
+
+    <link rel="stylesheet" href="css/videoslidebox.css">
+</head>
+<body>
+
+<div class="right-play-box swiper-container">
+    <div class="right-video-box swiper-wrapper">
+        <div class="swiper-slide op-p6" style="background-image: url(img/list-0.jpg);min-height: -webkit-fill-available;">
+            <video class="v-slide" id="vSlide0" src="img/home-bg1.mp4" onended="slideVideoEnd()"></video>
+            <ul class="right-btn-box">
+                <li class="btn-follow">
+                    <a href="details.html" class="blogger-icon">
+                        <span class="follow-syb"></span>
+                    </a>
+                </li>
+                <li class="btn-close">
+                    <span class="close-syb"></span>
+                </li>
+            </ul>
+            <div class="bottom-brief-box dis-no">
+                Test!!!Test!!Test!!Test!!Test!!Test!!
+            </div>
+
+            <div class="btn-play"></div>
+        </div>
+        <div class="swiper-slide op-p6" style="background-image: url(img/list-1.jpg)">
+            <video class="v-slide" id="vSlide1" src="img/home-bg1.mp4" onended="slideVideoEnd()"></video>
+            <ul class="right-btn-box">
+                <li class="btn-follow">
+                    <a href="details.html" class="blogger-icon">
+                        <span class="follow-syb"></span>
+                    </a>
+                </li>
+                <li class="btn-close">
+                    <span class="close-syb"></span>
+                </li>
+            </ul>
+            <div class="bottom-brief-box dis-no">
+                Test!!!Test!!Test!!Test!!Test!!Test!!
+            </div>
+
+            <div class="btn-play"></div>
+        </div>
+        <div class="swiper-slide op-p6" style="background-image: url(img/list-2.jpg)">
+            <video class="v-slide" id="vSlide2" src="img/home-bg2.mp4" onended="slideVideoEnd()"></video>
+            <ul class="right-btn-box">
+                <li class="btn-follow">
+                    <a href="details.html" class="blogger-icon">
+                        <span class="follow-syb"></span>
+                    </a>
+                </li>
+                <li class="btn-close">
+                    <span class="close-syb"></span>
+                </li>
+            </ul>
+            <div class="bottom-brief-box dis-no">
+                Test!!!Test!!Test!!Test!!Test!!Test!!
+            </div>
+
+            <div class="btn-play"></div>
+        </div>
+        <div class="swiper-slide op-p6" style="background-image: url(img/list-3.jpg)">
+            <video class="v-slide" id="vSlide3" src="img/home-bg3.mp4" onended="slideVideoEnd()"></video>
+            <ul class="right-btn-box">
+                <li class="btn-follow">
+                    <a href="details.html" class="blogger-icon">
+                        <span class="follow-syb"></span>
+                    </a>
+                </li>
+                <li class="btn-close">
+                    <span class="close-syb"></span>
+                </li>
+            </ul>
+            <div class="bottom-brief-box dis-no">
+                Test!!!Test!!Test!!Test!!Test!!Test!!
+            </div>
+
+            <div class="btn-play"></div>
+        </div>
+        <div class="swiper-slide op-p6" style="background-image: url(img/list-4.jpg)">
+            <video class="v-slide" id="vSlide4" src="img/home-bg4.mp4" onended="slideVideoEnd()"></video>
+            <ul class="right-btn-box">
+                <li class="btn-follow">
+                    <a href="details.html" class="blogger-icon">
+                        <span class="follow-syb"></span>
+                    </a>
+                </li>
+                <li class="btn-close">
+                    <span class="close-syb"></span>
+                </li>
+            </ul>
+            <div class="bottom-brief-box dis-no">
+                Test!!!Test!!Test!!Test!!Test!!Test!!
+            </div>
+
+            <div class="btn-play"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+
+<script type="text/javascript">
+
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // $(".right-play-box").addClass("dis-no");
+        $(".v-slide").trigger('pause');
+
+        
+        $(".btn-close").click(function () {
+            window.history.go(-1);
+
+            // 点击视频关闭，视频终止
+            $(".v-slide").trigger('pause');
+        })
+
+        $(".swiper-slide").click(function () {
+            if ($(this).hasClass("op-p6")) {
+                $(this).removeClass("op-p6");
+                $(this).find("video").css("visibility","visible");
+               $(this).find("video").trigger("play");
+                $(".btn-play").addClass('dis-no');
+            }else{
+                $(this).addClass("op-p6");
+                // $(this).find("video").css("visibility","hidden");
+                $(this).find("video").trigger("pause");
+                console.log("click the video 1")
+                $(".btn-play").removeClass('dis-no');
+            }
+        })
+    });
+
+    var swiper = new Swiper('.swiper-container',{
+        on: {
+            slideChangeTransitionStart: function(){
+                $(".v-slide").trigger('pause');
+                $(".v-slide").css('visibility',"hidden");
+                $(".swiper-slide").removeClass('op-p6');
+
+            },
+            slideChangeTransitionEnd: function(){
+
+                var vS= "#vSlide"+this.activeIndex;
+                // alert(this.activeIndex);//切换结束时，告诉我现在是第几个slide
+                $(vS).trigger('play');
+                $(vS).removeClass('op-p6');
+                $(vS).css('visibility',"visible");
+
+
+                $(".btn-play").addClass('dis-no');
+                // $('#vSlide'+this.activeIndex+"'").trigger('play');
+                console.log(vS);
+                console.log(this.activeIndex);
+            },
+        },
+    });
+    // var faceBtn = '.btn-'+index;
+
+
+
+    
+    function slideVideoEnd() {
+        $(".v-slide").css('visibility',"hidden");
+        $(".btn-play").removeClass('dis-no');
+        $(".swiper-slide").addClass('op-p6');
+    }
+
+
+    // 对视频在视窗容器位置的判定
+    function compareImgSize() {
+        var coverImg = document.getElementById("bgimg"),
+            coverSize = getImgNaturalDimensions(coverImg),
+
+            // 计算宽高比
+            coverSizeRate = coverSize[0] / coverSize[1];
+
+        // 多条件判断简写
+        (coverSizeRate > 1.7 || coverSizeRate == 1.7) ? imgPosition(33)
+            : (coverSizeRate < 1.7 && coverSizeRate > 0.7 || coverSizeRate == 0.7) ? imgPosition(12)
+            : (coverSizeRate < 0.7 && coverSizeRate > 0.65 || coverSizeRate == 0.65) ? imgPosition(0)
+                : imgPosition(-0.5);
+    }
+
+    // 封面图片对视频控制
+    function imgPosition(topData) {
+        $("#vSource").css({
+            "position": "absolute",
+            "top": topData + "%",
+            "margin-top": 0
+        })
+    }
+
+    // 获取图片原始大小
+    function getImgNaturalDimensions(img) {
+        var nWidth, nHeight;
+        if (img.naturalWidth) { // 现代浏览器
+            nWidth = img.naturalWidth
+            nHeight = img.naturalHeight
+        }
+        return [nWidth, nHeight]
+    }
+
+
+    // 页顶定时下拉功能
+    function downloadBox() {
+        setInterval(function () {
+            $(".downloadDlg").removeClass("dis-no")
+        }, 20000);
+    }
+
+    // 视频播放功能
+    $(".video-player").click(function () {
+        if ($("#playing").is(":hidden")) {
+            $("#playing").show();
+            $(".body-content video").trigger('pause');
+            $(".video-mask").show();
+
+        } else {
+            $("#playing").hide();
+            compareImgSize();
+            $(".video-mask").hide();
+            $(".body-content .video-source").show();
+            $(".body-content video").trigger("play");
+            $("#vSource").removeClass("dis-no");
+            $(".video-player").addClass("bg-transparent");
+        }
+    })
+
+
+    $(".cover-btn").click(function () {
+
+        $(".cover-btn").trigger('pause');
+        $(this).parents().css(
+            "background-image", "none",
+        )
+        console.log("adada");
+        $(this).trigger('play');
+    })
+
+    // 视频播放监测
+    function endPlay() {
+        $("#playing").show();
+        $(".body-content video").trigger('pause');
+        $(".body-content .video-source").hide();
+        $(".video-mask").show();
+        $(".video-player").removeClass("bg-transparent");
+        // console.log("播放结束！！")
+
+        $(".video-source").removeClass("pos-fix");
+        $(".list-cover").removeClass("bgimg-no")
+        
+    }
+
+
+    var i,
+        indexImg,
+        indexName,
+        titles,
+        lower = 1,
+        upper = 12,
+        nameArr = [
+            "@黑妹儿创作的原声",
+            "@瑞琪组合（🔥🔥🔥）创作的原声",
+            "@盒子日记创作的原声",
+            "Jingle Bells",
+            "@长发飘飘:乔金子创作的原声",
+            "说爱你",
+            "小太阳",
+            "@叫我马哈创作的原声",
+            "United State of Pop 2017 (How We Do It)",
+            "@生僻字（剪辑版）",
+            "目不转睛经"
+        ];
+
+    // 获取范围内随机数
+    function random(lower, upper) {
+        return Math.floor(Math.random() * (upper - lower)) + lower;
+    }
+
+    // 遍历生成列表
+    // for (i = 0; i < 4; i++) {
+    //     indexImg = i;
+    //     // indexImg = random(lower, upper);
+    //     indexName = Math.floor((Math.random() * nameArr.length));
+    //     titles = nameArr[indexName];
+    //     $(".videos-box-list").append("<li>\n" +
+    //         "                        <a href=\"###00\">\n" +
+    //         "                            <div class=\"list-cover\" style=\"background-image: url(img/list-" + indexImg + ".jpg)\">\n" +
+    //         "                                <div class=\"cover-mask\"></div>\n" +
+    //         "                                <div class=\"cover-btn btn-"+indexImg+"\"></div>\n" +
+    //         "                                <div class=\"cover-info\">\n" +
+    //         "                                    <span class=\"info-icon\" style=\"background-image: url(img/icon-" + indexImg+ ".jpeg)\"></span>\n" +
+    //         "                                    <span class=\"info-nickname\">" + titles + "</span>\n" +
+    //         "                                </div>\n" +
+    //         "                                <video class=\"video-source\" src=\"img/home-bg" + (i + 1) + ".mp4\" onended=\"endPlay()\">\n" +
+    //         "\n" +
+    //         "                                </video>\n" +
+    //         "                            </div>\n" +
+    //         "\n" +
+    //         "                        </a>\n" +
+    //         "                    </li>")
+
+        // var faceBtn = '.btn-'+index;
+
+        var vS= "#vSlide"+this.activeIndex;
+        $(".btn-0").click(function(){
+            swiper.slideTo(0, 1000, false);//切换到第一个slide，速度为1秒
+            $(vS).trigger('play');
+        })
+        $(".btn-1").click(function(){
+            swiper.slideTo(1, 1000, false);//切换到第一个slide，速度为1秒
+            $(vS).trigger('play');
+        })
+        $(".btn-2").click(function(){
+            swiper.slideTo(2, 1000, false);//切换到第一个slide，速度为1秒
+            $(vS).trigger('play');
+        })
+        $(".btn-3").click(function(){
+            swiper.slideTo(3, 1000, false);//切换到第一个slide，速度为1秒
+            $(vS).trigger('play');
+        })
+    // }
+
+
+
+</script>
+</html>

@@ -1,0 +1,131 @@
+/**
+ * Created by WebStorm.
+ * User: chig@foxmail.com
+ * Date: 2019/2/12 0012
+ * Time: 18:54
+ */
+
+.swiper-slide{
+    background-size: contain;
+}
+.right-play-box{
+    width: 100%;
+    /*position: absolute;*/
+    /*top:0;*/
+    /*right: -100%;*/
+}
+
+.wid-0{
+    width: 0;
+    display: none;
+}
+.v-slide{
+    width: 100%;
+    visibility: hidden;
+}
+
+.right-btn-box{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+    z-index: 10001;
+}
+.right-btn-box li{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 55px;
+    list-style: none;
+}
+.btn-follow{
+    /*background: #FF2C55;*/
+}
+.btn-follow a{
+    height: inherit;
+    width: inherit;
+    display: inline-block;
+    text-align: center;
+
+}
+.blogger-icon{
+    background-image: url("../img/icon-1.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    line-height: 90px;
+}
+.btn-close{
+     /*background: #AEB9C0;*/
+    background-color: #ECEBED;
+ }
+.follow-syb,
+.close-syb{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    position: relative;
+}
+.follow-syb{
+    border-radius: 50%;
+    background-color: #FF2C55;
+}
+
+.follow-syb::before,
+.follow-syb::after,
+.close-syb::before,
+.close-syb::after{
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 1.5px;
+    top: 13.5px;
+    right: -3.5px;
+    background: #ffffff;
+
+}
+.follow-syb::before{
+    height: 8px;
+    top: 6px;
+    right: 9px;
+}
+.follow-syb::after{
+    height: 8px;
+    top: 6px;
+    right: 9px;
+    transform: rotate(90deg);
+}
+.close-syb::before{
+    background: #A4A4A5;
+    transform: rotate(45deg);
+}
+.close-syb::after{
+    background: #A4A4A5;
+    transform: rotate(-45deg);
+}
+
+/*视频标题及简介*/
+.bottom-brief-box{
+    width: 80%;
+    color: #ffffff;
+    position: absolute;
+    bottom: 7.5%;
+    left: 5%;
+}
+
+.op-p6{
+    /*opacity: 0.6;*/
+}
+
+.btn-play{
+    background: url("../img/play.png");
+    background-repeat: no-repeat;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    background-size: cover;
+}
+
