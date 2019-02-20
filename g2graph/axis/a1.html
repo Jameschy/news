@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>axis1</title>
+</head>
+<script type="text/javascript" src="../js/g2.js"></script>
+<body>
+<div id="axis1"></div>
+
+<script type="text/javascript">
+    const chart = new G2.Chart({
+        container: 'axis1', // 指定图表容器 ID
+        width : 600, // 指定图表宽度
+        height : 300 // 指定图表高度
+    });
+
+    // 设置坐标轴相关
+    chart.axis('xField',{
+        // title:null
+        title:{
+            textStyle:{
+                fontSize:12,
+                textAlign:center,
+                fill:'#999',
+            }
+        },
+
+        line:{
+            lineWidth: 2, // 设置线的宽度
+            stroke: 'red', // 设置线的颜色
+            lineDash: [ 3, 3 ] // 设置虚线样式
+        }
+    })
+
+    chart.scale('xField',{
+        alias:'AxisStudy01'
+    })
+</script>
+</body>
+</html>
