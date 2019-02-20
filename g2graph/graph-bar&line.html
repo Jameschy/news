@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height">
+    <title>双轴图表</title>
+    <style>::-webkit-scrollbar{display:none;}html,body{overflow:hidden;height:100%;margin:0;}</style>
+</head>
+<body>
+<div id="mountNode"></div>
+<script>/*Fixing iframe window.innerHeight 0 issue in Safari*/document.body.clientHeight;</script>
+<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g2-3.4.1/dist/g2.min.js"></script>
+<script>
+    var data = [{
+        time: '10:10',
+        call: 4,
+        waiting: 2,
+        people: 2
+    }, {
+        time: '10:15',
+        call: 2,
+        waiting: 6,
+        people: 3
+    }, {
+        time: '10:20',
+        call: 13,
+        waiting: 2,
+        people: 5
+    }, {
+        time: '10:25',
+        call: 9,
+        waiting: 9,
+        people: 1
+    }, {
+        time: '10:30',
+        call: 5,
+        waiting: 2,
+        people: 3
+    }, {
+        time: '10:35',
+        call: 8,
+        waiting: 2,
+        people: 1
+    }, {
+        time: '10:40',
+        call: 13,
+        waiting: 1,
+        people: 2
+    }];
+
+    var chart = new G2.Chart({
+        container: 'mountNode',
+        forceFit: true,
+        height: window.innerHeight
+    });
+    chart.source(data, {
+        call: {
+            min: 0
+        },
+        people: {
+            min: 0
+        },
+        waiting: {
+            min: 0
+        }
+    });
+    chart.legend({
+        custom: true,
+        allowAllCanceled: true,
+        items: [{
+            value: 'waiting',
+            marker: {
+                symbol: 'square',
+                fill: '#3182bd',
+                radius: 5
+            }
+        }, {
+            value: 'people',
+            marker: {
+                symbol: 'hyphen',
+                stroke: '#fdae6b',
+                radius: 5,
+                lineWidth: 3
+            }
+        }],
+        onClick: function onClick(ev) {
+            var item = ev.item;
+            var value = item.value;
+            var checked = item.checked;
+            var geoms = chart.getAllGeoms();
+            for (var i = 0; i < geoms.length; i++) {
+                var geom = geoms[i];
+                if (geom.getYScale().field === value) {
+                    if (checked) {
+                        geom.show();
+                    }
+                } else {
+                    geom.hide();
+                }
+            }
+        }
+    });
+    chart.axis('people', {
+        grid: null,
+        label: {
+            textStyle: {
+                fill: '#fdae6b'
+            }
+        }
+    });
+    chart.interval().position('time*waiting').color('#3182bd');
+    chart.line().position('time*people').color('#fdae6b').size(3).shape('smooth');
+    chart.point().position('time*people').color('#fdae6b').size(3).shape('circle');
+    chart.render();
+</script>
+</body>
+</html>
