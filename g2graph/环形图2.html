@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height">
+    <title>基础环图</title>
+    <style>::-webkit-scrollbar {
+        display: none;
+    }
+
+    html, body {
+        overflow: hidden;
+        height: 100%;
+        margin: 0;
+    }</style>
+</head>
+<body>
+<!--<div id="mountNode"></div>-->
+
+<div id="chart_age"></div>
+<script>/*Fixing iframe window.innerHeight 0 issue in Safari*/
+document.body.clientHeight;</script>
+<script src="js/jquery-2.0.2.min.js"></script>
+<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.g2-3.4.1/dist/g2.min.js"></script>
+<script src="https://gw.alipayobjects.com/os/antv/pkg/_antv.data-set-0.10.1/dist/data-set.min.js"></script>
+<script>
+    var data = [{
+        item: '事例一',
+        count: 40,
+        percent: 0.4
+    }, {
+        item: '事例二',
+        count: 21,
+        percent: 0.21
+    }, {
+        item: '事例三',
+        count: 17,
+        percent: 0.17
+    }, {
+        item: '事例四',
+        count: 13,
+        percent: 0.13
+    }, {
+        item: '事例五',
+        count: 9,
+        percent: 0.09
+    }];
+    var chart = new G2.Chart({
+        container: 'mountNode',
+        forceFit: true,
+        height: window.innerHeight,
+        animate: false
+    });
+    chart.source(data, {
+        percent: {
+            formatter: function formatter(val) {
+                val = val * 100 + '%';
+                return val;
+            }
+        }
+    });
+    chart.coord('theta', {
+        radius: 0.75,
+        innerRadius: 0.6
+    });
+    chart.tooltip({
+        showTitle: true,
+        itemTpl: '<li><span style="background-color:{color};" class="g2-tooltip-marker"></span>{name}: {value}</li>'
+    });
+    // 辅助文本
+    // chart.guide().html({
+    //     position: ['50%', '50%'],
+    //     html: '<div style="color:#8c8c8c;font-size: 14px;text-align: center;width: 10em;">主机<br><span style="color:#8c8c8c;font-size:20px">200</span>台</div>',
+    //     alignX: 'middle',
+    //     alignY: 'middle'
+    // });
+    var interval = chart.intervalStack().position('percent').color('item').label('percent', {
+        formatter: function formatter(val, item) {
+            return item.item + ': ' + val;
+        }
+    }).tooltip('item*percent', function (item, percent) {
+        percent = percent * 100 + '%';
+        return {
+            name: item,
+            value: percent
+        };
+    }).style({
+        lineWidth: 1,
+        stroke: '#fff'
+    });
+    chart.render();
+    // interval.setSelected(data[0]);
+</script>
+
+<script type="text/javascript">
+
+    var age_data = [
+        {
+            "item": "6-17",
+            "count": 370,
+            "age": 6
+        },
+        {
+            "item": "18-24",
+            "count": 5162,
+            "age": 18
+        },
+        {
+            "item": "25-30",
+            "count": 3102,
+            "age": 25
+        },
+        {
+            "item": "31-35",
+            "count": 880,
+            "age": 31
+        },
+        {
+            "item": "36-40",
+            "count": 185,
+            "age": 36
+        },
+        {
+            "item": "41+",
+            "count": 301,
+            "age": 41
+        }
+            ];
+
+    var _DataSet = DataSet,
+        DataView = _DataSet.DataView;
+
+    var dv = new DataView();
+    dv.source(age_data).transform({
+        type: 'percent',
+        field: 'count',
+        dimension: 'item',
+        as: 'percent'
+    });
+    var chart_age = new G2.Chart({
+        forceFit: true,
+        container: 'chart_age',
+        animate: false,
+        height: 300,
+        width: $("#chart_age").width() + 20,
+    });
+    chart_age.source(dv);
+
+    chart_age.coord('theta', {
+        radius: 0.9,
+        innerRadius: 0.7
+    });
+
+    chart_age.tooltip({
+        showTitle: false,
+        itemTpl: '<li><span style="background-color:{color};" class="g2-tooltip-marker"></span>{name}: {value}</li>'
+    });
+
+    chart_age.legend(false);
+
+    var interval = chart_age.intervalStack().position('percent').color('item', function (cValue) {
+        if (cValue == '6-17') {
+            return '#3d9e1e';
+        }
+        if (cValue == '18-24') {
+            return '#57c42c';
+        }
+        if (cValue == '25-30') {
+            return '#76d147';
+        }
+        if (cValue == '31-35') {
+            return '#97de6a';
+        }
+        if (cValue == '36-40') {
+            return '#b8eb93';
+        }
+        return '#daf7c0';
+
+    }).label('percent', {
+        formatter: function formatter(val, item) {
+            return item.point.item;
+        }
+    }).tooltip('item*percent', function (item, percent) {
+        percent = (percent * 100).toFixed(2) + '%';
+        return {
+            name: item,
+            value: percent
+        };
+    });
+    //chart_age.color('item', ['#daf7c0', '#b8eb93', '#97de6a', '#76d147', '#57c42c','#3d9e1e'])
+    chart_age.render();
+
+</script>
+</body>
+</html>

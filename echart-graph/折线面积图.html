@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="line" style="width: 600px;height:400px;"></div>
+</body>
+<script src="js/echarts.min.js"></script>
+<script type="text/javascript">
+    const myChart = echarts.init(document.getElementById('line'));
+    const option = {
+        xAxis: {
+            type: 'category',
+            boundaryGap: true,
+            data: ['0210', '0211', '0212', '0213', '0214', '0215', '0216']
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [{
+            data: [20, 32, -90, -12, 129, 180, 130],
+            type: 'line',
+            areaStyle: {},
+            barWidth: 500,
+            itemStyle:{
+                normal:{
+                    color:'#95de64'
+                }
+            },
+            label:{
+                normal:{
+                    show: true,
+                    position: 'top',
+                    textStyle:{
+                        color: '#000'
+                    }
+                },
+                color:'#FF410F',
+                lineStyle:{
+                  color:'#52c41a'
+                }
+            }
+        }]
+    };
+    myChart.setOption(option);
+</script>
+</html>
