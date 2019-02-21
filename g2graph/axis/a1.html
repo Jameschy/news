@@ -3,39 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>axis1</title>
+    <link rel="icon" href="https://gw.alipayobjects.com/os/antv/assets/favoricon.png" type="image/x-icon">
 </head>
 <script type="text/javascript" src="../js/g2.js"></script>
 <body>
 <div id="axis1"></div>
 
 <script type="text/javascript">
-    const chart = new G2.Chart({
-        container: 'axis1', // 指定图表容器 ID
-        width : 600, // 指定图表宽度
-        height : 300 // 指定图表高度
-    });
+    const data = [
+        { name: 'John', vote: 35654 },
+        { name: 'Damon', vote: 65456 },
+        { name: 'Patrick', vote: 45724 },
+        { name: 'Mark', vote: 13654 }
+    ];
+    const imageMap = {
+        'John': 'https://zos.alipayobjects.com/rmsportal/mYhpaYHyHhjYcQf.png',
+        'Damon': 'https://zos.alipayobjects.com/rmsportal/JBxkqlzhrlkGlLW.png',
+        'Patrick': 'https://zos.alipayobjects.com/rmsportal/zlkGnEMgOawcyeX.png',
+        'Mark': 'https://zos.alipayobjects.com/rmsportal/KzCdIdkwsXdtWkg.png'
+    }
 
-    // 设置坐标轴相关
-    chart.axis('xField',{
-        // title:null
-        title:{
-            textStyle:{
-                fontSize:12,
-                textAlign:center,
-                fill:'#999',
+    const chart = new G2.Chart({
+        container : 'axis1',
+        width : 600,
+        height : 250
+    });
+    chart.source(data, {
+        vote: {
+            min: 0
+        }
+    });
+    chart.legend(false);
+    chart.axis('name', {
+        label: {
+            htmlTemplate: value => {
+                return '<img src="' +imageMap[value] + '" style="width:30px;max-width:none;"/>';
             }
         },
-
-        line:{
-            lineWidth: 2, // 设置线的宽度
-            stroke: 'red', // 设置线的颜色
-            lineDash: [ 3, 3 ] // 设置虚线样式
-        }
-    })
-
-    chart.scale('xField',{
-        alias:'AxisStudy01'
-    })
+        tickLine: null
+    });
+    chart.interval()
+        .position('name*vote')
+        .color('name', [ '#7f8da9', '#fec514', '#db4c3c', '#daf0fd' ])
+        .size(20)
+        .label('name');
+    chart.render();
 </script>
 </body>
 </html>
