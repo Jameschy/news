@@ -1,0 +1,95 @@
+
+/*扫码登陆*/
+.body-login{ background: none; background: #f5f7f8;}
+.login-main{ position:fixed; font-size: 14px;  background: rgba(0, 0, 0, 0.8); z-index:2001; width:100%; height:100%; top:0; left:0; bottom:0; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+.input-group input::-webkit-input-placeholder{color: #d2d2d2;}
+.input-group input:-moz-placeholder {color:#d2d2d2;}
+.input-group input::-moz-placeholder {color:#d2d2d2;}
+.input-group input:-ms-input-placeholder{color:#d2d2d2;}
+.login-code{ background: url(../images/login-bg.png); width:320px; height:418px; margin:140px auto; padding:1px 0;}
+.login-code .code{ width:200px; height:200px; margin:35px auto 30px;}
+.code img{ width:200px; height:200px;}
+.login-code-tip{ background:url(../images/line.png) no-repeat; width:290px; margin:0 auto; position:relative; color:#999; text-align:center; padding:20px 0;}
+.login-code-tip h4{ font-size:18px; color:#333; padding-bottom:6px; font-weight:normal;}
+.login-title{ width:170px; margin:30px auto 0;}
+.login-title li{ float:left; font-size:16px;}
+.login-title li:first-child{ margin-right:40px;}
+.login-title a{ color:#333;}
+.login-title a:hover, .login-title .active a{ color:#39b44b; border-bottom:2px solid #39b44b; padding-bottom:6px;}
+.phone-login{ width:360px; min-height:320px; padding:1px 30px 30px;  margin:140px auto; background:#fff; border-radius:10px;}
+.user-icon{ background:url(../images/login_icon.png); width:12px; height:16px; display:inline-block; margin:0 10px; vertical-align:middle; }
+.password-icon{  background:url(../images/login_icon.png); width:14px; height:16px; display:inline-block; margin:0 10px ; vertical-align:middle; background-position:-28px 0; }
+.identify-icon{ background:url(../images/login_icon.png); width:16px; height:16px; display:inline-block; margin:0 10px 0 7px ; vertical-align:middle; background-position:-12px 0;}
+.icon-warning{ background:url(../images/login_icon.png); width:16px; height:16px; margin-top:16px; vertical-align:middle; background-position:-42px 0; float:right;}
+.icon-warning{ background:url(../images/login_icon.png); width:16px; height:16px; display:inline-block; margin-top:16px; vertical-align:middle; background-position:-42px 0; float:right;}
+.set-in{ border:1px solid #ddd; border-radius:4px; margin:28px 0 16px; padding:0 10px;}
+.set-in input{ border:none;outline:none; width: 180px; height: 45px;}
+.set-in input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset;}
+.set-in .input-group:first-child{ border-bottom:1px solid #ddd;}
+.set-in .input-group{ text-align: left; width: 100%;}
+.bling-phone .input-group:nth-of-type(2){ border-bottom:1px solid #ddd;}
+.input-group{ height:49px; line-height:49px; }
+.warning-for {color: #df3a41;padding-bottom: 5px;}
+/* 选择框 */
+.control-checkbox { }
+.control-checkbox-label { line-height: 22px; font-weight: normal; color: #89a; }
+.icheckbox_square-green, .iradio_square-green { display: inline-block; *display: inline; vertical-align: middle; margin: 0; padding: 0; width: 22px; height: 22px; background: url(../images/green.png) no-repeat; border: none; cursor: pointer; margin-right: 10px; }
+.icheckbox_square-green { background-position: 0 0; }
+.icheckbox_square-green.hover { background-position: -24px 0px; }
+.icheckbox_square-green.checked { background-position: -48px 0px; }
+.icheckbox_square-green.disabled { background-position: -72px 0px; cursor: default; }
+.icheckbox_square-green.checked.disabled { background-position: -96px 0px; }
+.iradio_square-green { background-position: -120px 0; }
+.iradio_square-green.hover { background-position: -144px 0; }
+.iradio_square-green.checked { background-position: -168px 0; }
+.iradio_square-green.disabled { background-position: -192px 0; cursor: default; }
+.iradio_square-green.checked.disabled { background-position: -216px 0; }
+.forget-password{ color:#3489db; float:right;}
+
+.btn-login{ background:#39b44b; border-radius:4px; height:42px; line-height:42px; text-align:center; color:#fff; display:block; margin:18px 0; font-size:16px;}
+.btn-login:hover{ background:#309e40; color: #fff;}
+.btn-login:active{ background:#288535; color: #fff;}
+.phone-login p{ text-align:center; font-size: 14px;}
+.main-420{ width:420px; margin:140px auto; border-radius:10px; background:#fff; }
+.main-320{ width:320px; margin:140px auto; border-radius:10px; background:#fff;}
+.main-head{ background:#fafafa; height:92px; border-radius:10px 10px 0 0;}
+.main-head .piece{ width:330px; margin:0 auto; padding:28px 0 20px;}
+.main-head .piece dl{ float:left; width:110px; position:relative;}
+.main-head .piece dl:first-child .progress{ width:71px; left:40px; }
+.main-head .piece dl:last-child .progress{ width:71px; right:40px; }
+.main-head .piece dd{ color:#999; font-size:12px; text-align:center; padding-top:5px;}
+.main-head .piece .active dd{ color:#39b44b;}
+.main-head .piece .active dt{ background:#39b44b; color:#fff;}
+.main-head .piece .progress{ height:2px; background:#d2d2d2; position:absolute; top:14px; width:116px; z-index:1;}
+.sequence{ width:30px; height:30px; border-radius:50%; background:#d2d2d2; text-align:center; line-height:30px; color:#fff; margin:0 auto; position:relative; z-index:20;}
+.main-body{ padding:0 30px 1px; text-align: center;}
+.main-body h4{ font-size:18px; color:#333; padding:25px 0 15px; text-align:center;}
+.main-body .scan-qrcode{ padding:18px 0 40px;}
+.main-body .tip{ padding:20px 0 ; color:#df3a41;}
+.main-body .code{ width:200px; height:200px; margin:0 auto;}
+.distance-set{ margin:0; text-align:left;}
+.password-tip{ padding:10px 0;}
+.revise-password .btn-logon{ margin:10px 0 30px;}
+.icon-set-password{ background:url(../images/login-success.png); width:60px; height:60px; margin:0 auto;}
+.set-password-success{ padding:40px 30px 20px; text-align:center;}
+.set-password-success h4{ color:#333; font-size:18px; padding-top:16px;}
+.set-password-success p{ padding-top:12px;}
+.picture-identify{ width:88px; height:32px; background:#f2f2f2; float:right; margin-top:8px;}
+.picture-identify{ width:88px; height:32px; background:#f2f2f2; float:right; margin-top:8px;}
+.messege-identify{ width:88px; height:32px; line-height:32px; color:#fff; text-align:center; background:#39b44b; border-radius:4px; float:right; margin-top:8px; overflow: hidden;}
+.messege-identify:hover{ background:#309e40; color: #fff;}
+.messege-identify:activer{ background:#288535; color: #fff;}
+.main-body a:visited{color: #fff !important;}
+.unabled{ background:#d2d2d2; font-size:12px; cursor:default;}
+.sure-password{ margin:0;}
+.btn-distance{ margin:10px 0 30px;}
+.error-tip{ color:#df3a41; padding-bottom:10px;}
+.bling-phone{ margin-bottom:10px;}
+.error-tip-distance{ padding:10px 0 5px;}
+.unbling-phone{ text-align:center; padding:30px 0;}
+.unbling-phone .code{ width:200px; height:200px; margin:25px auto;}
+.unbling-phone h4{ font-size:18px; color:#333;}
+.unbling-phone p{ padding:0;}
+.btn-margin{ margin:8px 0 15px;}
+.remember-account .icheckbox_square-green{ margin-right:0;}
+.remember-account label{ cursor:pointer; }

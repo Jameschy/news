@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)###payment/Member#/Purchase/Pay?type=Advanced -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>黑马数据</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="css/video.css" rel="stylesheet" type="text/css">
+    <link href="css/select3.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="shortcut icon">
+    <script src="js/jquery-2.0.2.min.js"></script>
+</head>
+
+<body class="">
+    <div class="v-header">
+        <a href="javascript:;" class="icon-menu minifyme" data-action="minifyMenu"></a>
+        <dl class="userinfo">
+            <dt class="customer-service-box">
+                <a id="topbar_talk" href="javascript:void(0);" class="icon-service"></a>
+                <div id="talk-panel" class="customer-service" style="display:none">
+                    <div class="service-panel-head">客服中心</div>
+                    <div class="customer-service-main">
+                        <div class="customer-media">
+                            <h6>QQ客服</h6>
+                            <div class="customer-name">
+                                <div class="customer-qqnumber">小瓜抖 3539628485</div>
+                                <a href="tencent://message/?uin=3539628485&amp;Site=&amp;Menu=yes" class="btns-conversation">交谈</a>
+                            </div>
+                            <div class="customer-name">
+                                <div class="customer-qqnumber">小豆芽 14952924</div>
+                                <a href="tencent://message/?uin=14952924&amp;Site=&amp;Menu=yes" class="btns-conversation">交谈</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </dt>
+            <dt><img src="img/132" class="js-logout"></dt>
+            <dd><a href="javascript:void(0);" class="js-logout">慕柳先生</a></dd>
+            <dd><a href="javascript:void(0);" class="logout js-logout"></a></dd>
+        </dl>
+        <div class="logout-link" style="display:none;">
+            <a href="###payment/Home/LogOut">
+                <i class="iconfont icon-logout"></i>退出登录
+            </a>
+        </div>
+    </div>
+    <div class="v-sidbar">
+        <h1 class="logo">
+            <a href="###payment/"></a>
+        </h1>
+        <nav class="s-nav">
+            <ul style="">
+                <li>
+                    <a href="###payment/Member#">
+                        <i class="icon1"></i><span class="menu-item-parent">直播相关</span>
+
+                        <b class="collapse-sign"><em class="fa fa-angle-down fa-right"></em></b></a>
+                    <ul style="display:block;">
+                        <li class="visible-collapsed">直播相关</li>
+                        <li><a href="###payment/Aweme" title="热门直播">热门直播</a></li>
+                        <li><a href="###payment/Aweme" title="抖音热门视频">主播排行榜</a></li>
+                        <li><a href="index.html" title="我的抖音号">直播数据分析</a></li>
+                    </ul>
+                </li>
+                <li class="open">
+                    <a href="###/dashbord/Member#" class="active">
+                        <i class="icon2"></i><span class="menu-item-parent">抖音相关</span>
+
+                        <b class="collapse-sign"><em class="fa fa-angle-down fa-right"></em></b></a>
+                    <ul style="display:block;">
+                        <li class="visible-collapsed">抖音相关</li>
+                        <li><a href="###/dashbord/Aweme" title="抖音热门视频">抖音热门视频</a></li>
+                        <li><a href="###/dashbord/Music" title="抖音热门音乐">抖音热门音乐</a></li>
+                        <li><a href="###/dashbord/Rank/Tag" title="抖音排行榜">抖音排行榜</a></li>
+                        <li><a href="###/dashbord/Rank/PromotionTag" title="抖音号商品排行">抖音号商品排行</a></li>
+                        <li><a href="###/dashbord/Focus" title="我的抖音号">抖音数据分析</a></li>
+                        <li><a href="###/dashbord/Focus" title="我的抖音号">抖音商品分析</a></li>
+                        <li><a href="###/dashbord/Track" title="抖音视频监控">抖音视频监控</a></li>
+                        <li><a href="###/dashbord/Favorite?type=1" title="我收藏的素材">我收藏的素材</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="###/dashbord/Member#"><i class="icon3"></i><span
+                            class="menu-item-parent">相关查找</span><b class="collapse-sign"><em
+                            class="fa fa-angle-up fa-right fa-up"></em></b></a>
+                    <ul style="display:none;">
+                        <li class="visible-collapsed">抖音号查找</li>
+                        <li><a href="###/dashbord/Blogger" title="抖音号搜索" class="active">抖音号搜索</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="payment.html">
+                        <i class="icon6"></i><span class="menu-item-parent">续费中心</span><span
+                            class="badge nav-badge">年付6折</span>
+                        <div class="menu-tip">续费中心</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="personal.html">
+                        <i class="icon7"></i><span class="menu-item-parent">个人中心</span>
+                        <div class="menu-tip">个人中心</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="help.html" target="_blank">
+                        <i class="icon8"></i><span class="menu-item-parent">帮助中心</span>
+                        <div class="menu-tip">帮助中心</div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="content" style="opacity: 1;">
+
+
+<div class="v-main v-main-w">
+    <!--main-945-->
+    <div class="main-945" style="display:block">
+        <div class="p-list p-type">
+            <h3>购买版本：</h3>
+                <div class="purchase-type purchase-type-advance"><i class="icon-type"></i>高级版</div>
+            <a href="upgrade.html" class="pull-right select-version">选择其他版本</a>
+        </div>
+        <div class="p-list" id="pay_time_container">
+
+
+
+            <ul class="p-block p-time  clearfix">
+                <h3>购买时长：</h3>
+                    <li class="  ">
+                        <input name="" type="radio" value="" class="control-checkbox" id="pay-0" data-month="12" data-product="Advanced_12" data-price="2868" data-saving="1920" data-originalprice="4788" data-discount="6" data-promoiondays="0" checked="" style="display:none">
+                        <div class="p-month">
+                            <h5>
+                                12个月
+
+                                    <span class="tag-discount">6折</span>
+                            </h5>
+                                低至239／月
+                                    ，省1920元
+                        </div>
+
+
+                    </li>
+                    <li class="active  ">
+                        <input name="" type="radio" value="" class="control-checkbox" id="pay-1" data-month="6" data-product="Advanced_6" data-price="1914" data-saving="480" data-originalprice="2394" data-discount="8" data-promoiondays="0" checked="checked" style="display:none">
+                        <div class="p-month">
+                            <h5>
+                                6个月
+
+                                    <span class="tag-discount">8折</span>
+                            </h5>
+                                低至319／月
+                                    ，省480元
+                        </div>
+
+
+                    </li>
+                    <li class="  ">
+                        <input name="" type="radio" value="" class="control-checkbox" id="pay-2" data-month="1" data-product="Advanced_1" data-price="399" data-saving="0" data-originalprice="399" data-discount="" data-promoiondays="0" checked="" style="display:none">
+                        <div class="p-month">
+                            <h5>
+                                1个月
+
+                            </h5>
+                                低至399／月
+                        </div>
+
+
+                    </li>
+            </ul>
+        </div>
+        <div id="pay_type_container" class="p-list">
+            <ul class="p-block p-pay clearfix">
+                <h3>支付方式：</h3>
+                <li class="active">
+                    <input name="" type="radio" value="Alipay" class="control-checkbox" id="alipay" checked="checked" style="display:none">
+                    <span class="pay-type"><img src="img/alipay.png"></span>
+                </li>
+                <li>
+                    <input name="" type="radio" value="WechatPay" class="control-checkbox" id="weChat-pay" style="display:none">
+                    <span class="pay-type"><img src="img/weChat-pay.png"></span>
+                </li>
+                <a href="javascript:void(0);" class="pull-right how-to-pay">企业对公转帐如何支付？</a>
+            </ul>
+        </div>
+        <div class="p-amount">
+            <div class="amount-list" style="display:none">
+                <span class="amount-title" style="margin-right:20px;">支付方式：</span>使用活动优惠码，享受现金抵扣 <i class="add-close" id="btnAddCoupon"></i>
+                <div class="control-search-box activity" style="display:none" id="couponform">
+                    <div class="control-search-1 activity-preference">
+                        <input type="text" placeholder="请输入优惠码" name="couponcode">
+                    </div>
+                    <a href="javascript:;" class="control-search-1-submit" id="btnUseCoupon">立即使用</a>
+                </div>
+            </div>
+            <div class="amount-list" style="display:none">
+                <label>折后金额：</label><span class="price">1914元</span>
+                <span class="original-price">（原价<em>2394</em>元，一次性购买6个月8折，节省480元）</span>
+            </div>
+            <div class="amount-list" id="dkxqWarp" style="display:none">
+                <label>抵扣详情：</label>
+                <ul class="order-box">
+                    
+                    
+                </ul>
+            </div>
+            <div class="amount-list">
+                <span class="amount-title">应付金额：</span><span class="amount">1914元</span>
+                <span class="original-price" style="">（原价<em>2394</em>元，一次性购买6个月8折，节省480元）</span>
+            </div>
+            <div class="amount-list">
+                <span class="amount-title">有效期至：</span><span class="endTime">2019年08月22日</span>
+            </div>
+            <div class="purchase-note">
+                <p>• 点击"立即付款"表示您已阅读并接受<a href="http://www.xiguaji.com/About/Agreement" target="_blank" class="text-blue">《授权许可协议》</a></p>
+                <p>• 在线支付成功后重新登录即可自动生效</p>
+                
+            </div>
+        </div>
+        <div class="p-btns"><a href="javascript:void(0);" class="btns-unified immediate-payment">立即付款</a></div>
+    </div>
+    <!--/main-945-->
+</div>
+
+<div class="pop-code wechatpaydialog" id="WxPayQrCode" style="display:none;">
+    <a href="javascript:;" class="close"></a>
+    <div class="code" id="PayQrCode"></div>
+    <div class="scan">使用微信扫一扫付款</div>
+</div>
+<style>
+    .pop-code {
+        padding: 30px;
+        background: #f3f6f9;
+        z-index: 100;
+        z-index: 100;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin: -165px 0 0 -120px;
+        border-radius: 3px;
+    }
+
+    .code {
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 1px solid #e5e9ed;
+        background: #fff;
+    }
+
+        .code img {
+            width: 160px !important;
+            height: 160px !important;
+        }
+
+    .pop-code .scan {
+        text-align: center;
+        margin: 15px 0 -10px 0;
+    }
+</style>
+<div class="mask" style="display:none"></div>
+<div class="dialog alipaydialog" style="display:none;">
+    <h3>请您在新打开的页面完成支付</h3>
+    <a href="javascript:;" class="icon icon-close pay-icon-close"></a>
+    <ul class="pay-tip">
+        <li>支付完成前请不要关闭此窗口</li>
+        <li>完成付款后请根据您的情况点击下面的按钮</li>
+    </ul>
+    
+
+    <div class="dialog-btns">
+        <a class="pay-success user-paysuccess">支付完成</a> <a class="pay-failure immediate-payment">支付失败，重新支付</a>
+    </div>
+</div>
+<div class="dialog dialog-account" style="display: none">
+    <h4>企业对公转帐</h4>
+    <ul class="account-info">
+        <li>账户名称: 福州西瓜文化传播有限公司</li>
+        <li>账户号码: 35001896407052518469</li>
+        <li>开户银行: 中国建设银行福州晋安支行</li>
+    </ul>
+    <div class="transfer-remind">
+        1、受银行处理时间影响，采用对公转账方式到账会有延误，强烈建议采用在线支付。<br>
+        2、对公转账到账时间一般为：建行1-2天，跨行3-5天（具体到账时间以银行的实际到账时间为准）。<br>
+        3、请通过网银转账，或者自行到银行进行转账，转账成功后请将汇款底单拍照或扫描发送给客服。<br>
+        4、确认汇款到账后为您开通相关帐号功能，账号开通后可在后台用户中心索取发票。
+    </div>
+    <div class="dialog-btns">
+        <a class="btns-understand dialog-account-know">了解</a>
+    </div>
+</div>
+<script>
+    $('.how-to-pay').click(function() {
+        $('.mask').show();
+        $('.dialog-account').show();
+    });
+
+    $('.dialog-account-know').click(function() {
+        $('.mask').hide();
+        $('.dialog-account').hide();
+    });
+
+    $('.pay-icon-close').click(function() {
+        $('.alipaydialog').hide();
+        $('.mask').hide();
+    });
+    $(".mask").click(function() {
+        $('.mask').hide();
+        $('.wechatpaydialog').hide();
+        $('.alipaydialog').hide();
+        $('.dialog-account').hide();
+    });
+</script>
+<script src="js/qrcode.min.js"></script>
+
+
+<script src="js/icheck.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script>
+    var memberTimeTranslationMoney = 0;
+    var memberTimeTranslationMoneyDetail = '';
+    var productMemberLevel = 2;
+    var userMemberLevel = 0;
+    var orderNo = "";
+    var memberEndTime = new Date('02/22/2019');
+</script>
+
+
+<script>
+    $('.js-purchase-box li').click(function () {
+        if ($(this).data('disable') == 'true')
+            return;
+        $(this).parent().find('li').removeClass('active');
+        $(this).addClass('active');
+        var id = $(this).data('label');
+        $(".js-purchase-list [data-checkbox]").iCheck("uncheck");
+        $('#' + id).iCheck("check");
+        computePrice(0);
+    });
+
+
+
+    Date.prototype.addMonth = function (months) {
+        var cm = this.getMonth();
+        cm += months;
+        this.setMonth(cm);
+        return this;
+    }
+
+    Date.prototype.Format = function (fmt) { //author: meizz
+        var o = {
+            "M+": this.getMonth() + 1,                 //月份
+            "d+": this.getDate(),                    //日
+            "h+": this.getHours(),                   //小时
+            "m+": this.getMinutes(),                 //分
+            "s+": this.getSeconds(),                 //秒
+            "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+            "S": this.getMilliseconds()             //毫秒
+        };
+        if (/(y+)/.test(fmt))
+            fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o)
+            if (new RegExp("(" + k + ")").test(fmt))
+                fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+        return fmt;
+    }
+
+    function floatSub(arg1, arg2) {
+        var r1, r2, m, n;
+        try { r1 = arg1.toString().split(".")[1].length } catch (e) { r1 = 0 }
+        try { r2 = arg2.toString().split(".")[1].length } catch (e) { r2 = 0 }
+        m = Math.pow(10, Math.max(r1, r2));
+        //动态控制精度长度
+        n = (r1 >= r2) ? r1 : r2;
+        return ((arg1 - arg2 >= 0 ? (arg1 * m - arg2 * m) : 0) / m).toFixed(n);
+    }
+
+    function computePrice(couponMoney) {
+
+        var selectProduct = $("#pay_time_container input[type='radio'][checked='checked']");
+
+        var selectProductDataPrice = selectProduct.attr("data-price");
+        var promotionDays = parseInt(selectProduct.attr("data-promoiondays"));
+        var dataPriceAfterCoupon = selectProductDataPrice - couponMoney;
+
+        $(".p-amount .price").html(dataPriceAfterCoupon + "元");
+
+        var rawPay = floatSub(dataPriceAfterCoupon, memberTimeTranslationMoney);
+        $("#gzdk").remove();
+        rawPay = floatSub(rawPay, 0);
+        $(".p-amount .amount").html(rawPay + "元");
+
+        SetSavingStr(selectProduct, couponMoney);
+        var endTime = new Date(memberEndTime);
+        endTime = new Date(endTime.setMonth(endTime.getMonth() + selectProduct.data('month') * 1));
+        if (productMemberLevel > userMemberLevel) {
+            endTime = new Date();
+            endTime = new Date(endTime.setMonth(endTime.getMonth() + selectProduct.data('month') * 1));
+        }
+        if (promotionDays > 0) {
+            endTime = new Date(endTime.setDate(endTime.getDate() + promotionDays));
+        }
+
+        var strEndTime = endTime.Format("yyyy年MM月dd日");
+
+        $(".endTime").html(strEndTime);
+    }
+
+    function SetSavingStr(selectProduct, couponMoney) {
+        var priceSaving = parseInt(selectProduct.attr("data-saving"));
+
+        if (priceSaving <= 0 && couponMoney <= 0) {
+            $(".p-amount .original-price").html('');
+            return;
+        }
+        var str = "（原价<em>"
+            + selectProduct.attr("data-originalprice")
+            + "</em>元";
+
+        if (priceSaving > 0) {
+            str += "，一次性购买"
+                + selectProduct.attr("data-month")
+                + "个月"
+                + selectProduct.attr("data-discount")
+                + "折，节省"
+                + priceSaving
+                + "元";
+        }
+
+        if (couponMoney > 0) {
+            str += '，优惠券抵扣' + couponMoney + '元';
+        }
+
+        str += "）";
+
+        $(".p-amount .original-price").html(str);
+    }
+
+    //选择时长
+    $("#pay_time_container li:not(.disabled-to)").on("click", function () {
+        $this = $(this);
+
+        $this.addClass("active").siblings("li").removeClass("active");
+        $this.find("input").attr("checked", "checked");
+        $this.siblings("li").find("input").removeAttr("checked");
+
+        computePrice(0);
+    })
+
+    //选择付款方式
+    $("#pay_type_container li").on("click", function () {
+        $this = $(this);
+
+        $this.addClass("active").siblings("li").removeClass("active");
+        $this.find("input").attr("checked", "checked");
+        $this.siblings("li").find("input").removeAttr("checked");
+    })
+
+    //促销时长选择
+    $("#pay_time_container_promotion li").on("click", function () {
+        $this = $(this);
+
+        $this.addClass("active").siblings("li").removeClass("active");
+
+        var liIndex = $("#pay_time_container_promotion li").index($(this));
+
+        $("#pay_time_container li:eq(" + liIndex + ")").click();
+    })
+
+
+    //立即付款按钮
+    $(".immediate-payment").click(function () {
+        var selectProduct = $("#pay_time_container input[type='radio'][checked='checked']");
+        var payType = $("#pay_type_container input[type='radio'][checked='checked']").val();
+        selectProduct = selectProduct.attr("data-product");
+
+        var isUseCoupon = $(".immediate-payment").data("IsUseCoupon");
+        var couponCode = isUseCoupon == 1 ? $("input[name='couponcode']").val() : "";
+        if (selectProduct == "") {
+            alert('错误的产品类型，请联系客服');
+            return;
+        }
+        $(".immediate-payment").data("IsUseCoupon", 0);
+
+        if (payType == "Alipay") {
+            if ($(".alipaydialog").is(":hidden")) {
+                $(".alipaydialog").show();
+                $(".mask").show();
+            }
+
+            $('#productPayLayer').toggle();
+            var url = '/Purchase/CreateOrder/?productType=' + selectProduct + '&memberTimeTranslationMoney=' + memberTimeTranslationMoney + "&payType=" + payType + "&t=" + Math.random() + "&couponCode=" + couponCode;
+            setTimeout(TickOrderStatus, 1000 * 5);
+            window.open(url);
+
+        } else if (payType == "WechatPay") {
+            if ($(".wechatpaydialog").is(":hidden")) {
+                $(".wechatpaydialog").show();
+                $(".mask").show();
+            }
+
+            $('#PayQrCode').html('');
+            $.post("/Purchase/CreateOrder", {
+                "productType": selectProduct,
+                "memberTimeTranslationMoney": memberTimeTranslationMoney,
+                "payType": payType,
+                "couponCode": couponCode,
+                "t": Math.random()
+            }, function (result) {
+
+                if (result.Status == false) {
+                    XiguaPublic.modalAlert(result.Message);
+                    return;
+                }
+
+                if (result.Redirect) {
+                    window.location.href = result.Redirect;
+                    return;
+                }
+                setTimeout(TickOrderStatus, 1000 * 5);
+                orderNo = result.OrderNo;
+                var qrcode = new QRCode(document.getElementById("PayQrCode"), {
+                    text: result.Qr,
+                    width: 230,
+                    height: 230,
+                    colorDark: "#000000",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            });
+        }
+        //console.log(payType);
+        return false;
+    });
+
+    computePrice(0);
+
+    //展示优惠券按钮
+    $("#btnAddCoupon").on("click", function () {
+        $("#couponform").show();
+    })
+
+    //使用优惠券按钮
+    $("#btnUseCoupon").on("click", function () {
+        var couponCode = $("input[name='couponcode']").val();
+        $.ajax({
+            url: "/Purchase/ValidCoupon/?couponCode=" + couponCode,
+            success: function (data) {
+                if (data && data.status == 0) {
+                    XiguaPublic.modalAlert(data.message);
+                    $(".immediate-payment").data("IsUseCoupon", 0);
+                    return;
+                }
+
+                computePrice(data.price);
+                $(".immediate-payment").data("IsUseCoupon", 1);
+            }
+        });
+    })
+
+
+    function TickOrderStatus() {
+        $.post("/Purchase/CheckOrderStatus", { "orderNo": window.orderNo }, function (result) {
+
+            //console.log(result);
+
+            if (result == "") {
+                setTimeout(TickOrderStatus, 1000 * 3);
+            } else if (result == "true") {
+                window.location.hash = "#/Purchase/Success";
+            } else {
+                setTimeout(TickOrderStatus, 1000 * 10);
+            }
+        });
+    }
+
+    $(".user-paysuccess").click(function () {
+
+        $.post("/Purchase/CheckOrderStatus", { "orderNo": window.orderNo }, function (result) {
+            if (result == "true") {
+                window.location.hash = "#/Purchase/Success";
+            } else {
+                alert("尚未收到支付平台支付成功的通知");
+            }
+        });
+
+        return;
+
+    });
+</script></div>
+    <div class="footerBtns" style="display:none;" id="back-to-top-con">
+        <div class="icon s1" id="back-to-top"><a href="javascript:void(0);" style="display: block;"></a></div>
+    </div>
+    <link href="css/qrcode.css" rel="stylesheet">
+
+<div class="login-main" style=" display:none;" id="div_qrcode">
+
+    <div class="login-code" style="display:block;">
+        <ul class="login-title clearfix">
+            <li class="active"><a href="javascript:void(0);">扫码登录</a></li>
+            <li><a href="javascript:void(0);" class="js-show-phone">手机登录</a></li>
+        </ul>
+        <div class="code"><img src="###payment/Member"></div>
+        <div class="login-code-tip">
+            <h4>欢迎使用黑马数据</h4>
+            <p>使用微信扫一扫登陆或注册</p>
+        </div>
+    </div>
+
+    <div class="phone-login" style="display:none;">
+        <ul class="login-title clearfix">
+            <li><a href="javascript:void(0);" class="js-show-code">扫码登录</a></li>
+            <li class="active"><a href="javascript:void(0);">手机登录</a></li>
+        </ul>
+        <form class="set-in">
+            <div class="input-group"><span class="user-icon"></span><input type="text" placeholder="请输入绑定手机号码" name="tel" autocomplete="off"></div>
+            <div class="input-group">
+                <span class="password-icon"></span><input type="password" placeholder="请输入登录密码" name="pwd" autocomplete="off">
+                <a href="javascript:void(0);" class="forget-password js-forget-pwd js-reload">忘记密码</a>
+            </div>
+        </form>
+        <div class="remember-account">
+            <div class="icheckbox_square-green checked" style="position: relative;"><input type="checkbox" value="" class="control-checkbox" id="checkbox1" data-checkbox="" checked="" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+            <label for="checkbox1">记住我的账号</label>
+        </div>
+        <a href="javascript:void(0);" class="btn-login  js-account-logon">登 录</a>
+        <p class="warning-for"></p>
+        <p>尚未绑定手机登录？<a href="javascript:void(0);" class="js-bind-link js-reload">立即绑定</a></p>
+    </div>
+
+    <div class="main-420 js-bind-phone" style="display: none">
+        <div class="main-head">
+            <div class="piece clearfix">
+                <dl class="active">
+                    <a href="javascript:void(0);">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">1</dt>
+                        <dd>验证微信</dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="javascript:void(0);">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">2</dt>
+                        <dd>设置新密码</dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="javascript:void(0);">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">3</dt>
+                        <dd>完成更改</dd>
+                    </a>
+                </dl>
+            </div>
+        </div>
+        <div class="main-body text-center js-bind-one">
+            <h4>验证微信账号</h4>
+            <div class="code"><img src="###payment/Member"></div>
+            <p class="scan-qrcode">请使用注册的微信号扫一扫验证</p>
+            <div class="tip" style="display:none;">
+                <p></p>
+            </div>
+        </div>
+        <div class="main-body text-left  js-bind-two" style="display: none">
+            <form class="set-in bling-phone">
+                <div class="input-group"><span class="user-icon"></span><input type="text" placeholder="请输入绑定手机号码" name="bind-tel" autocomplete="off"></div>
+                <div class="input-group">
+                    <span class="identify-icon"></span><input type="text" placeholder="请输入图片验证码" name="bind-code" autocomplete="off">
+                    <img src="img/GetValidateCode" class="picture-identify">
+                </div>
+                <div class="input-group">
+                    <span class="identify-icon"></span><input type="text" placeholder="请输入短信验证码" name="bind-note" autocomplete="off">
+                    <a href="javascript:void(0);" class="messege-identify js-msg-identify">获取验证码</a>
+                </div>
+            </form>
+            <form class="set-in sure-password">
+                <div class="input-group">
+                    <span class="password-icon"></span>
+                    <input type="password" placeholder="请输入登录密码" name="bind-pwd" autocomplete="off">
+                    <span class="icon-warning" style="display:none"></span>
+                </div>
+                <div class="input-group">
+                    <span class="password-icon"></span>
+                    <input type="password" placeholder="请确认登录密码" name="bind-re-pwd" autocomplete="off">
+                    <span class="icon-warning" style="display:none"></span>
+                </div>
+            </form>
+            <div class="password-tip js-password-tip">密码至少6位，区分大小写</div>
+            <a href="javascript:void(0);" class="btn-login btn-distance  js-bind-confirm">确 定</a>
+        </div>
+    </div>
+
+    <div class="main-420  js-bind-success" style="display:none;">
+        <div class="set-password-success">
+            <div class="icon-set-password"></div>
+            <h4>成功绑定手机</h4>
+            <p></p>
+            <a href="javascript:void(0);" class="btn-login js-bind-over">重新登录</a>
+        </div>
+    </div>
+    
+    <div class="main-420  js-change-pwd" style="display:none;">
+        <div class="main-head">
+            <div class="piece clearfix">
+                <dl class="active">
+                    <a href="javascript:void(0);">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">1</dt>
+                        <dd>验证微信</dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="javascript:void(0);">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">2</dt>
+                        <dd>设置新密码</dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="javascript:void(0);">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">3</dt>
+                        <dd>完成更改</dd>
+                    </a>
+                </dl>
+            </div>
+        </div>
+        <div class="main-body  js-bind-one">
+            <h4>验证微信账号</h4>
+            <div class="code"><img src="###payment/Member"></div>
+            <p class="scan-qrcode">请使用注册的微信号扫一扫验证</p>
+            <div class="tip" style="display:none">
+                <p></p>
+            </div>
+        </div>
+
+        <div class="main-body text-left revise-password js-bind-two" style="display:none;">
+            <h4></h4>
+            <form class="set-in distance-set">
+                <div class="input-group"><span class="password-icon"></span><input type="password" placeholder="请输入新密码" name="reset-pwd"></div>
+                <div class="input-group"><span class="password-icon"></span><input type="password" placeholder="请确认新密码" name="reset-re-pwd"></div>
+            </form>
+            <div class="password-tip  js-password-tip">密码至少6位，区分大小写</div>
+            <a href="javascript:void(0);" class="btn-login  js-reset-btn">确 定</a>
+        </div>
+    </div>
+
+    <div class="main-420 js-reset-success" style="display:none">
+        <div class="set-password-success">
+            <div class="icon-set-password"></div>
+            <h4>成功设置新密码</h4>
+            <a href="javascript:void(0);" class="btn-login js-bind-over">重新登录 </a>
+        </div>
+    </div>
+
+    <div class="main-320 unbling-phone  js-unblinding-phone" style="display:none;">
+        <h4>解除手机绑定</h4>
+        <div class="code"><img src="###payment/Member"></div>
+        <p>请使用注册的微信号扫一扫验证</p>
+    </div>
+
+    <div class="main-420 js-unblinding-success" style="display:none">
+        <div class="set-password-success">
+            <div class="icon-set-password"></div>
+            <h4>成功解绑手机</h4>
+            <p>解绑手机成功，您可以在个人中心中重新绑定手机</p>
+            <a href="javascript:void(0);" class="btn-login js-bind-over">确 定</a>
+        </div>
+    </div>
+
+    <!--重新绑定-->
+    <!--<div class="main-420 rebind">
+        <div class="main-head">
+            <div class="piece clearfix">
+                <dl class="active">
+                    <a href="#">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">1</dt>
+                        <dd>解绑旧微信</dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="#">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">2</dt>
+                        <dd>绑定新微信</dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="#">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">3</dt>
+                        <dd>完成</dd>
+                    </a>
+                </dl>
+            </div>
+        </div>
+        <div class="main-body">
+            <h4>解绑旧微信账号</h4>
+            <div class="code">
+                <img src="images/11.png">
+            </div>
+            <p class="scan-qrcode">请使用微信号（蠢小子罗）进行扫码验证解绑</p>
+        </div>
+    </div>
+    <div class="main-420 rebind">
+        <div class="main-head">
+            <div class="piece clearfix">
+                <dl class="active">
+                    <a href="#">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">1</dt>
+                        <dd>解绑旧微信</dd>
+                    </a>
+                </dl>
+                <dl class="active">
+                    <a href="#">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">2</dt>
+                        <dd>绑定新微信</dd>
+                    </a>
+                </dl>
+                <dl>
+                    <a href="#">
+                        <dt class="progress"></dt>
+                        <dt class="sequence">3</dt>
+                        <dd>完成</dd>
+                    </a>
+                </dl>
+            </div>
+        </div>
+        <div class="main-body">
+            <h4>绑定新微信账号</h4>
+            <div class="code">
+                <img src="images/11.png">
+            </div>
+            <div class="scan-qrcode">请使用需要绑定的微信号进行扫码，完成绑定</div>
+            <div class="tip">
+                <p>请使用新微信号进行扫码绑定</p>
+                <p>微信号（xx）已绑定其他西瓜短视频账号</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-420 rebind">
+        <div class="set-password-success">
+            <div class="icon-set-password"></div>
+            <h4>绑定完成</h4>
+            <p>成功绑定了微信号（XXXX）到西瓜短视频</p>
+            <a href="#" class="btn-login">确 定</a>
+        </div>
+    </div>-->
+   
+</div>
+
+<script type="text/javascript">
+    var limg = "data:image/gif;base64,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";
+
+    intervalHandler_QrCode = 0;
+    window.JsReload = false;
+    function showQrCode(handler, msg) {
+        $("#div_qrcode .login-code .code").html("");
+        var loding = "<img class='qrloding' style='height:30px; width:30px; margin-top:84px; margin-left:84px;' src=\"" + limg + "\"/>";
+        var load = $(loding);
+        $("#div_qrcode .login-code .code").append(load);
+        $("#div_qrcode").show();
+        $.getJSON("/Login/QrCode",
+            function(result) {
+                if (result.Status > 0) {
+                    load.remove();
+                    var qrImgNode = "<img src='" + result.QrCodeUrl + "'>";
+                    $("#div_qrcode .login-code .code").html($(qrImgNode));
+                    // 储存全局ticket
+                    window.Ticket = result.Ticket;
+                    intervalHandler_QrCode = setInterval(function() { checkQrLogin(handler, true) }, 2000);
+                }
+            });
+
+        if (msg && msg.length > 5) {
+            $('.warning-for').html(msg);
+        }
+    }
+
+    $("#div_qrcode").click(function(e) {
+        if ($('#div_qrcode').is(e.target)) {
+            closeQrCode();
+        }
+    });
+
+    //关闭二维码
+    function closeQrCode() {
+        $("#div_qrcode").hide();
+        $("#div_qrcode").children().hide();
+        $(".login-code").show();
+    }
+
+    //检查登录
+    function checkQrLogin(handler, isClose) {
+        var ticket1 = window.Ticket;
+        $.ajax({
+            type: "GET",
+            url: "/Login/CheckQrStatus",
+            cache: false,
+            dataType: "json",
+            data: { scene: ticket1 },
+            success: function(result) {
+                if (result.status) {
+                    clearInterval(intervalHandler_QrCode);
+                    if (isClose)
+                        closeQrCode();
+                    handler(result);
+                }
+            }
+
+        });
+    }
+
+    $('.js-show-phone').click(function() {
+        $("#div_qrcode").children().hide();
+        $('.js-show-code').parent().parent().parent().show();
+    });
+    $('.js-show-code').click(function() {
+        $("#div_qrcode").children().hide();
+        $('.js-show-phone').parent().parent().parent().show();
+    });
+	$('.js-account-logon').click(AccountLogon);
+
+	$('input[name="pwd"]').bind('keypress', function (event) {
+		if (event.keyCode === 13) {
+			AccountLogon();
+		}
+	});
+    function CheckAccount() {
+        var tel = $('input[name="tel"]').val().trim();
+        var pwd = $('input[name="pwd"]').val().trim();
+        if (tel === "") {
+            return "请输入绑定手机号码";
+        }
+        if (pwd === "") {
+            return "请输入登录密码";
+        }
+        if (!CheckMobile(tel)) {
+            return "手机号码格式错误";
+        }
+        if (pwd.length < 6) {
+            return "密码不能小于6位";
+        }
+        return "";
+    }
+
+    function CheckMobile(str) {
+        var re = /^1\d{10}$/;
+        if (re.test(str)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+	function AccountLogon() {
+		var rst = CheckAccount();
+		if (rst !== "") {
+			$('.warning-for').html(rst);
+			return;
+		}
+		$('.warning-for').html('');
+        var postData = {
+            tel: $('input[name="tel"]').val().trim(),
+            pwd: $('input[name="pwd"]').val().trim()
+        };
+        var option =
+        {
+            type: 'POST',
+            data: JSON.stringify(postData),
+            url: "/Login/Login",
+            dataType: "json",
+            contentType: "application/json;charset=utf-8",
+            success: function(result) {
+                if (result.Status) {
+                    if ($(".saveName").is(":checked")) {
+                        setCookie("SaveUserName", $('input[name="tel"]').val().trim(), 24 * 30);
+                    } else {
+                        setCookie("SaveUserName", "");
+                    }
+                    var redirect = window.RedirectUrl === undefined || window.RedirectUrl === "" ? "/Member#/DashBoard" : window.RedirectUrl;
+                    if (window.location.href == redirect) {
+                        // 只有超时触发
+                        closeQrCode();
+                        checkURL();
+                    } else {
+                        window.location.href = redirect;
+                    }
+                } else {
+                    $('.warning-for').html(result.Msg);
+                }
+            },
+            error: function(result) {
+                $('.warning-for').html("登陆失败, 请尝试二维码登录");
+            }
+        };
+        $.ajax(option);
+    }
+
+    function getCookie(cookiename) {
+        var result;
+        var mycookie = document.cookie;
+        var start2 = mycookie.indexOf(cookiename + "=");
+        if (start2 > -1) {
+            start = mycookie.indexOf("=", start2) + 1;
+            var end = mycookie.indexOf(";", start);
+
+            if (end == -1) {
+                end = mycookie.length;
+            }
+
+            result = unescape(mycookie.substring(start, end));
+        }
+
+        return result;
+    }
+
+    function setCookie(cookiename, cookievalue, hours) {
+        var date = new Date();
+        date.setTime(date.getTime() + Number(hours) * 3600 * 1000);
+        document.cookie = cookiename + "=" + cookievalue + "; path=/;expires = " + date.toGMTString();
+    }
+
+    function Init() {
+        var tel = getCookie("SaveUserName");
+        if (tel != null && tel != undefined && tel != "" && tel != "undefined") {
+            $('input[name="tel"]').val(tel);
+        }
+    }
+
+    Init();
+
+    $('.js-bind-link').click(ShowBindPhone);
+
+    function ShowBindPhone() {
+		$("#div_qrcode").children().hide();
+        // 加载新
+        $("#div_qrcode .js-bind-phone .code").html("");
+        var loding = "<img class='qrloding' style='height:30px; width:30px; margin-top:70px; margin-left:6px;' src=\"" + limg + "\"/>";
+        var load = $(loding);
+        $("#div_qrcode .js-bind-phone .code").append(load);
+		$('.js-bind-phone').show();
+		$("#div_qrcode").show();
+        if ($(this).hasClass('js-reload')) {
+            window.JsReload = true;
+        }
+        clearInterval(intervalHandler_QrCode);
+        $.getJSON("/Login/QrCode",
+            function(result) {
+                if (result.Status > 0) {
+                    load.remove();
+                    var qrImgNode = "<img src='" + result.QrCodeUrl + "'>";
+                    $("#div_qrcode .js-bind-phone .code").html($(qrImgNode));
+                    // 储存全局ticket
+                    window.Ticket = result.Ticket;
+                    intervalHandler_QrCode = setInterval(function() { checkQrLogin(CheckQrBeforeBind, false) }, 2000);
+                }
+            });
+    }
+</script>
+<script>
+    function CheckQrBeforeBind() {
+        $.ajax({
+            type: 'GET',
+            url: '/Login/IsBindTel',
+            success: function (data) {
+                if (data.Status) {
+                    $('.js-bind-phone .scan-qrcode').hide();
+                    $('.js-bind-phone .tip p').html("该微信号已绑定手机，将为您自动登陆");
+                    $('.js-bind-phone .tip').show();
+                    setTimeout(function () { window.location = "/Member#/DashBoard"; }, 1500);
+                } else {
+                    ShowBindForm();
+                }
+            }
+        });
+    }
+    function ShowBindForm()
+    {
+        $('.js-bind-phone .js-bind-one').hide();
+        $('.js-bind-phone .js-bind-two').show();
+        $('.js-bind-phone .piece').children().eq(1).addClass('active');
+    }
+
+    $('.js-bind-phone .picture-identify').unbind('click').bind('click', function () {
+        $(this)[0].src = '/Login/GetValidateCode?rand=' + Math.random() * 1000;
+    });
+
+    $('input[name=bind-tel]').unbind('blur').bind('blur', CheckBindTel);
+    function CheckBindTel() {
+        var tel = $('input[name=bind-tel]').val();
+        if (tel === "") {
+            $('.js-validate-tip').html("手机号码不能为空");
+        } else if (!CheckMobile(tel)) {
+            $('.js-validate-tip').html("手机号码格式错误");
+        } else {
+            $('.js-validate-tip').html("");
+            return true;
+        }
+        return false;
+    }
+
+    $('input[name=bind-code]').unbind('blur').bind('blur', CheckBindCode);
+    function CheckBindCode() {
+        var code = $('input[name=bind-code]').val();
+        var rst = false;
+        if (code === "") {
+            $('.js-validate-tip').html("验证码不能为空");
+        } else {
+            $.ajax({
+                type: 'GET',
+				url: '/Login/CheckValidateCode?code=' + code,
+				async: false,
+                success: function(data) {
+                    if (data.Status) {
+                        $('.js-validate-tip').html("");
+                        rst = true;
+                    } else {
+                        $('.js-validate-tip').html("验证码错误");
+                    }
+                }});
+        }
+        return rst;
+    }
+
+    function CheckBindNote() {
+		var note = $('input[name=bind-note]').val();
+        if (note === "") {
+            $('.js-validate-tip').html("短信验证码不能为空");
+        } else {
+            $('.js-validate-tip').html("");
+            return true;
+        }
+        return false;
+    }
+    $('input[name=bind-re-pwd]').unbind('blur').bind('blur', CheckBindPwd);
+    function CheckBindPwd() {
+        var pwd = $('input[name=bind-pwd]').val().trim();
+		var rePwd = $('input[name=bind-re-pwd]').val().trim();
+		if (pwd === "" || rePwd === "") {
+			ShowErrorMsg("密码不能为空");
+        } else if (pwd !== rePwd) {
+			ShowErrorMsg("密码不一致");
+        }
+        else if (pwd.length < 6) {
+			ShowErrorMsg("密码不能小于6位");
+        }
+        else {
+			ShowErrorMsg("");
+            return true;
+        }
+        return false;
+    }
+
+    $('.js-msg-identify').unbind('click').click(function () {
+        if (!CheckBindTel())
+			return;
+        var tel = $('input[name=bind-tel]').val().trim();
+        $.getJSON('/Login/SendMessageCode/?tel=' + tel + '&rand=' + (Math.random() * 1000), function (data) {
+            if (data.Status) {
+                $('.js-msg-identify').html('短信已发送');
+                var time = 60;
+                var code = $('.js-msg-identify');
+                if (true) {
+                    code.addClass("unabled");
+                    var t = setInterval(function () {
+                        time--;
+                        code.html(time + "秒后才能重新获取");
+                        if (time == 0) {
+                            clearInterval(t);
+                            code.html("获取验证码");
+                            code.removeClass("unabled");
+                        }
+                    }, 1000);
+                }
+            }
+            else {
+                //$('.js-validate-tip').html(data.Msg);
+                $('.js-password-tip').addClass('error-tip');
+                $('.js-password-tip').html(data.Msg);
+			}
+
+        });
+
+    });
+
+    $('.js-bind-confirm').unbind('click').click(function () {
+		var check = CheckBindTel() && CheckBindCode() && CheckBindNote() && CheckBindPwd();
+        if (!check)
+			return;
+        var postData = {
+            tel: $('input[name="bind-tel"]').val().trim(),
+            code: $('input[name="bind-code"]').val().trim(),
+            note: $('input[name="bind-note"]').val().trim(),
+            pwd: $('input[name="bind-pwd"]').val().trim()
+		};
+        var option =
+        {
+            type: 'POST',
+            data: JSON.stringify(postData),
+            url: "/Login/BindUserTel",
+            dataType: "json",
+            contentType: "application/json;charset=utf-8",
+            success: function(result) {
+				if (result.Status) {
+					var tel = $('input[name="bind-tel"]').val().trim();
+					ShowBindSuccess(tel);
+                } else {
+					$('.js-password-tip').addClass('error-tip');
+					$('.js-password-tip').html(result.Msg);
+                }
+            },
+            error: function(result) {
+				$('.js-password-tip').addClass('error-tip');
+				$('.js-password-tip').html("绑定失败，请刷新重试");
+            }
+		};
+		$.ajax(option);
+    });
+
+	function ShowErrorMsg(msg) {
+		if (msg === undefined || msg === "") {
+			$('.js-password-tip').removeClass('error-tip');
+			$('.js-password-tip').html('密码至少6位，区分大小写');
+			$('.icon-warning').hide();
+		} else {
+			$('.js-password-tip').addClass('error-tip');
+			$('.js-password-tip').html(msg);
+			$('.icon-warning').show();
+		}
+	}
+
+	function ShowBindSuccess(tel) {
+		$('#div_qrcode').children().hide();
+		$('.js-bind-success p').html('现在您可以使用' + tel + '的手机号码登录西瓜数据');
+		if (window.JsReload) {
+		    $.ajax({
+		        url: '/Login/LogOut',
+		        async: false,
+                success: function(data) {
+                    if (data.Status) {
+                        $('.js-bind-success a').html('重新登录');
+                    }
+                }
+		    });
+		    window.JsReload = false;
+		}
+		$('.js-bind-success').show();
+	}
+
+    $('.js-forget-pwd').unbind('click').click(ClickForgetPwd);
+
+    function ClickForgetPwd() {
+        $("#div_qrcode").children().hide();
+        // 加载新
+        var $code = $("#div_qrcode .js-change-pwd .code");
+        var loding = "<img class='qrloding' style='height:30px; width:30px; margin-top:70px; margin-left:6px;' src=\"" + limg + "\"/>";
+        var load = $(loding);
+        $code.html(load);
+        $('.js-change-pwd .scan-qrcode').show();
+        $('.js-change-pwd .tip').hide();
+        $('.js-change-pwd .tip p').html("");
+        $('.js-change-pwd').show();
+        $("#div_qrcode").show();
+        clearInterval(intervalHandler_QrCode);
+        if ($(this).hasClass('js-reload')) {
+            window.JsReload = true;
+        }
+        $.getJSON("/Login/QrCode",
+        function(result) {
+            if (result.Status > 0) {
+                load.remove();
+                var qrImgNode = "<img src='" + result.QrCodeUrl + "'>";
+                $code.html($(qrImgNode));
+                // 储存全局ticket
+                window.Ticket = result.Ticket;
+                intervalHandler_QrCode = setInterval(function () { checkQrLogin(CheckQrBeforeChange, false) }, 2000);
+            }
+        });
+    }
+
+	function CheckQrBeforeChange() {
+        $.ajax({
+            type: 'GET',
+            url: '/Login/IsBindTel',
+			success: function (data) {
+                if (data.Status) {
+					$('.js-change-pwd .js-bind-one').hide();
+					$('.js-change-pwd .js-bind-two h4').html("您绑定的手机号码：" + data.Msg);
+					$('.js-change-pwd .js-bind-two').show();
+					$('.js-change-pwd .piece').children().eq(1).addClass('active');
+					return;
+                } else {
+					$('.js-change-pwd .scan-qrcode').hide();
+					$('.js-change-pwd .tip p').html("该微信号未绑定手机，请先绑定手机");
+					$('.js-change-pwd .tip').show();
+					return;
+                }
+            }
+        });
+	}
+
+    $('input[name=reset-re-pwd]').unbind('blur').bind('blur', CheckResetPwd);
+	function CheckResetPwd() {
+		var pwd = $('input[name=reset-pwd]').val().trim();
+		var rePwd = $('input[name=reset-re-pwd]').val().trim();
+		if (pwd === "" || rePwd === "") {
+			ShowErrorMsg("密码不能为空");
+		} else if (pwd !== rePwd) {
+			ShowErrorMsg("密码不一致");
+		}
+		else if (pwd.length < 6) {
+			ShowErrorMsg("密码不能小于6位");
+		}
+		else {
+			ShowErrorMsg("");
+			return true;
+		}
+		return false;
+	}
+	$('.js-reset-btn').unbind('click').click(function () {
+		if (!CheckResetPwd())
+			return;
+		var postData = {
+			pwd: $('input[name="reset-pwd"]').val().trim()
+		};
+        var option =
+        {
+            type: 'POST',
+            data: JSON.stringify(postData),
+            url: "/Login/ResetPwd",
+            dataType: "json",
+            contentType: "application/json;charset=utf-8",
+            success: function(result) {
+				if (result.Status) {
+					$('#div_qrcode').children().hide();
+					if (window.JsReload) {
+					    $.ajax({
+					        url: '/Login/LogOut',
+					        async: false,
+					        success: function (data) {
+					            if (data.Status) {
+					                $('.js-reset-success a').html('重新登录');
+					            }
+					        }
+					    });
+					    window.JsReload = false;
+					}
+				    $('.js-reset-success').show();
+                } else {
+					$('.js-password-tip').addClass('error-tip');
+					$('.js-password-tip').html(result.Msg);
+                }
+            },
+            error: function(result) {
+				$('.js-password-tip').addClass('error-tip');
+				$('.js-password-tip').html("修改密码失败，请刷新重试");
+            }
+		};
+		$.ajax(option);
+	});
+
+    $('.js-unblinding-phone').unbind().click(ClickUnblindingPhone);
+
+    function ClickUnblindingPhone() {
+        $("#div_qrcode").children().hide();
+        // 加载新
+        var $code = $("#div_qrcode .js-unblinding-phone .code");
+        var loding = "<img class='qrloding' style='height:30px; width:30px; margin-top:70px; margin-left:6px;' src=\"" + limg + "\"/>";
+        var load = $(loding);
+        $code.html(load);
+        $('.js-unblinding-phone p').html("请使用注册的微信号扫一扫验证");
+        $('.js-unblinding-phone p').removeClass('error-tip');
+        $('.js-unblinding-phone').show();
+        $("#div_qrcode").show();
+        clearInterval(intervalHandler_QrCode);
+        $.getJSON("/Login/QrCode",
+        function(result) {
+            if (result.Status > 0) {
+                load.remove();
+                var qrImgNode = "<img src='" + result.QrCodeUrl + "'>";
+                $code.html($(qrImgNode));
+                // 储存全局ticket
+                window.Ticket = result.Ticket;
+                intervalHandler_QrCode = setInterval(function () { checkQrLogin(UnblindingPhone, false) }, 2000);
+            }
+        });
+    }
+
+    function UnblindingPhone() {
+        var $code = $("#div_qrcode .js-unblinding-phone .code");
+		$.ajax({
+            type: 'POST',
+            url: '/Login/UnblindingPhone',
+			success: function (data) {
+                if (data.Status) {
+					$('#div_qrcode').children().hide();
+					$('.js-unblinding-success').show();
+					return;
+                } else {
+					$('.js-unblinding-phone p').html(data.Msg);
+					$('.js-unblinding-phone p').addClass('error-tip');
+					$.getJSON("/Login/QrCode",
+                        function(result) {
+                            if (result.Status > 0) {
+                                var qrImgNode = "<img src='" + result.QrCodeUrl + "'>";
+                                $code.html($(qrImgNode));
+                                // 储存全局ticket
+                                window.Ticket = result.Ticket;
+                                intervalHandler_QrCode = setInterval(function () { checkQrLogin(UnblindingPhone, false) }, 2000);
+                            }
+                        });
+					return;
+                }
+            }
+        });
+	}
+
+    $('.js-bind-over').unbind().click(function () {
+        if ($(this).html() === '重新登录') {
+            $("#div_qrcode").children().hide();
+            $('.js-show-code').parent().parent().parent().show();
+            return;
+        }
+        //var url = '/Home#/User';
+        //if (location.hash === '#/User') {
+        //    checkURL();
+        //    return;
+        //}
+        //location.href = url;
+    });
+</script>
+<script src="js/icheck.min.js"></script>
+<script>
+    $('[data-checkbox]').iCheck({
+        checkboxClass: 'icheckbox_square-green',
+        radioClass: 'iradio_square-green',
+        increaseArea: '20%'
+    });
+
+
+    $(function () {
+        clickSlide();
+    });
+    function clickSlide(){
+        $('[data-action=minifyMenu]').click(function () {
+            $('body').toggleClass('sidebar-collapsed');
+        });
+    }
+</script>
+
+    <div id="loadingLayer" style="display:none;">
+        <div class="mask"></div>
+        <div class="page-load-container">
+            <div class="load2 line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p>努力为您加载中...</p>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+    <script src="js/select2.min(1).js"></script>
+    <script src="js/g2.min.js"></script>
+    <script src="js/data-set.min.js"></script>
+    <!--<script src="js/xiguaji.js"></script>-->
+
+
+</body></html>
