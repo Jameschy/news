@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="http://more.handlino.com/javascripts/moretext-1.2.js" type="text/javascript"></script>
+<body>
+<div class="lipsum(3,20-50)">
+
+</div>
+
+
+<!--ul>li.add#my_${heloo}*3-->
+<ul>
+    <li class="add" id="my_1">heloo</li>
+    <li class="add" id="my_2">heloo</li>
+    <li class="add" id="my_3">heloo</li>
+</ul>
+<!--span.hello+.my-->
+<span class="hello"></span>
+<div class="my"></div>
+<!--.d-->
+<div class="d"></div>
+<!--(.foo>h1)+(.doo>p)-->
+<div class="foo">
+    <h1></h1>
+</div>
+<div class="doo">
+    <p></p>
+</div>
+
+<ul>
+    <!--.item-->
+    <li class="item"></li>
+</ul>
+
+<tr>
+    <!--.ss-->
+    <td class="ss"></td>
+</tr>
+
+<!--div+div>p>span+em^bq-->
+<div></div>
+<div>
+    <p><span></span><em></em></p>
+    <blockquote></blockquote>
+</div>
+
+<!--div+div>p>span+em^^bq-->
+<div></div>
+<div>
+    <p><span></span><em></em></p>
+</div>
+<blockquote></blockquote>
+
+<!--div>(header>ul>li*2>a[href=###])+footer>p-->
+<div>
+    <header>
+        <ul>
+            <li><a href="###"></a></li>
+            <li><a href="###"></a></li>
+        </ul>
+    </header>
+    <footer>
+        <p></p>
+    </footer>
+</div>
+
+<!--(div>dl>(dt+dd)*3)+footer>p-->
+<div>
+    <dl>
+        <dt></dt>
+        <dd></dd>
+        <dt></dt>
+        <dd></dd>
+        <dt></dt>
+        <dd></dd>
+    </dl>
+</div>
+<footer>
+    <p></p>
+</footer>
+
+<!--h$[title=item$]{Header $}*3-->
+<h1 title="item1">Header 1</h1>
+<h2 title="item2">Header 2</h2>
+<h3 title="item3">Header 3</h3>
+
+<!--ul>li.item$$$*5-->
+<ul>
+    <li class="item001"></li>
+    <li class="item002"></li>
+    <li class="item003"></li>
+    <li class="item004"></li>
+    <li class="item005"></li>
+</ul>
+
+<!--ul>li.item$$*5-->
+<ul>
+    <li class="item01"></li>
+    <li class="item02"></li>
+    <li class="item03"></li>
+    <li class="item04"></li>
+    <li class="item05"></li>
+</ul>
+
+<!--倒序-->
+<!--ul>li.item$@-*5-->
+<ul>
+    <li class="item5"></li>
+    <li class="item4"></li>
+    <li class="item3"></li>
+    <li class="item2"></li>
+    <li class="item1"></li>
+</ul>
+
+<!--间隔-->
+<!--ul>li.item$@3*5-->
+<ul>
+    <li class="item3"></li>
+    <li class="item4"></li>
+    <li class="item5"></li>
+    <li class="item6"></li>
+    <li class="item7"></li>
+</ul>
+
+<!--ul>li.item$@-7*3-->
+<ul>
+    <li class="item7"></li>
+    <li class="item6"></li>
+    <li class="item5"></li>
+    <li class="item4"></li>
+    <li class="item3"></li>
+</ul>
+
+
+
+
+<!--假文-->
+<div>
+    <!--Lorem-->
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusamus accusantium at, eius eligendi error et ex expedita in magnam maxime mollitia obcaecati officiis optio porro recusandae sapiente, voluptatem voluptatum!
+</div>
+
+<div>
+    <!--lipsum-->
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem consequatur cumque ea et inventore maiores pariatur quam reiciendis repellat rerum? Ab architecto beatae eveniet ex iusto magnam minus rerum veritatis.
+</div>
+
+<div>
+    <!--lorem10-->
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quos.
+</div>
+
+<style>
+    .ss{
+        /*空表示px*/
+        /*p 表示%*/
+        /*e 表示 em*/
+        /*x 表示 ex*/
+
+        /*w100+h12*/
+        width: 100px;
+        height: 12px;
+        /*l10p+r5e*/
+        left: 10%;
+        right: 5em;
+
+        /*o-h*/
+        overflow: hidden;
+        /*c-b*/
+        clear: both;
+        /*f-r*/
+        float: right;
+        /*p-ad -a -r -s*/
+        position: absolute;
+        position: fixed;
+        position: relative;
+        position: static;
+        
+        /*trs*/
+        -webkit-transition: prop time;
+        -moz-transition: prop time;
+        -ms-transition: prop time;
+        -o-transition: prop time;
+        transition: prop time;
+        
+        /*tfs*/
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+
+        /*-transform*/
+        -webkit-transform: ;
+        -moz-transform: ;
+        -ms-transform: ;
+        -o-transform: ;
+        transform: ;
+
+        /*lg*/
+
+        
+    }
+
+    /*@f */
+    @font-face {
+        font-family: ;
+        src: url();
+    }
+    /*@f+*/
+    @font-face {
+        font-family: 'FontName';
+        src: url('FileName.eot');
+        src: url('FileName.eot?#iefix') format('embedded-opentype'), url('FileName.woff') format('woff'), url('FileName.ttf') format('truetype'), url('FileName.svg#FontName') format('svg');
+        font-style: normal;
+        font-weight: normal;
+    }
+
+    /*@m*/
+    @media screen {
+        
+    }
+    /*@o*/
+    @-o-keyframes  {
+
+    }
+
+    /*@k*/
+    @keyframes  {
+
+    }
+
+
+</style>
+
+</body>
+</html>
