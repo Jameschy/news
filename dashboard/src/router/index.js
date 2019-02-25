@@ -9,7 +9,13 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: resolve => require(['../components/common/Home.vue'], resolve)
+      component: resolve => require(['../components/common/Home.vue'], resolve),
+      children:[
+        {
+          path:'/page1',
+          component: resolve => require(['../components/common/pages/page1.vue'], resolve)
+        }
+      ]
     },
     {
       path: '/about',

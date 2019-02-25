@@ -31,11 +31,8 @@
 <script>
 export default {
   name: 'App',
-  data(){
-
-  },
   created(){
-    console.log($);
+    // console.log($);
   }
 }
 
