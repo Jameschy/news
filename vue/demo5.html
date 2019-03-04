@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>v-if：v-show：v-for</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+<div id="root">
+    <div v-if="show">Hello World</div>
+
+    <div v-show="show">Hello World</div>
+
+    <!--v-show 性能优于v-if；因为标签不会再次渲染Dom-->
+    <!--v-if:为false时，会删除标签，true再渲染并加载标签-->
+    <!--一次性使用v-if比较好-->
+
+    <button @click="handleClick">Toggle</button>
+    <ul>
+        <!--<li v-for="item of list">{{item}}</li>-->
+    </ul>
+    <ul>
+        <!--v-for 页面循环展示；加key会提升渲染性能，使得渲染每项不相同-->
+        <li v-for="(item,index) of list" :key="index">{{item}}</li>
+    </ul>
+</div>
+
+<!--v-if:控制dom存在与否-->
+<!--v-show:控制dom显示与否-->
+<!--v-for:控制一组数据渲染-->
+</body>
+<script type="text/javascript">
+    new Vue({
+        el:"#root",
+        data:{
+            show:true,
+            // list:[1,2,3]
+            list:['apple','banana','orange']
+        },
+        methods:{
+            handleClick:function () {
+                this.show = !this.show;
+            }
+        }
+
+    })
+</script>
+</html>
