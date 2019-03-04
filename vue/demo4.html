@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>计算属性：侦听器</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+<div id="root">
+    姓 <input v-model="firstName"></input>
+    名 <input v-model="lastName"></input>
+    <div>{{fullName}}</div>
+    <div>{{count}}</div>
+    <!--v-bind 简写方式： :-->
+</div>
+</body>
+<script type="text/javascript">
+    new Vue({
+        el:"#root",
+        data:{
+            firstName:'',
+            lastName:'',
+            count:0
+        },
+
+        // computed = 表示一个属性通过其他属性计算后返回而来，计算属性如果不变，会不再计算，只有其中某个变化了才会重现计算并返回
+        // computed：计算属性
+        computed:{
+            fullName:function () {
+                return this.firstName +""+this.lastName
+            }
+        },
+        // wath:监听某个属性是否发生变化
+        watch:{
+            // firstName:function () {
+            //     this.count ++
+            // },
+            // lastName:function () {
+            //     this.count ++
+            // }
+            fullName:function () {
+                this.count ++
+            }
+        }
+
+    })
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>属性绑定：双向数据绑定</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+<div id="root">
+    <div :title="title +'Hello'">hello world</div>
+
+    <!--双向数据绑定 v-model-->
+    <input type="text" v-model="content"/>
+    <div >{{content}}</div>
+
+    <!--v-bind 简写方式： :-->
+</div>
+</body>
+<script type="text/javascript">
+    new Vue({
+        el:"#root",
+        data:{
+            title:"this is hello world!!!!!!!",
+            content:"this is a input!!!"
+        }
+    })
+</script>
+</html>
