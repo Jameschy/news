@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+<div id="root">
+    <h1>{{msg}}</h1>
+    <h2 v-html="number"></h2>
+    <h3 v-text="content"></h3>
+
+    <!--v-html:在加载时，语义化渲染标签及内容-->
+    <!--v-text:在加载时，直接原样输出数据-->
+</div>
+</body>
+<script type="text/javascript">
+    new Vue({
+        el:"#root",
+        data:{
+            msg:"World",
+            number:"<h4>123</h4>",
+            content:'<h4> zheshi h4</h4>'
+        }
+    })
+
+
+</script>
+</html>
