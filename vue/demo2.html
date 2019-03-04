@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绑定事件</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+<div id="root">
+    <h1>{{msg}}</h1>
+    <h2 v-html="number"></h2>
+    <h3 v-text="content"></h3>
+
+    <div v-on:click="handleClick1">{{content}}</div>
+    <div @click="handleClick2">{{content2}}</div>
+
+    <!--v-html:在加载时，语义化渲染标签及内容-->
+    <!--v-text:在加载时，直接原样输出数据-->
+    v-on 简写方式： @
+</div>
+</body>
+<script type="text/javascript">
+    new Vue({
+        el:"#root",
+        data:{
+            msg:"World",
+            number:"<h4>123</h4>",
+            content:'Hello',
+            content2:'你好'
+        },
+        methods:{
+            handleClick1: function () {
+                console.log("这是content 1！！！");
+                // 修改content内容
+                this.content = "world"
+            },
+            handleClick2:function () {
+                console.log("这是content 2！！！");
+                this.content2 = "世界"
+            }
+        }
+    })
+
+
+</script>
+</html>
