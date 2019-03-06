@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TodoList组件化、通信</title>
+    <script type="text/javascript" src="js/vue.js"></script>
+</head>
+<body>
+<div id="root">
+    <div>
+        <input type="text" v-model="inputValue"/>
+        <button @click="handleSubmit">提交</button>
+    </div>
+    <ul>
+        <!--<li v-for="(item,index) of list" :key="index">-->
+            <!--{{item}}-->
+        <!--</li>-->
+
+        <todo-item
+                v-for="(item,index) of list"
+                :key="index"
+                :content="item"
+        >
+
+        </todo-item>
+    </ul>
+</div>
+</body>
+<script type="text/javascript">
+
+    // 组件的拆分
+
+    // 全局组件:小组件可以有自己模板
+    // 注册组件:component
+    // Vue.component('todo-item',{
+    //     template:'<li>item</li>'
+    // })
+
+    //局部组件定义
+    // var todoItem ={
+    //     template:'<li>item</li>'
+    // }
+
+    // 使用局部组件
+    Vue.component('todo-item',{
+        props:['content'],
+        template:'<li>{{content}}</li>'
+    })
+    new Vue({
+        el:"#root",
+        // 局部组件声明
+        // component:{'todo-item':todoItem},
+        data:{
+          inputValue:'hello',
+            list:[]
+        },
+        methods:{
+            handleSubmit:function () {
+                this.list.push(this.inputValue)
+                this.inputValue = ''
+            }
+        }
+
+    })
+
+</script>
+</html>
