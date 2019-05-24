@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取Div值</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<ul id="liBox">
+    <li>
+        <b>00没有</b>
+    </li>
+    <li>
+        <b>01没有</b>
+    </li>
+    <li>
+        <b>02没有彩票</b>
+    </li>
+    <li>
+        <b>03有彩票</b>
+    </li>
+    <li>
+        <b>04有</b>
+    </li>
+    <li>
+        <b>05哈哈</b>
+    </li>
+</ul>
+</body>
+
+<script type="text/javascript">
+
+
+   $("#liBox li").each(function(){
+       if($(this).html().indexOf("彩票")!=-1){
+           $(this).css("display","none")
+       }
+   })
+</script>
+
+</html>
