@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html mip>
+<head>
+    <meta charset="utf-8"/>
+    <title>[!--pagetitle--]_<?=$public_r['add_www_kaifadou_com_name']?></title>
+    <meta name="keywords" content="[!--pagekey--]"/>
+    <meta name="description" content="[!--pagedes--]"/>
+    <meta name="applicable-device" content="mobile"/>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="canonical" href="http://<?=$public_r['add_www_kaifadou_com_url']?>[!--titleurl--]">
+    <link rel="stylesheet" type="text/css" href="http://m.gtyymm.com/kaifadou/css/webdown.css"/>
+    <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v2/mip.css"/>
+    <style mip-custom>
+        .tongji {
+            display: none;
+        }
+
+        mip-history.mip-history-default {
+            padding: 0;
+            margin: 0;
+        }
+
+        mip-vd-tabs .mip-vd-tabs-nav {
+            width: 100%;
+        }
+
+        .g-ishot-isbest ul li {
+            padding: 2px 0 10px 10px;
+        }
+
+        #tonglei .g-rank-ul mip-img {
+            width: auto;
+            margin-right: 8px;
+        }
+
+        .g-rank-ul li .g-a-left img {
+            margin: 0;
+        }
+
+        .mip-showmore-btn {
+            text-align: center;
+            font-size: 16px;
+            color: #000;
+        }
+
+        .m-show-content {
+            text-align: center;
+            height: 25px;
+            line-height: 25px;
+            font-size: 18px;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body class="game-content">
+<header class="g-top-full">
+    <mip-history history="go, -1" class="mip-history-default g-back-home"></mip-history>
+    <?=$public_r['add_www_kaifadou_com_name']?>
+    <p><a href="/websousuo.html"></a><b class="m-navshow-btn" on="tap:my-mip-toggle-1.toggle">展开</b></p>
+    <mip-toggle id="my-mip-toggle-1" class="m-navshow-ul">
+        <ul>
+            <li><a href="/"><b></b><strong>网站首页</strong></a></li>
+            <li><a href="/ruanj.html"><b></b><strong>软件下载</strong></a></li>
+            <li><a href="/youxi.html"><b></b><strong>游戏下载</strong></a></li>
+            <li><a href="/news.html"><b></b><strong>文章资讯</strong></a></li>
+            <li><a href="/xcx/"><b></b><strong>小程序</strong></a></li>
+            <li><a href="/qm/"><b></b><strong>个性签名</strong></a></li>
+            <li><a href="/wm/"><b></b><strong>个性网名</strong></a></li>
+            <li><a href="/tx/"><b></b><strong>个性头像</strong></a></li>
+            <li><a href="/tp/"><b></b><strong>个性图片</strong></a></li>
+            <li><a href="/ss/"><b></b><strong>个性说说</strong></a></li>
+            <li><a href="/bq/"><b></b><strong>个性表情</strong></a></li>
+            <li><a href="/pf/"><b></b><strong>个性皮肤</strong></a></li>
+        </ul>
+    </mip-toggle>
+    <b class="m-black"></b>
+</header>
+<nav class="g-nav-full">
+    <a href="/">首页</a>| <a href="/nlist.html">软件</a>| <a href="/glist.html" class="m-hover">游戏</a>| <a
+        href="/rank.html">排行</a>| <a href="/topic.html">专题</a>
+</nav>
+<section class="g-down-game">
+    <dl class="g-game-top">
+        <dt>
+            <mip-img src="<?=$public_r['add_www_kaifadou_com_url']?>[!--titlepic--]"></mip-img>
+        </dt>
+        <dd>
+            <h1>[!--title--]</h1>
+            <b><em>大小：<span class="f-game-size">[!--rjdx--]</span></em><em>语言：[!--rjyy--]</em></b> <b><em>类别：[!--class.name--]</em><em>系统：[!--rjpt--]</em></b>
+        </dd>
+    </dl>
+    <div id="downAddress">
+        <ul class="g-game-btn m-down-ul">
+            <li class="m-down-last"><a href="[!--downlink--]" class="down" id="address">点击下载</a></li>
+        </ul>
+    </div>
+</section>
+
+<mip-vd-tabs>
+    <section class="g-down-nav">
+        <b id="m-game-introd">简介</b><b id="m-game-tutorail">教程</b><b id="m-game-comment">评论(0)</b>
+    </section>
+
+    <div>
+        <section class="g-down-previmg ">
+            <div class="g-previmg-bo2">
+
+                <div id="owl-demo" class="owl-theme">
+                    <mip-carousel
+                            autoplay
+                            defer="2500"
+                            layout="responsive"
+                            width="600"
+                            height="850"
+                            indicator
+                            indicatorId="mip-carousel-example"
+                    >
+                        <?php
+    $picr=explode(egetzy('rn'),$navinfor[morepic]);
+    $tushu =count($picr);
+
+    for($p=0;$p<count($picr);$p++)
+    {
+    $spicr=explode("::::::",$picr[$p]);
+    ?>
+                        <div class="item">
+                            <a rel="jietu" class="swipebox" href>
+                                <mip-img src="<?=$public_r['add_www_kaifadou_com_url']?><?=$spicr[1]?>"></mip-img>
+                            </a>
+                        </div>
+                        <?php } ?>
+                    </mip-carousel>
+                    <div class="mip-carousel-indicator-wrapper">
+                        <div class="mip-carousel-indicatorDot" id="mip-carousel-example">
+                            <div class="mip-carousel-activeitem mip-carousel-indecator-item"></div>
+                            <div class="mip-carousel-indecator-item"></div>
+                            <div class="mip-carousel-indecator-item"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="g-theme-info">
+                <ul class="g-theme-ul">
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="g-down-information"><strong><em>版本：[!--rjbb--]</em><em>时间：[!--newstime--]</em></strong>
+            <p>
+                <span class="u-bq-txt">标签：</span>
+                [e:loop={"SELECT * FROM www_kaifadou_com_ecms_azgame_data_1 WHERE id = '".$navinfor[id]."'",1,24,0}]
+                <?
+                    $a="$bqr[infotags]";
+                    $str=str_replace('，', ',', $a);
+                    $tag='';
+                    $t= explode(",", $str);
+
+                    for($i=0;$i<count($t);$i++)
+                    {
+                        if($t[$i])
+                        {
+
+                            $tsql=$empire->query("SELECT * FROM www_kaifadou_com_enewstags WHERE tagname =
+                '".$t[$i]."'");
+                while($trs=$empire->fetch($tsql)){
+                $tagid=$trs[tagid];
+                }
+
+                $tagslink="/tag/$tagid/";
+                $tag.="<a href='$tagslink' target='_blank' title='$t[$i]'>$t[$i]</a>";
+                }
+                }
+                echo $tag;
+                ?>
+                [/e:loop]
+            </p>
+        </section>
+
+
+        <div class="g-down-introd">
+            <dl class="g-title">
+                <dt>游戏介绍</dt>
+                <dd></dd>
+            </dl>
+            <mip-showmore bottomshadow='1' maxheight='140' animatetime='.3' id="showmore01">
+                <div class="g-down-content">
+                    <?=str_replace("[!--empirenews.page--]","",stripslashes(str_replace("/d/file/",$public_r['add_www_kaifadou_com_url']."/d/file/",stripslashes($navinfor['newstext']))))?>
+                </div>
+            </mip-showmore>
+            <div on="tap:showmore01.toggle" data-closetext="收起" class="m-show-content mip-showmore-btn">点击显示</div>
+        </div>
+
+        <section class="g-down-recomd">
+            <dl class="g-title">
+                <dt>热门推荐</dt>
+                <dd></dd>
+            </dl>
+            <div class="g-ishot-isbest">
+                <ul>
+                    [e:loop={"select * from www_kaifadou_com_ecms_azgame where classid='".$GLOBALS[navclassid]."' and
+                    isgood in (1,2,3,4,5,6) order by newstime desc limit 10",6,24,0}]
+                    <li>
+                        <a href="<?=$bqsr[titleurl]?>">
+                            <mip-img src="<?=$public_r['add_www_kaifadou_com_url']?><?=$bqr[titlepic]?>"
+                                     alt="<?=$bqr[ftitle]?>"></mip-img>
+                            <strong><?=$bqr[title]?></strong>
+                        </a>
+                    </li>
+                    [/e:loop]
+                </ul>
+            </div>
+        </section>
+    </div>
+    <!--第二-->
+    <div>
+        <section class="g-cms-relatedcms">
+            <dl class="g-title">
+                <dt>推荐教程</dt>
+                <dd></dd>
+            </dl>
+            <ul class="g-cmslist">
+                [e:loop={"select * from www_kaifadou_com_ecms_news order by newstime desc limit 6",6,24,0}]
+                <li><b></b><a href="<?=$bqsr[titleurl]?>"><?=$bqr[title]?></a></li>
+                [/e:loop]
+            </ul>
+        </section>
+
+
+        <div class="g-box" id="g-keyword">
+            <div class="g-game-recomd m-tab-box">
+                <dl class="g-title">
+                    <dt>猜你喜欢</dt>
+                    <dd></dd>
+                </dl>
+                <div class="g-keyword-cont m-tab-cont">
+                    <ul>
+                        [e:loop={"select * from www_kaifadou_com_ecms_azgame where classid='".$GLOBALS[navclassid]."'
+                        order by rand() desc limit 10",6,24,0}]
+                        <li>
+                            <a href="<?=$bqsr[titleurl]?>">
+                                <mip-img src="<?=$public_r['add_www_kaifadou_com_url']?><?=$bqr[titlepic]?>"></mip-img>
+                                <strong><?=$bqr[title]?></strong>
+                            </a>
+                        </li>
+                        [/e:loop]
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <section>
+            <div class="margin10 clearfix">
+                <div class="g-title-top"><strong>相关合集</strong></div>
+                <div class="g-zthj scroll-module clearfix">
+                    <span></span>
+                    [e:loop={'select * from www_kaifadou_com_enewszt where zcid=11 order by addtime desc limit
+                    8',10,24,0}]
+                    <a href="/<?=$bqr['ztpath']?>/" title="<?=$bqr['ztname']?>">
+                        <mip-img src="<?=$public_r['add_www_kaifadou_com_url']?><?=$bqr['ztimg']?>"
+                                 alt="<?=$bqr['ztname']?>"></mip-img>
+                        <strong><?=$bqr['ztname']?></strong>
+                    </a>
+                    [/e:loop]
+                    <span></span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--第三-->
+    <div>
+        <section class="m-comment">
+            <dl class="g-title">
+                <dt>用户评论</dt>
+                <dd></dd>
+            </dl>
+            <div class="g-commentbox g-game-comment">
+                <div class="g-game2-ly" id="comment_list">
+                    [!--temp.www_kaifadou_com_cy--]
+                </div>
+            </div>
+        </section>
+    </div>
+</mip-vd-tabs>
+
+<section id="tonglei">
+    <div class="g-game-recomd g-relate-cms">
+        <dl class="g-title">
+            <dt>本类排行</dt>
+            <dd></dd>
+        </dl>
+        <ul class="g-rank-ul g-scoll-ul">
+            [e:loop={"select * from www_kaifadou_com_ecms_azgame where classid='".$GLOBALS[navclassid]."' order by
+            onclick desc limit 10",6,24,0}]
+            <li class="m-rank-<?=$bqno?> ">
+                <a href="<?=$bqsr[titleurl]?>" class="g-a-left">
+                    <mip-img src="<?=$public_r['add_www_kaifadou_com_url']?><?=$bqr[titlepic]?>"></mip-img>
+                    <p><strong><?=$bqr[title]?></strong><b><span><?=$bqr[rjdx]?></span><span><em><?=$bqr[onclick]?></em>人在玩</span></b><b><?=$bqr[smalltext]?></b>
+                    </p>
+                </a><a href="<?=$bqsr[titleurl]?>" class="g-a-right">下载</a></li>
+            [/e:loop]
+        </ul>
+    </div>
+</section>
+
+
+<footer><a href="<?=$public_r['add_www_kaifadou_com_url']?>">访问电脑版</a> | <a href="/">返回首页</a></footer>
+
+<div class="tongji"><?=$public_r['add_www_kaifadou_com_tongji']?></div>
+<mip-fixed type="gototop">
+    <mip-gototop></mip-gototop>
+</mip-fixed>
+</body>
+<script src="https://c.mipcdn.com/static/v2/mip.js"></script>
+<script src="https://c.mipcdn.com/static/v2/mip-history/mip-history.js"></script>
+<script src="https://c.mipcdn.com/static/v2/mip-toggle/mip-toggle.js"></script>
+<script src="https://c.mipcdn.com/static/v2/mip-vd-tabs/mip-vd-tabs.js"></script>
+<script src="https://c.mipcdn.com/static/v2/mip-gototop/mip-gototop.js"></script>
+<script src="https://c.mipcdn.com/static/v2/mip-showmore/mip-showmore.js"></script>
+<script src="https://c.mipcdn.com/static/v2/mip-script/mip-script.js"></script>
+<mip-script src="http://m.gtyymm.com/kaifadou/app/game.js"></script>
+    <
+    mip - script
+    src = "http://m.gtyymm.com/kaifadou/js/webdown.min.js" > < /mip-script>
+        < /html>
