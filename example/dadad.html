@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html mip>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>[!--pagetitle--]_<?=$public_r['add_www_kaifadou_com_name']?></title>
+    <meta name="keywords" content="[!--pagekey--]" />
+    <meta name="description" content="[!--pagedes--]" />
+    <meta name="applicable-device" content="mobile" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"/>
+    <meta http-equiv="Cache-Control" content="no-transform"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="canonical" href="https://<?=$public_r['add_www_kaifadou_com_url']?>[!--titleurl--]">
+    <link href="http://m.gtyymm.com/kaifadou/css/cmsmain.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://c.mipcdn.com/static/v2/mip.css">
+    <!--<script type="text/javascript" src="/kaifadou/skin/new2018/js/jquery.min.js"></script>-->
+    <!--<script>var _pageinfo = { id: "275976", path:"cms",categroyId:'95',rootId:'26',commendid:'1'};var Page = 5; var CommentTpye = 1;</script>-->
+    <!--<script src="/kaifadou/js/jquery.swipebox2.js"></script>-->
+    <style mip-custom>
+        .tongji {
+            display: none;
+        }
+
+        mip-history.mip-history-default {
+            padding: 0;
+            margin: 0;
+        }
+        .mip-fill-content{
+            min-width:auto;
+            max-width:auto;
+        }
+        .mip-showmore-btn{
+            display: inline-block;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+            /* background: transparent; */
+            border: none;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+<body>
+<header class="g-top-full">
+    <mip-history history="go, -1" class="mip-history-default g-back-home"></mip-history>
+    <?=$public_r['add_www_kaifadou_com_name']?>
+    <p><a href="/websousuo.html"></a><b class="m-navshow-btn" on="tap:my-mip-toggle-1.toggle">展开</b></p>
+    <mip-toggle id="my-mip-toggle-1" class="m-navshow-ul">
+        <ul>
+            <li><a href="/"><b></b><strong>网站首页</strong></a></li>
+            <li><a href="/ruanj.html"><b></b><strong>软件下载</strong></a></li>
+            <li><a href="/youxi.html"><b></b><strong>游戏下载</strong></a></li>
+            <li><a href="/news.html"><b></b><strong>文章资讯</strong></a></li>
+            <li><a href="/xcx/"><b></b><strong>小程序</strong></a></li>
+            <li><a href="/qm/"><b></b><strong>个性签名</strong></a></li>
+            <li><a href="/wm/"><b></b><strong>个性网名</strong></a></li>
+            <li><a href="/tx/"><b></b><strong>个性头像</strong></a></li>
+            <li><a href="/tp/"><b></b><strong>个性图片</strong></a></li>
+            <li><a href="/ss/"><b></b><strong>个性说说</strong></a></li>
+            <li><a href="/bq/"><b></b><strong>个性表情</strong></a></li>
+            <li><a href="/pf/"><b></b><strong>个性皮肤</strong></a></li>
+        </ul>
+    </mip-toggle>
+    <b class="m-black"></b> </header>
+<article class="g-cms-content">
+    <h1>[!--title--]</h1>
+    <em>
+        <time pubdate="pubdate">时间:[!--newstime--]</time>
+        作者:<? if($navinfor['writer']=="") { echo "本站作者";}else{echo $navinfor[writer];} ?> 人气:<span id="hits"></span></em>
+    <mip-showmore bottomshadow='1' maxheight='100' id="showmore08">
+    <div class="g-cont" id="content">
+        <?php if($navinfor[azrjid]==''){}else{ ?>
+        [e:loop={"select * from www_kaifadou_com_ecms_az where titlepic<>'' and id=$navinfor[azrjid] order by newstime desc limit 1",6,24,0}]
+        <section class="g-cms-game">
+            <a href="<?=$bqsr[titleurl]?>" class="g-game"> <mip-img src="<?=$public_r['add_www_kaifadou_com_url']?><?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></mip-img>
+                <p class="g-game-top"> <span class="g-game-top-span"> <strong><?=$bqr[title]?></strong> <b><?=$bqr[rjdx]?> / <?=$bqr[rjyy]?></b></span></p>
+                <b class="m-game-down">点击下载</b>
+            </a>
+        </section>
+        [/e:loop]
+        <?php } if($navinfor[azyxid]==''){}else{ ?>
+        [e:loop={"select * from www_kaifadou_com_ecms_azgame where titlepic<>'' and id=$navinfor[azyxid] order by newstime desc limit 1",6,24,0}]
+        <section class="g-cms-game">
+            <a href="<?=$bqsr[titleurl]?>" class="g-game"> <mip-img src="<?=$public_r['add_www_kaifadou_com_url']?><?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></mip-img>
+                <p class="g-game-top"> <span class="g-game-top-span"> <strong><?=$bqr[title]?></strong> <b><?=$bqr[rjdx]?> / <?=$bqr[rjyy]?></b></span></p>
+                <b class="m-game-down">点击下载</b>
+            </a>
+        </section>
+        [/e:loop]
+        <?php } if($navinfor[pgrjid]==''){}else{ ?>
+        [e:loop={"select * from www_kaifadou_com_ecms_ios where titlepic<>'' and id=$navinfor[pgrjid] order by newstime desc limit 1",6,24,0}]
+        <section class="g-cms-game">
+            <a href="<?=$bqsr[titleurl]?>" class="g-game"> <mip-img src="<?=$public_r['add_www_kaifadou_com_url']?><?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></mip-img>
+                <p class="g-game-top"> <span class="g-game-top-span"> <strong><?=$bqr[title]?></strong> <b><?=$bqr[rjdx]?> / <?=$bqr[rjyy]?></b></span></p>
+                <b class="m-game-down">点击下载</b>
+            </a>
+        </section>
+        [/e:loop]
+        <?php } if($navinfor[pgyxid]==''){}else{ ?>
+        [e:loop={"select * from www_kaifadou_com_ecms_iosgame where titlepic<>'' and id=$navinfor[pgyxid] order by newstime desc limit 1",6,24,0}]
+        <section class="g-cms-game">
+            <a href="<?=$bqsr[titleurl]?>" class="g-game"> <mip-img src="<?=$public_r['add_www_kaifadou_com_url']?><?=$bqr[titlepic]?>" alt="<?=$bqr[title]?>"></mip-img>
+                <p class="g-game-top"> <span class="g-game-top-span"> <strong><?=$bqr[title]?></strong> <b><?=$bqr[rjdx]?> / <?=$bqr[rjyy]?></b></span></p>
+                <b class="m-game-down">点击下载</b>
+            </a>
+        </section>
+        [/e:loop]
+        <?php } ?>
+        <?=str_replace("[!--empirenews.page--]","",stripslashes(str_replace("/d/file/",$public_r['add_www_kaifadou_com_url']."/d/file/",stripslashes($navinfor['newstext']))))?>
+    </div>
+    </mip-showmore>
+<!--    <b class="m-showload">-->
+<!--        <div on="tap:showmore01.toggle" data-closetext="收起" class="mip-showmore-btn">点击显示</div>-->
+<!--    </b>-->
+    <div on="tap:showmore08.toggle" data-closetext="收起内容" class="mip-showmore-btn">点击显示</div>
+</article>
+<section class="g-cms-relatedcms">
+    <dl class="g-title">
+        <dt>相关教程</dt>
+        <dd></dd>
+    </dl>
+    <ul class="g-cmslist">
+        [e:loop={"select * from www_kaifadou_com_ecms_news where id<>'$navinfor[id]' and classid='".$GLOBALS[navclassid]."' and titlepic<>'' order by newstime desc limit 6",6,24,0}]
+        <li><b></b><a href="<?=$bqsr[titleurl]?>" title="<?=$bqr[title]?>"><?=$bqr[title]?></a></li>
+        [/e:loop]
+    </ul>
+</section>
+<div class="g-box" id="g-keyword">
+    <div class="g-game-recomd m-tab-box">
+        <dl class="g-title">
+            <dt>猜你喜欢</dt>
+        </dl>
+        <div class="g-keyword-cont m-tab-cont">
+            <ul>
+                [e:loop={"select * from www_kaifadou_com_ecms_az where titlepic<>'' order by newstime desc limit 8",6,24,0}]
+                <li><a href="<?=$bqsr[titleurl]?>"><mip-img src="<?=$public_r['add_www_kaifadou_com_url']?><?=$bqr[titlepic]?>" > </mip-img><strong><?=$bqr[title]?></strong></a></li>
+                [/e:loop]
+            </ul>
+        </div>
+    </div>
+</div>
+<section class="m-comment">
+    <dl class="g-title">
+        <dt>用户评论</dt>
+        <dd></dd>
+    </dl>
+    <div class="g-commentbox g-game-comment">
+        [!--temp.www_kaifadou_com_cy--]
+    </div>
+</section>
+<footer> <a href="<?=$public_r['add_www_kaifadou_com_url']?>">访问电脑版</a> | <a href="/">返回首页</a> </footer>
+<div class="tongji"><?=$public_r['add_www_kaifadou_com_tongji']?></div>
+<!--<script src="/kaifadou/js/kaifadou.js"></script>-->
+<mip-fixed type="gototop">
+    <mip-gototop></mip-gototop>
+</mip-fixed>
+</body>
+<!--<script src=[!--news.url--]e/public/ViewClick?classid=[!--classid--]&id=[!--id--]&addclick=1></script>-->
+<script src="https://c.mipcdn.com/static/v2/mip.js"></script>
+<script src="https://c.mipcdn.com/static/v2/mip-history/mip-history.js"></script>
+<script src="https://c.mipcdn.com/static/v2/mip-toggle/mip-toggle.js"></script>
+<script src="https://c.mipcdn.com/static/v2/mip-showmore/mip-showmore.js"></script>
+<script src="https://c.mipcdn.com/static/v2/mip-gototop/mip-gototop.js"></script>
+</html>
